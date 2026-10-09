@@ -1,0 +1,56 @@
+## 1) Ranked tactic stack (learning priority) + community-safe names
+**Ranking criterion:** (a) broad usefulness, (b) supports ethical use + self-defense, (c) lowest risk of misuse first, (d) evidence density.### Tier A — Core (teach first; “influence literacy”)
+1. **Baseline & context calibration** → *“Personal Baseline & Context Calibration”* (no “lying face”; compare to the person’s normal)2. **Slow-down & verification habits** → *“Deliberate Pause + Independent Verification”* (cooling-off, cross-checking)3. **Cognitive bias awareness** (framing/anchoring/loss aversion/ELM) → *“Decision Bias Literacy”*4. **Cluster-based interpretation** → *“Multi-Signal Pattern Reading (Not Single Cues)”*5. **Boundary & autonomy protection** → *“Boundaries + Consent-Centered Influence”*### Tier B — Applied (teach second; skill-building with guardrails)
+6. **Strategic questioning for clarity** → *“Clarifying Questions & Timeline Re-checks”* (reverse order, peripheral details, delayed re-ask)7. **Narrative consistency checks** → *“Consistency Checking Across Retellings”*8. **Vocal/verbal load signals** → *“Cognitive Load & Speech Changes”* (rate, pitch, hesitations)9. **Nonverbal clusters & incongruence** → *“Nonverbal Congruence Reading”* (context-dependent)10. **Manipulation “signature” recognition** → *“High-Pressure Pattern Detection”* (urgency + emotion + info control + etc.)### Tier C — Research-only / moderation-focused (high misuse risk; teach as “red flags,” not “how-to”)
+11. **Engineered urgency systems** → *“Scarcity & Urgency Claims Audit”* (spot unverifiable scarcity, urgency fatigue)12. **Narrative persuasion misuse** → *“Story-Based Persuasion Risks”* (transportation, plausibility checks)13. **Dark-pattern UX & digital manipulation** → *“Online Influence & Dark Pattern Awareness”*14. **High-control group dynamics** → *“High-Control Environment Indicators (BITE)”*15. **“Bad actor” playbooks & advanced control frames** → *“Compliance: Coordinated Influence Operations”* (systems, not tips)---
+
+## 2) Reframed glossary (controversial → community-safe labels)
+Use these labels in community-facing UI/curricula; keep originals only in citations or “research appendix.”- **Gaslighting** → *“Reality-denial & Perception Undermining (abuse red flag)”*- **Love bombing** → *“Accelerated Intensity / Fast Attachment Ramping (screen for pacing)”*- **Intermittent reinforcement** → *“Variable Reinforcement Pattern (push–pull volatility)”*- **FOG (fear/obligation/guilt)** → *“Fear–Obligation–Guilt Pressure Cycle”*- **Triangulation** → *“Third-Party Leverage / Comparison Framing”*- **Manufactured authority** → *“Credential Signaling Without Verification”*- **Layered ambiguity** → *“Unfalsifiable Jargon / Claims You Can’t Check”*- **Future faking** → *“Unbacked Future Promises”*- **“Enslavement” (IRAE)** → *“High-Dependency Bonding (ethics red flag; not taught as a skill)”*- **Mate poaching** → *“Boundary-Crossing Relationship Entry (ethics + risk case study)”*- **Cold reading / Barnum** → *“Perceived-Personalization Effect (skepticism training)”*---
+
+## 3) Learning modules + which materials belong where
+(Modules are sequenced; each has a “Use ethically / defend first” posture.)
+
+### Module 0 — Orientation: ethics, safety, and error-checking
+**Goal:** define ethical influence vs manipulation; avoid overconfidence; set community norms.  
+**Materials:**  
+- Ethical boundary tests + autonomy/accuracy/vulnerability framing- Limits of lie detection & false positives (anxiety mimics deception; ~54% accuracy)- “Hypothesis, not verdict” stance### Module 1 — Foundations of persuasion (how influence works)
+**Goal:** shared vocabulary: source/message/target/situation; ELM; Cialdini basics; cognitive mechanisms.  
+**Materials:**  
+- Foundations of Persuasion & Psychological Manipulation (Hovland model; Cialdini; ELM; biases)- Psychology of Persuasion/Manipulation synthesis (ELM, framing/anchoring/priming)### Module 2 — Bias & framing literacy (persuasion without pressure)
+**Goal:** recognize frames, anchors, loss aversion, identity frames; practice “reframe in your own terms.”  
+**Materials:**  
+- Core framing mechanisms + loss aversion/anchoring/framing effects- “Spotting manipulation in real time” categories (pressure/emotion/info control/authority)- Defensive countermeasures (slow down, verify, outside perspective, demand specifics)### Module 3 — Conversation skills for clarity (ethical questioning + truth-seeking)
+**Goal:** ask better questions without accusation; reduce confirmation bias; document for consistency.  
+**Materials:**  
+- Strategic questioning (reverse chronology, peripheral details, delayed re-ask; don’t signal suspicion)- Step-by-step field method (baseline → target question → follow-ups → later compare)- Manipulation-resistance in negotiation: “name the tactic,” slow down, verify claims### Module 4 — Deception literacy (what’s reliable, what isn’t)
+**Goal:** understand deception as cognitive load + narrative maintenance; avoid “tell” hunting.  
+**Materials:**  
+- Deception/Lying/Fabrication definitions + cognitive load + illusory truth + memory distortion- “Inconsistent narratives” and “anomalous detail level” (bolstering)- Speech rate/pitch/fluency changes + disproportionate denial### Module 5 — Nonverbal communication (clusters, congruence, context)
+**Goal:** interpret clusters; avoid single-cue myths; apply “seek clarity” language.  
+**Materials:**  
+- Advanced Body Language Masterclass: clusters + context + incongruence- Micro-expressions overview + baseline-first drill- “Seek clarity” script for incongruence (“you say you’re fine, but…”)### Module 6 — Manipulation patterns in relationships (defense-first)
+**Goal:** identify relational red flags; protect boundaries; understand attachment vulnerabilities.  
+**Materials:**  
+- Gaslighting / love bombing / intermittent reinforcement / FOG / isolation / future faking- Attachment vulnerability vectors + boundary testing + projection/blame shifting + triangulation- “Personal insecurity as confound” and anxiety false positives### Module 7 — Negotiation psychology (ethical influence + anti-manipulation)
+**Goal:** principled negotiation + defenses against false scarcity/authority and concession traps.  
+**Materials:**  
+- Negotiation Psychology guide (Harvard framework, BATNA, manipulation recognition, defense)### Module 8 — Digital & marketplace influence (platform-era defenses)
+**Goal:** recognize algorithmic manipulation, dark patterns, astroturfing; apply verification hygiene.  
+**Materials:**  
+- Digital influence ecosystem + tactics (dark patterns, gamification, astroturfing)- Counter-tactics (privacy tools, diverse perspectives, conscious disengagement)### Module 9 — High-control groups & systemic influence (community safety)
+**Goal:** detect BITE patterns; understand recruitment/retention/exit-blocking; recovery resources.  
+**Materials:**  
+- Cult Psychology guide: definition, BITE, detection questions, defense framework, recovery### Module 10 — Marketing & communications (ethical conversion + measurement)
+**Goal:** separate ethical positioning from deceptive pressure; build trust + test responsibly.  
+**Materials:**  
+- Marketing masterclass: positioning/differentiation + ethics vs unethical practices- Measurement/experimentation ethics (avoid false scarcity)### Module 11 — “Red flags & compliance review” (restricted / moderator track)
+**Goal:** identify coordinated bad-actor systems; document patterns; escalate appropriately.  
+**Materials:**  
+- Manipulator’s Playbook (as pattern recognition, not replication)- Category 9–10 systems: “sophistication is a red flag,” phased architecture, documentation steps### Module 12 — Storytelling for influence (pro-social, with integrity tests)
+**Goal:** use story for clarity/connection; apply truthfulness/intention/long-term checks.  
+**Materials:**  
+- Story mechanics + ethical storytelling + integrity tests> **Explicitly exclude from community “skills” modules (keep only as ethics case studies, if at all):**
+> - Step-by-step fabrication instructions / “how to fabricate good stories”> - “Advanced micro-influence” sequences intended to bypass rational objection> - “Attraction” materials that frame coercion (e.g., “enslavement,” mate poaching tactics)---
+
+## 4) Quick “module-to-file” mapping (by title family)
+- **Detecting Deception: Behavioral Science Approach** → Modules 0, 3, 4, 5- **Advanced Body Language & Nonverbal Masterclass** → Module 5- **Foundations of Persuasion / Psychology of Persuasion** → Modules 1–2- **Anatomy of Manipulation / Relational tactics slides** → Modules 2, 6, 11- **Digital Influence & Online Manipulation** → Module 8- **Cult Psychology & High-Control Groups** → Module 9- **Negotiation Psychology** → Module 7- **Marketing/Advertising Masterclasses** → Module 10- **Manipulator’s Playbook / Category 9–10** → Module 11 (restricted)- **Storytelling for Influence** → Module 12 (ethical-only)
