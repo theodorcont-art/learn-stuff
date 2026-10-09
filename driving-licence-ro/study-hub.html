@@ -1,0 +1,651 @@
+<title>Drumul spre permis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Overpass:wght@400;600;800&family=Overpass+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one calm reading column, like a road. Course map first, then the lesson, then an exam-style test. */
+:root {
+  --bg: #EDF0F3;
+  --surface: #FFFFFF;
+  --ink: #14191F;
+  --muted: #56616D;
+  --line: #D3DAE1;
+  --sign: #0B4F9C;          /* Romanian information-sign blue */
+  --sign-soft: #DCE7F5;
+  --mark: #E8A900;          /* temporary yellow road marking */
+  --mark-soft: #FBF0CF;
+  --ok: #1B7444;
+  --ok-soft: #DCF0E3;
+  --bad: #A8261E;
+  --bad-soft: #F7DEDC;
+  --asphalt: #2E343B;
+  --paint: #F4F6F8;
+  --gravel: #B8B09F;
+  --grass: #7C9F67;
+  --curb: #C5CBD2;
+  --f-display: "Overpass", "Arial Narrow", Arial, sans-serif;
+  --f-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "Overpass Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1216; --surface: #161B21; --ink: #E6EAEE; --muted: #97A2AE; --line: #29313A;
+    --sign: #5A98E3; --sign-soft: #15283F; --mark: #F2C233; --mark-soft: #33290C;
+    --ok: #57C487; --ok-soft: #12291C; --bad: #F07870; --bad-soft: #351614;
+    --asphalt: #262C33; --paint: #E9EDF1; --gravel: #6A6457; --grass: #3F5B33; --curb: #4A535D;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1216; --surface: #161B21; --ink: #E6EAEE; --muted: #97A2AE; --line: #29313A;
+  --sign: #5A98E3; --sign-soft: #15283F; --mark: #F2C233; --mark-soft: #33290C;
+  --ok: #57C487; --ok-soft: #12291C; --bad: #F07870; --bad-soft: #351614;
+  --asphalt: #262C33; --paint: #E9EDF1; --gravel: #6A6457; --grass: #3F5B33; --curb: #4A535D;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--f-body); font-size: 17px; line-height: 1.6;
+  padding-inline: 16px; padding-block: 0 64px;
+}
+.wrap { max-width: 760px; margin-inline: auto; display: grid; gap: 56px; }
+h1, h2, h3 { font-family: var(--f-display); line-height: 1.15; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2.2rem, 7vw, 3.4rem); font-weight: 800; letter-spacing: -0.01em; }
+h2 { font-size: 1.75rem; font-weight: 800; }
+h3 { font-size: 1.2rem; font-weight: 600; }
+p { margin: 0; }
+.prose { display: grid; gap: 14px; max-width: 65ch; }
+.lead { max-width: 65ch; }
+.label {
+  font-family: var(--f-display); font-weight: 600; font-size: 0.78rem;
+  letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted);
+}
+.ro { font-weight: 700; }
+.en { color: var(--muted); }
+a { color: var(--sign); }
+:focus-visible { outline: 3px solid var(--mark); outline-offset: 2px; }
+
+/* top nav */
+nav.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--bg); border-bottom: 1px solid var(--line);
+  margin-inline: -16px; padding: 10px 16px;
+}
+nav.top .in { max-width: 760px; margin-inline: auto; display: flex; gap: 6px 18px; flex-wrap: wrap; align-items: center; }
+nav.top a { font-family: var(--f-display); font-weight: 600; text-decoration: none; color: var(--ink); font-size: 0.95rem; }
+nav.top a:hover { color: var(--sign); }
+nav.top .sp { flex: 1; }
+.toggle { display: inline-flex; gap: 8px; align-items: center; font-size: 0.9rem; color: var(--muted); cursor: pointer; }
+.toggle input { accent-color: var(--sign); width: 18px; height: 18px; }
+body.no-en .en-line { display: none; }
+
+/* hero */
+header.hero { padding-top: 36px; display: grid; gap: 18px; }
+.plate {
+  display: inline-flex; align-items: stretch; border: 2px solid var(--ink); border-radius: 6px; overflow: hidden;
+  font-family: var(--f-mono); font-weight: 600; font-size: 0.85rem; width: fit-content;
+}
+.plate .eu { background: var(--sign); color: #fff; padding: 2px 7px; display: grid; place-items: center; font-size: 0.75rem; }
+.plate .txt { padding: 2px 10px; background: var(--surface); }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.fact { background: var(--surface); padding: 12px 14px; display: grid; gap: 2px; }
+.fact b { font-family: var(--f-display); font-size: 1.6rem; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.fact span { font-size: 0.85rem; color: var(--muted); line-height: 1.35; }
+.small { font-size: 0.88rem; color: var(--muted); }
+
+/* course map: a road with stops */
+.route { list-style: none; margin: 0; padding: 0; position: relative; display: grid; gap: 0; }
+.route::before {
+  content: ""; position: absolute; left: 17px; top: 8px; bottom: 8px; width: 10px; border-radius: 5px;
+  background: var(--asphalt);
+}
+.route::after {
+  content: ""; position: absolute; left: 21px; top: 14px; bottom: 14px; width: 2px;
+  background: repeating-linear-gradient(to bottom, var(--paint) 0 10px, transparent 10px 20px);
+}
+.stop { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; padding-block: 9px; position: relative; z-index: 1; }
+.pin {
+  width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--surface); border: 3px solid var(--line);
+  font-family: var(--f-display); font-weight: 800; font-variant-numeric: tabular-nums;
+}
+.stop.now .pin { background: var(--sign); border-color: var(--sign); color: #fff; }
+.stop.done .pin { background: var(--ok); border-color: var(--ok); color: #fff; }
+.stop .body { min-width: 0; display: grid; gap: 2px; padding-top: 2px; }
+.stop .body h3 { font-size: 1.08rem; }
+.stop .body p { font-size: 0.92rem; color: var(--muted); line-height: 1.45; }
+.chip {
+  display: inline-block; font-family: var(--f-display); font-weight: 600; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 1px 8px; border-radius: 999px; margin-left: 8px; vertical-align: 2px;
+  background: var(--sign-soft); color: var(--sign);
+}
+.stop.done .chip { background: var(--ok-soft); color: var(--ok); }
+.stop.later .chip { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+.stop.finish .pin { border-radius: 8px; background: var(--ink); color: var(--bg); border-color: var(--ink); font-size: 0.75rem; }
+
+/* lesson */
+.section-head { display: grid; gap: 6px; }
+.def {
+  background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--sign);
+  border-radius: 4px 10px 10px 4px; padding: 16px 18px; display: grid; gap: 8px;
+}
+.def q { quotes: "„" "”"; font-size: 1.05rem; }
+.def mark { background: var(--mark-soft); color: inherit; padding: 0 2px; border-radius: 2px; }
+.def .src { font-family: var(--f-mono); font-size: 0.78rem; color: var(--muted); }
+figure { margin: 0; display: grid; gap: 10px; }
+figcaption { font-size: 0.9rem; color: var(--muted); }
+.diagram { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+.diagram svg { display: block; width: 100%; min-width: 560px; height: auto; }
+.diagram svg text { font-family: var(--f-body); fill: var(--ink); }
+.diagram svg .lab { font-size: 13px; }
+.diagram svg .lab-sm { font-size: 11.5px; fill: var(--muted); }
+.diagram svg .lab-paint { font-size: 13px; fill: var(--paint); font-family: var(--f-display); font-weight: 600; }
+
+.terms { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 0.95rem; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--f-display); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 700; white-space: nowrap; }
+
+.traps { display: grid; gap: 10px; }
+.trap {
+  display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: start;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px;
+}
+.tri { width: 34px; height: 30px; }
+.tri path { fill: var(--surface); stroke: var(--bad); stroke-width: 4; stroke-linejoin: round; }
+.tri text { fill: var(--ink); font-family: var(--f-display); font-weight: 800; font-size: 15px; }
+.trap p { min-width: 0; }
+
+.callout { background: var(--mark-soft); border-radius: 10px; padding: 14px 16px; display: grid; gap: 6px; }
+.callout .label { color: var(--ink); }
+
+/* quiz */
+.quiz { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.qbar { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--line); font-family: var(--f-mono); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+.qbar .sp { flex: 1; }
+.qbar .ok { color: var(--ok); } .qbar .bad { color: var(--bad); }
+.progress { height: 4px; background: var(--line); }
+.progress i { display: block; height: 100%; width: 0; background: var(--sign); transition: width .25s ease; }
+.qbody { padding: 20px 16px 18px; display: grid; gap: 16px; }
+.qtext { font-size: 1.15rem; font-weight: 700; line-height: 1.4; }
+.qtext .en-line { display: block; font-weight: 400; font-size: 0.95rem; color: var(--muted); margin-top: 4px; }
+.opts { display: grid; gap: 10px; }
+.opt {
+  display: grid; grid-template-columns: 38px 1fr; gap: 12px; align-items: start; text-align: left;
+  width: 100%; padding: 12px 14px; border-radius: 10px; cursor: pointer;
+  background: var(--bg); border: 2px solid transparent; color: var(--ink); font: inherit; line-height: 1.45;
+}
+.opt:hover { border-color: var(--line); }
+.opt .key {
+  width: 38px; height: 38px; border-radius: 8px; display: grid; place-items: center;
+  font-family: var(--f-display); font-weight: 800; background: var(--surface); border: 2px solid var(--line);
+}
+.opt .en-line { display: block; color: var(--muted); font-size: 0.9rem; }
+.opt[aria-pressed="true"] { border-color: var(--sign); background: var(--sign-soft); }
+.opt[aria-pressed="true"] .key { background: var(--sign); border-color: var(--sign); color: #fff; }
+.opt.right { border-color: var(--ok); background: var(--ok-soft); }
+.opt.right .key { background: var(--ok); border-color: var(--ok); color: #fff; }
+.opt.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.opt.wrong .key { background: var(--bad); border-color: var(--bad); color: #fff; }
+.opt.missed { border-style: dashed; border-color: var(--ok); }
+.opt:disabled { cursor: default; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn {
+  font-family: var(--f-display); font-weight: 800; font-size: 0.98rem; letter-spacing: 0.01em;
+  padding: 11px 18px; border-radius: 8px; border: 2px solid var(--ink); background: var(--ink); color: var(--bg); cursor: pointer;
+}
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn:disabled { opacity: .4; cursor: default; }
+.verdict { border-radius: 10px; padding: 12px 14px; display: grid; gap: 6px; }
+.verdict.ok { background: var(--ok-soft); }
+.verdict.bad { background: var(--bad-soft); }
+.verdict strong { font-family: var(--f-display); }
+.result { padding: 24px 16px; display: grid; gap: 14px; text-align: left; }
+.result .big { font-family: var(--f-display); font-weight: 800; font-size: 3rem; line-height: 1; font-variant-numeric: tabular-nums; }
+
+.notes { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: grid; gap: 12px; }
+.notes ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+.recall { display: flex; flex-wrap: wrap; gap: 8px; }
+.recall span { font-family: var(--f-mono); font-size: 0.82rem; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); }
+
+footer { font-size: 0.85rem; color: var(--muted); display: grid; gap: 6px; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<nav class="top" aria-label="Sections">
+  <div class="in">
+    <a href="#traseu">Traseul</a>
+    <a href="#cap1">Capitolul 1</a>
+    <a href="#test">Test</a>
+    <a href="#notite">Notițe</a>
+    <span class="sp"></span>
+    <label class="toggle" for="enToggle"><input type="checkbox" id="enToggle" checked> English help</label>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="plate" aria-hidden="true"><span class="eu">RO</span><span class="txt">CATEGORIA B</span></div>
+  <h1>Drumul spre permis</h1>
+  <p class="lead" style="font-size:1.08rem">Your route through the Romanian theory exam (<span class="ro">proba teoretică</span>), one chapter at a time. No rush: each chapter is short, ends with a test in the real exam format, and you only move on when it feels easy.</p>
+  <div class="facts" role="list" aria-label="Exam format">
+    <div class="fact" role="listitem"><b>26</b><span>întrebări (questions)</span></div>
+    <div class="fact" role="listitem"><b>30 min</b><span>timp de lucru</span></div>
+    <div class="fact" role="listitem"><b>22</b><span>corecte ca să treci, deci max. 4 greșeli</span></div>
+    <div class="fact" role="listitem"><b>A · B · C</b><span>3 variante, 1, 2 sau toate 3 pot fi corecte</span></div>
+  </div>
+  <p class="small">Checked 9 Oct 2026 against <a href="https://www.avocatnet.ro/articol_72635/Permis-auto-Cum-se-poate-ob%C8%9Bine-in-2026-categoria-B.html" target="_blank" rel="noopener">avocatnet.ro (Sept 2026)</a> and <a href="https://www.scoalarutiera.ro/chestionare-drpciv-categoria-b" target="_blank" rel="noopener">scoalarutiera.ro</a>. If you fail, you can retake after at least 15 days. The biggest trap: a question is only right if you tick <em>every</em> correct letter and nothing else.</p>
+</header>
+
+<section id="traseu" class="section-head" style="gap:18px">
+  <div class="section-head">
+    <span class="label">Traseul · the plan</span>
+    <h2>12 stops, then mock exams</h2>
+    <p class="lead">Roughly one chapter every 3 to 5 days fits your 1 to 3 month window with room to spare. The order follows the structure of the Romanian traffic code (<span class="ro">Codul rutier</span>, OUG 195/2002), so it lines up with your book.</p>
+  </div>
+  <ol class="route" id="route">
+    <li class="stop now" data-ch="1"><span class="pin">1</span><div class="body"><h3>Drumul public <span class="chip">acum</span></h3><p>Road anatomy and the key definitions everything else is built on.</p></div></li>
+    <li class="stop later"><span class="pin">2</span><div class="body"><h3>Deplasarea pe drum <span class="chip">urmează</span></h3><p>Which lane to use, keeping right, lane changes, distance to the car ahead.</p></div></li>
+    <li class="stop later"><span class="pin">3</span><div class="body"><h3>Indicatoare rutiere <span class="chip">urmează</span></h3><p>Road signs by family: warning, priority, prohibition, obligation, information.</p></div></li>
+    <li class="stop later"><span class="pin">4</span><div class="body"><h3>Marcaje, semafoare, polițist <span class="chip">urmează</span></h3><p>Road markings, traffic lights, police officer signals, emergency vehicles.</p></div></li>
+    <li class="stop later"><span class="pin">5</span><div class="body"><h3>Prioritatea <span class="chip">urmează</span></h3><p>Who goes first. The chapter most exam questions come from, so it gets extra time.</p></div></li>
+    <li class="stop later"><span class="pin">6</span><div class="body"><h3>Intersecții și drumuri speciale <span class="chip">urmează</span></h3><p>Roundabouts, one-way roads, motorways, residential and pedestrian zones.</p></div></li>
+    <li class="stop later"><span class="pin">7</span><div class="body"><h3>Viteza <span class="chip">urmează</span></h3><p>Speed limits by road type and for beginner drivers, plus when to slow down.</p></div></li>
+    <li class="stop later"><span class="pin">8</span><div class="body"><h3>Manevre <span class="chip">urmează</span></h3><p>Overtaking, stopping, parking, U-turns and reversing, and where each is banned.</p></div></li>
+    <li class="stop later"><span class="pin">9</span><div class="body"><h3>Locuri speciale <span class="chip">urmează</span></h3><p>Railway crossings, pedestrian crossings, curves, hills, tunnels and bridges.</p></div></li>
+    <li class="stop later"><span class="pin">10</span><div class="body"><h3>Obligațiile șoferului <span class="chip">urmează</span></h3><p>Before and during a trip, children, accidents, breakdowns, first-year drivers.</p></div></li>
+    <li class="stop later"><span class="pin">11</span><div class="body"><h3>Sancțiuni <span class="chip">urmează</span></h3><p>Penalty points, fine classes, alcohol limits, licence suspension and offences.</p></div></li>
+    <li class="stop later"><span class="pin">12</span><div class="body"><h3>Prim ajutor, mecanică, eco <span class="chip">urmează</span></h3><p>First aid, basic car mechanics, eco and defensive driving. Small but always on the exam.</p></div></li>
+    <li class="stop later finish"><span class="pin">EXAM</span><div class="body"><h3>Simulări de examen <span class="chip">final</span></h3><p>Full 26-question, 30-minute mock exams until you pass them comfortably.</p></div></li>
+  </ol>
+</section>
+
+<section id="cap1" style="display:grid;gap:28px">
+  <div class="section-head">
+    <span class="label">Capitolul 1 · about 25 minutes</span>
+    <h2>Drumul public: what the road is made of</h2>
+  </div>
+
+  <div class="prose">
+    <h3>The idea first</h3>
+    <p>Before any rule makes sense, the law needs a shared vocabulary. When an exam question says <span class="ro">acostament</span> or <span class="ro">bandă</span>, it means something precise. This chapter is that vocabulary. It feels dry, but it's the easiest chapter to score full marks on, because it's pure recognition.</p>
+    <p>The single most important idea: <strong>the traffic code only applies on a public road</strong> (<span class="ro">drumul public</span>). So the law starts by saying exactly what counts as one.</p>
+  </div>
+
+  <div class="def">
+    <span class="label">Definiția · drum public</span>
+    <q>orice cale de comunicație terestră, <mark>cu excepția căilor ferate</mark>, special amenajată pentru <mark>traficul pietonal sau rutier</mark>, deschisă circulației publice</q>
+    <p class="en">Any land route, except railways, specially built for pedestrian or vehicle traffic and open to the public. Forest and farm tracks are usually not public roads. A road closed to the public must be marked at its entrance with the <span class="ro">„Accesul interzis”</span> sign plus a panel <span class="ro">„Drum închis circulației publice”</span>.</p>
+    <span class="src">OUG 195/2002, art. 6 pct. 14 · Regulament, art. 3</span>
+  </div>
+
+  <figure>
+    <div class="diagram">
+      <svg viewBox="0 0 720 330" role="img" aria-labelledby="roadTitle">
+        <title id="roadTitle">Top-down view of a two-way road outside a town, showing ditch, shoulder, carriageway, lanes numbered from the right edge toward the centre line, and the centre line.</title>
+        <!-- ditch top -->
+        <rect x="150" y="10" width="560" height="22" fill="var(--grass)"/>
+        <!-- shoulder top -->
+        <rect x="150" y="32" width="560" height="26" fill="var(--gravel)"/>
+        <!-- carriageway -->
+        <rect x="150" y="58" width="560" height="214" fill="var(--asphalt)"/>
+        <!-- shoulder bottom -->
+        <rect x="150" y="272" width="560" height="26" fill="var(--gravel)"/>
+        <!-- ditch bottom -->
+        <rect x="150" y="298" width="560" height="22" fill="var(--grass)"/>
+        <!-- edge lines -->
+        <rect x="150" y="60" width="560" height="3" fill="var(--paint)"/>
+        <rect x="150" y="267" width="560" height="3" fill="var(--paint)"/>
+        <!-- lane dividers (dashed) -->
+        <g fill="var(--paint)">
+          <rect x="160" y="111" width="40" height="3"/><rect x="240" y="111" width="40" height="3"/><rect x="320" y="111" width="40" height="3"/><rect x="400" y="111" width="40" height="3"/><rect x="480" y="111" width="40" height="3"/><rect x="560" y="111" width="40" height="3"/><rect x="640" y="111" width="40" height="3"/>
+          <rect x="160" y="216" width="40" height="3"/><rect x="240" y="216" width="40" height="3"/><rect x="320" y="216" width="40" height="3"/><rect x="400" y="216" width="40" height="3"/><rect x="480" y="216" width="40" height="3"/><rect x="560" y="216" width="40" height="3"/><rect x="640" y="216" width="40" height="3"/>
+        </g>
+        <!-- centre line (continuous white) -->
+        <rect x="150" y="162" width="560" height="5" fill="var(--paint)"/>
+        <!-- lane labels + arrows: upper half drives left, lower half drives right -->
+        <text class="lab-paint" x="560" y="90">← banda 1</text>
+        <text class="lab-paint" x="560" y="143">← banda 2</text>
+        <text class="lab-paint" x="220" y="196">banda 2 →</text>
+        <text class="lab-paint" x="220" y="249">banda 1 →</text>
+        <!-- cars -->
+        <g>
+          <rect x="300" y="72" width="52" height="26" rx="7" fill="var(--sign)"/>
+          <rect x="300" y="76" width="12" height="18" rx="3" fill="var(--paint)" opacity=".75"/>
+          <rect x="470" y="232" width="52" height="26" rx="7" fill="var(--bad)"/>
+          <rect x="508" y="236" width="12" height="18" rx="3" fill="var(--paint)" opacity=".75"/>
+        </g>
+        <!-- left legend -->
+        <text class="lab" x="0" y="25">șanț</text>
+        <text class="lab-sm" x="0" y="39">ditch</text>
+        <text class="lab" x="0" y="52">acostament</text>
+        <text class="lab-sm" x="88" y="52">shoulder</text>
+        <text class="lab" x="0" y="112">sensul ←</text>
+        <text class="lab-sm" x="0" y="127">one direction</text>
+        <text class="lab" x="0" y="170">axa drumului</text>
+        <text class="lab-sm" x="0" y="185">centre line</text>
+        <text class="lab" x="0" y="225">sensul →</text>
+        <text class="lab-sm" x="0" y="240">other direction</text>
+        <text class="lab" x="0" y="290">acostament</text>
+        <text class="lab" x="0" y="315">șanț</text>
+        <!-- carriageway bracket -->
+        <path d="M140 60 L134 60 L134 270 L140 270" fill="none" stroke="var(--muted)" stroke-width="1.5"/>
+        <text class="lab-sm" x="124" y="165" text-anchor="middle" transform="rotate(-90 124 165)">parte carosabilă</text>
+      </svg>
+    </div>
+    <figcaption>Outside a town. Romania drives on the right, so each direction (<span class="ro">sens</span>) numbers its lanes <strong>from its own right edge toward the centre line</strong>: banda 1 is always the outer one. Inside a town the shoulder and ditch are replaced by a <span class="ro">trotuar</span> (sidewalk, for pedestrians) and a <span class="ro">rigolă</span> (gutter).</figcaption>
+  </figure>
+
+  <figure>
+    <div class="diagram">
+      <svg viewBox="0 0 720 170" role="img" aria-labelledby="slopeTitle">
+        <title id="slopeTitle">Road profile for a car driving left to right: an uphill section called rampă, a flat section called palier, and a downhill section called pantă.</title>
+        <path d="M20 140 L230 50 L470 50 L700 140" fill="none" stroke="var(--asphalt)" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M20 140 L230 50 L470 50 L700 140" fill="none" stroke="var(--paint)" stroke-width="1.5" stroke-dasharray="10 10"/>
+        <g transform="translate(110 92) rotate(-23)">
+          <rect x="-22" y="-26" width="44" height="18" rx="5" fill="var(--sign)"/>
+          <circle cx="-12" cy="-6" r="5" fill="var(--ink)"/><circle cx="12" cy="-6" r="5" fill="var(--ink)"/>
+        </g>
+        <path d="M150 115 l26 -11" stroke="var(--sign)" stroke-width="2.5" fill="none" marker-end="url(#ah)"/>
+        <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="var(--sign)"/></marker></defs>
+        <text class="lab" x="70" y="160" style="font-weight:700">rampă</text>
+        <text class="lab-sm" x="122" y="160">going uphill</text>
+        <text class="lab" x="315" y="34" style="font-weight:700">palier</text>
+        <text class="lab-sm" x="365" y="34">flat</text>
+        <text class="lab" x="560" y="160" style="font-weight:700">pantă</text>
+        <text class="lab-sm" x="605" y="160">going downhill</text>
+      </svg>
+    </div>
+    <figcaption>The name depends on your direction of travel. The same hill is a <span class="ro">rampă</span> for the car climbing it and a <span class="ro">pantă</span> for the car coming down. Memory hook: <strong>r</strong>ampă, <strong>r</strong>ising.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h3>The words you'll meet on the exam</h3>
+    <p>You don't need to recite these. You need to recognise the correct one among three options. The highlighted bits are what the exam twists.</p>
+  </div>
+  <div class="terms">
+    <table>
+      <thead><tr><th>Termen</th><th>What it means</th><th>Watch for</th></tr></thead>
+      <tbody>
+        <tr><td>parte carosabilă</td><td>The part of the road platform meant for vehicles.</td><td>A road can have <strong>several</strong> carriageways if they are completely separated.</td></tr>
+        <tr><td>acostament</td><td>The side strip between the edge of the carriageway and the edge of the road platform.</td><td>It is <strong>not</strong> part of the carriageway.</td></tr>
+        <tr><td>trotuar</td><td>Strip at the side of the road, visibly separated from the carriageway, for pedestrians.</td><td>Can be raised or level, it only has to be visibly separated.</td></tr>
+        <tr><td>bandă de circulație</td><td>A lengthwise strip of the carriageway, marked or delimited, wide enough for one line of vehicles (not counting two-wheelers).</td><td>Numbered from the right edge toward the centre line.</td></tr>
+        <tr><td>sens de circulație</td><td>The part of the road where everyone travels the same way.</td><td>The centre line (<span class="ro">axa</span>) can be imaginary or painted, and is not always the geometric middle.</td></tr>
+        <tr><td>bandă de urgență</td><td>The extra strip on the far right of a motorway.</td><td><strong>Not counted</strong> when numbering lanes. Not for driving or overtaking.</td></tr>
+        <tr><td>autostradă</td><td>High-capacity national road, specially signed, <strong>only for motor vehicles</strong>, at least 2 lanes per direction, separated by a central strip.</td><td>No bikes, pedestrians, tractors or carts.</td></tr>
+        <tr><td>localitate</td><td>Hamlet, village, commune, town or city <strong>whose entries and exits are signposted</strong>.</td><td>No sign, no "localitate" in the legal sense.</td></tr>
+        <tr><td>vehicul</td><td>Any mechanical system that moves on the road, with or without its own engine.</td><td>A bicycle is a <span class="ro">vehicul</span>.</td></tr>
+        <tr><td>autovehicul</td><td>A vehicle with an engine, normally used to carry people or goods.</td><td>Tram: <strong>no</strong>. Farm or forestry tractor: <strong>no</strong>. Trolleybus: <strong>yes</strong>.</td></tr>
+        <tr><td>participant la trafic</td><td>Any person using the public road at a given moment.</td><td>Pedestrians count, not just drivers.</td></tr>
+        <tr><td>conducător</td><td>Person who drives a vehicle, or leads a group of people or animals on the road.</td><td>Broader than "driver".</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small">Definitions from OUG 195/2002 art. 6 (pct. 2, 5, 6, 7, 8, 12, 14, 17, 23, 24, 33, 35) and art. 41, paraphrased in English. Your book will have the full Romanian wording, which is worth reading once next to this table.</p>
+
+  <div class="prose"><h3>Capcane · the traps</h3></div>
+  <div class="traps">
+    <div class="trap"><svg class="tri" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 3 L31 27 L3 27 Z"/><text x="13.5" y="24">!</text></svg><p><strong>Tram vs trolleybus.</strong> Both are electric public transport, but the tram runs on rails, so the law says it is <em>not</em> an <span class="ro">autovehicul</span>. The trolleybus is.</p></div>
+    <div class="trap"><svg class="tri" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 3 L31 27 L3 27 Z"/><text x="13.5" y="24">!</text></svg><p><strong>"Select all that apply" is always on.</strong> When two answers both look right, they often both are. Read all three before ticking.</p></div>
+    <div class="trap"><svg class="tri" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 3 L31 27 L3 27 Z"/><text x="13.5" y="24">!</text></svg><p><strong>Absolute words.</strong> Options with <span class="ro">întotdeauna</span> (always), <span class="ro">numai</span> (only) or <span class="ro">oricând</span> (anytime) are wrong more often than not. Example: the centre line does <em>not always</em> sit in the middle.</p></div>
+    <div class="trap"><svg class="tri" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 3 L31 27 L3 27 Z"/><text x="13.5" y="24">!</text></svg><p><strong>Railways are excluded.</strong> A railway is a land route too, which is exactly why the definition of <span class="ro">drum public</span> has to exclude it by name.</p></div>
+  </div>
+
+  <div class="callout">
+    <span class="label">Cu cartea ta · with your book</span>
+    <p>Find the definitions section in your book (usually the first chapter, from art. 6 of the code). Read it once with this page open, then write in your own notebook only the 5 terms you'd most likely mix up. Snap a photo of those notes and send it in the thread if you want me to file them in your repo.</p>
+  </div>
+</section>
+
+<section id="test" style="display:grid;gap:18px">
+  <div class="section-head">
+    <span class="label">Test · capitolul 1</span>
+    <h2>13 questions, real exam style</h2>
+    <p class="lead">Tick every correct letter, then press <span class="ro">Trimite răspunsul</span>. Like the real exam, you can push a question to the end with <span class="ro">Răspunde mai târziu</span>. No timer on chapter tests.</p>
+  </div>
+  <div class="quiz" id="quiz" aria-live="polite"></div>
+</section>
+
+<section id="notite" class="notes">
+  <span class="label">Notițe · capitolul 1 in six lines</span>
+  <ul>
+    <li>The traffic code applies on the <span class="ro">drum public</span>: any land route except railways, built for pedestrians or vehicles, open to the public.</li>
+    <li>Outside towns: <span class="ro">șanț · acostament · parte carosabilă · acostament · șanț</span>. Inside towns: <span class="ro">trotuar · rigolă · parte carosabilă · rigolă · trotuar</span>.</li>
+    <li>Lanes are numbered from the right edge toward the centre line. The motorway emergency lane isn't counted.</li>
+    <li><span class="ro">Vehicul</span> includes bicycles. <span class="ro">Autovehicul</span> excludes trams and farm/forestry tractors, but includes trolleybuses.</li>
+    <li>A <span class="ro">localitate</span> only exists legally where its entries and exits are signposted.</li>
+    <li><span class="ro">Rampă</span> = rising, <span class="ro">palier</span> = flat, <span class="ro">pantă</span> = falling, always judged from your direction of travel.</li>
+  </ul>
+  <span class="label" style="margin-top:6px">Repetă testul · spaced recall</span>
+  <div class="recall"><span>azi</span><span>mâine</span><span>peste 3 zile</span><span>peste o săptămână</span></div>
+  <p class="small">Redo the test on these days. When you score 13/13 twice in a row, the chapter goes into long-term memory and you can stop revisiting it until the mock exams.</p>
+</section>
+
+<footer>
+  <p>Sources: OUG 195/2002 (Codul rutier) and HG 1391/2006 (Regulamentul de aplicare), via the structure of the <a href="https://www.scoalarutiera.ro/curs-legislatie/codul-rutier" target="_blank" rel="noopener">scoalarutiera.ro legislation course</a>. This is a study aid; when it and your book disagree, tell me and I'll check the current law.</p>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  var store = {
+    get: function (k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  };
+
+  // English help toggle
+  var enToggle = document.getElementById('enToggle');
+  var enPref = store.get('dsp-en');
+  if (enPref === false) { enToggle.checked = false; document.body.classList.add('no-en'); }
+  enToggle.addEventListener('change', function () {
+    document.body.classList.toggle('no-en', !enToggle.checked);
+    store.set('dsp-en', enToggle.checked);
+  });
+
+  var Q = [
+    { ro: 'Ce se înțelege prin „drum public”?', en: 'What counts as a "public road"?',
+      o: [
+        { ro: 'orice cale de comunicație terestră, inclusiv căile ferate, deschisă circulației publice', en: 'any land route, including railways, open to the public' },
+        { ro: 'orice cale de comunicație terestră, cu excepția căilor ferate, special amenajată pentru traficul pietonal sau rutier, deschisă circulației publice', en: 'any land route except railways, built for pedestrian or vehicle traffic, open to the public' },
+        { ro: 'numai drumurile naționale și autostrăzile', en: 'only national roads and motorways' }
+      ], c: [1],
+      x: 'Railways are the one land route the definition excludes by name (art. 6 pct. 14). County roads, streets and village roads are public roads too.' },
+    { ro: 'Acostamentul este:', en: 'The shoulder (acostament) is:',
+      o: [
+        { ro: 'fâșia laterală cuprinsă între limita părții carosabile și marginea platformei drumului', en: 'the side strip between the edge of the carriageway and the edge of the road platform' },
+        { ro: 'spațiul longitudinal destinat circulației pietonilor, separat vizibil de partea carosabilă', en: 'the strip for pedestrians, visibly separated from the carriageway' },
+        { ro: 'porțiunea din platforma drumului destinată circulației vehiculelor', en: 'the part of the road platform for vehicles' }
+      ], c: [0],
+      x: 'B describes the sidewalk (trotuar) and C the carriageway (parte carosabilă). The shoulder sits between the carriageway and the edge of the platform (art. 6 pct. 2).' },
+    { ro: 'Care dintre afirmațiile despre partea carosabilă sunt corecte?', en: 'Which statements about the carriageway are correct?',
+      o: [
+        { ro: 'este porțiunea din platforma drumului destinată circulației vehiculelor', en: 'it is the part of the road platform meant for vehicles' },
+        { ro: 'include și acostamentele', en: 'it also includes the shoulders' },
+        { ro: 'un drum poate avea mai multe părți carosabile, complet separate una de alta', en: 'a road can have several carriageways, completely separated from each other' }
+      ], c: [0, 2],
+      x: 'Two correct answers here. A dual carriageway with a central reservation has two separate carriageways. The shoulder is never part of the carriageway (art. 6 pct. 23).' },
+    { ro: 'Cum se numerotează benzile de circulație?', en: 'How are traffic lanes numbered?',
+      o: [
+        { ro: 'de la axa drumului spre marginea din dreapta', en: 'from the centre line toward the right edge' },
+        { ro: 'de la marginea din dreapta a părții carosabile spre axa drumului', en: 'from the right edge of the carriageway toward the centre line' },
+        { ro: 'pe autostradă, banda de urgență este banda 1', en: 'on a motorway, the emergency lane is lane 1' }
+      ], c: [1],
+      x: 'Lane 1 is always the outer right lane of your direction (art. 41). On a motorway the emergency lane is not counted, so lane 1 is the first lane next to it.' },
+    { ro: 'Care dintre următoarele vehicule sunt considerate autovehicule?', en: 'Which of these count as motor vehicles (autovehicule)?',
+      o: [
+        { ro: 'troleibuzul', en: 'the trolleybus' },
+        { ro: 'tramvaiul', en: 'the tram' },
+        { ro: 'tractorul utilizat în exploatările agricole', en: 'a tractor used on a farm' }
+      ], c: [0],
+      x: 'The law makes two exceptions: trams (they run on rails) and farm or forestry tractors are not autovehicule. It names the trolleybus as one that is (art. 6 pct. 6).' },
+    { ro: 'Autostrada este:', en: 'A motorway is:',
+      o: [
+        { ro: 'un drum național de mare capacitate și viteză, semnalizat special, rezervat exclusiv circulației autovehiculelor', en: 'a high-capacity national road, specially signed, reserved only for motor vehicles' },
+        { ro: 'un drum cu cel puțin două benzi pe fiecare sens, despărțite printr-o zonă mediană', en: 'a road with at least two lanes per direction, separated by a central strip' },
+        { ro: 'un drum pe care pot circula și bicicletele, pe banda de urgență', en: 'a road where bicycles may ride in the emergency lane' }
+      ], c: [0, 1],
+      x: 'Both A and B are parts of the same definition (art. 6 pct. 5). Bicycles are not autovehicule, so they can never use a motorway.' },
+    { ro: 'Ce este „localitatea”, în sensul Codului rutier?', en: 'What is a "localitate" under the traffic code?',
+      o: [
+        { ro: 'orice grup de clădiri, chiar dacă intrarea nu este semnalizată', en: 'any group of buildings, even if its entry isn’t signposted' },
+        { ro: 'cătunul, satul, comuna, orașul și municipiul ale căror intrări și ieșiri sunt semnalizate prin indicatoare', en: 'a hamlet, village, commune, town or city whose entries and exits are signposted' },
+        { ro: 'numai orașele și municipiile', en: 'only towns and cities' }
+      ], c: [1],
+      x: 'The signs make it a localitate in law (art. 6 pct. 17). This matters later, because speed limits and some rules change at that sign.' },
+    { ro: 'Cine este participant la trafic?', en: 'Who is a road user (participant la trafic)?',
+      o: [
+        { ro: 'persoana fizică ce utilizează, la un moment dat, drumul public', en: 'any person using the public road at a given moment' },
+        { ro: 'numai conducătorii de autovehicule', en: 'only motor vehicle drivers' },
+        { ro: 'pietonul care merge pe trotuar', en: 'a pedestrian walking on the sidewalk' }
+      ], c: [0, 2],
+      x: 'The sidewalk is part of the public road, so a pedestrian on it is a road user (art. 6 pct. 24). Drivers are just one kind.' },
+    { ro: 'Cum se numește porțiunea de drum care urcă, în sensul de mers?', en: 'What do you call a stretch of road that climbs, in your direction of travel?',
+      o: [
+        { ro: 'pantă', en: 'pantă' },
+        { ro: 'rampă', en: 'rampă' },
+        { ro: 'palier', en: 'palier' }
+      ], c: [1],
+      x: 'Rampă = rising, pantă = falling, palier = flat. Rampă and rising both start with r.' },
+    { ro: 'Banda de urgență:', en: 'The emergency lane:',
+      o: [
+        { ro: 'este situată la extremitatea din partea dreaptă a autostrăzii', en: 'is on the far right side of the motorway' },
+        { ro: 'poate fi folosită pentru depășire când traficul este aglomerat', en: 'may be used to overtake when traffic is heavy' },
+        { ro: 'poate fi folosită de autovehiculele cu regim de circulație prioritară, aflate în misiune', en: 'may be used by priority vehicles on an emergency mission' }
+      ], c: [0, 2],
+      x: 'Emergency vehicles on a mission may use it (art. 6 pct. 8, art. 74). Using it to get past a queue is exactly what the law forbids.' },
+    { ro: 'Cum se semnalizează un drum închis circulației publice?', en: 'How is a road closed to public traffic marked?',
+      o: [
+        { ro: 'la intrare, cu indicatorul „Accesul interzis” și panoul „Drum închis circulației publice”', en: 'at the entrance, with the "No entry" sign and a "Road closed to public traffic" panel' },
+        { ro: 'nu este obligatoriu să fie semnalizat', en: 'it doesn’t have to be marked' },
+        { ro: 'cu indicatorul „Drum cu prioritate”', en: 'with the "Priority road" sign' }
+      ], c: [0],
+      x: 'Closed roads must be marked at the entry point (Regulament, art. 3). Without that marking, drivers would have no way to know.' },
+    { ro: 'Axa drumului:', en: 'The centre line of the road (axa drumului):',
+      o: [
+        { ro: 'poate fi o linie imaginară', en: 'can be an imaginary line' },
+        { ro: 'poate fi materializată prin marcaj', en: 'can be shown by a painted marking' },
+        { ro: 'coincide întotdeauna cu mijlocul geometric al drumului', en: 'always sits exactly in the geometric middle of the road' }
+      ], c: [0, 1],
+      x: 'It only sits in the middle when both directions are equally wide. Notice the word întotdeauna (always) in the wrong option.' },
+    { ro: 'Bicicleta este:', en: 'A bicycle is:',
+      o: [
+        { ro: 'vehicul', en: 'a vehicle (vehicul)' },
+        { ro: 'autovehicul', en: 'a motor vehicle (autovehicul)' },
+        { ro: 'nu este considerată vehicul, deoarece nu are motor', en: 'not a vehicle, since it has no engine' }
+      ], c: [0],
+      x: 'A vehicul is any mechanical system moving on the road, with or without its own engine (art. 6 pct. 35). No engine means it can’t be an autovehicul.' }
+  ];
+
+  var el = document.getElementById('quiz');
+  var LETTERS = ['A', 'B', 'C'];
+  var state;
+
+  function range(n) { var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+  function start(onlyIdx) {
+    var order = onlyIdx && onlyIdx.length ? onlyIdx.slice() : range(Q.length);
+    state = { queue: order, total: order.length, answered: 0, ok: 0, bad: 0, wrong: [], sel: [], locked: false };
+    render();
+  }
+
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+  function bar() {
+    var pct = Math.round(state.answered / state.total * 100);
+    return '<div class="qbar"><span>Întrebarea ' + Math.min(state.answered + 1, state.total) + ' / ' + state.total + '</span>' +
+      '<span class="sp"></span><span class="ok">✓ ' + state.ok + ' corecte</span><span class="bad">✗ ' + state.bad + ' greșite</span></div>' +
+      '<div class="progress"><i style="width:' + pct + '%"></i></div>';
+  }
+
+  function render() {
+    if (!state.queue.length) return finish();
+    var qi = state.queue[0], q = Q[qi];
+    var h = bar() + '<div class="qbody"><p class="qtext">' + esc(q.ro) + '<span class="en-line">' + esc(q.en) + '</span></p><div class="opts">';
+    q.o.forEach(function (o, i) {
+      h += '<button type="button" class="opt" id="opt' + i + '" data-i="' + i + '" aria-pressed="false"><span class="key">' + LETTERS[i] + '</span><span>' + esc(o.ro) + '<span class="en-line">' + esc(o.en) + '</span></span></button>';
+    });
+    h += '</div><div id="fb"></div><div class="actions" id="acts">' +
+      '<button type="button" class="btn" id="send" disabled>Trimite răspunsul</button>' +
+      (state.queue.length > 1 ? '<button type="button" class="btn ghost" id="later">Răspunde mai târziu</button>' : '') +
+      '</div></div>';
+    el.innerHTML = h;
+    state.sel = []; state.locked = false;
+    el.querySelectorAll('.opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (state.locked) return;
+        var i = +b.dataset.i, k = state.sel.indexOf(i);
+        if (k >= 0) state.sel.splice(k, 1); else state.sel.push(i);
+        b.setAttribute('aria-pressed', k < 0 ? 'true' : 'false');
+        document.getElementById('send').disabled = state.sel.length === 0;
+      });
+    });
+    document.getElementById('send').addEventListener('click', submit);
+    var later = document.getElementById('later');
+    if (later) later.addEventListener('click', function () { state.queue.push(state.queue.shift()); render(); });
+  }
+
+  function submit() {
+    var qi = state.queue[0], q = Q[qi];
+    state.locked = true;
+    var sel = state.sel.slice().sort(), cor = q.c.slice().sort();
+    var right = sel.length === cor.length && sel.every(function (v, i) { return v === cor[i]; });
+    el.querySelectorAll('.opt').forEach(function (b) {
+      var i = +b.dataset.i, isC = q.c.indexOf(i) >= 0, isS = state.sel.indexOf(i) >= 0;
+      b.disabled = true;
+      if (isC && isS) b.classList.add('right');
+      else if (!isC && isS) b.classList.add('wrong');
+      else if (isC && !isS) b.classList.add('right', 'missed');
+    });
+    state.answered++;
+    if (right) state.ok++; else { state.bad++; state.wrong.push(qi); }
+    var corr = q.c.map(function (i) { return LETTERS[i]; }).join(' + ');
+    document.getElementById('fb').innerHTML = '<div class="verdict ' + (right ? 'ok' : 'bad') + '"><strong>' +
+      (right ? 'Corect.' : 'Greșit. Răspunsul corect: ' + corr + '.') + '</strong><p>' + esc(q.x) + '</p></div>';
+    state.queue.shift();
+    document.getElementById('acts').innerHTML = '<button type="button" class="btn" id="next">' + (state.queue.length ? 'Următoarea întrebare' : 'Vezi rezultatul') + '</button>';
+    var nx = document.getElementById('next'); nx.addEventListener('click', render); nx.focus();
+  }
+
+  function finish() {
+    var full = state.total === Q.length;
+    var passMark = Math.ceil(state.total * 22 / 26);
+    var passed = state.ok >= passMark;
+    if (full) {
+      var best = store.get('dsp-ch1-best') || 0;
+      if (state.ok > best) store.set('dsp-ch1-best', state.ok);
+      store.set('dsp-ch1-last', { ok: state.ok, at: Date.now() });
+    }
+    var msg = state.bad === 0 ? 'Perfect. This chapter is yours.'
+      : passed ? 'That would be a pass at exam rate (22 out of 26 is about 85%). Retry the ones you missed so they stick.'
+      : 'Not there yet, and that’s fine on a first go. Reread the traps section, then retry just the ones you missed.';
+    var h = bar() + '<div class="result"><span class="label">Rezultat</span><div class="big">' + state.ok + ' / ' + state.total + '</div><p>' + msg + '</p><div class="actions">';
+    if (state.wrong.length) h += '<button type="button" class="btn" id="retryWrong">Reia greșelile (' + state.wrong.length + ')</button>';
+    h += '<button type="button" class="btn ' + (state.wrong.length ? 'ghost' : '') + '" id="restart">Reia tot testul</button></div></div>';
+    el.innerHTML = h;
+    var wrong = state.wrong.slice();
+    var rw = document.getElementById('retryWrong'); if (rw) rw.addEventListener('click', function () { start(wrong); });
+    document.getElementById('restart').addEventListener('click', function () { start(); });
+    markRoute();
+  }
+
+  function markRoute() {
+    var best = store.get('dsp-ch1-best') || 0;
+    var s = document.querySelector('.stop[data-ch="1"]');
+    if (best === Q.length && s) {
+      s.classList.remove('now'); s.classList.add('done');
+      s.querySelector('.chip').textContent = 'stăpânit';
+    }
+  }
+
+  start();
+  markRoute();
+})();
+</script>
