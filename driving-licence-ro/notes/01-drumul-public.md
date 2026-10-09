@@ -1,35 +1,35 @@
-# 1. Drumul public: what the road is made of
+# 1. Drumul public: din ce e făcut drumul
 
-**Key idea:** the traffic code only applies on a *drum public*.
+**Ideea principală:** Codul rutier se aplică pe *drumul public*.
 
-## Definitions (OUG 195/2002, art. 6)
+## Definiții (OUG 195/2002, art. 6)
 
-- **drum public** (pct. 14): any land route *except railways*, specially built for pedestrian or vehicle traffic, open to the public. A closed road is marked at its entrance with "Accesul interzis" + panel "Drum închis circulației publice" (Regulament art. 3).
-- **parte carosabilă** (pct. 23): the part of the road platform for vehicles. A road can have several, if completely separated.
-- **acostament** (pct. 2): side strip between the carriageway edge and the platform edge. Not part of the carriageway.
-- **trotuar** (pct. 33): side strip, visibly separated from the carriageway, for pedestrians.
-- **bandă de circulație** (pct. 7): lengthwise strip of the carriageway, marked or delimited, wide enough for one line of vehicles (not two-wheelers). Numbered from the right edge toward the centre line (art. 41).
-- **bandă de urgență** (pct. 8): extra strip on the far right of a motorway. Not counted in lane numbering. Emergency vehicles on a mission may use it.
-- **autostradă** (pct. 5): high-capacity national road, specially signed, only for motor vehicles, min. 2 lanes per direction, central separation.
-- **localitate** (pct. 17): hamlet, village, commune, town or city whose entries and exits are signposted.
-- **vehicul** (pct. 35): mechanical system moving on the road, with or without an engine (a bicycle is a vehicle).
-- **autovehicul** (pct. 6): vehicle with an engine for carrying people or goods. Trams and farm/forestry tractors are NOT; trolleybuses ARE.
-- **participant la trafic** (pct. 24): any person using the public road at that moment (pedestrians too).
-- **conducător** (pct. 12): person who drives a vehicle or leads people/animals on the road.
+- **drum public** (pct. 14): orice cale de comunicație terestră, *cu excepția căilor ferate*, special amenajată pentru traficul pietonal sau rutier, deschisă circulației publice. Drumul închis se semnalizează la intrare cu „Accesul interzis” + panoul „Drum închis circulației publice” (Regulament, art. 3).
+- **parte carosabilă** (pct. 23): porțiunea din platforma drumului destinată circulației vehiculelor. Un drum poate avea mai multe, dacă sunt complet separate.
+- **acostament** (pct. 2): fâșia laterală dintre limita părții carosabile și marginea platformei drumului. Nu face parte din partea carosabilă.
+- **trotuar** (pct. 33): spațiul longitudinal de pe marginea drumului, separat vizibil de partea carosabilă, pentru pietoni.
+- **bandă de circulație** (pct. 7): subdiviziunea longitudinală a părții carosabile, marcată sau delimitată, cu lățimea necesară unui șir de vehicule (altele decât cele pe două roți). Se numerotează de la marginea din dreapta spre axa drumului (art. 41).
+- **bandă de urgență** (pct. 8): subdiviziunea suplimentară din extremitatea dreaptă a autostrăzii. Nu se numără la numerotarea benzilor. O pot folosi vehiculele cu regim prioritar aflate în misiune.
+- **autostradă** (pct. 5): drum național de mare capacitate și viteză, semnalizat special, rezervat exclusiv autovehiculelor, cu minimum 2 benzi pe sens și zonă mediană.
+- **localitate** (pct. 17): cătunul, satul, comuna, orașul și municipiul ale căror intrări și ieșiri sunt semnalizate.
+- **vehicul** (pct. 35): sistemul mecanic care se deplasează pe drum, cu sau fără motor (bicicleta este vehicul).
+- **autovehicul** (pct. 6): vehiculul cu motor folosit pentru transportul persoanelor sau mărfurilor. Tramvaiul și tractorul agricol sau forestier NU sunt; troleibuzul ESTE.
+- **participant la trafic** (pct. 24): persoana fizică ce folosește, la un moment dat, drumul public (inclusiv pietonii).
+- **conducător** (pct. 12): persoana care conduce un vehicul sau un grup de persoane ori animale pe drum.
 
-## Road layout
+## Elementele drumului
 
-- Outside towns: șanț · acostament · parte carosabilă · acostament · șanț
-- Inside towns: trotuar · rigolă · parte carosabilă · rigolă · trotuar
-- The centre line (axa) can be imaginary or painted; it's only in the middle if both directions are equally wide.
-- Rampă = rising, palier = flat, pantă = falling (judged from your direction of travel).
+- În afara localității: șanț · acostament · parte carosabilă · acostament · șanț
+- În localitate: trotuar · rigolă · parte carosabilă · rigolă · trotuar
+- Axa drumului poate fi imaginară sau marcată; e la mijloc doar dacă ambele sensuri au aceeași lățime.
+- Rampă = urcare, palier = plat, pantă = coborâre (în funcție de sensul de mers).
 
-## Traps
+## Capcane
 
-- Tram is not an autovehicul; trolleybus is.
-- Multiple answers can be right: read all three.
-- "întotdeauna", "numai", "oricând" in an option usually make it wrong.
+- Tramvaiul nu e autovehicul; troleibuzul este.
+- Pot fi mai multe răspunsuri corecte: citește toate trei variantele.
+- „întotdeauna”, „numai”, „oricând” într-o variantă o fac de obicei greșită.
 
-## My notes from the book
+## Notițele mele din carte
 
-_(add yours here)_
+_(adaugă aici)_

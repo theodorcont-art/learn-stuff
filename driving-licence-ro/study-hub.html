@@ -217,14 +217,12 @@ footer { font-size: 0.85rem; color: var(--muted); display: grid; gap: 6px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
-<nav class="top" aria-label="Sections">
+<nav class="top" aria-label="Secțiuni">
   <div class="in">
     <a href="#traseu">Traseul</a>
     <a href="#cap1">Capitolul 1</a>
     <a href="#test">Test</a>
     <a href="#notite">Notițe</a>
-    <span class="sp"></span>
-    <label class="toggle" for="enToggle"><input type="checkbox" id="enToggle" checked> English help</label>
   </div>
 </nav>
 
@@ -233,119 +231,104 @@ footer { font-size: 0.85rem; color: var(--muted); display: grid; gap: 6px; }
 <header class="hero">
   <div class="plate" aria-hidden="true"><span class="eu">RO</span><span class="txt">CATEGORIA B</span></div>
   <h1>Drumul spre permis</h1>
-  <p class="lead" style="font-size:1.08rem">Your route through the Romanian theory exam (<span class="ro">proba teoretică</span>), one chapter at a time. No rush: each chapter is short, ends with a test in the real exam format, and you only move on when it feels easy.</p>
-  <div class="facts" role="list" aria-label="Exam format">
-    <div class="fact" role="listitem"><b>26</b><span>întrebări (questions)</span></div>
+  <p class="lead" style="font-size:1.08rem">Traseul tău prin proba teoretică, câte un capitol pe rând. Fără grabă: fiecare capitol e scurt, se termină cu un test în formatul real al examenului, iar treci mai departe doar când ți se pare ușor.</p>
+  <div class="facts" role="list" aria-label="Formatul examenului">
+    <div class="fact" role="listitem"><b>26</b><span>întrebări</span></div>
     <div class="fact" role="listitem"><b>30 min</b><span>timp de lucru</span></div>
-    <div class="fact" role="listitem"><b>22</b><span>corecte ca să treci, deci max. 4 greșeli</span></div>
-    <div class="fact" role="listitem"><b>A · B · C</b><span>3 variante, 1, 2 sau toate 3 pot fi corecte</span></div>
+    <div class="fact" role="listitem"><b>22</b><span>răspunsuri corecte ca să promovezi, deci maximum 4 greșeli</span></div>
+    <div class="fact" role="listitem"><b>A · B · C</b><span>3 variante, pot fi corecte 1, 2 sau toate 3</span></div>
   </div>
-  <p class="small">Checked 9 Oct 2026 against <a href="https://www.avocatnet.ro/articol_72635/Permis-auto-Cum-se-poate-ob%C8%9Bine-in-2026-categoria-B.html" target="_blank" rel="noopener">avocatnet.ro (Sept 2026)</a> and <a href="https://www.scoalarutiera.ro/chestionare-drpciv-categoria-b" target="_blank" rel="noopener">scoalarutiera.ro</a>. If you fail, you can retake after at least 15 days. The biggest trap: a question is only right if you tick <em>every</em> correct letter and nothing else.</p>
+  <p class="small">Verificat pe 9 octombrie 2026 pe <a href="https://www.avocatnet.ro/articol_72635/Permis-auto-Cum-se-poate-ob%C8%9Bine-in-2026-categoria-B.html" target="_blank" rel="noopener">avocatnet.ro (septembrie 2026)</a> și <a href="https://www.scoalarutiera.ro/chestionare-drpciv-categoria-b" target="_blank" rel="noopener">scoalarutiera.ro</a>. Dacă nu promovezi, poți reprograma examenul după cel puțin 15 zile. Cea mai mare capcană: o întrebare e corectă doar dacă bifezi <em>toate</em> variantele corecte și nimic în plus.</p>
 </header>
 
 <section id="traseu" class="section-head" style="gap:18px">
   <div class="section-head">
-    <span class="label">Traseul · the plan</span>
-    <h2>12 stops, then mock exams</h2>
-    <p class="lead">Roughly one chapter every 3 to 5 days fits your 1 to 3 month window with room to spare. The order follows the structure of the Romanian traffic code (<span class="ro">Codul rutier</span>, OUG 195/2002), so it lines up with your book.</p>
+    <span class="label">Traseul · planul</span>
+    <h2>12 opriri, apoi simulări de examen</h2>
+    <p class="lead">Un capitol la 3–5 zile se încadrează lejer în cele 1–3 luni pe care le ai. Ordinea urmează structura Codului rutier (OUG 195/2002), deci se potrivește cu cartea ta.</p>
   </div>
   <ol class="route" id="route">
-    <li class="stop now" data-ch="1"><span class="pin">1</span><div class="body"><h3>Drumul public <span class="chip">acum</span></h3><p>Road anatomy and the key definitions everything else is built on.</p></div></li>
-    <li class="stop later"><span class="pin">2</span><div class="body"><h3>Deplasarea pe drum <span class="chip">urmează</span></h3><p>Which lane to use, keeping right, lane changes, distance to the car ahead.</p></div></li>
-    <li class="stop later"><span class="pin">3</span><div class="body"><h3>Indicatoare rutiere <span class="chip">urmează</span></h3><p>Road signs by family: warning, priority, prohibition, obligation, information.</p></div></li>
-    <li class="stop later"><span class="pin">4</span><div class="body"><h3>Marcaje, semafoare, polițist <span class="chip">urmează</span></h3><p>Road markings, traffic lights, police officer signals, emergency vehicles.</p></div></li>
-    <li class="stop later"><span class="pin">5</span><div class="body"><h3>Prioritatea <span class="chip">urmează</span></h3><p>Who goes first. The chapter most exam questions come from, so it gets extra time.</p></div></li>
-    <li class="stop later"><span class="pin">6</span><div class="body"><h3>Intersecții și drumuri speciale <span class="chip">urmează</span></h3><p>Roundabouts, one-way roads, motorways, residential and pedestrian zones.</p></div></li>
-    <li class="stop later"><span class="pin">7</span><div class="body"><h3>Viteza <span class="chip">urmează</span></h3><p>Speed limits by road type and for beginner drivers, plus when to slow down.</p></div></li>
-    <li class="stop later"><span class="pin">8</span><div class="body"><h3>Manevre <span class="chip">urmează</span></h3><p>Overtaking, stopping, parking, U-turns and reversing, and where each is banned.</p></div></li>
-    <li class="stop later"><span class="pin">9</span><div class="body"><h3>Locuri speciale <span class="chip">urmează</span></h3><p>Railway crossings, pedestrian crossings, curves, hills, tunnels and bridges.</p></div></li>
-    <li class="stop later"><span class="pin">10</span><div class="body"><h3>Obligațiile șoferului <span class="chip">urmează</span></h3><p>Before and during a trip, children, accidents, breakdowns, first-year drivers.</p></div></li>
-    <li class="stop later"><span class="pin">11</span><div class="body"><h3>Sancțiuni <span class="chip">urmează</span></h3><p>Penalty points, fine classes, alcohol limits, licence suspension and offences.</p></div></li>
-    <li class="stop later"><span class="pin">12</span><div class="body"><h3>Prim ajutor, mecanică, eco <span class="chip">urmează</span></h3><p>First aid, basic car mechanics, eco and defensive driving. Small but always on the exam.</p></div></li>
-    <li class="stop later finish"><span class="pin">EXAM</span><div class="body"><h3>Simulări de examen <span class="chip">final</span></h3><p>Full 26-question, 30-minute mock exams until you pass them comfortably.</p></div></li>
+    <li class="stop now" data-ch="1"><span class="pin">1</span><div class="body"><h3>Drumul public <span class="chip">acum</span></h3><p>Elementele drumului și definițiile de bază pe care se sprijină tot restul.</p></div></li>
+    <li class="stop later"><span class="pin">2</span><div class="body"><h3>Deplasarea pe drum <span class="chip">urmează</span></h3><p>Ce bandă folosești, circulația pe dreapta, schimbarea benzii, distanța față de mașina din față.</p></div></li>
+    <li class="stop later"><span class="pin">3</span><div class="body"><h3>Indicatoare rutiere <span class="chip">urmează</span></h3><p>Pe categorii: de avertizare, de prioritate, de interzicere, de obligare, de orientare și informare.</p></div></li>
+    <li class="stop later"><span class="pin">4</span><div class="body"><h3>Marcaje, semafoare, polițist <span class="chip">urmează</span></h3><p>Marcajele rutiere, semafoarele, semnalele polițistului, vehiculele cu regim prioritar.</p></div></li>
+    <li class="stop later"><span class="pin">5</span><div class="body"><h3>Prioritatea <span class="chip">urmează</span></h3><p>Cine trece primul. Din acest capitol vin cele mai multe întrebări, așa că primește timp în plus.</p></div></li>
+    <li class="stop later"><span class="pin">6</span><div class="body"><h3>Intersecții și drumuri speciale <span class="chip">urmează</span></h3><p>Sensul giratoriu, drumul cu sens unic, autostrada, zonele rezidențiale și pietonale.</p></div></li>
+    <li class="stop later"><span class="pin">7</span><div class="body"><h3>Viteza <span class="chip">urmează</span></h3><p>Limitele de viteză pe tipuri de drum și pentru începători, și când trebuie să reduci viteza.</p></div></li>
+    <li class="stop later"><span class="pin">8</span><div class="body"><h3>Manevre <span class="chip">urmează</span></h3><p>Depășirea, oprirea, staționarea, parcarea, întoarcerea, mersul înapoi și unde sunt interzise.</p></div></li>
+    <li class="stop later"><span class="pin">9</span><div class="body"><h3>Locuri speciale <span class="chip">urmează</span></h3><p>Trecerea la nivel cu calea ferată, trecerea pentru pietoni, curbe, rampe, tuneluri și poduri.</p></div></li>
+    <li class="stop later"><span class="pin">10</span><div class="body"><h3>Obligațiile șoferului <span class="chip">urmează</span></h3><p>Înainte și în timpul drumului, transportul copiilor, accidentul, defecțiunea, șoferii cu vechime sub un an.</p></div></li>
+    <li class="stop later"><span class="pin">11</span><div class="body"><h3>Sancțiuni <span class="chip">urmează</span></h3><p>Puncte de penalizare, clase de amenzi, alcoolul, suspendarea permisului și infracțiunile.</p></div></li>
+    <li class="stop later"><span class="pin">12</span><div class="body"><h3>Prim ajutor, mecanică, conducere ecologică <span class="chip">urmează</span></h3><p>Puține întrebări, dar apar mereu la examen.</p></div></li>
+    <li class="stop later finish"><span class="pin">EXAM</span><div class="body"><h3>Simulări de examen <span class="chip">final</span></h3><p>Teste complete de 26 de întrebări în 30 de minute, până le treci fără emoții.</p></div></li>
   </ol>
 </section>
 
 <section id="cap1" style="display:grid;gap:28px">
   <div class="section-head">
-    <span class="label">Capitolul 1 · about 25 minutes</span>
-    <h2>Drumul public: what the road is made of</h2>
+    <span class="label">Capitolul 1 · cam 25 de minute</span>
+    <h2>Drumul public: din ce e făcut drumul</h2>
   </div>
 
   <div class="prose">
-    <h3>The idea first</h3>
-    <p>Before any rule makes sense, the law needs a shared vocabulary. When an exam question says <span class="ro">acostament</span> or <span class="ro">bandă</span>, it means something precise. This chapter is that vocabulary. It feels dry, but it's the easiest chapter to score full marks on, because it's pure recognition.</p>
-    <p>The single most important idea: <strong>the traffic code only applies on a public road</strong> (<span class="ro">drumul public</span>). So the law starts by saying exactly what counts as one.</p>
+    <h3>Mai întâi ideea</h3>
+    <p>Ca regulile să aibă sens, legea are nevoie de un vocabular comun. Când o întrebare spune <span class="ro">acostament</span> sau <span class="ro">bandă</span>, înseamnă ceva precis. Capitolul ăsta e exact vocabularul acela. Pare sec, dar e cel mai ușor capitol de luat punctaj maxim, pentru că totul ține de recunoaștere.</p>
+    <p>Cea mai importantă idee: <strong>Codul rutier se aplică pe drumul public</strong>. De aceea legea începe prin a spune exact ce este un drum public.</p>
   </div>
 
   <div class="def">
     <span class="label">Definiția · drum public</span>
     <q>orice cale de comunicație terestră, <mark>cu excepția căilor ferate</mark>, special amenajată pentru <mark>traficul pietonal sau rutier</mark>, deschisă circulației publice</q>
-    <p class="en">Any land route, except railways, specially built for pedestrian or vehicle traffic and open to the public. Forest and farm tracks are usually not public roads. A road closed to the public must be marked at its entrance with the <span class="ro">„Accesul interzis”</span> sign plus a panel <span class="ro">„Drum închis circulației publice”</span>.</p>
+    <p class="en">Drumurile forestiere sau agricole, de regulă, nu sunt drumuri publice. Un drum închis circulației publice se semnalizează la intrare cu indicatorul <span class="ro">„Accesul interzis”</span> și panoul <span class="ro">„Drum închis circulației publice”</span>.</p>
     <span class="src">OUG 195/2002, art. 6 pct. 14 · Regulament, art. 3</span>
   </div>
 
   <figure>
     <div class="diagram">
       <svg viewBox="0 0 720 330" role="img" aria-labelledby="roadTitle">
-        <title id="roadTitle">Top-down view of a two-way road outside a town, showing ditch, shoulder, carriageway, lanes numbered from the right edge toward the centre line, and the centre line.</title>
-        <!-- ditch top -->
+        <title id="roadTitle">Drum cu două sensuri în afara localității, văzut de sus: șanț, acostament, parte carosabilă, benzi numerotate de la marginea din dreapta spre axă și axa drumului.</title>
         <rect x="150" y="10" width="560" height="22" fill="var(--grass)"/>
-        <!-- shoulder top -->
         <rect x="150" y="32" width="560" height="26" fill="var(--gravel)"/>
-        <!-- carriageway -->
         <rect x="150" y="58" width="560" height="214" fill="var(--asphalt)"/>
-        <!-- shoulder bottom -->
         <rect x="150" y="272" width="560" height="26" fill="var(--gravel)"/>
-        <!-- ditch bottom -->
         <rect x="150" y="298" width="560" height="22" fill="var(--grass)"/>
-        <!-- edge lines -->
         <rect x="150" y="60" width="560" height="3" fill="var(--paint)"/>
         <rect x="150" y="267" width="560" height="3" fill="var(--paint)"/>
-        <!-- lane dividers (dashed) -->
         <g fill="var(--paint)">
           <rect x="160" y="111" width="40" height="3"/><rect x="240" y="111" width="40" height="3"/><rect x="320" y="111" width="40" height="3"/><rect x="400" y="111" width="40" height="3"/><rect x="480" y="111" width="40" height="3"/><rect x="560" y="111" width="40" height="3"/><rect x="640" y="111" width="40" height="3"/>
           <rect x="160" y="216" width="40" height="3"/><rect x="240" y="216" width="40" height="3"/><rect x="320" y="216" width="40" height="3"/><rect x="400" y="216" width="40" height="3"/><rect x="480" y="216" width="40" height="3"/><rect x="560" y="216" width="40" height="3"/><rect x="640" y="216" width="40" height="3"/>
         </g>
-        <!-- centre line (continuous white) -->
         <rect x="150" y="162" width="560" height="5" fill="var(--paint)"/>
-        <!-- lane labels + arrows: upper half drives left, lower half drives right -->
         <text class="lab-paint" x="560" y="90">← banda 1</text>
         <text class="lab-paint" x="560" y="143">← banda 2</text>
         <text class="lab-paint" x="220" y="196">banda 2 →</text>
         <text class="lab-paint" x="220" y="249">banda 1 →</text>
-        <!-- cars -->
         <g>
           <rect x="300" y="72" width="52" height="26" rx="7" fill="var(--sign)"/>
           <rect x="300" y="76" width="12" height="18" rx="3" fill="var(--paint)" opacity=".75"/>
           <rect x="470" y="232" width="52" height="26" rx="7" fill="var(--bad)"/>
           <rect x="508" y="236" width="12" height="18" rx="3" fill="var(--paint)" opacity=".75"/>
         </g>
-        <!-- left legend -->
         <text class="lab" x="0" y="25">șanț</text>
-        <text class="lab-sm" x="0" y="39">ditch</text>
         <text class="lab" x="0" y="52">acostament</text>
-        <text class="lab-sm" x="88" y="52">shoulder</text>
-        <text class="lab" x="0" y="112">sensul ←</text>
-        <text class="lab-sm" x="0" y="127">one direction</text>
+        <text class="lab" x="0" y="112">un sens</text>
+        <text class="lab-sm" x="0" y="127">de circulație</text>
         <text class="lab" x="0" y="170">axa drumului</text>
-        <text class="lab-sm" x="0" y="185">centre line</text>
-        <text class="lab" x="0" y="225">sensul →</text>
-        <text class="lab-sm" x="0" y="240">other direction</text>
+        <text class="lab" x="0" y="225">celălalt sens</text>
+        <text class="lab-sm" x="0" y="240">de circulație</text>
         <text class="lab" x="0" y="290">acostament</text>
         <text class="lab" x="0" y="315">șanț</text>
-        <!-- carriageway bracket -->
         <path d="M140 60 L134 60 L134 270 L140 270" fill="none" stroke="var(--muted)" stroke-width="1.5"/>
         <text class="lab-sm" x="124" y="165" text-anchor="middle" transform="rotate(-90 124 165)">parte carosabilă</text>
       </svg>
     </div>
-    <figcaption>Outside a town. Romania drives on the right, so each direction (<span class="ro">sens</span>) numbers its lanes <strong>from its own right edge toward the centre line</strong>: banda 1 is always the outer one. Inside a town the shoulder and ditch are replaced by a <span class="ro">trotuar</span> (sidewalk, for pedestrians) and a <span class="ro">rigolă</span> (gutter).</figcaption>
+    <figcaption>În afara localității. În România se circulă pe dreapta, așa că fiecare sens își numerotează benzile <strong>de la marginea lui din dreapta spre axa drumului</strong>: banda 1 e mereu cea de lângă margine. În localitate, acostamentul și șanțul sunt înlocuite de <span class="ro">trotuar</span> (pentru pietoni) și <span class="ro">rigolă</span> (pentru scurgerea apei).</figcaption>
   </figure>
 
   <figure>
     <div class="diagram">
       <svg viewBox="0 0 720 170" role="img" aria-labelledby="slopeTitle">
-        <title id="slopeTitle">Road profile for a car driving left to right: an uphill section called rampă, a flat section called palier, and a downhill section called pantă.</title>
+        <title id="slopeTitle">Profilul drumului pentru o mașină care merge de la stânga la dreapta: rampă (urcare), palier (plat) și pantă (coborâre).</title>
         <path d="M20 140 L230 50 L470 50 L700 140" fill="none" stroke="var(--asphalt)" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
         <path d="M20 140 L230 50 L470 50 L700 140" fill="none" stroke="var(--paint)" stroke-width="1.5" stroke-dasharray="10 10"/>
         <g transform="translate(110 92) rotate(-23)">
@@ -355,81 +338,81 @@ footer { font-size: 0.85rem; color: var(--muted); display: grid; gap: 6px; }
         <path d="M150 115 l26 -11" stroke="var(--sign)" stroke-width="2.5" fill="none" marker-end="url(#ah)"/>
         <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="var(--sign)"/></marker></defs>
         <text class="lab" x="70" y="160" style="font-weight:700">rampă</text>
-        <text class="lab-sm" x="122" y="160">going uphill</text>
+        <text class="lab-sm" x="122" y="160">urcare</text>
         <text class="lab" x="315" y="34" style="font-weight:700">palier</text>
-        <text class="lab-sm" x="365" y="34">flat</text>
+        <text class="lab-sm" x="365" y="34">plat</text>
         <text class="lab" x="560" y="160" style="font-weight:700">pantă</text>
-        <text class="lab-sm" x="605" y="160">going downhill</text>
+        <text class="lab-sm" x="605" y="160">coborâre</text>
       </svg>
     </div>
-    <figcaption>The name depends on your direction of travel. The same hill is a <span class="ro">rampă</span> for the car climbing it and a <span class="ro">pantă</span> for the car coming down. Memory hook: <strong>r</strong>ampă, <strong>r</strong>ising.</figcaption>
+    <figcaption>Denumirea depinde de sensul de mers. Același deal e <span class="ro">rampă</span> pentru mașina care urcă și <span class="ro">pantă</span> pentru cea care coboară. Truc de memorare: <strong>r</strong>ampă = u<strong>r</strong>că.</figcaption>
   </figure>
 
   <div class="prose">
-    <h3>The words you'll meet on the exam</h3>
-    <p>You don't need to recite these. You need to recognise the correct one among three options. The highlighted bits are what the exam twists.</p>
+    <h3>Termenii care apar la examen</h3>
+    <p>Nu trebuie să-i reciți. Trebuie doar să-l recunoști pe cel corect dintre trei variante. Ce e îngroșat e partea pe care examenul o răsucește.</p>
   </div>
   <div class="terms">
     <table>
-      <thead><tr><th>Termen</th><th>What it means</th><th>Watch for</th></tr></thead>
+      <thead><tr><th>Termen</th><th>Ce înseamnă</th><th>Atenție la</th></tr></thead>
       <tbody>
-        <tr><td>parte carosabilă</td><td>The part of the road platform meant for vehicles.</td><td>A road can have <strong>several</strong> carriageways if they are completely separated.</td></tr>
-        <tr><td>acostament</td><td>The side strip between the edge of the carriageway and the edge of the road platform.</td><td>It is <strong>not</strong> part of the carriageway.</td></tr>
-        <tr><td>trotuar</td><td>Strip at the side of the road, visibly separated from the carriageway, for pedestrians.</td><td>Can be raised or level, it only has to be visibly separated.</td></tr>
-        <tr><td>bandă de circulație</td><td>A lengthwise strip of the carriageway, marked or delimited, wide enough for one line of vehicles (not counting two-wheelers).</td><td>Numbered from the right edge toward the centre line.</td></tr>
-        <tr><td>sens de circulație</td><td>The part of the road where everyone travels the same way.</td><td>The centre line (<span class="ro">axa</span>) can be imaginary or painted, and is not always the geometric middle.</td></tr>
-        <tr><td>bandă de urgență</td><td>The extra strip on the far right of a motorway.</td><td><strong>Not counted</strong> when numbering lanes. Not for driving or overtaking.</td></tr>
-        <tr><td>autostradă</td><td>High-capacity national road, specially signed, <strong>only for motor vehicles</strong>, at least 2 lanes per direction, separated by a central strip.</td><td>No bikes, pedestrians, tractors or carts.</td></tr>
-        <tr><td>localitate</td><td>Hamlet, village, commune, town or city <strong>whose entries and exits are signposted</strong>.</td><td>No sign, no "localitate" in the legal sense.</td></tr>
-        <tr><td>vehicul</td><td>Any mechanical system that moves on the road, with or without its own engine.</td><td>A bicycle is a <span class="ro">vehicul</span>.</td></tr>
-        <tr><td>autovehicul</td><td>A vehicle with an engine, normally used to carry people or goods.</td><td>Tram: <strong>no</strong>. Farm or forestry tractor: <strong>no</strong>. Trolleybus: <strong>yes</strong>.</td></tr>
-        <tr><td>participant la trafic</td><td>Any person using the public road at a given moment.</td><td>Pedestrians count, not just drivers.</td></tr>
-        <tr><td>conducător</td><td>Person who drives a vehicle, or leads a group of people or animals on the road.</td><td>Broader than "driver".</td></tr>
+        <tr><td>parte carosabilă</td><td>Porțiunea din platforma drumului destinată circulației vehiculelor.</td><td>Un drum poate avea <strong>mai multe</strong> părți carosabile, dacă sunt complet separate.</td></tr>
+        <tr><td>acostament</td><td>Fâșia laterală dintre limita părții carosabile și marginea platformei drumului.</td><td><strong>Nu</strong> face parte din partea carosabilă.</td></tr>
+        <tr><td>trotuar</td><td>Spațiul longitudinal de pe marginea drumului, separat vizibil de partea carosabilă, pentru pietoni.</td><td>Poate fi denivelat sau la același nivel, important e să fie separat vizibil.</td></tr>
+        <tr><td>bandă de circulație</td><td>Subdiviziunea longitudinală a părții carosabile, marcată sau delimitată, cu lățimea necesară unui șir de vehicule (altele decât cele pe două roți).</td><td>Se numerotează de la marginea din dreapta spre axă.</td></tr>
+        <tr><td>sens de circulație</td><td>Partea drumului pe care toate vehiculele merg în aceeași direcție.</td><td>Axa poate fi imaginară sau marcată și nu e întotdeauna la mijlocul geometric.</td></tr>
+        <tr><td>bandă de urgență</td><td>Subdiviziunea suplimentară din extremitatea dreaptă a autostrăzii.</td><td><strong>Nu se numără</strong> la numerotarea benzilor. Nu e pentru mers sau depășit.</td></tr>
+        <tr><td>autostradă</td><td>Drum național de mare capacitate și viteză, semnalizat special, rezervat <strong>exclusiv autovehiculelor</strong>, cu minimum 2 benzi pe sens, separate printr-o zonă mediană.</td><td>Fără biciclete, pietoni, tractoare sau căruțe.</td></tr>
+        <tr><td>localitate</td><td>Cătunul, satul, comuna, orașul și municipiul <strong>ale căror intrări și ieșiri sunt semnalizate</strong>.</td><td>Fără indicatoare, nu e localitate în sens legal.</td></tr>
+        <tr><td>vehicul</td><td>Sistemul mecanic care se deplasează pe drum, cu sau fără mijloace de autopropulsare.</td><td>Bicicleta este <span class="ro">vehicul</span>.</td></tr>
+        <tr><td>autovehicul</td><td>Vehiculul echipat cu motor, folosit în mod obișnuit pentru transportul persoanelor sau mărfurilor.</td><td>Tramvaiul: <strong>nu</strong>. Tractorul agricol sau forestier: <strong>nu</strong>. Troleibuzul: <strong>da</strong>.</td></tr>
+        <tr><td>participant la trafic</td><td>Persoana fizică ce folosește, la un moment dat, drumul public.</td><td>Și pietonii, nu doar șoferii.</td></tr>
+        <tr><td>conducător</td><td>Persoana care conduce un vehicul sau un grup de persoane ori animale pe drum.</td><td>Mai larg decât „șofer”.</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="small">Definitions from OUG 195/2002 art. 6 (pct. 2, 5, 6, 7, 8, 12, 14, 17, 23, 24, 33, 35) and art. 41, paraphrased in English. Your book will have the full Romanian wording, which is worth reading once next to this table.</p>
+  <p class="small">Definiții din OUG 195/2002, art. 6 (pct. 2, 5, 6, 7, 8, 12, 14, 17, 23, 24, 33, 35) și art. 41, pe scurt. Cartea ta are formularea completă din lege, merită citită o dată lângă tabelul ăsta.</p>
 
-  <div class="prose"><h3>Capcane · the traps</h3></div>
+  <div class="prose"><h3>Capcane</h3></div>
   <div class="traps">
-    <div class="trap"><svg class="tri" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 3 L31 27 L3 27 Z"/><text x="13.5" y="24">!</text></svg><p><strong>Tram vs trolleybus.</strong> Both are electric public transport, but the tram runs on rails, so the law says it is <em>not</em> an <span class="ro">autovehicul</span>. The trolleybus is.</p></div>
-    <div class="trap"><svg class="tri" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 3 L31 27 L3 27 Z"/><text x="13.5" y="24">!</text></svg><p><strong>"Select all that apply" is always on.</strong> When two answers both look right, they often both are. Read all three before ticking.</p></div>
-    <div class="trap"><svg class="tri" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 3 L31 27 L3 27 Z"/><text x="13.5" y="24">!</text></svg><p><strong>Absolute words.</strong> Options with <span class="ro">întotdeauna</span> (always), <span class="ro">numai</span> (only) or <span class="ro">oricând</span> (anytime) are wrong more often than not. Example: the centre line does <em>not always</em> sit in the middle.</p></div>
-    <div class="trap"><svg class="tri" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 3 L31 27 L3 27 Z"/><text x="13.5" y="24">!</text></svg><p><strong>Railways are excluded.</strong> A railway is a land route too, which is exactly why the definition of <span class="ro">drum public</span> has to exclude it by name.</p></div>
+    <div class="trap"><svg class="tri" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 3 L31 27 L3 27 Z"/><text x="13.5" y="24">!</text></svg><p><strong>Tramvai sau troleibuz.</strong> Ambele sunt transport public electric, dar tramvaiul merge pe șine, așa că legea spune că <em>nu</em> este <span class="ro">autovehicul</span>. Troleibuzul este.</p></div>
+    <div class="trap"><svg class="tri" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 3 L31 27 L3 27 Z"/><text x="13.5" y="24">!</text></svg><p><strong>Pot fi mai multe răspunsuri corecte.</strong> Când două variante par bune, deseori chiar sunt amândouă. Citește toate trei înainte să bifezi.</p></div>
+    <div class="trap"><svg class="tri" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 3 L31 27 L3 27 Z"/><text x="13.5" y="24">!</text></svg><p><strong>Cuvintele absolute.</strong> Variantele cu <span class="ro">întotdeauna</span>, <span class="ro">numai</span> sau <span class="ro">oricând</span> sunt de cele mai multe ori greșite. Exemplu: axa drumului <em>nu</em> e întotdeauna la mijloc.</p></div>
+    <div class="trap"><svg class="tri" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 3 L31 27 L3 27 Z"/><text x="13.5" y="24">!</text></svg><p><strong>Căile ferate sunt excluse.</strong> Și calea ferată e o cale de comunicație terestră, de aceea definiția drumului public trebuie să o excludă explicit.</p></div>
   </div>
 
   <div class="callout">
-    <span class="label">Cu cartea ta · with your book</span>
-    <p>Find the definitions section in your book (usually the first chapter, from art. 6 of the code). Read it once with this page open, then write in your own notebook only the 5 terms you'd most likely mix up. Snap a photo of those notes and send it in the thread if you want me to file them in your repo.</p>
+    <span class="label">Cu cartea ta</span>
+    <p>Caută în carte partea cu definițiile (de obicei primul capitol, din art. 6 al Codului). Citește-o o dată cu pagina asta deschisă, apoi notează în caiet doar cei 5 termeni pe care i-ai încurca cel mai ușor. Fă o poză la notițe și trimite-o în conversație dacă vrei să le salvez în repo.</p>
   </div>
 </section>
 
 <section id="test" style="display:grid;gap:18px">
   <div class="section-head">
     <span class="label">Test · capitolul 1</span>
-    <h2>13 questions, real exam style</h2>
-    <p class="lead">Tick every correct letter, then press <span class="ro">Trimite răspunsul</span>. Like the real exam, you can push a question to the end with <span class="ro">Răspunde mai târziu</span>. No timer on chapter tests.</p>
+    <h2>13 întrebări, ca la examen</h2>
+    <p class="lead">Bifează toate variantele corecte, apoi apasă <span class="ro">Trimite răspunsul</span>. Ca la examenul real, poți amâna o întrebare cu <span class="ro">Răspunde mai târziu</span>. Testele pe capitole nu au cronometru.</p>
   </div>
   <div class="quiz" id="quiz" aria-live="polite"></div>
 </section>
 
 <section id="notite" class="notes">
-  <span class="label">Notițe · capitolul 1 in six lines</span>
+  <span class="label">Notițe · capitolul 1 în șase rânduri</span>
   <ul>
-    <li>The traffic code applies on the <span class="ro">drum public</span>: any land route except railways, built for pedestrians or vehicles, open to the public.</li>
-    <li>Outside towns: <span class="ro">șanț · acostament · parte carosabilă · acostament · șanț</span>. Inside towns: <span class="ro">trotuar · rigolă · parte carosabilă · rigolă · trotuar</span>.</li>
-    <li>Lanes are numbered from the right edge toward the centre line. The motorway emergency lane isn't counted.</li>
-    <li><span class="ro">Vehicul</span> includes bicycles. <span class="ro">Autovehicul</span> excludes trams and farm/forestry tractors, but includes trolleybuses.</li>
-    <li>A <span class="ro">localitate</span> only exists legally where its entries and exits are signposted.</li>
-    <li><span class="ro">Rampă</span> = rising, <span class="ro">palier</span> = flat, <span class="ro">pantă</span> = falling, always judged from your direction of travel.</li>
+    <li>Codul rutier se aplică pe <span class="ro">drumul public</span>: orice cale terestră, în afară de calea ferată, amenajată pentru pietoni sau vehicule și deschisă publicului.</li>
+    <li>În afara localității: <span class="ro">șanț · acostament · parte carosabilă · acostament · șanț</span>. În localitate: <span class="ro">trotuar · rigolă · parte carosabilă · rigolă · trotuar</span>.</li>
+    <li>Benzile se numerotează de la marginea din dreapta spre axă. Banda de urgență de pe autostradă nu se numără.</li>
+    <li><span class="ro">Vehicul</span> include bicicleta. <span class="ro">Autovehicul</span> nu include tramvaiul și tractorul agricol sau forestier, dar include troleibuzul.</li>
+    <li><span class="ro">Localitatea</span> există legal doar acolo unde intrările și ieșirile sunt semnalizate.</li>
+    <li><span class="ro">Rampă</span> = urcare, <span class="ro">palier</span> = plat, <span class="ro">pantă</span> = coborâre, mereu în funcție de sensul tău de mers.</li>
   </ul>
-  <span class="label" style="margin-top:6px">Repetă testul · spaced recall</span>
+  <span class="label" style="margin-top:6px">Repetă testul</span>
   <div class="recall"><span>azi</span><span>mâine</span><span>peste 3 zile</span><span>peste o săptămână</span></div>
-  <p class="small">Redo the test on these days. When you score 13/13 twice in a row, the chapter goes into long-term memory and you can stop revisiting it until the mock exams.</p>
+  <p class="small">Refă testul în zilele astea. Când iei 13 din 13 de două ori la rând, capitolul e fixat și nu mai trebuie reluat până la simulări.</p>
 </section>
 
 <footer>
-  <p>Sources: OUG 195/2002 (Codul rutier) and HG 1391/2006 (Regulamentul de aplicare), via the structure of the <a href="https://www.scoalarutiera.ro/curs-legislatie/codul-rutier" target="_blank" rel="noopener">scoalarutiera.ro legislation course</a>. This is a study aid; when it and your book disagree, tell me and I'll check the current law.</p>
+  <p>Surse: OUG 195/2002 (Codul rutier) și HG 1391/2006 (Regulamentul de aplicare), după structura <a href="https://www.scoalarutiera.ro/curs-legislatie/codul-rutier" target="_blank" rel="noopener">cursului de legislație de pe scoalarutiera.ro</a>. Materialul e pentru învățat; dacă nu se potrivește cu cartea ta, spune-mi și verific legea în vigoare.</p>
 </footer>
 
 </div>
@@ -441,107 +424,66 @@ footer { font-size: 0.85rem; color: var(--muted); display: grid; gap: 6px; }
     set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
   };
 
-  // English help toggle
-  var enToggle = document.getElementById('enToggle');
-  var enPref = store.get('dsp-en');
-  if (enPref === false) { enToggle.checked = false; document.body.classList.add('no-en'); }
-  enToggle.addEventListener('change', function () {
-    document.body.classList.toggle('no-en', !enToggle.checked);
-    store.set('dsp-en', enToggle.checked);
-  });
-
   var Q = [
-    { ro: 'Ce se înțelege prin „drum public”?', en: 'What counts as a "public road"?',
-      o: [
-        { ro: 'orice cale de comunicație terestră, inclusiv căile ferate, deschisă circulației publice', en: 'any land route, including railways, open to the public' },
-        { ro: 'orice cale de comunicație terestră, cu excepția căilor ferate, special amenajată pentru traficul pietonal sau rutier, deschisă circulației publice', en: 'any land route except railways, built for pedestrian or vehicle traffic, open to the public' },
-        { ro: 'numai drumurile naționale și autostrăzile', en: 'only national roads and motorways' }
-      ], c: [1],
-      x: 'Railways are the one land route the definition excludes by name (art. 6 pct. 14). County roads, streets and village roads are public roads too.' },
-    { ro: 'Acostamentul este:', en: 'The shoulder (acostament) is:',
-      o: [
-        { ro: 'fâșia laterală cuprinsă între limita părții carosabile și marginea platformei drumului', en: 'the side strip between the edge of the carriageway and the edge of the road platform' },
-        { ro: 'spațiul longitudinal destinat circulației pietonilor, separat vizibil de partea carosabilă', en: 'the strip for pedestrians, visibly separated from the carriageway' },
-        { ro: 'porțiunea din platforma drumului destinată circulației vehiculelor', en: 'the part of the road platform for vehicles' }
-      ], c: [0],
-      x: 'B describes the sidewalk (trotuar) and C the carriageway (parte carosabilă). The shoulder sits between the carriageway and the edge of the platform (art. 6 pct. 2).' },
-    { ro: 'Care dintre afirmațiile despre partea carosabilă sunt corecte?', en: 'Which statements about the carriageway are correct?',
-      o: [
-        { ro: 'este porțiunea din platforma drumului destinată circulației vehiculelor', en: 'it is the part of the road platform meant for vehicles' },
-        { ro: 'include și acostamentele', en: 'it also includes the shoulders' },
-        { ro: 'un drum poate avea mai multe părți carosabile, complet separate una de alta', en: 'a road can have several carriageways, completely separated from each other' }
-      ], c: [0, 2],
-      x: 'Two correct answers here. A dual carriageway with a central reservation has two separate carriageways. The shoulder is never part of the carriageway (art. 6 pct. 23).' },
-    { ro: 'Cum se numerotează benzile de circulație?', en: 'How are traffic lanes numbered?',
-      o: [
-        { ro: 'de la axa drumului spre marginea din dreapta', en: 'from the centre line toward the right edge' },
-        { ro: 'de la marginea din dreapta a părții carosabile spre axa drumului', en: 'from the right edge of the carriageway toward the centre line' },
-        { ro: 'pe autostradă, banda de urgență este banda 1', en: 'on a motorway, the emergency lane is lane 1' }
-      ], c: [1],
-      x: 'Lane 1 is always the outer right lane of your direction (art. 41). On a motorway the emergency lane is not counted, so lane 1 is the first lane next to it.' },
-    { ro: 'Care dintre următoarele vehicule sunt considerate autovehicule?', en: 'Which of these count as motor vehicles (autovehicule)?',
-      o: [
-        { ro: 'troleibuzul', en: 'the trolleybus' },
-        { ro: 'tramvaiul', en: 'the tram' },
-        { ro: 'tractorul utilizat în exploatările agricole', en: 'a tractor used on a farm' }
-      ], c: [0],
-      x: 'The law makes two exceptions: trams (they run on rails) and farm or forestry tractors are not autovehicule. It names the trolleybus as one that is (art. 6 pct. 6).' },
-    { ro: 'Autostrada este:', en: 'A motorway is:',
-      o: [
-        { ro: 'un drum național de mare capacitate și viteză, semnalizat special, rezervat exclusiv circulației autovehiculelor', en: 'a high-capacity national road, specially signed, reserved only for motor vehicles' },
-        { ro: 'un drum cu cel puțin două benzi pe fiecare sens, despărțite printr-o zonă mediană', en: 'a road with at least two lanes per direction, separated by a central strip' },
-        { ro: 'un drum pe care pot circula și bicicletele, pe banda de urgență', en: 'a road where bicycles may ride in the emergency lane' }
-      ], c: [0, 1],
-      x: 'Both A and B are parts of the same definition (art. 6 pct. 5). Bicycles are not autovehicule, so they can never use a motorway.' },
-    { ro: 'Ce este „localitatea”, în sensul Codului rutier?', en: 'What is a "localitate" under the traffic code?',
-      o: [
-        { ro: 'orice grup de clădiri, chiar dacă intrarea nu este semnalizată', en: 'any group of buildings, even if its entry isn’t signposted' },
-        { ro: 'cătunul, satul, comuna, orașul și municipiul ale căror intrări și ieșiri sunt semnalizate prin indicatoare', en: 'a hamlet, village, commune, town or city whose entries and exits are signposted' },
-        { ro: 'numai orașele și municipiile', en: 'only towns and cities' }
-      ], c: [1],
-      x: 'The signs make it a localitate in law (art. 6 pct. 17). This matters later, because speed limits and some rules change at that sign.' },
-    { ro: 'Cine este participant la trafic?', en: 'Who is a road user (participant la trafic)?',
-      o: [
-        { ro: 'persoana fizică ce utilizează, la un moment dat, drumul public', en: 'any person using the public road at a given moment' },
-        { ro: 'numai conducătorii de autovehicule', en: 'only motor vehicle drivers' },
-        { ro: 'pietonul care merge pe trotuar', en: 'a pedestrian walking on the sidewalk' }
-      ], c: [0, 2],
-      x: 'The sidewalk is part of the public road, so a pedestrian on it is a road user (art. 6 pct. 24). Drivers are just one kind.' },
-    { ro: 'Cum se numește porțiunea de drum care urcă, în sensul de mers?', en: 'What do you call a stretch of road that climbs, in your direction of travel?',
-      o: [
-        { ro: 'pantă', en: 'pantă' },
-        { ro: 'rampă', en: 'rampă' },
-        { ro: 'palier', en: 'palier' }
-      ], c: [1],
-      x: 'Rampă = rising, pantă = falling, palier = flat. Rampă and rising both start with r.' },
-    { ro: 'Banda de urgență:', en: 'The emergency lane:',
-      o: [
-        { ro: 'este situată la extremitatea din partea dreaptă a autostrăzii', en: 'is on the far right side of the motorway' },
-        { ro: 'poate fi folosită pentru depășire când traficul este aglomerat', en: 'may be used to overtake when traffic is heavy' },
-        { ro: 'poate fi folosită de autovehiculele cu regim de circulație prioritară, aflate în misiune', en: 'may be used by priority vehicles on an emergency mission' }
-      ], c: [0, 2],
-      x: 'Emergency vehicles on a mission may use it (art. 6 pct. 8, art. 74). Using it to get past a queue is exactly what the law forbids.' },
-    { ro: 'Cum se semnalizează un drum închis circulației publice?', en: 'How is a road closed to public traffic marked?',
-      o: [
-        { ro: 'la intrare, cu indicatorul „Accesul interzis” și panoul „Drum închis circulației publice”', en: 'at the entrance, with the "No entry" sign and a "Road closed to public traffic" panel' },
-        { ro: 'nu este obligatoriu să fie semnalizat', en: 'it doesn’t have to be marked' },
-        { ro: 'cu indicatorul „Drum cu prioritate”', en: 'with the "Priority road" sign' }
-      ], c: [0],
-      x: 'Closed roads must be marked at the entry point (Regulament, art. 3). Without that marking, drivers would have no way to know.' },
-    { ro: 'Axa drumului:', en: 'The centre line of the road (axa drumului):',
-      o: [
-        { ro: 'poate fi o linie imaginară', en: 'can be an imaginary line' },
-        { ro: 'poate fi materializată prin marcaj', en: 'can be shown by a painted marking' },
-        { ro: 'coincide întotdeauna cu mijlocul geometric al drumului', en: 'always sits exactly in the geometric middle of the road' }
-      ], c: [0, 1],
-      x: 'It only sits in the middle when both directions are equally wide. Notice the word întotdeauna (always) in the wrong option.' },
-    { ro: 'Bicicleta este:', en: 'A bicycle is:',
-      o: [
-        { ro: 'vehicul', en: 'a vehicle (vehicul)' },
-        { ro: 'autovehicul', en: 'a motor vehicle (autovehicul)' },
-        { ro: 'nu este considerată vehicul, deoarece nu are motor', en: 'not a vehicle, since it has no engine' }
-      ], c: [0],
-      x: 'A vehicul is any mechanical system moving on the road, with or without its own engine (art. 6 pct. 35). No engine means it can’t be an autovehicul.' }
+    { q: 'Ce se înțelege prin „drum public”?',
+      o: ['orice cale de comunicație terestră, inclusiv căile ferate, deschisă circulației publice',
+          'orice cale de comunicație terestră, cu excepția căilor ferate, special amenajată pentru traficul pietonal sau rutier, deschisă circulației publice',
+          'numai drumurile naționale și autostrăzile'], c: [1],
+      x: 'Calea ferată e singura cale terestră pe care definiția o exclude explicit (art. 6 pct. 14). Drumurile județene, străzile și drumurile comunale sunt și ele drumuri publice.' },
+    { q: 'Acostamentul este:',
+      o: ['fâșia laterală cuprinsă între limita părții carosabile și marginea platformei drumului',
+          'spațiul longitudinal destinat circulației pietonilor, separat vizibil de partea carosabilă',
+          'porțiunea din platforma drumului destinată circulației vehiculelor'], c: [0],
+      x: 'B descrie trotuarul, iar C partea carosabilă. Acostamentul e între partea carosabilă și marginea platformei (art. 6 pct. 2).' },
+    { q: 'Care dintre afirmațiile despre partea carosabilă sunt corecte?',
+      o: ['este porțiunea din platforma drumului destinată circulației vehiculelor',
+          'include și acostamentele',
+          'un drum poate avea mai multe părți carosabile, complet separate una de alta'], c: [0, 2],
+      x: 'Aici sunt două răspunsuri corecte. Un drum cu zonă mediană are două părți carosabile separate. Acostamentul nu face niciodată parte din partea carosabilă (art. 6 pct. 23).' },
+    { q: 'Cum se numerotează benzile de circulație?',
+      o: ['de la axa drumului spre marginea din dreapta',
+          'de la marginea din dreapta a părții carosabile spre axa drumului',
+          'pe autostradă, banda de urgență este banda 1'], c: [1],
+      x: 'Banda 1 e mereu banda din dreapta a sensului tău (art. 41). Pe autostradă banda de urgență nu se numără, deci banda 1 e prima de lângă ea.' },
+    { q: 'Care dintre următoarele vehicule sunt considerate autovehicule?',
+      o: ['troleibuzul', 'tramvaiul', 'tractorul utilizat în exploatările agricole'], c: [0],
+      x: 'Legea face două excepții: tramvaiele (merg pe șine) și tractoarele agricole sau forestiere nu sunt autovehicule. Troleibuzul este numit explicit ca autovehicul (art. 6 pct. 6).' },
+    { q: 'Autostrada este:',
+      o: ['un drum național de mare capacitate și viteză, semnalizat special, rezervat exclusiv circulației autovehiculelor',
+          'un drum cu cel puțin două benzi pe fiecare sens, despărțite printr-o zonă mediană',
+          'un drum pe care pot circula și bicicletele, pe banda de urgență'], c: [0, 1],
+      x: 'A și B fac parte din aceeași definiție (art. 6 pct. 5). Bicicletele nu sunt autovehicule, deci nu pot circula niciodată pe autostradă.' },
+    { q: 'Ce este „localitatea”, în sensul Codului rutier?',
+      o: ['orice grup de clădiri, chiar dacă intrarea nu este semnalizată',
+          'cătunul, satul, comuna, orașul și municipiul ale căror intrări și ieșiri sunt semnalizate prin indicatoare',
+          'numai orașele și municipiile'], c: [1],
+      x: 'Indicatoarele o fac localitate din punct de vedere legal (art. 6 pct. 17). Contează mai târziu, pentru că la indicator se schimbă limitele de viteză și alte reguli.' },
+    { q: 'Cine este participant la trafic?',
+      o: ['persoana fizică ce utilizează, la un moment dat, drumul public',
+          'numai conducătorii de autovehicule',
+          'pietonul care merge pe trotuar'], c: [0, 2],
+      x: 'Trotuarul face parte din drumul public, deci pietonul de pe el e participant la trafic (art. 6 pct. 24). Șoferii sunt doar o categorie.' },
+    { q: 'Cum se numește porțiunea de drum care urcă, în sensul de mers?',
+      o: ['pantă', 'rampă', 'palier'], c: [1],
+      x: 'Rampă = urcare, pantă = coborâre, palier = plat. Rampă și urcă au amândouă litera r.' },
+    { q: 'Banda de urgență:',
+      o: ['este situată la extremitatea din partea dreaptă a autostrăzii',
+          'poate fi folosită pentru depășire când traficul este aglomerat',
+          'poate fi folosită de autovehiculele cu regim de circulație prioritară, aflate în misiune'], c: [0, 2],
+      x: 'Vehiculele cu regim prioritar în misiune o pot folosi (art. 6 pct. 8, art. 74). Să o folosești ca să treci de o coloană e exact ce interzice legea.' },
+    { q: 'Cum se semnalizează un drum închis circulației publice?',
+      o: ['la intrare, cu indicatorul „Accesul interzis” și panoul „Drum închis circulației publice”',
+          'nu este obligatoriu să fie semnalizat',
+          'cu indicatorul „Drum cu prioritate”'], c: [0],
+      x: 'Drumurile închise trebuie semnalizate la intrare (Regulament, art. 3). Fără semnalizare, șoferii n-ar avea de unde să știe.' },
+    { q: 'Axa drumului:',
+      o: ['poate fi o linie imaginară',
+          'poate fi materializată prin marcaj',
+          'coincide întotdeauna cu mijlocul geometric al drumului'], c: [0, 1],
+      x: 'E la mijloc doar când ambele sensuri au aceeași lățime. Observă cuvântul „întotdeauna” din varianta greșită.' },
+    { q: 'Bicicleta este:',
+      o: ['vehicul', 'autovehicul', 'nu este considerată vehicul, deoarece nu are motor'], c: [0],
+      x: 'Vehiculul e orice sistem mecanic care se deplasează pe drum, cu sau fără motor (art. 6 pct. 35). Fără motor, nu poate fi autovehicul.' }
   ];
 
   var el = document.getElementById('quiz');
@@ -549,14 +491,13 @@ footer { font-size: 0.85rem; color: var(--muted); display: grid; gap: 6px; }
   var state;
 
   function range(n) { var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 
   function start(onlyIdx) {
     var order = onlyIdx && onlyIdx.length ? onlyIdx.slice() : range(Q.length);
     state = { queue: order, total: order.length, answered: 0, ok: 0, bad: 0, wrong: [], sel: [], locked: false };
     render();
   }
-
-  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 
   function bar() {
     var pct = Math.round(state.answered / state.total * 100);
@@ -567,10 +508,10 @@ footer { font-size: 0.85rem; color: var(--muted); display: grid; gap: 6px; }
 
   function render() {
     if (!state.queue.length) return finish();
-    var qi = state.queue[0], q = Q[qi];
-    var h = bar() + '<div class="qbody"><p class="qtext">' + esc(q.ro) + '<span class="en-line">' + esc(q.en) + '</span></p><div class="opts">';
+    var q = Q[state.queue[0]];
+    var h = bar() + '<div class="qbody"><p class="qtext">' + esc(q.q) + '</p><div class="opts">';
     q.o.forEach(function (o, i) {
-      h += '<button type="button" class="opt" id="opt' + i + '" data-i="' + i + '" aria-pressed="false"><span class="key">' + LETTERS[i] + '</span><span>' + esc(o.ro) + '<span class="en-line">' + esc(o.en) + '</span></span></button>';
+      h += '<button type="button" class="opt" id="opt' + i + '" data-i="' + i + '" aria-pressed="false"><span class="key">' + LETTERS[i] + '</span><span>' + esc(o) + '</span></button>';
     });
     h += '</div><div id="fb"></div><div class="actions" id="acts">' +
       '<button type="button" class="btn" id="send" disabled>Trimite răspunsul</button>' +
@@ -616,16 +557,15 @@ footer { font-size: 0.85rem; color: var(--muted); display: grid; gap: 6px; }
 
   function finish() {
     var full = state.total === Q.length;
-    var passMark = Math.ceil(state.total * 22 / 26);
-    var passed = state.ok >= passMark;
+    var passed = state.ok >= Math.ceil(state.total * 22 / 26);
     if (full) {
       var best = store.get('dsp-ch1-best') || 0;
       if (state.ok > best) store.set('dsp-ch1-best', state.ok);
       store.set('dsp-ch1-last', { ok: state.ok, at: Date.now() });
     }
-    var msg = state.bad === 0 ? 'Perfect. This chapter is yours.'
-      : passed ? 'That would be a pass at exam rate (22 out of 26 is about 85%). Retry the ones you missed so they stick.'
-      : 'Not there yet, and that’s fine on a first go. Reread the traps section, then retry just the ones you missed.';
+    var msg = state.bad === 0 ? 'Perfect. Capitolul ăsta e al tău.'
+      : passed ? 'La examen ar fi fost promovat (22 din 26 înseamnă cam 85%). Reia greșelile ca să se fixeze.'
+      : 'Încă nu, și e normal la prima încercare. Mai citește o dată capcanele, apoi reia doar întrebările greșite.';
     var h = bar() + '<div class="result"><span class="label">Rezultat</span><div class="big">' + state.ok + ' / ' + state.total + '</div><p>' + msg + '</p><div class="actions">';
     if (state.wrong.length) h += '<button type="button" class="btn" id="retryWrong">Reia greșelile (' + state.wrong.length + ')</button>';
     h += '<button type="button" class="btn ' + (state.wrong.length ? 'ghost' : '') + '" id="restart">Reia tot testul</button></div></div>';
