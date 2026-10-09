@@ -1,10 +1,10 @@
 # learn-stuff
 
-Personal learning notes. Learning only.
+Notițe personale de învățare. Doar pentru învățare.
 
-| Folder | Topic |
+| Folder | Subiect |
 | --- | --- |
-| [behaviour/](behaviour/) | Influence, persuasion, deception, attraction: books, summaries and research |
-| [philosophy/](philosophy/) | Philosophy and self-development book summaries and notes |
-| [business/](business/) | Business and hustle notes |
-| [personal/](personal/) | Personal plans and routines |
+| [behaviour/](behaviour/) | Comportament: influență, persuasiune, înșelăciune, atracție (cărți, rezumate și cercetare) |
+| [philosophy/](philosophy/) | Filozofie și dezvoltare personală: rezumate de cărți și notițe |
+| [business/](business/) | Notițe despre business și hustle |
+| [personal/](personal/) | Planuri și rutine personale |
