@@ -1,0 +1,347 @@
+{
+  "id": 9,
+  "title": "Locuri și situații speciale",
+  "tagline": "Calea ferată, trecerea de pietoni, curbe și pante",
+  "minutes": 40,
+  "intro": "Sunt câteva locuri unde riscul e mai mare decât pe un drum obișnuit: trenul nu poate frâna, pietonul nu are caroserie, curba și vârful de rampă îți ascund ce urmează. Aici legea îți cere mai multă atenție și îți interzice unele manevre. Dacă înțelegi de ce, regulile vin aproape de la sine.",
+  "cards": [
+    {
+      "kind": "idea",
+      "title": "De ce trenul are mereu prioritate",
+      "body": "<p>Un tren nu poate vira și are nevoie de sute de metri ca să oprească. Mecanicul te vede, dar nu te poate ocoli.</p><p>De aceea, la calea ferată, toată responsabilitatea e a ta. Legea cere <b>prudență sporită</b> la apropierea de trecerea la nivel și la traversarea ei, fie că e o cale ferată curentă, fie una industrială.</p><p>Gândul liniștitor: dacă oprești și te uiți, nu greșești niciodată.</p>",
+      "src": "OUG 195/2002 art. 60 alin. (1)"
+    },
+    {
+      "kind": "rule",
+      "title": "Cum îți anunță drumul calea ferată",
+      "body": "<p>Apropierea de o trecere la nivel se semnalizează cu indicatoare de avertizare: <b>„cu bariere”</b> (un gard) sau <b>„fără bariere”</b> (o locomotivă).</p><p>Sub ele sau după ele apar <b>panouri cu benzi roșii înclinate</b>, care „numără invers” distanța: <b>3 benzi ≈ 150 m</b>, <b>2 benzi ≈ 100 m</b>, <b>1 bandă ≈ 50 m</b> până la trecere.</p><p>Cu cât vezi mai puține benzi, cu atât ești mai aproape.</p>",
+      "src": "Regulament art. 68",
+      "visual": { "signs": [ "av-calea-ferata-bariere", "av-calea-ferata-fara-bariere" ] }
+    },
+    {
+      "kind": "rule",
+      "title": "La trecere: crucea Sf. Andrei și STOP",
+      "body": "<p>Chiar la trecerea <b>fără bariere</b> găsești:</p><ul><li><b>crucea Sf. Andrei simplă</b>: cale ferată simplă, fără bariere;</li><li><b>crucea dublă</b>: cale ferată dublă (sau mai multe linii), fără bariere;</li><li>împreună cu indicatorul <b>„Oprire” (STOP)</b>.</li></ul><p>Crucea Sf. Andrei e ultimul semn înainte de șine. Nu o confunda cu indicatoarele de avertizare puse la 150-50 m înainte.</p>",
+      "src": "Regulament art. 69 alin. (1)",
+      "visual": { "signs": [ "av-cruce-sf-andrei", "av-cruce-sf-andrei-dubla", "pr-stop" ] }
+    },
+    {
+      "kind": "rule",
+      "title": "Fără bariere: oprești obligatoriu",
+      "body": "<p>La indicatoarele „Trecere la nivel cu calea ferată simplă/dublă, fără bariere” sau „Oprire” <b>oprești</b>, chiar dacă nu vezi niciun tren.</p><ul><li>Oprești în <b>ordinea sosirii</b>.</li><li>Oprești la <b>marcajul de oprire</b>; dacă nu există, în locul cu <b>vizibilitate maximă</b> asupra căii ferate, <b>fără să depășești indicatorul</b>.</li><li>Te uiți stânga-dreapta. Dacă vine un tren, aștepți să treacă și verifici că nu vine altul.</li></ul>",
+      "src": "Regulament art. 136 alin. (1); art. 138 alin. (1) lit. c), alin. (2)",
+      "visual": { "sign": "pr-stop" }
+    },
+    {
+      "kind": "trap",
+      "title": "Fiecare șofer oprește singur",
+      "body": "<p>Capcană frecventă: mașina din fața ta a oprit la STOP, s-a uitat și a trecut. Tu poți să treci „pe urma ei”?</p><p><b>Nu.</b> Obligația de oprire e a fiecărui conducător în parte. Când ajungi la indicator, oprești și te asiguri tu însuți.</p><p>La fel, oprești și când pare evident că nu vine trenul. Regula nu depinde de ce crezi că vezi.</p>",
+      "src": "Regulament art. 138 alin. (1) lit. c), alin. (2)"
+    },
+    {
+      "kind": "rule",
+      "title": "Semnalele luminoase de la calea ferată",
+      "body": "<ul><li><b>Lumina albă intermitentă, cu cadență lentă</b>: instalația funcționează și poți trece, cu atenție.</li><li><b>Două lumini roșii care clipesc alternativ</b>, de obicei cu <b>semnal sonor</b>: se apropie trenul, <b>oprești</b>.</li></ul><p>Dacă instalația nu funcționează deloc, procedezi ca la o trecere fără semnale: oprești și te asiguri.</p>",
+      "src": "Regulament art. 69 alin. (2); art. 137 alin. (1)",
+      "visual": { "table": [ ["Semnal", "Ce faci"], ["Albă intermitentă lentă", "treci, cu atenție"], ["Roșii alternative și/sau sonor", "oprești"] ] }
+    },
+    {
+      "kind": "trap",
+      "title": "Un singur semnal e suficient",
+      "body": "<p>Circulația e <b>interzisă</b> dacă apare <b>oricare</b> dintre acestea:</p><ul><li>clipește <b>o singură</b> lampă roșie (cealaltă e arsă);</li><li>funcționează <b>doar semnalul sonor</b>;</li><li><b>o singură semibarieră</b> e coborâtă orizontal.</li></ul><p>Interzis e și cât timp barierele sau semibarierele <b>coboară sau se ridică</b>. Un semnal „pe jumătate” nu e o invitație, e tot un STOP.</p>",
+      "src": "Regulament art. 71"
+    },
+    {
+      "kind": "rule",
+      "title": "Cu bariere: când oprești",
+      "body": "<p>La trecerea cu bariere sau semibariere oprești când:</p><ul><li>barierele sunt <b>coborâte, în curs de coborâre sau de ridicare</b>;</li><li>funcționează <b>luminile roșii și/sau semnalul sonor</b>.</li></ul><p>Oprești în ordinea sosirii, <b>înaintea marcajului de oprire</b> sau <b>înaintea barierelor</b>. Nu ocolești niciodată o semibarieră coborâtă.</p>",
+      "src": "OUG 195/2002 art. 60 alin. (2); Regulament art. 138",
+      "visual": { "sign": "av-calea-ferata-bariere" }
+    },
+    {
+      "kind": "rule",
+      "title": "Când ai voie să treci",
+      "body": "<p>Treci peste o cale ferată cu bariere sau semibariere doar când sunt îndeplinite <b>toate</b>:</p><ul><li>barierele sunt <b>ridicate</b> complet;</li><li>luminile roșii și semnalul sonor <b>nu funcționează</b>;</li><li>funcționează <b>lumina albă intermitentă cu cadență lentă</b>.</li></ul><p>Dacă circulația e dirijată de <b>agenți de cale ferată</b>, respecți semnalele lor. La o cale ferată industrială, la fel.</p>",
+      "src": "Regulament art. 137; OUG 195/2002 art. 60 alin. (3)"
+    },
+    {
+      "kind": "rule",
+      "title": "Dacă rămâi blocat pe șine",
+      "body": "<p>Mașina s-a oprit pe calea ferată? Prioritatea sunt <b>oamenii</b>, nu mașina.</p><ol><li><b>Scoți imediat pasagerii</b> și eliberezi calea ferată.</li><li>Dacă nu poți scoate mașina, <b>semnalizezi prezența ei prin orice mijloc</b>.</li></ol><p>Ceilalți participanți din apropiere sunt <b>obligați să ajute</b> la scoaterea ei sau la semnalizare.</p><p>Și: nu treci și nu ocolești <b>porțile de gabarit</b> de la calea ferată electrificată dacă vehiculul sau încărcătura ajung la înălțimea lor.</p>",
+      "src": "Regulament art. 139"
+    },
+    {
+      "kind": "memo",
+      "title": "Calea ferată: cifra 50",
+      "body": "<ul><li><b>Depășirea</b>: interzisă pe trecere și cu <b>50 m înainte</b>. După trecere, da.</li><li><b>Oprirea și staționarea</b>: interzise pe trecere și la mai puțin de <b>50 m înainte și după</b>.</li><li><b>Întoarcerea</b> și <b>mersul înapoi</b>: interzise acolo unde e interzisă oprirea, deci tot în acești 50 m.</li></ul><p>Truc: depășirea „se uită înainte”, oprirea „se uită în ambele părți”.</p>",
+      "src": "Regulament art. 120 lit. f); art. 142 lit. b); art. 126 lit. a); art. 128",
+      "visual": { "big": "50 m", "caption": "zona de protecție a căii ferate" }
+    },
+    {
+      "kind": "rule",
+      "title": "Trecerea pentru pietoni: prioritatea",
+      "body": "<p>Pietonul are prioritate față de vehicule când traversează:</p><ul><li>pe o <b>trecere amenajată, marcată și semnalizată</b>;</li><li>sau pe <b>verde la semaforul pentru pietoni</b>.</li></ul><p>Tu, ca șofer, îi acorzi prioritate pietonului care traversează astfel și <b>se află pe sensul tău de deplasare</b>. Când pietonul traversează în alt loc, nu are prioritate, dar tu tot rămâi atent.</p>",
+      "src": "OUG 195/2002 art. 72 alin. (2); Regulament art. 135 lit. h)",
+      "visual": { "signs": [ "inf-trecere-pietoni", "av-trecere-pietoni" ] }
+    },
+    {
+      "kind": "rule",
+      "title": "Când reduci viteza la 30 sau 50",
+      "body": "<p>Pe o trecere <b>nesemaforizată</b>, pe un drum cu <b>cel mult o bandă pe sens</b>, dacă pe trotuar, lângă carosabil, sunt <b>pietoni care urmează să traverseze</b>, reduci viteza la:</p><ul><li><b>30 km/h</b> în localitate;</li><li><b>50 km/h</b> în afara localității.</li></ul><p>Intuiția: la viteza asta poți opri liniștit dacă pietonul pășește brusc pe trecere.</p>",
+      "src": "Regulament art. 123 lit. h)",
+      "visual": { "big": "30 / 50 km/h", "caption": "în localitate / în afara localității" }
+    },
+    {
+      "kind": "rule",
+      "title": "Ce nu faci la trecerea de pietoni",
+      "body": "<ul><li><b>Nu depășești</b> pe trecere (nici măcar o bicicletă).</li><li><b>Nu oprești și nu staționezi</b> pe trecere și la mai puțin de <b>25 m înainte și după</b> ea.</li><li><b>Nu întorci</b> pe marcajul pietonal, nici în zona de 25 m.</li><li><b>Nu dai înapoi</b> acolo.</li></ul><p>Motivul e simplu: o mașină oprită lângă trecere ascunde pietonul de ceilalți șoferi.</p>",
+      "src": "Regulament art. 120 lit. e); art. 142 lit. e); art. 126 lit. a), e); art. 128"
+    },
+    {
+      "kind": "example",
+      "title": "Verde pentru tine, verde și pentru pieton",
+      "body": "<p>Ai verde și faci dreapta. Pe strada în care intri, pietonii traversează tot pe verde.</p><p>Cine trece primul? <b>Pietonii.</b> Verdele tău îți permite să intri în intersecție, dar nu îți dă prioritate față de pietonii care traversează regulamentar pe sensul tău de mers.</p><p>Aștepți înaintea trecerii, fără să o blochezi, apoi îți continui drumul.</p>",
+      "src": "Regulament art. 135 lit. h)",
+      "visual": { "scene": { "layout": "cross", "main": null, "vehicles": [ { "id": "A", "arm": "s", "go": "right", "type": "car", "you": true }, { "id": "P", "arm": "e", "go": "straight", "type": "pedestrian" } ], "light": { "s": "green" }, "caption": "A așteaptă pietonul, apoi virează." } }
+    },
+    {
+      "kind": "rule",
+      "title": "Drumul în curbă",
+      "body": "<p>Curba îți ascunde ce e după ea. De aceea:</p><ul><li>în curbele <b>deosebit de periculoase</b> semnalizate sau cu vizibilitate <b>sub 50 m</b>, viteza e de cel mult <b>30 km/h</b> în localitate și <b>50 km/h</b> în afara ei;</li><li>în curbele cu vizibilitate sub 50 m sunt <b>interzise</b> depășirea, oprirea, staționarea, întoarcerea și mersul înapoi.</li></ul>",
+      "src": "Regulament art. 123 lit. b); art. 120 lit. c); art. 142 lit. d); art. 126 lit. a)",
+      "visual": { "signs": [ "av-curba-dreapta", "av-curba-stanga", "av-curbe-succesive" ] }
+    },
+    {
+      "kind": "idea",
+      "title": "Cum iei o curbă fără emoții",
+      "body": "<p>Secretul e să faci tot ce e greu <b>înainte</b> de curbă:</p><ul><li><b>frânezi pe drum drept</b>, înainte să intri;</li><li>în curbă ții volanul liniștit și accelerezi ușor, constant;</li><li>stai <b>pe partea ta</b>, nu „tai” curba, mai ales spre stânga, unde poate apărea cineva din față.</li></ul><p>Frâna bruscă în plină curbă poate face mașina să derapeze, mai ales pe ud.</p>"
+    },
+    {
+      "kind": "rule",
+      "title": "Rampa și panta",
+      "body": "<p><b>Rampa</b> e urcarea, <b>panta</b> e coborârea.</p><ul><li>Lângă <b>vârful rampei</b>, cu vizibilitate <b>sub 50 m</b>, depășirea e interzisă. Implicit, sunt interzise și oprirea și staționarea.</li><li><b>Staționarea</b> e interzisă în pante și rampe, pe toată lungimea lor.</li><li>Dacă rămâi imobilizat involuntar în pantă sau rampă, <b>bracezi roțile</b> și tragi frâna de ajutor.</li></ul>",
+      "src": "Regulament art. 120 lit. b); art. 142 lit. p); art. 143 lit. e); art. 141 alin. (2)",
+      "visual": { "signs": [ "av-urcare", "av-coborare" ] }
+    },
+    {
+      "kind": "rule",
+      "title": "Drum îngust de munte: cine dă înapoi",
+      "body": "<p>Pe un drum îngust și/sau cu declivitate, unde două vehicule nu pot trece unul pe lângă altul, <b>manevrează cu spatele</b>:</p><ul><li><b>vehiculul</b> singur, când întâlnește un <b>ansamblu</b> (vehicul cu remorcă);</li><li><b>vehiculul ușor</b>, când întâlnește unul <b>greu</b>;</li><li>vehiculul de <b>mărfuri</b>, când întâlnește unul de <b>transport public de persoane</b>.</li></ul><p>La vehicule de aceeași categorie, dă înapoi <b>cel care urcă</b>, cu excepția cazului când îi e mai ușor celui care coboară, mai ales lângă un refugiu.</p>",
+      "src": "Regulament art. 127"
+    },
+    {
+      "kind": "trap",
+      "title": "Obstacolul pe sensul celui care urcă",
+      "body": "<p>Atenție să nu amesteci două reguli.</p><p>Pe un drum cu loc pentru amândoi, dacă pe <b>sensul celui care urcă</b> e un <b>obstacol imobil</b>, tu, cel care <b>cobori</b>, îi <b>cedezi trecerea</b>. Urcătorul are nevoie de elan; dacă ar opri, ar porni greu din pantă.</p><p>Pe drumul atât de îngust încât nu încăpeți unul pe lângă altul, se aplică regula cu mersul înapoi (de obicei, dă înapoi cel care urcă).</p>",
+      "src": "Regulament art. 135 lit. e); art. 127",
+      "visual": { "sign": "av-coborare" }
+    },
+    {
+      "kind": "rule",
+      "title": "Ceață, ploaie torențială, ninsoare",
+      "body": "<p>Când <b>vizibilitatea scade sub 100 m</b> din cauza ceții, a ploii torențiale sau a ninsorii abundente, reduci viteza la cel mult:</p><ul><li><b>30 km/h</b> în localitate;</li><li><b>50 km/h</b> în afara localității.</li></ul><p>Regula de bun-simț: trebuie să poți opri în porțiunea de drum pe care o vezi. Pe ceață, lângă curbe și vârfuri de rampă, fii de două ori mai atent.</p>",
+      "src": "Regulament art. 123 lit. j)",
+      "visual": { "big": "sub 100 m", "caption": "vizibilitate → 30 / 50 km/h" }
+    }
+  ],
+  "summary": [
+    "La calea ferată ai obligația de prudență sporită, pentru că trenul nu poate opri sau ocoli.",
+    "La trecerea fără bariere (crucea Sf. Andrei și STOP) oprești obligatoriu, chiar dacă nu vine trenul.",
+    "Lumina albă intermitentă lentă înseamnă că poți trece; luminile roșii alternative sau semnalul sonor înseamnă STOP.",
+    "Un singur semnal de interdicție e suficient: o lampă roșie, doar sunetul sau o singură semibarieră coborâtă.",
+    "Blocat pe șine: scoți imediat pasagerii, apoi eliberezi calea ferată sau semnalizezi mașina.",
+    "La calea ferată, depășirea e interzisă cu 50 m înainte, iar oprirea cu 50 m înainte și după.",
+    "Pietonul de pe trecere, aflat pe sensul tău de mers, are prioritate, chiar dacă tu ai verde la viraj.",
+    "La trecerea pentru pietoni nu depășești, iar oprirea, staționarea și întoarcerea sunt interzise pe ea și la 25 m înainte și după.",
+    "În curbe cu vizibilitate sub 50 m nu depășești, nu oprești, nu întorci și nu dai înapoi.",
+    "Pe drum îngust de munte, între vehicule de aceeași categorie, dă înapoi cel care urcă, de regulă."
+  ],
+  "questions": [
+    {
+      "q": "Ce semnificație are indicatorul?",
+      "o": ["Trecere la nivel cu o cale ferată dublă, fără bariere", "Trecere la nivel cu o cale ferată simplă, fără bariere", "Intersecție cu un drum fără prioritate"],
+      "c": [1],
+      "x": "Crucea Sf. Andrei simplă arată o cale ferată simplă, fără bariere. Varianta dublă are două cruci suprapuse.",
+      "src": "Regulament art. 69 alin. (1)",
+      "visual": { "sign": "av-cruce-sf-andrei" }
+    },
+    {
+      "q": "Vă apropiați de o trecere la nivel cu calea ferată fără bariere, semnalizată cu indicatorul „Oprire”. Nu se vede niciun tren. Cum procedați?",
+      "o": ["treceți cu viteză redusă, fără să opriți, deoarece nu vine trenul", "opriți numai dacă se aude sau se vede un tren", "opriți obligatoriu, apoi traversați după ce v-ați asigurat"],
+      "c": [2],
+      "x": "Oprirea la STOP e obligatorie mereu, nu doar când vezi trenul. Abia după oprire te asiguri și treci.",
+      "src": "Regulament art. 138 alin. (1) lit. c)",
+      "visual": { "sign": "pr-stop" }
+    },
+    {
+      "q": "La o trecere la nivel cu calea ferată fără bariere, unde nu există marcaj de oprire, unde opriți?",
+      "o": ["în ordinea sosirii", "imediat lângă prima șină, ca să vedeți mai bine", "în locul cu vizibilitate maximă asupra căii ferate, fără a depăși indicatorul"],
+      "c": [0, 2],
+      "x": "Oprești în ordinea sosirii, în locul de unde vezi cel mai bine calea ferată, dar fără să treci de indicator. Lângă șină ai fi deja în pericol.",
+      "src": "Regulament art. 138 alin. (2)"
+    },
+    {
+      "q": "Sunteți obligat să opriți la trecerea la nivel cu calea ferată atunci când:",
+      "o": ["barierele sunt în curs de ridicare", "funcționează semnalul sonor, chiar dacă luminile roșii nu se aprind", "barierele sunt ridicate, iar lumina albă intermitentă cu cadență lentă funcționează"],
+      "c": [0, 1],
+      "x": "Barierele în mișcare și semnalul sonor singur înseamnă oprire. Barierele ridicate cu lumina albă lentă înseamnă că poți trece.",
+      "src": "Regulament art. 71; art. 137 alin. (1); art. 138 alin. (1)"
+    },
+    {
+      "q": "Ce semnifică lumina albă intermitentă cu cadență lentă de la o trecere la nivel cu calea ferată?",
+      "o": ["instalația este defectă, opriți și așteptați un agent", "instalația funcționează și puteți trece, cu atenție", "se apropie un tren, trebuie să opriți"],
+      "c": [1],
+      "x": "Albul lent e semnalul „liber”. Trenul se anunță prin luminile roșii alternative și semnalul sonor.",
+      "src": "Regulament art. 69 alin. (2); art. 137 alin. (1)"
+    },
+    {
+      "q": "La o trecere la nivel cu calea ferată, o lampă roșie clipește, iar cealaltă nu funcționează. Cum procedați?",
+      "o": ["treceți, deoarece semnalul este defect", "opriți, este semnal de interzicere a trecerii", "treceți cu prudență, dacă nu vedeți trenul"],
+      "c": [1],
+      "x": "O singură lampă roșie aprinsă e suficientă pentru a interzice trecerea. Nu e un semnal „pe jumătate”.",
+      "src": "Regulament art. 71 alin. (1) lit. a)"
+    },
+    {
+      "q": "La o trecere cu semibariere, una dintre ele este coborâtă orizontal, iar cealaltă este ridicată. Ce faceți?",
+      "o": ["opriți, circulația este interzisă", "ocoliți semibariera coborâtă, cu viteză redusă", "așteptați până când semibariera e ridicată, luminile roșii sunt stinse și funcționează lumina albă intermitentă lentă"],
+      "c": [0, 2],
+      "x": "O singură semibarieră orizontală interzice trecerea. Ocolirea ei este una dintre cele mai periculoase greșeli.",
+      "src": "Regulament art. 71 alin. (1) lit. c); art. 137 alin. (1)"
+    },
+    {
+      "q": "Barierele trecerii la nivel sunt coborâte. Unde opriți?",
+      "o": ["în ordinea sosirii", "lângă barieră, cu roțile din față peste marcajul de oprire", "înaintea marcajului de oprire sau înaintea barierelor"],
+      "c": [0, 2],
+      "x": "Oprești în ordinea sosirii, înaintea marcajului de oprire sau a barierelor, nu peste ele.",
+      "src": "Regulament art. 138 alin. (2)"
+    },
+    {
+      "q": "Autoturismul dumneavoastră a rămas imobilizat pe calea ferată. Ce obligații aveți?",
+      "o": ["să scoateți imediat pasagerii și să eliberați calea ferată", "să rămâneți cu pasagerii în mașină până sosește ajutorul", "dacă nu puteți elibera calea ferată, să semnalizați prezența vehiculului prin orice mijloc"],
+      "c": [0, 2],
+      "x": "Oamenii ies primii din mașină. Apoi, dacă mașina nu poate fi scoasă, avertizezi prin orice mijloc.",
+      "src": "Regulament art. 139 alin. (1)"
+    },
+    {
+      "q": "Ce obligație au conducătorii aflați în apropierea unui vehicul imobilizat pe calea ferată?",
+      "o": ["să-și continue drumul, pentru a nu bloca trecerea", "să anunțe doar poliția, fără a interveni", "să acorde sprijin pentru scoaterea lui sau, dacă nu este posibil, pentru semnalizarea lui"],
+      "c": [2],
+      "x": "Legea îi obligă pe cei din apropiere să ajute: fie la scoaterea vehiculului, fie la semnalizarea lui.",
+      "src": "Regulament art. 139 alin. (2)"
+    },
+    {
+      "q": "Aveți voie să depășiți un autoturism la 40 m înainte de o trecere la nivel cu calea ferată?",
+      "o": ["da, dacă barierele sunt ridicate", "nu", "da, dacă vizibilitatea este bună"],
+      "c": [1],
+      "x": "Depășirea e interzisă pe trecere și la mai puțin de 50 m înainte de ea, indiferent de bariere sau vizibilitate.",
+      "src": "Regulament art. 120 alin. (1) lit. f)"
+    },
+    {
+      "q": "Doriți să opriți la 30 m după o trecere la nivel cu calea ferată. Este permis?",
+      "o": ["nu, oprirea este interzisă la mai puțin de 50 m înainte și după trecere", "da, interdicția există numai înainte de trecere", "da, dacă oprirea durează mai puțin de 5 minute"],
+      "c": [0],
+      "x": "Pentru oprire, zona de 50 m e în ambele părți. Doar la depășire contează numai partea dinainte.",
+      "src": "Regulament art. 142 lit. b)"
+    },
+    {
+      "q": "Un pieton s-a angajat în traversare pe o trecere marcată și semnalizată și se află pe sensul dumneavoastră de mers. Cum procedați?",
+      "o": ["îi acordați prioritate", "claxonați și treceți, dacă pietonul este încă departe de banda dumneavoastră", "opriți înaintea trecerii, fără a o bloca"],
+      "c": [0, 2],
+      "x": "Pietonul de pe trecere, aflat pe sensul tău, are prioritate. Oprești înaintea trecerii, nu pe ea.",
+      "src": "OUG 195/2002 art. 72 alin. (2); Regulament art. 135 lit. h)"
+    },
+    {
+      "q": "În localitate, pe un drum cu o bandă pe sens, vă apropiați de o trecere nesemaforizată. Pe trotuar, lângă carosabil, sunt pietoni care urmează să traverseze. Care este viteza maximă?",
+      "o": ["50 km/h", "40 km/h", "30 km/h"],
+      "c": [2],
+      "x": "În localitate, viteza scade la 30 km/h (în afara localității, la 50 km/h), ca să poți opri dacă pietonul pășește pe trecere.",
+      "src": "Regulament art. 123 lit. h)"
+    },
+    {
+      "q": "Aveți verde la semafor și virați la dreapta. Pietonii traversează strada în care intrați, pe verde la semaforul lor. Cum procedați?",
+      "o": ["acordați prioritate pietonilor", "aveți prioritate, deoarece și dumneavoastră aveți verde", "treceți înaintea lor dacă au ajuns abia la jumătatea trecerii"],
+      "c": [0],
+      "x": "Verdele tău nu îți dă prioritate față de pietonii care traversează pe verdele lor, pe sensul tău de mers.",
+      "src": "Regulament art. 135 lit. h)",
+      "visual": { "scene": { "layout": "cross", "main": null, "vehicles": [ { "id": "A", "arm": "s", "go": "right", "type": "car", "you": true }, { "id": "P", "arm": "e", "go": "straight", "type": "pedestrian" } ], "light": { "s": "green" } } }
+    },
+    {
+      "q": "Pietonii au prioritate față de vehicule atunci când:",
+      "o": ["traversează pe la colțul străzii, într-un loc fără trecere marcată", "traversează prin locuri special amenajate, marcate și semnalizate", "traversează la culoarea verde a semaforului pentru pietoni"],
+      "c": [1, 2],
+      "x": "Prioritatea pietonului există pe trecerea marcată și semnalizată sau pe verdele lui. La colțul străzii poate traversa, dar fără prioritate.",
+      "src": "OUG 195/2002 art. 72 alin. (2), (3)"
+    },
+    {
+      "q": "Ce este interzis în apropierea unei treceri pentru pietoni?",
+      "o": ["oprirea voluntară la 20 m după trecere", "depășirea pe trecere", "oprirea voluntară la 40 m înainte de trecere"],
+      "c": [0, 1],
+      "x": "Oprirea e interzisă la mai puțin de 25 m înainte și după trecere, deci 20 m e prea aproape, iar 40 m e în regulă.",
+      "src": "Regulament art. 120 lit. e); art. 142 lit. e)"
+    },
+    {
+      "q": "Ce manevre sunt interzise într-o curbă cu vizibilitate sub 50 m?",
+      "o": ["depășirea", "întoarcerea", "oprirea și staționarea voluntară"],
+      "c": [0, 1, 2],
+      "x": "Toate sunt interzise. Unde vizibilitatea e sub 50 m nu depășești, deci nu oprești, deci nu staționezi și nu întorci.",
+      "src": "Regulament art. 120 lit. c); art. 126 lit. a); art. 142 lit. d); art. 143 lit. a)"
+    },
+    {
+      "q": "Care este viteza maximă admisă într-o curbă deosebit de periculoasă, semnalizată ca atare, în afara localității?",
+      "o": ["70 km/h", "50 km/h", "30 km/h"],
+      "c": [1],
+      "x": "În curbe deosebit de periculoase: 30 km/h în localitate și 50 km/h în afara ei.",
+      "src": "Regulament art. 123 lit. b)"
+    },
+    {
+      "q": "Depășirea este interzisă în apropierea vârfului unei rampe atunci când:",
+      "o": ["rampa este semnalizată cu indicatorul „Urcare cu înclinare mare”", "vizibilitatea este de 200 m", "vizibilitatea este redusă sub 50 m"],
+      "c": [2],
+      "x": "Interdicția depinde de vizibilitate: sub 50 m. Indicatorul de urcare singur nu interzice depășirea.",
+      "src": "Regulament art. 120 alin. (1) lit. b)"
+    },
+    {
+      "q": "Pe un drum în pantă sau în rampă:",
+      "o": ["staționarea voluntară este interzisă", "staționarea este permisă, dacă bracați roțile", "oprirea voluntară este interzisă lângă vârful rampei, dacă vizibilitatea este sub 50 m"],
+      "c": [0, 2],
+      "x": "Staționarea e interzisă pe toată panta sau rampa. Bracarea roților e obligatorie doar la imobilizare involuntară, nu îți dă voie să staționezi.",
+      "src": "Regulament art. 143 lit. e); art. 142 lit. d), p); art. 141 alin. (2)"
+    },
+    {
+      "q": "Pe un drum îngust de munte, unde două autoturisme nu pot trece unul pe lângă altul, cine trebuie să manevreze cu spatele?",
+      "o": ["întotdeauna cel care coboară", "cel care urcă, cu excepția cazului când îi este mai ușor celui care coboară, mai ales lângă un refugiu", "cel care a intrat ultimul pe sectorul îngust"],
+      "c": [1],
+      "x": "La vehicule de aceeași categorie, de regulă dă înapoi cel care urcă. Excepția: când celui care coboară îi e mai ușor, de exemplu lângă un refugiu.",
+      "src": "Regulament art. 127 alin. (2)"
+    },
+    {
+      "q": "Pe un drum îngust și cu declivitate, unde vehiculele nu pot trece unele pe lângă altele, cine manevrează cu spatele?",
+      "o": ["autoturismul, când întâlnește un autocamion greu", "autobuzul care face transport public de persoane, când întâlnește un autoturism", "autocamionul de marfă, când întâlnește un autobuz care face transport public de persoane"],
+      "c": [0, 2],
+      "x": "Dă înapoi vehiculul ușor în fața celui greu și vehiculul de marfă în fața celui de transport public de persoane.",
+      "src": "Regulament art. 127 alin. (1)"
+    },
+    {
+      "q": "Coborâți o pantă și întâlniți un vehicul care urcă. Pe sensul acestuia se află un obstacol imobil. Cum procedați?",
+      "o": ["aveți prioritate, deoarece obstacolul nu este pe sensul dumneavoastră", "îi cedați trecerea vehiculului care urcă", "claxonați și treceți primul"],
+      "c": [1],
+      "x": "Cel care coboară cedează trecerea celui care urcă dacă obstacolul e pe sensul acestuia. Urcătorului i-ar fi greu să pornească din nou din pantă.",
+      "src": "Regulament art. 135 lit. e)",
+      "visual": { "sign": "av-coborare" }
+    },
+    {
+      "q": "În afara localității, vizibilitatea scade sub 100 m din cauza ceții. Care este viteza maximă?",
+      "o": ["70 km/h", "50 km/h", "30 km/h"],
+      "c": [1],
+      "x": "Cu vizibilitate sub 100 m (ceață, ploaie torențială, ninsoare abundentă): 50 km/h în afara localității, 30 km/h în localitate.",
+      "src": "Regulament art. 123 lit. j)"
+    }
+  ],
+  "uncertain": [
+    "Distanțele panourilor cu benzi înclinate (3 benzi ≈ 150 m, 2 ≈ 100 m, 1 ≈ 50 m) provin din lecția scoalarutiera.ro; art. 68 din Regulament nu le dă explicit (sunt în standardul de semnalizare). Pe card am scris „≈”. În localitate scoalarutiera spune că indicatorul se pune la 50 m, cu o singură bandă.",
+    "Regulament art. 135 lit. e) (cel care coboară cedează celui care urcă când obstacolul e pe sensul acestuia) verificat doar pe text consolidat mai vechi (legeaz.net); sursele de presă confirmă regula.",
+    "Regulament art. 123 lit. b), h), j) (30/50 km/h) verificate pe textul de pe legeaz.net (consolidare mai veche) și pe scoalarutiera.ro pentru lit. b) și h); nu am găsit modificări ulterioare.",
+    "Formularea „aflat pe sensul de deplasare al vehiculului” din art. 135 lit. h) e preluată din scoalarutiera.ro; am evitat întrebări pe nuanța „drum cu două benzi pe sens, pieton pe partea opusă”.",
+    "Vizibilitatea redusă (ceață, noapte) nu are lecție proprie pe scoalarutiera în capitolul 7; am pus doar un card (art. 123 lit. j). Regulile de lumini (ceață, faza scurtă) probabil sunt în capitolul despre lumini."
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "id": 7,
+  "title": "Viteza",
+  "tagline": "Câte numere trebuie să știi și când să mergi mai încet",
+  "minutes": 35,
+  "intro": "La examen, viteza înseamnă câteva numere clare și o listă de situații în care mergi mai încet. Numerele se învață repede dacă le vezi ca pe o scară. Lista are o logică: încetinești acolo unde nu vezi bine, nu poți frâna bine sau pot apărea oameni.",
+  "cards": [
+    {
+      "kind": "idea",
+      "title": "De ce contează fiecare km/h",
+      "body": "<p>Viteza nu e doar „cât de repede ajung”. E <b>cât timp ai să reacționezi</b> și <b>cât spațiu îți trebuie să oprești</b>.</p><p>Când viteza se dublează, distanța de frânare nu se dublează, ci crește de aproximativ <b>patru ori</b>. La fel crește și forța unui impact.</p><p>De aceea limitele sunt mai mici acolo unde sunt oameni, intersecții sau vizibilitate slabă.</p>"
+    },
+    {
+      "kind": "rule",
+      "title": "În localitate: 50 km/h",
+      "body": "<p>Viteza maximă admisă <b>în localități</b> este <b>50 km/h</b>.</p><p>Limita începe de la indicatorul cu numele localității și se termină la indicatorul de ieșire din localitate.</p><p>E aceeași pentru toți: și pentru șoferii începători, și pentru cei cu remorcă, dacă nu există alt indicator.</p>",
+      "src": "OUG 195/2002 art. 49 alin. (1)",
+      "visual": { "big": "50 km/h", "caption": "viteza maximă în localitate" }
+    },
+    {
+      "kind": "rule",
+      "title": "Uneori mai mult în oraș: până la 80",
+      "body": "<p>Pe anumite porțiuni de drum din localitate, administratorul drumului poate stabili, cu avizul poliției rutiere, limite <b>mai mari</b> pentru autovehiculele din categoriile A și B.</p><p>Limita ridicată <b>nu poate depăși 80 km/h</b> și se anunță prin indicatoare.</p><p>Fără indicator, rămâne 50.</p>",
+      "src": "OUG 195/2002 art. 49 alin. (2)",
+      "visual": { "sign": "in-viteza-70" }
+    },
+    {
+      "kind": "rule",
+      "title": "Uneori mai puțin: dar nu sub 30",
+      "body": "<p>Tot administratorul drumului, cu acordul poliției rutiere, poate stabili limite <b>mai mici</b> pe anumite sectoare, după cum e traficul.</p><p>Aceste limite nu pot coborî sub <b>30 km/h</b> pentru autovehicule (și sub 10 km/h pentru tramvaie).</p><p>Indicatorul de limitare are mereu întâietate: respecți limita legală <b>și</b> pe cea arătată de semnalizare.</p>",
+      "src": "OUG 195/2002 art. 49 alin. (3); Regulament art. 121 alin. (1)",
+      "visual": { "sign": "in-viteza-30" }
+    },
+    {
+      "kind": "rule",
+      "title": "În afara localității, categoria B",
+      "body": "<p>În afara localităților, pentru autoturisme (categoria B), viteza maximă depinde de tipul drumului:</p><ul><li><b>autostradă</b>: 130 km/h;</li><li><b>drum expres</b>: 120 km/h;</li><li><b>drum național european (E)</b>: 100 km/h;</li><li><b>celelalte drumuri</b>: 90 km/h.</li></ul><p>Drumurile județene, comunale și naționale care nu sunt E intră la „celelalte”.</p>",
+      "src": "OUG 195/2002 art. 49 alin. (4), art. 50 alin. (1) lit. a)",
+      "visual": { "table": [["Tip de drum", "Viteză maximă (B)"], ["Autostradă", "130 km/h"], ["Drum expres", "120 km/h"], ["Drum național european (E)", "100 km/h"], ["Alte drumuri", "90 km/h"], ["În localitate", "50 km/h"]] }
+    },
+    {
+      "kind": "memo",
+      "title": "Scara 130 · 120 · 100 · 90",
+      "body": "<p>Gândește-te la drumuri ca la o scară, de la cel mai „sigur” la cel mai obișnuit:</p><ul><li><b>Autostrada</b> (fără intersecții, cu sensuri separate): cea mai mare, 130.</li><li><b>Expresul</b> e „o autostradă mai mică”: cu 10 mai puțin, 120.</li><li><b>Drumul E</b> e o rută importantă, dar fără sensuri separate: 100.</li><li><b>Restul</b>: 90.</li></ul><p>Pentru începător scazi 20 la fiecare treaptă.</p>",
+      "visual": { "signs": ["inf-autostrada", "inf-drum-expres", "inf-intrare-localitate"] }
+    },
+    {
+      "kind": "rule",
+      "title": "Permis de sub un an: minus 20",
+      "body": "<p>Dacă ai permisul de <b>mai puțin de un an</b>, viteza ta maximă <b>în afara localităților</b> e cu <b>20 km/h mai mică</b> decât cea pentru categoria ta. Același lucru e valabil pentru cei care învață să conducă.</p><p>Pentru categoria B:</p><ul><li>autostradă: <b>110 km/h</b>;</li><li>drum expres: <b>100 km/h</b>;</li><li>drum E: <b>80 km/h</b>;</li><li>alte drumuri: <b>70 km/h</b>.</li></ul>",
+      "src": "OUG 195/2002 art. 50 alin. (4)",
+      "visual": { "table": [["Tip de drum", "Permis > 1 an", "Permis < 1 an"], ["Autostradă", "130", "110"], ["Drum expres", "120", "100"], ["Drum E", "100", "80"], ["Alte drumuri", "90", "70"], ["Localitate", "50", "50"]] }
+    },
+    {
+      "kind": "trap",
+      "title": "Începătorul în localitate: tot 50",
+      "body": "<p>Reducerea de 20 km/h se aplică <b>doar în afara localităților</b>.</p><p>În localitate, șoferul începător are aceeași limită ca toată lumea: <b>50 km/h</b>, nu 30.</p><p>La examen apare des varianta „30 km/h în localitate pentru începători”. E o capcană: 30 vine din altă regulă, cea a situațiilor periculoase.</p>",
+      "src": "OUG 195/2002 art. 49 alin. (1), art. 50 alin. (4)"
+    },
+    {
+      "kind": "rule",
+      "title": "Cu remorcă: minus 10",
+      "body": "<p>Un autovehicul care tractează o <b>remorcă</b> are, în afara localităților, o limită cu <b>10 km/h mai mică</b> decât cea a categoriei vehiculului trăgător.</p><p>Pentru un autoturism cu remorcă (șofer cu permis de peste un an): autostradă 120, drum expres 110, drum E 90, alte drumuri 80.</p><p>În localitate rămâne 50.</p>",
+      "src": "OUG 195/2002 art. 50 alin. (2)"
+    },
+    {
+      "kind": "rule",
+      "title": "30 în localitate, 50 în afară (I)",
+      "body": "<p>Există situații în care nu ai voie să depășești <b>30 km/h în localitate</b> și <b>50 km/h în afara ei</b>, chiar dacă limita drumului e mai mare:</p><ul><li>în <b>intersecțiile nedirijate</b> (fără semafor sau polițist);</li><li>în <b>curbe deosebit de periculoase</b>, semnalizate, sau unde vizibilitatea e sub <b>50 m</b>;</li><li>pe lângă <b>grupuri organizate, coloane militare sau cortegii</b>, pe drumuri cu o bandă pe sens;</li><li>pe lângă <b>animale</b> conduse pe carosabil sau pe acostament;</li><li>pe drum cu <b>gheață, polei, zăpadă bătătorită, mâzgă</b> sau piatră cubică udă.</li></ul>",
+      "src": "Regulament art. 123 lit. a)-e)"
+    },
+    {
+      "kind": "rule",
+      "title": "30 în localitate, 50 în afară (II)",
+      "body": "<p>Lista continuă:</p><ul><li>pe drumuri cu <b>denivelări</b> semnalizate;</li><li>în zona indicatorului <b>„Copii”</b>, între <b>7:00 și 22:00</b>, și în zona indicatorului „Accident”;</li><li>la <b>trecerile de pietoni nesemaforizate</b>, pe drumuri cu o bandă pe sens, când pietonii de pe trotuar vor să traverseze;</li><li>la <b>schimbarea direcției prin viraje</b>;</li><li>când vizibilitatea e sub <b>100 m</b> din cauza <b>ceții, ploii torențiale sau ninsorii abundente</b>.</li></ul>",
+      "src": "Regulament art. 123 lit. f)-j)",
+      "visual": { "signs": ["av-copii", "av-denivelare", "av-drum-alunecos"] }
+    },
+    {
+      "kind": "memo",
+      "title": "Logica listei: nu văd, nu frânez, oameni",
+      "body": "<p>Nu trebuie să tocești cele zece situații. Aproape toate intră în trei grupe:</p><ul><li><b>Nu văd bine</b>: curbe periculoase, vizibilitate sub 50 m sau sub 100 m pe ceață, ploaie, ninsoare.</li><li><b>Nu pot frâna bine</b>: gheață, polei, zăpadă, piatră udă, denivelări.</li><li><b>Pot apărea oameni sau animale</b>: copii, pietoni, coloane, animale, intersecții nedirijate, viraje.</li></ul><p>Și numerele sunt mereu aceleași: <b>30 în localitate, 50 în afară</b>.</p>"
+    },
+    {
+      "kind": "trap",
+      "title": "„Copii”: doar între 7 și 22",
+      "body": "<p>Limita de 30/50 din zona indicatorului <b>„Copii”</b> se aplică <b>între orele 7:00 și 22:00</b>, când copiii sunt de obicei pe drum, spre școală sau de la joacă.</p><p>Noaptea, după ora 22:00, această limită specială nu mai e obligatorie. Rămâne limita obișnuită a drumului, plus prudența ta.</p><p>La examen, verifică întâi <b>ora</b> din întrebare.</p>",
+      "src": "Regulament art. 123 lit. g)",
+      "visual": { "sign": "av-copii" }
+    },
+    {
+      "kind": "example",
+      "title": "Ceață pe autostradă",
+      "body": "<p>Mergi pe autostradă cu 120 km/h. Intri într-o zonă cu ceață densă și vezi doar vreo 80 de metri în față.</p><p>Vizibilitatea e sub 100 m din cauza ceții, iar autostrada e în afara localității. Deci viteza ta maximă devine <b>50 km/h</b>.</p><p>Pare foarte încet pentru o autostradă. Dar la 50 km/h poți opri în spațiul pe care chiar îl vezi.</p>",
+      "src": "Regulament art. 123 lit. j)"
+    },
+    {
+      "kind": "rule",
+      "title": "Zona rezidențială și zona pietonală",
+      "body": "<ul><li>În <b>zona rezidențială</b>, semnalizată ca atare, viteza maximă e <b>20 km/h</b>. Pietonii pot folosi toată lățimea drumului, iar copiii se pot juca acolo. Nu îi stânjenești și oprești dacă e nevoie.</li><li>În <b>zona pietonală</b> intră doar riverani și anumite servicii, cu cel mult <b>5 km/h</b>, adică la pas.</li></ul>",
+      "src": "Regulament art. 158, art. 159",
+      "visual": { "signs": ["inf-zona-rezidentiala", "inf-zona-pietonala"] }
+    },
+    {
+      "kind": "rule",
+      "title": "La trecerea cu calea ferată",
+      "body": "<p>Când treci calea ferată la nivel, circuli <b>cu viteză redusă</b> și te asiguri <b>în ambele părți</b> că nu vine un tren.</p><p>Legea nu dă aici un număr fix. Viteza trebuie să-ți permită să vezi, să auzi și, la nevoie, să oprești înainte de șine.</p><p>Bariera ridicată nu e un motiv să accelerezi.</p>",
+      "src": "Regulament art. 136 alin. (1)",
+      "visual": { "signs": ["av-calea-ferata-bariere", "av-cruce-sf-andrei"] }
+    },
+    {
+      "kind": "rule",
+      "title": "Viteza minimă",
+      "body": "<p>Și prea încet poate fi periculos, pentru că îi obligă pe ceilalți la depășiri.</p><ul><li>Indicatorul <b>„Viteză minimă obligatorie”</b> (cerc albastru) îți cere să mergi <b>cel puțin</b> cu viteza scrisă, dacă nu ai un motiv întemeiat.</li><li>Pe <b>autostradă și drum expres</b> nu au voie vehiculele care, prin construcție sau din alte cauze, <b>nu pot depăși 50 km/h</b>.</li><li>Nu ai voie să <b>reduci brusc viteza</b> sau să oprești pe neașteptate fără motiv.</li></ul>",
+      "src": "OUG 195/2002 art. 74 alin. (1), art. 99; Regulament art. 122",
+      "visual": { "sign": "ob-viteza-minima-30" }
+    },
+    {
+      "kind": "idea",
+      "title": "Limita e un maxim, nu o țintă",
+      "body": "<p>Legea îți cere să respecți limitele <b>și</b> să adaptezi viteza la condițiile de drum, ca să poți face orice manevră în siguranță.</p><p>Deci 90 km/h pe un drum județean e un plafon, nu o recomandare. Pe ploaie, noaptea, pe drum îngust sau cu mulți pietoni, viteza potrivită poate fi mult mai mică.</p><p>Întrebarea bună e: „Pot opri la timp în ce văd în fața mea?”</p>",
+      "src": "OUG 195/2002 art. 48"
+    },
+    {
+      "kind": "idea",
+      "title": "Distanța de oprire, pe înțeles",
+      "body": "<p>Până oprești, mașina parcurge două bucăți de drum:</p><ol><li><b>Distanța de reacție</b>: cât mergi până apeși frâna (cam o secundă). La 50 km/h, asta înseamnă vreo 14 m.</li><li><b>Distanța de frânare</b>: cât mai merge mașina după ce ai apăsat frâna.</li></ol><p>Ca ordin de mărime, pe asfalt uscat: la 50 km/h ai nevoie de <b>aproximativ 25-30 m</b>. La 100 km/h, de <b>aproximativ 80 m</b>. Pe drum ud sau cu gheață, mult mai mult.</p>"
+    },
+    {
+      "kind": "example",
+      "title": "Începător pe un drum E",
+      "body": "<p>Ai permisul de opt luni. Ieși din oraș pe un drum național european (E), fără alte indicatoare de viteză.</p><ul><li>În localitate: <b>50 km/h</b>, ca toată lumea.</li><li>După indicatorul de ieșire din localitate: 100 − 20 = <b>80 km/h</b>.</li><li>Ajungi la o intersecție nedirijată: <b>50 km/h</b> (situație din lista specială).</li></ul><p>Când ai două limite, o respecți pe <b>cea mai mică</b>.</p>",
+      "src": "OUG 195/2002 art. 50 alin. (4); Regulament art. 123 lit. a)"
+    }
+  ],
+  "summary": [
+    "În localitate viteza maximă este 50 km/h, iar administratorul o poate ridica prin indicatoare până la cel mult 80 km/h pentru categoriile A și B.",
+    "În afara localității, pentru categoria B: 130 pe autostradă, 120 pe drum expres, 100 pe drum E și 90 pe celelalte drumuri.",
+    "Cu permis de sub un an scazi 20 km/h în afara localității: 110, 100, 80 și 70, iar în localitate rămâi la 50.",
+    "Cu remorcă scazi 10 km/h în afara localității.",
+    "În situațiile periculoase din Regulament (art. 123) nu depășești 30 km/h în localitate și 50 km/h în afara ei.",
+    "Limita din zona indicatorului „Copii” se aplică între orele 7:00 și 22:00.",
+    "În zona rezidențială mergi cu cel mult 20 km/h, iar în zona pietonală cu cel mult 5 km/h.",
+    "La trecerea cu calea ferată reduci viteza și te asiguri în ambele părți.",
+    "Nu frânezi brusc fără motiv, iar pe autostradă nu au acces vehiculele care nu pot depăși 50 km/h.",
+    "Limita legală e un maxim: adaptezi viteza ca să poți opri în spațiul pe care îl vezi."
+  ],
+  "questions": [
+    {
+      "q": "Care este viteza maximă admisă pentru un autoturism în localitate, dacă nu există indicatoare care să stabilească altfel?",
+      "o": ["60 km/h", "50 km/h", "70 km/h"],
+      "c": [1],
+      "x": "În localitate, regula generală e 50 km/h. Valorile mai mari apar doar unde sunt indicatoare.",
+      "src": "OUG 195/2002 art. 49 alin. (1)",
+      "visual": { "sign": "inf-intrare-localitate" }
+    },
+    {
+      "q": "Aveți permis de conducere de categoria B de cinci ani. Care este viteza maximă admisă pe autostradă?",
+      "o": ["130 km/h", "120 km/h", "110 km/h"],
+      "c": [0],
+      "x": "Pe autostradă, pentru categoria B, limita e 130 km/h. 120 e pentru drumul expres, iar 110 pentru începători.",
+      "src": "OUG 195/2002 art. 50 alin. (1) lit. a)",
+      "visual": { "sign": "inf-autostrada" }
+    },
+    {
+      "q": "Ce viteze maxime sunt admise pentru autoturisme, în afara localității, dacă șoferul are permis de peste un an?",
+      "o": ["100 km/h pe drumurile expres", "120 km/h pe drumurile expres", "100 km/h pe drumurile naționale europene (E)"],
+      "c": [1, 2],
+      "x": "Drumul expres are 120 km/h, iar drumul E are 100 km/h. Capcana e să le inversezi.",
+      "src": "OUG 195/2002 art. 49 alin. (4)"
+    },
+    {
+      "q": "Care este viteza maximă admisă pentru un autoturism pe un drum comunal, în afara localității, condus de un șofer cu permis de trei ani?",
+      "o": ["80 km/h", "100 km/h", "90 km/h"],
+      "c": [2],
+      "x": "Drumurile care nu sunt autostrăzi, expres sau E intră la „celelalte drumuri”, cu 90 km/h.",
+      "src": "OUG 195/2002 art. 49 alin. (4) lit. d)"
+    },
+    {
+      "q": "Aveți permisul de conducere de șase luni. Cu ce viteză maximă aveți voie să circulați pe autostradă?",
+      "o": ["130 km/h", "110 km/h", "100 km/h"],
+      "c": [1],
+      "x": "Cu permis de sub un an scazi 20 km/h din limita categoriei: 130 − 20 = 110 km/h.",
+      "src": "OUG 195/2002 art. 50 alin. (4)"
+    },
+    {
+      "q": "Un conducător cu permis de categoria B obținut acum trei luni circulă cu un autoturism. Ce limite de viteză trebuie să respecte?",
+      "o": ["50 km/h în localitate", "30 km/h în localitate", "80 km/h pe drumurile naționale europene (E)"],
+      "c": [0, 2],
+      "x": "Reducerea de 20 km/h e doar în afara localităților, deci pe drum E are 80. În localitate rămâne 50, ca toată lumea, nu 30.",
+      "src": "OUG 195/2002 art. 49 alin. (1), art. 50 alin. (4)"
+    },
+    {
+      "q": "Aveți permisul de zece luni. Care este viteza maximă admisă pe un drum județean, în afara localității?",
+      "o": ["70 km/h", "90 km/h", "80 km/h"],
+      "c": [0],
+      "x": "Drumul județean e la „celelalte drumuri”, cu 90 km/h. Începătorul scade 20, deci 70 km/h.",
+      "src": "OUG 195/2002 art. 50 alin. (4)"
+    },
+    {
+      "q": "Pe anumite sectoare de drum din localitate, administratorul drumului, cu avizul poliției rutiere, poate stabili:",
+      "o": ["Limite de viteză mai mari pentru categoriile A și B, dar nu peste 80 km/h", "Limite de viteză de până la 100 km/h pe bulevardele largi", "Limite de viteză mai mici, dar nu sub 30 km/h pentru autovehicule"],
+      "c": [0, 2],
+      "x": "Plafonul de sus în localitate e 80 km/h, iar cel de jos e 30 km/h pentru autovehicule. 100 km/h nu e permis în localitate.",
+      "src": "OUG 195/2002 art. 49 alin. (2)-(3)"
+    },
+    {
+      "q": "Conduceți un autoturism care tractează o remorcă și aveți permis de peste un an. Care este viteza maximă admisă pe autostradă?",
+      "o": ["130 km/h", "110 km/h", "120 km/h"],
+      "c": [2],
+      "x": "Cu remorcă scazi 10 km/h din limita categoriei: 130 − 10 = 120 km/h. 110 ar fi pentru un începător fără remorcă.",
+      "src": "OUG 195/2002 art. 50 alin. (2)"
+    },
+    {
+      "q": "În care dintre situațiile de mai jos nu aveți voie să depășiți 30 km/h în localitate?",
+      "o": ["La trecerea prin intersecțiile cu circulație nedirijată", "Pe un drum cu prioritate, în aliniament, cu vizibilitate bună", "La schimbarea direcției de mers prin viraje"],
+      "c": [0, 2],
+      "x": "Intersecțiile nedirijate și virajele sunt pe lista specială. Un drum drept, cu prioritate și vizibilitate bună nu e.",
+      "src": "Regulament art. 123 lit. a), i)"
+    },
+    {
+      "q": "Circulați în localitate, la ora 14:00, în zona de acțiune a indicatorului din imagine. Ce viteză maximă aveți voie să aveți?",
+      "o": ["30 km/h", "50 km/h", "20 km/h"],
+      "c": [0],
+      "x": "Indicatorul „Copii” impune maximum 30 km/h în localitate între orele 7:00 și 22:00. La 14:00 limita se aplică.",
+      "src": "Regulament art. 123 lit. g)",
+      "visual": { "sign": "av-copii" }
+    },
+    {
+      "q": "Circulați în localitate, la ora 23:00, în zona de acțiune a indicatorului „Copii”. Nu există alte indicatoare. Care este viteza maximă admisă?",
+      "o": ["30 km/h", "20 km/h", "50 km/h"],
+      "c": [2],
+      "x": "Limita specială din zona „Copii” se aplică doar între 7:00 și 22:00. La 23:00 rămâne limita obișnuită din localitate, 50 km/h.",
+      "src": "Regulament art. 123 lit. g); OUG 195/2002 art. 49 alin. (1)",
+      "visual": { "sign": "av-copii" }
+    },
+    {
+      "q": "Circulați pe autostradă și intrați într-o zonă cu ceață, în care vizibilitatea scade sub 100 m. Care este viteza maximă admisă?",
+      "o": ["50 km/h", "90 km/h", "30 km/h"],
+      "c": [0],
+      "x": "Vizibilitatea sub 100 m din cauza ceții e o situație din lista specială. Autostrada e în afara localității, deci limita e 50 km/h.",
+      "src": "Regulament art. 123 lit. j)"
+    },
+    {
+      "q": "Partea carosabilă este acoperită cu polei. Ce viteze maxime trebuie să respectați?",
+      "o": ["30 km/h în localitate", "70 km/h în afara localității", "50 km/h în afara localității"],
+      "c": [0, 2],
+      "x": "Poleiul, gheața, zăpada bătătorită, mâzga și piatra cubică udă înseamnă 30 în localitate și 50 în afara ei.",
+      "src": "Regulament art. 123 lit. e)",
+      "visual": { "sign": "av-drum-alunecos" }
+    },
+    {
+      "q": "În afara localității, în care dintre situațiile de mai jos nu aveți voie să depășiți 50 km/h?",
+      "o": ["La trecerea pe lângă animale conduse pe acostament", "La trecerea pe lângă o coloană militară, pe un drum cu o singură bandă pe sens", "Pe sectoarele de drum cu denivelări, semnalizate ca atare"],
+      "c": [0, 1, 2],
+      "x": "Toate trei sunt pe lista specială din Regulament: animale, coloane militare și denivelări semnalizate. În afara localității, plafonul e 50 km/h.",
+      "src": "Regulament art. 123 lit. c), d), f)"
+    },
+    {
+      "q": "Care dintre afirmațiile de mai jos sunt corecte?",
+      "o": ["În zona rezidențială, viteza maximă admisă este de 20 km/h", "În zona pietonală, vehiculele permise circulă cu cel mult 5 km/h", "În zona rezidențială, pietonii nu au voie să folosească partea carosabilă"],
+      "c": [0, 1],
+      "x": "Zona rezidențială are 20 km/h, iar zona pietonală 5 km/h. Tocmai în zona rezidențială pietonii pot folosi toată lățimea drumului.",
+      "src": "Regulament art. 158, art. 159",
+      "visual": { "signs": ["inf-zona-rezidentiala", "inf-zona-pietonala"] }
+    },
+    {
+      "q": "Ce obligație vă impune indicatorul din imagine?",
+      "o": ["Să nu depășiți viteza de 30 km/h", "Să circulați cu o viteză de cel puțin 30 km/h, dacă nu aveți un motiv întemeiat să mergeți mai încet", "Să circulați cu cel puțin 30 km/h numai pe banda 1"],
+      "c": [1],
+      "x": "Cercul albastru e un indicator de obligare: îți cere o viteză minimă. Limita maximă de 30 ar fi pe cerc alb cu chenar roșu.",
+      "src": "OUG 195/2002 art. 99",
+      "visual": { "sign": "ob-viteza-minima-30" }
+    },
+    {
+      "q": "Accesul pe autostradă este interzis vehiculelor care, prin construcție sau din alte cauze, nu pot depăși:",
+      "o": ["30 km/h", "70 km/h", "50 km/h"],
+      "c": [2],
+      "x": "Pragul e 50 km/h. Un vehicul prea lent ar fi un pericol pe un drum unde ceilalți merg cu 130.",
+      "src": "OUG 195/2002 art. 74 alin. (1)"
+    },
+    {
+      "q": "Ce înseamnă să vă adaptați viteza la condițiile de drum?",
+      "o": ["Să circulați cu o viteză care vă permite să efectuați orice manevră în condiții de siguranță", "Să circulați mereu cu viteza maximă admisă, ca să nu încurcați traficul", "Să mergeți mai încet decât limita legală atunci când drumul, vremea sau traficul o cer"],
+      "c": [0, 2],
+      "x": "Limita legală e un maxim, nu o obligație. Viteza potrivită e cea cu care poți face orice manevră în siguranță.",
+      "src": "OUG 195/2002 art. 48"
+    },
+    {
+      "q": "Care dintre afirmațiile despre distanța de oprire sunt corecte?",
+      "o": ["Este formată din distanța parcursă până reacționați și distanța de frânare", "Dacă viteza se dublează, distanța de frânare crește de aproximativ patru ori", "Pe drum ud, distanța de frânare devine mai scurtă"],
+      "c": [0, 1],
+      "x": "Oprirea are două părți: reacția și frânarea. Frânarea crește cu pătratul vitezei, iar pe drum ud se lungește, nu se scurtează.",
+      "src": "OUG 195/2002 art. 48"
+    },
+    {
+      "q": "Aveți voie să reduceți brusc viteza sau să opriți pe neașteptate?",
+      "o": ["Da, dacă vehiculul din spate circulă prea aproape", "Nu, dacă nu există un motiv întemeiat", "Da, oricând doriți să verificați frânele"],
+      "c": [1],
+      "x": "Frânarea bruscă fără motiv e interzisă. Dacă cineva vine prea aproape, nu-l „pedepsești” cu frâna: îi lași spațiu să depășească.",
+      "src": "Regulament art. 122"
+    },
+    {
+      "q": "Cum procedați când vă apropiați de o trecere la nivel cu calea ferată?",
+      "o": ["Circulați cu viteză redusă", "Dacă bariera este ridicată, accelerați ca să eliberați repede trecerea", "Vă asigurați în ambele părți că nu se apropie un vehicul feroviar"],
+      "c": [0, 2],
+      "x": "La calea ferată reduci viteza și te uiți în ambele părți. Bariera ridicată nu e un motiv să grăbești trecerea.",
+      "src": "Regulament art. 136 alin. (1)",
+      "visual": { "sign": "av-calea-ferata-bariere" }
+    },
+    {
+      "q": "În afara localității, abordați o curbă deosebit de periculoasă, semnalizată ca atare. Care este viteza maximă admisă?",
+      "o": ["70 km/h", "50 km/h", "30 km/h"],
+      "c": [1],
+      "x": "Curbele deosebit de periculoase semnalizate sunt pe lista specială: 30 în localitate, 50 în afara ei.",
+      "src": "Regulament art. 123 lit. b)",
+      "visual": { "sign": "av-curbe-succesive" }
+    }
+  ],
+  "uncertain": [
+    "Brief-ul cerea lista situațiilor de reducere a vitezei din „art. 121 Regulament”. În textul actual al Regulamentului, art. 121 tratează respectarea limitelor și indicatoarele, iar lista situațiilor cu 30/50 km/h este la art. 123 (verificat pe legeaz.net și scoalarutiera.ro). Am citat art. 123.",
+    "Limitele de viteză (OUG art. 49-50: 50/80/30 în localitate; 130/120/100/90 pentru B; −20 km/h pentru începători doar în afara localităților; −10 km/h cu remorcă) sunt verificate pe euroavocatura.ro (versiunea 2024) și scoalarutiera.ro. Articolele de presă din 2025-2026 vorbesc doar despre proiecte (praguri de sancționare, acces A1/B1 pe autostradă), nu despre limite noi adoptate.",
+    "Viteza minimă: am citat OUG art. 99 pentru contravenția de a circula nejustificat cu cel puțin 10 km/h sub limita minimă obligatorie (văzut doar în fragmente pe e-juridic.manager.ro). Numărul nu apare în carduri, doar citarea.",
+    "Distanța de oprire (aprox. 14 m reacție la 50 km/h, 25-30 m total la 50 km/h, aprox. 80 m la 100 km/h pe uscat, frânare de 4 ori mai lungă la viteză dublă) vine din calcul fizic aproximativ, nu din lege. Întrebarea de quiz folosește doar faptele calitative.",
+    "Zona rezidențială 20 km/h și zona pietonală 5 km/h (Regulament art. 158-159) sunt verificate doar din scoalarutiera.ro.",
+    "Cardul „Uneori mai mult în oraș” folosește indicatorul in-viteza-70 ca exemplu pentru o limită ridicată în localitate."
+  ]
+}

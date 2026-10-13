@@ -5,6 +5,7 @@ signs = {}
 if os.path.exists(os.path.join(src, 'signs.json')):
     signs = json.load(open(os.path.join(src, 'signs.json'), encoding='utf-8'))
 ARMS = {'n', 's', 'e', 'w'}
+RING = {'rn','rs','re','rw'}
 LAYOUTS = {'cross', 't-north', 't-south', 't-east', 't-west', 'roundabout', 'straight'}
 TAGS = re.compile(r'</?([a-zA-Z0-9]+)')
 OK_TAGS = {'p', 'b', 'i', 'ul', 'ol', 'li', 'br', 'strong', 'em'}
@@ -17,7 +18,7 @@ def vis(v, where):
     if sc:
         if sc.get('layout') not in LAYOUTS: problems.append(f'{where}: bad layout {sc.get("layout")}')
         for ve in sc.get('vehicles', []):
-            if ve.get('arm') not in ARMS: problems.append(f'{where}: bad arm {ve}')
+            if ve.get('arm') not in ARMS | RING: problems.append(f'{where}: bad arm {ve}')
         for g in sc.get('signs', []): used.add(g.get('sign'))
 for p in sorted(glob.glob(os.path.join(src, 'ch*.json'))):
     raw = open(p, encoding='utf-8').read()

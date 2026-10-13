@@ -1,0 +1,720 @@
+{
+ "id": 8,
+ "title": "Manevre",
+ "tagline": "Depășești, oprești, parchezi, întorci, dai înapoi",
+ "minutes": 45,
+ "intro": "Orice manevră înseamnă că ieși din „ritmul” celorlalți: treci pe lângă cineva, te oprești sau schimbi sensul. De aceea legea spune exact unde poți face asta liniștit și unde nu. Capitolul are multe liste, dar ele se leagă între ele, așa că le vei învăța mai ușor decât pare.",
+ "cards": [
+  {
+   "kind": "idea",
+   "title": "Orice manevră începe cu un semnal",
+   "body": "<p>Ceilalți nu îți pot citi gândurile. Semnalizarea e felul în care le spui ce urmează să faci, ca să aibă timp să reacționeze.</p><p>Pentru orice manevră (depășire, oprire, plecare de pe loc, întoarcere, mers înapoi) semnalizezi <b>din timp</b> și te asiguri că nu pui pe nimeni în pericol. Semnalul rămâne pornit <b>pe toată durata manevrei</b>.</p><p>Luminile de direcție se pornesc cu cel puțin <b>50 m</b> înainte în localitate și <b>100 m</b> în afara localității.</p>",
+   "src": "OUG 195/2002 art. 54; Regulament art. 116",
+   "visual": {
+    "big": "50 m / 100 m",
+    "caption": "semnalizare: în localitate / în afara localității"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Ce este, de fapt, depășirea",
+   "body": "<p>Depășirea e manevra prin care treci <b>înaintea altui vehicul sau pe lângă un obstacol</b>, pe același sens, ieșind de pe banda sau din șirul în care erai.</p><ul><li>Și <b>ocolirea unei mașini oprite</b> sau a unui obstacol este depășire.</li><li>Pe un drum cu <b>două sau mai multe benzi pe sens</b>, dacă pe o bandă se merge mai repede decât pe alta, asta <b>nu</b> este depășire.</li></ul>",
+   "src": "OUG 195/2002 art. 45 alin. (1) și (4)"
+  },
+  {
+   "kind": "rule",
+   "title": "Înainte și în timpul depășirii",
+   "body": "<ol><li>Verifici că mașina din față sau cea din spate <b>nu a început deja</b> o manevră asemănătoare.</li><li>Dacă treci peste axa drumului, te asiguri că <b>nu vine nimeni din față</b> și că ai loc să revii.</li><li>Semnalizezi, păstrezi o <b>distanță laterală suficientă</b> față de cel depășit.</li><li>Semnalizezi și revii pe banda inițială doar când e sigur pentru cel depășit.</li></ol>",
+   "src": "OUG 195/2002 art. 45 alin. (2), (3); Regulament art. 118 alin. (1)",
+   "visual": {
+    "scene": {
+     "layout": "straight",
+     "main": null,
+     "vehicles": [
+      {
+       "id": "B",
+       "arm": "s",
+       "go": "straight",
+       "type": "truck"
+      },
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "straight",
+       "type": "car",
+       "you": true
+      },
+      {
+       "id": "C",
+       "arm": "n",
+       "go": "straight",
+       "type": "car"
+      }
+     ],
+     "caption": "Depășești pe B doar dacă C e suficient de departe."
+    }
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Pe stânga, cu două excepții",
+   "body": "<p>Regula: depășești <b>pe stânga</b>. Pe <b>dreapta</b> se depășesc doar:</p><ul><li>vehiculul al cărui șofer a <b>semnalizat stânga și s-a încadrat</b> corespunzător, dacă ai loc;</li><li><b>tramvaiul</b>.</li></ul><p>Tramvaiul <b>în mers</b> poate fi depășit și pe <b>stânga</b> când drumul e <b>cu sens unic</b> sau când între șina din dreapta și trotuar <b>nu e loc</b> suficient.</p>",
+   "src": "OUG 195/2002 art. 45 alin. (5), (6)",
+   "visual": {
+    "sign": "av-tramvai"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Tramvaiul oprit în stație",
+   "body": "<p>Intuiția: din tramvai coboară oameni, iar dacă stația nu are refugiu, ei pășesc direct pe carosabil.</p><ul><li><b>Stație fără refugiu</b>: nu depășești. Oprești <b>în spatele tramvaiului</b>, în ordinea sosirii, și pleci doar după ce <b>ușile s-au închis</b> și nu pui în pericol pietonii.</li><li><b>Stație cu refugiu</b>: poți trece pe dreapta, cu atenție.</li></ul>",
+   "src": "Regulament art. 107 alin. (4); art. 120 alin. (1) lit. g)",
+   "visual": {
+    "scene": {
+     "layout": "straight",
+     "main": null,
+     "tram": "ns",
+     "vehicles": [
+      {
+       "id": "T",
+       "arm": "s",
+       "go": "stop",
+       "type": "tram"
+      },
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "stop",
+       "type": "car",
+       "you": true
+      },
+      {
+       "id": "P",
+       "arm": "e",
+       "go": "straight",
+       "type": "pedestrian"
+      }
+     ],
+     "caption": "Fără refugiu: aștepți în spatele tramvaiului."
+    }
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Bicicleta și trotineta: loc generos",
+   "body": "<p>Un biciclist se poate dezechilibra oricând. De aceea legea cere spațiu clar, nu „la milimetru”.</p><p>Când depășești o <b>bicicletă</b> sau o <b>trotinetă electrică</b> cu un autovehicul (altul decât unul pe două roți):</p><ul><li>la <b>cel mult 50 km/h</b>: cel puțin <b>încalci</b> marcajul longitudinal (de separare a sensurilor sau a benzilor);</li><li>la <b>peste 50 km/h</b>: treci peste marcaj cu <b>cel puțin jumătate din lățimea</b> mașinii.</li></ul><p>Dacă marcajul e continuu, aștepți linia discontinuă.</p>",
+   "src": "Regulament art. 118 alin. (2)"
+  },
+  {
+   "kind": "rule",
+   "title": "Când ești tu cel depășit",
+   "body": "<p>Cel care e depășit are și el două obligații simple:</p><ul><li><b>nu mărește viteza</b> (o poate păstra sau reduce);</li><li>circulă <b>cât mai aproape de marginea din dreapta</b> a drumului sau a benzii.</li></ul><p>Gândește-te că îl ajuți pe celălalt să termine repede o manevră riscantă. Să accelerezi „din orgoliu” e și periculos, și interzis.</p>",
+   "src": "Regulament art. 119"
+  },
+  {
+   "kind": "rule",
+   "title": "Depășirea interzisă: locurile",
+   "body": "<ol><li>În <b>intersecții nedirijate</b>.</li><li>Lângă <b>vârful rampei</b>, cu vizibilitate sub <b>50 m</b>.</li><li>În <b>curbe</b> și oriunde vizibilitatea e sub <b>50 m</b>.</li><li>Pe <b>pasaje denivelate, poduri, sub poduri, în tuneluri</b>.</li><li>Pe <b>trecerile pentru pietoni</b> semnalizate.</li><li>Pe <b>trecerea la nivel cu calea ferată</b> și la mai puțin de <b>50 m înainte</b> de ea.</li><li>În dreptul <b>tramvaiului oprit</b> în stație fără refugiu.</li><li>În zona indicatorului <b>„Depășirea interzisă”</b>.</li></ol>",
+   "src": "Regulament art. 120 alin. (1) lit. a)-h)",
+   "visual": {
+    "sign": "in-depasirea-interzisa"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Depășirea interzisă: situațiile",
+   "body": "<p>Mai e interzisă depășirea și atunci când:</p><ul><li>ar trebui să treci peste <b>marcajul continuu</b> (simplu sau dublu) care desparte sensurile, ajungând chiar și parțial pe contrasens;</li><li>cel care vine din față ar fi nevoit să facă <b>manevre de evitare</b>;</li><li>s-a format o <b>coloană care așteaptă</b> (la semafor, la calea ferată) și depășirea te-ar duce pe contrasens.</li></ul><p>Separat: <b>coloana oficială</b> nu se depășește, nu te intercalezi și nu te atașezi la ea.</p>",
+   "src": "Regulament art. 120 alin. (1) lit. i)-k), alin. (2)"
+  },
+  {
+   "kind": "trap",
+   "title": "Pe pod poți depăși… o bicicletă",
+   "body": "<p>Pe poduri, sub poduri, pe pasaje și în tuneluri, depășirea e interzisă. Dar există o excepție pe care examenul o iubește.</p><p>Poți depăși acolo <b>vehicule cu tracțiune animală, motociclete fără ataș, mopede, biciclete și trotinete electrice</b>, dacă:</p><ul><li>vizibilitatea e asigurată pe <b>mai mult de 20 m</b>;</li><li>drumul are <b>cel puțin 7 m</b> lățime.</li></ul><p>Un autoturism sau un camion nu intră în excepție.</p>",
+   "src": "Regulament art. 120 alin. (1) lit. d)",
+   "visual": {
+    "big": "20 m / 7 m",
+    "caption": "vizibilitate peste 20 m, drum de cel puțin 7 m"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Oprire, staționare, parcare",
+   "body": "<p>Diferența ține de <b>durată</b> și de <b>loc</b>:</p><ul><li><b>Oprirea</b>: imobilizarea voluntară pe drumul public pentru <b>cel mult 5 minute</b>.</li><li><b>Staționarea</b>: imobilizarea care durează <b>mai mult de 5 minute</b>.</li><li><b>Parcarea</b>: staționarea în <b>spații special amenajate</b> sau stabilite și semnalizate.</li></ul><p>Orice staționare începe ca o oprire. Regulile din capitol privesc oprirea și staționarea <b>voluntară</b>, nu pe cea impusă de trafic.</p>",
+   "src": "OUG 195/2002 art. 63 alin. (1), (4)",
+   "visual": {
+    "table": [
+     [
+      "Ce",
+      "Cât / unde"
+     ],
+     [
+      "Oprire",
+      "cel mult 5 minute"
+     ],
+     [
+      "Staționare",
+      "peste 5 minute"
+     ],
+     [
+      "Parcare",
+      "staționare în loc amenajat"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "trap",
+   "title": "Ce nu se consideră oprire",
+   "body": "<p>Două situații <b>nu</b> se consideră oprire, deci nu intră sub interdicții:</p><ul><li>imobilizarea cât <b>urcă sau coboară persoane</b>, dacă nu se perturbă circulația;</li><li>imobilizarea unui vehicul de <b>cel mult 3,5 t</b> care <b>livrează alimente</b> la unități comerciale.</li></ul><p>Atenție: dacă te oprești să citești harta, chiar și 2 minute, asta este oprire.</p>",
+   "src": "OUG 195/2002 art. 63 alin. (2)"
+  },
+  {
+   "kind": "rule",
+   "title": "Cum te așezi când oprești",
+   "body": "<ul><li>Pe carosabil: <b>lângă marginea din dreapta, paralel</b> cu ea, <b>pe un singur rând</b>, dacă alt semnal nu arată altfel. Motocicletele fără ataș, mopedele și bicicletele pot sta câte două.</li><li><b>În localitate, pe drum cu sens unic</b>: poți opri și <b>pe stânga</b>, dacă rămâne liberă cel puțin o bandă.</li><li><b>În afara localității</b>: oprești <b>în afara carosabilului</b>; dacă nu se poate, cât mai aproape de marginea dreaptă, paralel cu axa.</li></ul>",
+   "src": "OUG 195/2002 art. 63 alin. (5); Regulament art. 141 alin. (4), (5)"
+  },
+  {
+   "kind": "rule",
+   "title": "Când cobori din mașină",
+   "body": "<p>Când lași vehiculul imobilizat pe drum:</p><ul><li>tragi <b>frâna de ajutor</b>;</li><li><b>oprești motorul</b>;</li><li>cuplezi o <b>treaptă inferioară</b> (la cutia automată, <b>P</b>).</li></ul><p>Dacă rămâi imobilizat involuntar <b>în pantă sau rampă</b>, <b>bracezi roțile</b> (le întorci spre bordură). Și încă ceva: tu și pasagerii <b>nu deschideți ușile</b> și nu coborâți fără să vă asigurați că nu creați un pericol.</p>",
+   "src": "Regulament art. 141 alin. (1), (2); art. 145"
+  },
+  {
+   "kind": "rule",
+   "title": "Oprirea interzisă: locurile cu distanțe",
+   "body": "<p>Câteva locuri au o „zonă de protecție” în jurul lor, pentru că acolo apar brusc oameni sau trenuri și toți trebuie să vadă bine.</p><p>Oprirea voluntară e interzisă <b>pe locul respectiv și în zona din tabel</b>. La calea ferată, trecerea pentru pietoni și stație, distanța se măsoară <b>înainte și după</b>. La intersecție contează distanța <b>de la colț</b>, atunci când nu există marcaj continuu de preselecție.</p><p>Truc: <b>trenul are 50, pietonii și stațiile au 25</b>.</p>",
+   "src": "Regulament art. 142 lit. b), d), e), f), g), l)",
+   "visual": {
+    "table": [
+     [
+      "Locul",
+      "Interzis"
+     ],
+     [
+      "Trecere cale ferată",
+      "pe ea + 50 m înainte și după"
+     ],
+     [
+      "Trecere pietoni",
+      "pe ea + 25 m înainte și după"
+     ],
+     [
+      "Stație transport public",
+      "în stație + 25 m înainte și după"
+     ],
+     [
+      "Intersecție (fără marcaj)",
+      "în ea + sub 25 m de colț"
+     ],
+     [
+      "Curbă / loc fără vizibilitate",
+      "vizibilitate sub 50 m"
+     ],
+     [
+      "Platformă tramvai / CF industrială",
+      "sub 50 m, dacă stânjenește"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Oprirea interzisă: restul locurilor",
+   "body": "<ul><li>În zona indicatorului <b>„Oprirea interzisă”</b> (de regulă, până la prima intersecție).</li><li>Pe <b>poduri</b>, pe și sub <b>pasaje denivelate</b>, pe <b>viaducte</b>.</li><li>Lângă un vehicul deja oprit, dacă se blochează circulația din ambele sensuri.</li><li>Unde <b>acoperi un indicator sau un semafor</b>.</li><li>Pe sectoarele cu <b>„Drum îngustat”</b> sau cu indicatoarele de <b>prioritate față de sens invers</b>.</li><li>Pe <b>piste</b> pentru pietoni sau biciclete și pe benzile rezervate.</li><li>Pe carosabilul <b>autostrăzilor, drumurilor expres și drumurilor europene (E)</b>.</li><li>Pe <b>trotuar</b>, dacă nu e amenajat pentru asta.</li><li>Oriunde <b>depășirea e interzisă</b>.</li></ul>",
+   "src": "Regulament art. 142 lit. a), c), h)-k), m)-p)",
+   "visual": {
+    "signs": [
+     "in-oprirea-interzisa",
+     "av-drum-ingustat",
+     "pr-prioritate-sens-invers"
+    ]
+   }
+  },
+  {
+   "kind": "memo",
+   "title": "Lanțul interdicțiilor",
+   "body": "<p>Ține minte un lanț care merge <b>doar într-o direcție</b>:</p><p><b>Depășire interzisă → oprire interzisă → staționare interzisă.</b></p><ul><li>Unde nu ai voie să depășești, nu ai voie nici să oprești.</li><li>Unde nu ai voie să oprești, nu ai voie nici să staționezi.</li></ul><p>Invers <b>nu</b> merge: sub indicatorul „Staționarea interzisă” poți opri (până la 5 minute). Iar unde e interzisă staționarea, poți întoarce.</p>",
+   "src": "Regulament art. 142 lit. p); art. 143 lit. a)",
+   "visual": {
+    "signs": [
+     "in-depasirea-interzisa",
+     "in-oprirea-interzisa",
+     "in-stationarea-interzisa"
+    ]
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Staționarea interzisă: locuri în plus",
+   "body": "<p>Pe lângă toate locurile unde e interzisă oprirea, staționarea voluntară mai e interzisă:</p><ul><li>în zona indicatorului <b>„Staționarea interzisă”</b> sau a marcajului care o interzice;</li><li>pe drumuri publice <b>mai înguste de 6 m</b>;</li><li>în <b>dreptul căilor de acces</b> la proprietăți (porți, garaje);</li><li>în <b>pante și rampe</b>;</li><li>la „Staționare alternantă”, în ziua nepermisă, sau peste timpul permis într-o zonă cu durată limitată.</li></ul><p>Mașina staționată neregulamentar poate fi <b>ridicată</b>, pe costul deținătorului.</p>",
+   "src": "Regulament art. 143; OUG 195/2002 art. 64",
+   "visual": {
+    "sign": "in-stationarea-interzisa"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Parcarea: lateral, perpendicular, oblic",
+   "body": "<p>Fără marcaje, parchezi <b>lateral</b>: paralel cu marginea din dreapta, pe un singur rând. Cu marcaje, respecți desenul lor: <b>lateral</b>, <b>perpendicular</b> sau <b>oblic</b> față de axa drumului.</p><p><b>Pe trotuar</b> poți parca doar unde e amenajat și semnalizat. Atunci trebuie să rămână liber pentru pietoni un culoar de <b>cel puțin 1 m</b>. Astfel de locuri nu se amenajează la mai puțin de <b>10 m</b> de intersecții, stații sau treceri pentru pietoni.</p>",
+   "src": "OUG 195/2002 art. 63 alin. (5), art. 72 alin. (7); Regulament art. 144",
+   "visual": {
+    "sign": "inf-parcare"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Întoarcerea: cum o faci",
+   "body": "<p>Întoarcerea înseamnă să treci pe celălalt sens al <b>aceluiași drum</b>. O poți face dintr-un singur viraj sau prin manevre înainte și înapoi.</p><p>Înainte de ea, <b>semnalizezi</b> și te asiguri că <b>din față, din spate și din lateral</b> nu vine, în acel moment, niciun vehicul.</p><p>E o manevră lentă, care taie drumul tuturor. De aceea are nevoie de un moment complet liber.</p>",
+   "src": "Regulament art. 125",
+   "visual": {
+    "scene": {
+     "layout": "straight",
+     "main": null,
+     "vehicles": [
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "uturn",
+       "type": "car",
+       "you": true
+      }
+     ],
+     "caption": "Întorci doar când drumul e liber în toate direcțiile."
+    }
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Unde e interzisă întoarcerea",
+   "body": "<ul><li>Unde e interzisă <b>oprirea voluntară</b> (excepție: intersecțiile, care au regulile lor).</li><li>În intersecțiile unde e <b>interzis virajul la stânga</b> sau unde ar trebui să manevrezi înainte-înapoi.</li><li>Unde <b>soliditatea drumului</b> nu permite.</li><li>Pe drumurile <b>cu sens unic</b>.</li><li>Pe <b>marcajul trecerii pentru pietoni</b>.</li><li>Unde e indicatorul <b>„Întoarcerea interzisă”</b>.</li></ul>",
+   "src": "Regulament art. 126",
+   "visual": {
+    "sign": "in-intoarcerea-interzisa"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Mersul înapoi",
+   "body": "<p>Mersul înapoi e <b>interzis</b>:</p><ul><li>unde e interzisă <b>întoarcerea</b>, <b>cu excepția drumurilor cu sens unic</b>;</li><li>pe o distanță <b>mai mare de 50 m</b>;</li><li>la <b>ieșirea de pe proprietăți</b> (curte, garaj) în drumul public.</li></ul><p>Dacă nu vezi bine în spate, dai înapoi doar <b>dirijat de cel puțin o persoană</b> din afara mașinii, care răspunde de siguranța manevrei. Manevra se semnalizează cu <b>lumina de mers înapoi</b>.</p>",
+   "src": "Regulament art. 128",
+   "visual": {
+    "big": "50 m",
+    "caption": "distanța maximă cu spatele"
+   }
+  }
+ ],
+ "summary": [
+  "Orice manevră se semnalizează din timp: cu cel puțin 50 m înainte în localitate și 100 m în afara ei.",
+  "Depășirea se face pe stânga; pe dreapta depășești doar tramvaiul și vehiculul care s-a încadrat la stânga.",
+  "Tramvaiul oprit în stație fără refugiu nu se depășește: aștepți în spatele lui până se închid ușile.",
+  "Bicicleta și trotineta electrică se depășesc trecând peste marcaj, cu cel puțin jumătate din lățimea mașinii peste 50 km/h.",
+  "Cel depășit nu accelerează și se ține cât mai la dreapta.",
+  "Oprirea durează cel mult 5 minute; staționarea, mai mult; parcarea e staționarea în loc amenajat.",
+  "Oprirea e interzisă la calea ferată (50 m înainte și după), la trecerea pentru pietoni și la stații (25 m înainte și după) și la sub 25 m de colțul intersecției.",
+  "Unde depășirea e interzisă, e interzisă și oprirea; unde oprirea e interzisă, e interzisă și staționarea.",
+  "Întoarcerea e interzisă pe drumuri cu sens unic, pe trecerea pentru pietoni și unde e interzisă oprirea.",
+  "Mersul înapoi e interzis pe mai mult de 50 m, la ieșirea din curte și unde e interzisă întoarcerea (dar e permis pe sens unic)."
+ ],
+ "questions": [
+  {
+   "q": "Ocolirea unui autoturism oprit pe partea dreaptă a drumului, pe sensul dumneavoastră de mers, este considerată:",
+   "o": [
+    "schimbare a benzii de circulație, nu depășire",
+    "depășire",
+    "manevră de evitare care nu trebuie semnalizată"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Și ocolirea unui vehicul oprit sau a unui obstacol este depășire, deci se aplică toate regulile depășirii, inclusiv semnalizarea.",
+   "src": "OUG 195/2002 art. 45 alin. (1)"
+  },
+  {
+   "q": "Pe un drum cu două benzi pe sens, circulați pe banda a doua mai repede decât autovehiculele de pe prima bandă. Cum este considerată situația?",
+   "o": [
+    "depășire pe stânga",
+    "depășire pe dreapta, interzisă",
+    "nu este considerată depășire"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Când pe același sens sunt mai multe benzi, faptul că o bandă merge mai repede decât alta nu înseamnă depășire.",
+   "src": "OUG 195/2002 art. 45 alin. (4)"
+  },
+  {
+   "q": "Pe partea dreaptă aveți voie să depășiți:",
+   "o": [
+    "un autovehicul care circulă încet pe banda întâi, dacă banda a doua e liberă",
+    "un tramvai aflat în mers, dacă între șina din dreapta și trotuar este spațiu suficient",
+    "un autovehicul al cărui conducător a semnalizat virajul la stânga și s-a încadrat corespunzător"
+   ],
+   "c": [
+    1,
+    2
+   ],
+   "x": "Pe dreapta se depășesc doar tramvaiul și vehiculul încadrat pentru virajul la stânga. Un vehicul lent nu se depășește pe dreapta doar pentru că merge încet.",
+   "src": "OUG 195/2002 art. 45 alin. (5)"
+  },
+  {
+   "q": "Circulați pe un drum cu sens unic, în spatele unui tramvai aflat în mers. Pe ce parte îl puteți depăși?",
+   "o": [
+    "pe stânga, deoarece drumul este cu sens unic",
+    "numai pe dreapta",
+    "pe dreapta, dacă spațiul permite"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Tramvaiul se depășește în mod normal pe dreapta, dar cel aflat în mers poate fi depășit și pe stânga pe un drum cu sens unic. Capcana e cuvântul „numai”.",
+   "src": "OUG 195/2002 art. 45 alin. (5), (6)"
+  },
+  {
+   "q": "Un tramvai este oprit într-o stație fără refugiu pentru pietoni. Cum procedați?",
+   "o": [
+    "opriți în spatele tramvaiului, în ordinea sosirii",
+    "îl depășiți pe stânga, cu viteză redusă",
+    "porniți după ce ușile tramvaiului s-au închis și v-ați asigurat că nu puneți în pericol pietonii"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Fără refugiu, pasagerii coboară direct pe carosabil. Aștepți în spatele tramvaiului și pleci doar după închiderea ușilor.",
+   "src": "Regulament art. 107 alin. (4); art. 120 alin. (1) lit. g)",
+   "visual": {
+    "scene": {
+     "layout": "straight",
+     "main": null,
+     "tram": "ns",
+     "vehicles": [
+      {
+       "id": "T",
+       "arm": "s",
+       "go": "stop",
+       "type": "tram"
+      },
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "stop",
+       "type": "car",
+       "you": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "q": "Depășiți un biciclist cu un autoturism, cu o viteză de 60 km/h. Cum trebuie realizată depășirea?",
+   "o": [
+    "este suficient să atingeți marcajul longitudinal cu roțile din stânga",
+    "trecând peste marcajul longitudinal cu cel puțin jumătate din lățimea autoturismului",
+    "păstrând o distanță laterală de cel puțin 0,5 m, fără a trece peste marcaj"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Peste 50 km/h, legea cere cel puțin jumătate din lățimea mașinii peste marcaj. Simpla încălcare a marcajului ajunge doar până la 50 km/h.",
+   "src": "Regulament art. 118 alin. (2)"
+  },
+  {
+   "q": "Ce obligații aveți când sunteți depășit?",
+   "o": [
+    "să nu măriți viteza",
+    "să semnalizați dreapta pentru a-i arăta celuilalt că poate depăși",
+    "să circulați cât mai aproape de marginea din dreapta a părții carosabile sau a benzii"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Cel depășit nu accelerează și se apropie de marginea din dreapta. Nu există obligația de a semnaliza dreapta.",
+   "src": "Regulament art. 119"
+  },
+  {
+   "q": "Depășirea vehiculelor este interzisă:",
+   "o": [
+    "pe trecerile pentru pietoni semnalizate prin indicatoare și marcaje",
+    "la 30 m după o trecere la nivel cu calea ferată",
+    "la mai puțin de 50 m înainte de o trecere la nivel cu calea ferată"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "La calea ferată, depășirea e interzisă pe trecere și cu 50 m înainte. După trecere nu mai există această interdicție.",
+   "src": "Regulament art. 120 alin. (1) lit. e), f)"
+  },
+  {
+   "q": "Pe un pod lat de 8 m, cu vizibilitate bună pe 100 m, aveți voie să depășiți:",
+   "o": [
+    "o bicicletă",
+    "un autoturism care circulă cu 40 km/h",
+    "o motocicletă fără ataș"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Pe pod, excepția privește doar vehiculele cu tracțiune animală, motocicletele fără ataș, mopedele, bicicletele și trotinetele electrice, cu vizibilitate peste 20 m și drum de cel puțin 7 m. Autoturismul nu intră în excepție.",
+   "src": "Regulament art. 120 alin. (1) lit. d)"
+  },
+  {
+   "q": "Pe un drum cu câte o bandă pe sens s-a format o coloană care așteaptă la semafor. Aveți voie să depășiți coloana circulând pe sensul opus?",
+   "o": [
+    "da, dacă sensul opus este liber",
+    "da, dacă semnalizați din timp",
+    "nu, este interzis"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Depășirea unei coloane în așteptare e interzisă dacă te duce pe sensul opus, chiar dacă acesta pare liber.",
+   "src": "Regulament art. 120 alin. (1) lit. k)",
+   "visual": {
+    "scene": {
+     "layout": "straight",
+     "main": null,
+     "vehicles": [
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "stop",
+       "type": "car"
+      },
+      {
+       "id": "B",
+       "arm": "s",
+       "go": "stop",
+       "type": "car"
+      },
+      {
+       "id": "C",
+       "arm": "s",
+       "go": "straight",
+       "type": "car",
+       "you": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "q": "Vă apropiați de o coloană oficială. Ce este interzis?",
+   "o": [
+    "să depășiți coloana",
+    "să vă atașați la coloană",
+    "să reduceți viteza"
+   ],
+   "c": [
+    0,
+    1
+   ],
+   "x": "Coloana oficială nu se depășește, iar intercalarea sau atașarea la ea sunt interzise. Reducerea vitezei este, firește, permisă.",
+   "src": "Regulament art. 120 alin. (2)"
+  },
+  {
+   "q": "Imobilizarea voluntară a unui autoturism pe drumul public timp de 4 minute, pentru a citi o hartă, este considerată:",
+   "o": [
+    "staționare",
+    "oprire",
+    "parcare"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Până la 5 minute este oprire. Peste 5 minute devine staționare, iar parcarea e staționarea într-un loc amenajat.",
+   "src": "OUG 195/2002 art. 63 alin. (1)"
+  },
+  {
+   "q": "Care dintre situațiile de mai jos nu sunt considerate oprire?",
+   "o": [
+    "imobilizarea vehiculului cât urcă sau coboară persoane, dacă nu se perturbă circulația",
+    "imobilizarea timp de 3 minute pentru a vorbi la telefon",
+    "imobilizarea unui vehicul de cel mult 3,5 t care livrează alimente la unități comerciale"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Legea scoate din noțiunea de oprire doar urcarea sau coborârea persoanelor și livrarea de alimente cu vehicule de până la 3,5 t. Orice altă imobilizare scurtă e oprire.",
+   "src": "OUG 195/2002 art. 63 alin. (2)"
+  },
+  {
+   "q": "Oprirea voluntară lângă o trecere pentru pietoni este interzisă:",
+   "o": [
+    "numai pe trecere și la mai puțin de 25 m înainte de ea",
+    "pe trecere și la mai puțin de 25 m înainte și după ea",
+    "pe trecere și la mai puțin de 50 m înainte și după ea"
+   ],
+   "c": [
+    1
+   ],
+   "x": "La trecerea pentru pietoni distanța e de 25 m, în ambele părți. 50 m ține de calea ferată.",
+   "src": "Regulament art. 142 lit. e)"
+  },
+  {
+   "q": "Oprirea voluntară la o trecere la nivel cu calea ferată este interzisă:",
+   "o": [
+    "pe trecere și la mai puțin de 50 m înainte și după ea",
+    "numai pe trecere",
+    "pe trecere și la mai puțin de 25 m înainte de ea"
+   ],
+   "c": [
+    0
+   ],
+   "x": "La calea ferată regula e 50 m, înainte și după. Spre deosebire de depășire, oprirea e interzisă și după trecere.",
+   "src": "Regulament art. 142 lit. b)"
+  },
+  {
+   "q": "Unde este interzisă oprirea voluntară a vehiculelor?",
+   "o": [
+    "pe acostament, în afara localității, departe de intersecții și treceri",
+    "în stațiile mijloacelor de transport public de persoane și la mai puțin de 25 m înainte și după ele",
+    "pe un drum cu sens unic din localitate, pe partea stângă, dacă rămâne liberă cel puțin o bandă"
+   ],
+   "c": [
+    1
+   ],
+   "x": "În afara localității chiar se recomandă oprirea în afara carosabilului, iar pe sens unic, în localitate, oprirea pe stânga e permisă dacă rămâne o bandă liberă.",
+   "src": "Regulament art. 141 alin. (4), (5); art. 142 lit. g)"
+  },
+  {
+   "q": "Ce semnificație are indicatorul?",
+   "o": [
+    "oprirea și staționarea sunt interzise",
+    "parcarea pe trotuar este interzisă, iar pe carosabil este permisă",
+    "staționarea este interzisă, dar oprirea este permisă"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Indicatorul „Staționarea interzisă” are o singură bară: interzice staționarea, dar oprirea de până la 5 minute rămâne permisă.",
+   "src": "Regulament art. 143 lit. b)",
+   "visual": {
+    "sign": "in-stationarea-interzisa"
+   }
+  },
+  {
+   "q": "Staționarea voluntară este interzisă:",
+   "o": [
+    "pe drumurile publice cu lățimea mai mică de 6 m",
+    "în pante și în rampe",
+    "în dreptul căilor de acces care deservesc proprietățile de lângă drum"
+   ],
+   "c": [
+    0,
+    1,
+    2
+   ],
+   "x": "Toate trei sunt locuri unde staționarea e interzisă, în plus față de cele unde e interzisă oprirea.",
+   "src": "Regulament art. 143 lit. c)-e)"
+  },
+  {
+   "q": "Pe un sector unde este instalat indicatorul din imagine:",
+   "o": [
+    "sunt permise oprirea și staționarea, dacă nu stânjeniți circulația",
+    "este permisă oprirea, dar nu și staționarea",
+    "sunt interzise atât oprirea, cât și staționarea voluntară"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Unde depășirea e interzisă, e interzisă și oprirea, iar unde oprirea e interzisă, e interzisă și staționarea.",
+   "src": "Regulament art. 142 lit. p); art. 143 lit. a)",
+   "visual": {
+    "sign": "in-depasirea-interzisa"
+   }
+  },
+  {
+   "q": "Pe un trotuar unde parcarea este permisă prin indicator, ce spațiu trebuie să rămână liber pentru pietoni?",
+   "o": [
+    "cel puțin 0,5 m",
+    "cel puțin 1 m",
+    "cel puțin 1,5 m"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Culoarul minim pentru pietoni este de 1 m. Ține minte: trotuarul rămâne în primul rând al pietonilor.",
+   "src": "OUG 195/2002 art. 72 alin. (7); Regulament art. 144 alin. (2)"
+  },
+  {
+   "q": "În afara localității, unde trebuie să opriți voluntar autoturismul?",
+   "o": [
+    "pe partea stângă, dacă rămâne liberă o bandă de circulație",
+    "în afara părții carosabile, iar dacă nu este posibil, cât mai aproape de marginea din dreapta, paralel cu axa drumului",
+    "pe mijlocul benzii, cu luminile de avarie pornite"
+   ],
+   "c": [
+    1
+   ],
+   "x": "În afara localității, viteza e mare, așa că legea te vrea în afara carosabilului. Oprirea pe stânga e permisă doar în localitate, pe sens unic.",
+   "src": "Regulament art. 141 alin. (5)"
+  },
+  {
+   "q": "Părăsiți autoturismul oprit pe drumul public. Ce obligații aveți?",
+   "o": [
+    "să acționați frâna de ajutor",
+    "să lăsați motorul pornit dacă lipsiți mai puțin de 5 minute",
+    "să opriți motorul"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Frâna de ajutor, motorul oprit și o treaptă inferioară cuplată (sau P la cutia automată), indiferent cât lipsești.",
+   "src": "Regulament art. 141 alin. (1)"
+  },
+  {
+   "q": "Întoarcerea vehiculului este interzisă:",
+   "o": [
+    "în orice loc unde staționarea este interzisă",
+    "pe drumurile cu sens unic",
+    "în orice intersecție"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Pe sens unic nu există „celălalt sens” pe care să întorci. Interdicția de staționare nu interzice întoarcerea, iar în intersecții întoarcerea e permisă dacă virajul la stânga nu e interzis.",
+   "src": "Regulament art. 126"
+  },
+  {
+   "q": "Mersul înapoi este interzis:",
+   "o": [
+    "pe o distanță mai mare de 50 m",
+    "pe un drum cu sens unic, pe 15 m, unde nu există altă interdicție",
+    "la ieșirea din curtea unei proprietăți în drumul public"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Pe sens unic întoarcerea e interzisă, dar mersul înapoi rămâne permis. Ieșirea din curte cu spatele în drum e interzisă.",
+   "src": "Regulament art. 128 alin. (1)"
+  },
+  {
+   "q": "Vreți să mergeți cu spatele într-un loc permis, dar vizibilitatea în spate este împiedicată. Cum procedați?",
+   "o": [
+    "efectuați manevra numai dirijat de cel puțin o persoană aflată în afara vehiculului",
+    "este suficient să claxonați scurt înainte de manevră",
+    "persoana care vă dirijează trebuie să se asigure că manevra nu pune în pericol participanții la trafic"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Fără vizibilitate, ai nevoie de un ajutor din afara mașinii, iar acel ajutor răspunde de siguranța manevrei. Claxonul nu înlocuiește dirijarea.",
+   "src": "Regulament art. 128 alin. (2), (3)"
+  }
+ ],
+ "uncertain": [
+  "Regulament art. 142 lit. f) (intersecții, sub 25 m de colț) și lit. e) (25 m înainte ȘI după trecerea pentru pietoni): textul consolidat de pe legeaz.net (versiune ~2011) spune doar „25 m înainte” la lit. e); am folosit forma actuală de pe scoalarutiera.ro („înainte și după”), considerată mai nouă.",
+  "Regulament art. 142 lit. n) (trotuar): am folosit forma nouă („cu excepția amenajărilor conform art. 144 alin. (2) și (3)”), confirmată indirect de scoalarutiera.ro; legeaz.net are forma veche cu 1 m. Art. 144 alin. (3) (10 m) confirmat doar prin citat din presă (adevarul.ro).",
+  "Excepția de la art. 126 lit. a) (întoarcerea în intersecții, trimitere la art. 142 lit. f)): sursele o explică diferit; pe card am scris doar că intersecțiile „au regulile lor” și am evitat întrebări pe intersecții nedirijate.",
+  "Durata zonei indicatorului „Oprirea interzisă” („de regulă, până la prima intersecție”) provine din lecția scoalarutiera, nu am găsit textul exact de lege."
+ ]
+}

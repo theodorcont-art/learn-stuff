@@ -168,7 +168,7 @@ button { font: inherit; color: inherit; }
 .v-table th { font-weight: 600; color: var(--muted); font-size: .8rem; }
 .v-table tr:last-child td { border-bottom: 0; }
 .scene { width: 100%; max-width: 340px; display: grid; gap: 8px; }
-.scene svg { width: 100%; height: auto; display: block; border-radius: 16px; }
+.scene > svg { width: 100%; height: auto; display: block; border-radius: 16px; }
 .scene .cap { font-size: .86rem; color: var(--muted); text-align: center; }
 .nav { display: grid; grid-template-columns: auto 1fr; gap: 10px; position: sticky; bottom: 0; padding: 12px 0 calc(12px + env(safe-area-inset-bottom, 0px)); background: linear-gradient(to bottom, transparent, var(--bg) 30%); }
 .intro-ic { width: 96px; height: 96px; }
@@ -362,14 +362,26 @@ footer a { color: inherit; }
     var count = {};
     var pal = ['#E8505B', '#F2A541', '#7E57C2', '#26A69A', '#5C6BC0'];
     (s.vehicles || []).forEach(function (v, i) {
-      var k = count[v.arm] = (count[v.arm] || 0) + 1;
-      var back = (k - 1) * 52;
+      // "beside": waits next to the previous vehicle on its arm (two rows on one wide lane)
+      var pair = (s.vehicles || []).some(function (u) { return u.beside && u.arm === v.arm; });
+      var k = count[v.arm] = (count[v.arm] || 0) + (v.beside ? 0 : 1);
+      var back = (k - 1) * 52, side = pair ? (v.beside ? 11 : -9) : 0;
       var geo = L === 'straight'
-        ? { s: [170, 210 + back, 0], n: [130, 90 - back, 180] }
+        ? { s: [170, 226 + back, 0], n: [130, 74 - back, 180] }
         : L === 'roundabout'
           ? { s: [170, 262 + back, 0], n: [130, 38 - back, 180], e: [262 + back, 130, 270], w: [38 - back, 170, 90] }
           : { s: [170, 244 + back, 0], n: [130, 56 - back, 180], e: [244 + back, 130, 270], w: [56 - back, 170, 90] };
+      if (L === 'roundabout' && /^r[nsew]$/.test(v.arm)) {
+        // already inside the roundabout, next to that arm, moving anticlockwise
+        var th = { s: 90, e: 0, n: -90, w: 180 }[v.arm[1]] + 28, tr = th * Math.PI / 180;
+        var vx = 150 + 63 * Math.cos(tr), vy = 150 + 63 * Math.sin(tr);
+        var rot = Math.atan2(Math.sin(tr), Math.cos(tr)) * 180 / Math.PI;
+        o.push(ringRun(th, v.you ? 'var(--sky)' : pal[i % pal.length]));
+        o.push(vehicle({ type: v.type, id: v.id, you: v.you, go: 'stop' }, vx, vy, rot, v.you ? 'var(--sky)' : pal[i % pal.length], true));
+        return;
+      }
       var g = geo[v.arm]; if (!g) return;
+      if (side) { var rt = { s: [1, 0], n: [-1, 0], e: [0, -1], w: [0, 1] }[v.arm]; g = [g[0] + rt[0] * side, g[1] + rt[1] * side, g[2]]; }
       var color = v.you ? 'var(--sky)' : pal[i % pal.length];
       if (v.type === 'pedestrian') { o.push(walker(v, L, color)); return; }
       o.push(vehicle(v, g[0], g[1], g[2], color, L === 'roundabout'));
@@ -381,6 +393,14 @@ footer a { color: inherit; }
     var s = SIGNS[id];
     if (!s || !s.svg) return '<rect x="' + x + '" y="' + y + '" width="' + size + '" height="' + size + '" rx="6" fill="#fff" stroke="#999"/>';
     return s.svg.replace('<svg', '<svg x="' + x + '" y="' + y + '" width="' + size + '" height="' + size + '"');
+  }
+  function ringRun(th, color) {
+    var r = 63, s0 = th - 16, s1 = th - 70;
+    function pt(a) { a = a * Math.PI / 180; return [(150 + r * Math.cos(a)).toFixed(1), (150 + r * Math.sin(a)).toFixed(1)]; }
+    var p0 = pt(s0), p1 = pt(s1), b = (s1 - 6) * Math.PI / 180, hx = 150 + r * Math.cos(b), hy = 150 + r * Math.sin(b);
+    var ang = Math.atan2(hy - p1[1], hx - p1[0]) * 180 / Math.PI;
+    return '<path d="M' + p0[0] + ' ' + p0[1] + ' A' + r + ' ' + r + ' 0 0 0 ' + p1[0] + ' ' + p1[1] + '" fill="none" stroke="' + color + '" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 7"/>' +
+      '<path d="M0 -6 L10 0 L0 6 Z" fill="' + color + '" transform="translate(' + hx.toFixed(1) + ' ' + hy.toFixed(1) + ') rotate(' + ang.toFixed(1) + ')"/>';
   }
   // Roundabouts run anticlockwise (seen from above): enter on the right, leave at the exit arm.
   function ringArrow(v, color) {
@@ -399,6 +419,7 @@ footer a { color: inherit; }
   function walker(v, L, color) {
     var d = L === 'roundabout' ? 104 : 58, c = 150, o = '', i;
     var vert = v.arm === 'n' || v.arm === 's', sg = v.arm === 'n' || v.arm === 'w' ? -1 : 1;
+    if (L === 'straight') { vert = true; sg = 0; } // on a plain road the crossing sits mid-picture
     for (i = 0; i < 7; i++) {
       var off = -36 + i * 12;
       o += vert ? '<rect x="' + (c + off - 4) + '" y="' + (c + sg * d - 9) + '" width="7" height="18" fill="var(--road-line)" opacity=".9"/>'

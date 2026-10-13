@@ -1,0 +1,586 @@
+{
+  "id": 4,
+  "title": "Marcaje, semafoare și polițistul",
+  "tagline": "Cui asculți când semnalele se contrazic",
+  "minutes": 40,
+  "intro": "Pe drum primești mesaje din multe părți: polițist, semafor, indicatoare, linii pe asfalt. De cele mai multe ori spun același lucru. Capitolul ăsta te învață ce înseamnă fiecare și pe cine asculți atunci când nu se potrivesc.",
+  "cards": [
+    {
+      "kind": "rule",
+      "title": "Ordinea de prioritate a semnalelor",
+      "body": "<p>Când două semnale spun lucruri diferite, legea îți dă o ordine fixă. Asculți de cel aflat mai sus în listă:</p><ol><li><b>Polițistul rutier</b> (semnale, indicații, dispoziții)</li><li><b>Semnalele speciale</b> ale vehiculelor cu regim prioritar (girofar roșu sau albastru)</li><li><b>Semnalizarea temporară</b> și/sau indicatoarele electronice care schimbă regimul normal</li><li><b>Semafoarele</b> (semnale luminoase sau sonore)</li><li><b>Indicatoarele</b></li><li><b>Marcajele</b></li><li><b>Regulile de circulație</b></li></ol>",
+      "src": "OUG 195/2002 art. 31"
+    },
+    {
+      "kind": "memo",
+      "title": "De la om la vopsea",
+      "body": "<p>Un truc ca să ții minte ordinea: <b>cu cât semnalul e mai „viu” și mai nou, cu atât e mai puternic</b>.</p><ul><li>Omul (polițistul) vede situația chiar acum.</li><li>Girofarul anunță o urgență chiar acum.</li><li>Semnalizarea temporară a fost pusă pentru azi.</li><li>Semaforul se schimbă la fiecare minut.</li><li>Tabla (indicatorul) stă fixă ani de zile.</li><li>Vopseaua (marcajul) e și mai veche.</li><li>Regula generală e la bază, când nu există altceva.</li></ul>"
+    },
+    {
+      "kind": "example",
+      "title": "Exemple de contradicții",
+      "body": "<ul><li><b>Semafor verde</b>, dar polițistul ridică brațul vertical: <b>oprești</b>. Polițistul e mai sus.</li><li><b>Semafor funcțional</b> și indicator <b>„Cedează trecerea”</b> pe același stâlp: respecți <b>semaforul</b>. Indicatorul contează când semaforul e stins sau galben intermitent.</li><li>Indicator permanent de 50 km/h și unul <b>temporar, cu fond galben</b>, de 30 km/h: mergi cu <b>30</b>.</li><li>Marcaj discontinuu, dar indicator <b>„Depășirea interzisă”</b>: nu depășești. Indicatorul e peste marcaj.</li></ul>",
+      "src": "OUG 195/2002 art. 31"
+    },
+    {
+      "kind": "idea",
+      "title": "Cum „citești” polițistul",
+      "body": "<p>Pare complicat, dar există o imagine simplă. Gândește-te la polițist ca la un <b>perete</b>.</p><p>Dacă vezi <b>pieptul</b> sau <b>spatele</b> lui, ai un perete în față: <b>oprești</b>.</p><p>Dacă îl vezi din <b>profil</b> (umărul, brațul îndreptat spre tine sau în direcția ta de mers), drumul e ca un culoar deschis: <b>poți trece</b>.</p><p>Asta e valabil pentru brațele întinse orizontal sau coborâte după acest semnal.</p>"
+    },
+    {
+      "kind": "rule",
+      "title": "Brațul ridicat vertical",
+      "body": "<p>Înseamnă <b>„atenție, oprire”</b> pentru <b>toți</b> participanții care se apropie, din orice direcție.</p><p>Două excepții:</p><ul><li>șoferii care sunt deja prea aproape și <b>nu mai pot opri în siguranță</b>;</li><li>dacă semnalul e dat într-o intersecție, cei <b>deja angajați în traversare</b> își termină trecerea.</li></ul><p>E ca un galben dat cu mâna.</p>",
+      "src": "Regulament art. 88 alin. (1) lit. a)"
+    },
+    {
+      "kind": "rule",
+      "title": "Brațele întinse orizontal",
+      "body": "<p>Semnifică <b>„oprire”</b> pentru cei care vin din direcțiile <b>intersectate de braț sau brațe</b>, adică din <b>fața</b> și din <b>spatele</b> polițistului, indiferent de sensul de mers.</p><p>Cei care vin din <b>lateral</b>, din direcția brațelor, pot trece.</p><p>După acest semnal, polițistul poate <b>coborî brațele</b>. Poziția are aceeași semnificație: oprire pentru cei din față și din spate.</p>",
+      "src": "Regulament art. 88 alin. (1) lit. b)",
+      "visual": {
+        "scene": {
+          "layout": "cross",
+          "main": null,
+          "vehicles": [
+            {
+              "id": "A",
+              "arm": "s",
+              "go": "stop",
+              "type": "car",
+              "you": true
+            },
+            {
+              "id": "B",
+              "arm": "w",
+              "go": "straight",
+              "type": "car"
+            }
+          ],
+          "signs": [],
+          "officer": {
+            "facing": "ns",
+            "arm": "both-out"
+          },
+          "caption": "A vede pieptul polițistului și oprește. B vine din direcția brațului și trece."
+        }
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Alte gesturi ale polițistului",
+      "body": "<ul><li><b>Noaptea</b>, o lumină roșie sau un baston fluorescent balansat <b>vertical</b>: <b>oprire</b> pentru cei spre care e îndreptat.</li><li>Brațul balansat <b>pe verticală, cu palma spre sol</b>: <b>reduceți viteza</b>.</li><li>Brațul <b>rotit vioi</b>: <b>măriți viteza</b> (sau pietonii să grăbească traversarea).</li><li>Polițistul îți poate arăta cu brațul să avansezi, să depășești, să treci prin fața sau prin spatele lui.</li><li><b>Fluierul</b> poate însoți semnalele cu brațul.</li></ul>",
+      "src": "Regulament art. 88"
+    },
+    {
+      "kind": "rule",
+      "title": "Polițistul din mașina de poliție",
+      "body": "<p>Polițistul aflat în autovehiculul poliției poate scoate brațul (cu sau fără baston) pe geam:</p><ul><li>pe <b>partea dreaptă</b>: <b>oprire</b> pentru cei care merg <b>în spatele</b> mașinii de poliție;</li><li>pe <b>partea stângă</b>: <b>oprire</b> pentru cei de pe <b>banda din stânga</b>, în același sens, și pentru cei care vin din <b>sens opus</b>.</li></ul><p>Poate folosi și panouri luminoase cu mesaje variabile și portavocea.</p>",
+      "src": "Regulament art. 92"
+    },
+    {
+      "kind": "rule",
+      "title": "Nu doar polițistul te poate opri",
+      "body": "<p>Ești obligat să oprești și la semnalele date de:</p><ul><li>polițiștii de frontieră;</li><li>îndrumătorii de circulație militari;</li><li>agenții căilor ferate, la trecerile la nivel;</li><li>personalul autorizat de la lucrări pe drum;</li><li>membrii patrulelor școlare, la trecerile de pietoni de lângă școli;</li><li>pietonii nevăzători care ridică <b>bastonul alb</b> când traversează.</li></ul>",
+      "src": "OUG 195/2002 art. 29; Regulament art. 89"
+    },
+    {
+      "kind": "rule",
+      "title": "Girofar roșu și sirenă: oprești",
+      "body": "<p><b>Lumina roșie</b> o folosesc autovehiculele <b>poliției și pompierilor</b>.</p><p>Când un astfel de vehicul se apropie cu <b>lumina roșie și sirena</b> pornite, ești obligat să <b>oprești imediat</b>: pe acostament sau, dacă nu există, cât mai aproape de marginea drumului ori de bordură, în sensul tău de mers.</p><p>Pietonii nu au voie să traverseze până trece vehiculul.</p>",
+      "src": "OUG 195/2002 art. 32 alin. (2) lit. a), art. 37 alin. (1), (3)",
+      "visual": {
+        "big": "Roșu = STOP",
+        "caption": "oprești lângă margine până trece"
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Girofar albastru și sirenă: îi faci loc",
+      "body": "<p><b>Lumina albastră</b> o folosesc, de exemplu, poliția, jandarmeria, poliția de frontieră, ambulanțele, protecția civilă, Salvamont, doar în misiuni urgente.</p><p>Când vine cu <b>albastru și sirenă</b>, trebuie să:</p><ul><li><b>reduci viteza</b>;</li><li>circuli <b>cât mai aproape de marginea drumului</b>;</li><li>îi <b>acorzi prioritate</b>.</li></ul><p>Nu ești obligat să oprești, dar trebuie să-i lași drum liber.</p>",
+      "src": "OUG 195/2002 art. 32 alin. (2) lit. b), art. 37 alin. (2)"
+    },
+    {
+      "kind": "trap",
+      "title": "Fără sirenă, nu e prioritar",
+      "body": "<p>Un vehicul are <b>regim de circulație prioritară</b> doar când are pornite <b>și lumina, și semnalul sonor</b>.</p><ul><li>Doar girofarul, fără sirenă: <b>nu</b> are prioritate. Îl tratezi ca pe orice mașină, dar cu atenție.</li><li>Doar sirena, fără girofar: e <b>interzis</b> să fie folosită așa.</li></ul><p>Chiar și vehiculele prioritare trebuie să respecte <b>semnalele polițistului</b> și regulile de la <b>trecerea la nivel cu calea ferată</b>.</p>",
+      "src": "OUG 195/2002 art. 61; Regulament art. 91"
+    },
+    {
+      "kind": "rule",
+      "title": "Girofarul galben: atenție, nu prioritate",
+      "body": "<p><b>Lumina galbenă</b> o au vehiculele care merg încet sau ocupă mult loc: transporturi agabaritice și mașinile care le însoțesc, utilaje de întreținere și curățenie a drumului, plugurile de zăpadă, platformele de tractare, unele transporturi de mărfuri periculoase.</p><p>Mesajul lor este doar: <b>„circulă cu atenție”</b>. Vehiculele cu girofar galben <b>nu au regim prioritar</b>.</p>",
+      "src": "OUG 195/2002 art. 32 alin. (1) lit. c), alin. (2) lit. c)"
+    },
+    {
+      "kind": "rule",
+      "title": "Semnalizarea temporară: fondul galben",
+      "body": "<p>Se folosește când drumul e schimbat pentru o perioadă: <b>lucrări</b>, <b>accidente</b>, <b>calamități</b>.</p><p>Indicatoarele temporare arată ca cele obișnuite, doar că <b>fondul alb e înlocuit cu fond galben</b>. Pot apărea și marcaje temporare, de altă culoare decât albul obișnuit.</p><p>Semnalizarea temporară stă <b>deasupra</b> semafoarelor, indicatoarelor și marcajelor permanente. Dacă se contrazic, asculți de cea temporară.</p>",
+      "src": "OUG 195/2002 art. 31 lit. c); Regulament art. 67",
+      "visual": {
+        "sign": "av-lucrari"
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Roșu și galben",
+      "body": "<ul><li><b>Roșu</b>: interzice trecerea. Oprești <b>înaintea liniei de oprire</b> sau a trecerii de pietoni; dacă nu există marcaj, în dreptul semaforului.</li><li><b>Roșu + galben</b> aprinse împreună: anunță că <b>urmează verdele</b>. Încă nu pornești.</li><li><b>Galben după verde</b>: nu treci de linia de oprire, <b>cu excepția</b> cazului în care ești atât de aproape încât <b>nu mai poți opri în siguranță</b>.</li></ul>",
+      "src": "Regulament art. 52, art. 53 alin. (1)",
+      "visual": {
+        "signs": [
+          "sem-rosu",
+          "sem-galben"
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Galbenul intermitent",
+      "body": "<p>Galbenul care clipește <b>permite trecerea</b>, dar îți spune: <b>„aici semaforul nu te mai ajută”</b>.</p><p>Treci <b>cu viteză redusă</b> și respecți <b>indicatoarele</b> și <b>regulile de prioritate</b> din acel loc. De exemplu, dacă pe stâlp e „Cedează trecerea”, cedezi.</p><p>Dacă nu e niciun indicator, se aplică regula generală: prioritate de dreapta.</p>",
+      "src": "Regulament art. 53 alin. (2)",
+      "visual": {
+        "sign": "sem-galben-intermitent"
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Verdele și săgeata verde suplimentară",
+      "body": "<p><b>Verde</b>: permite trecerea. Totuși, când virezi, cedezi celor pe care îi intersectezi și care au și ei verde (de exemplu pietonii).</p><p>Unele semafoare au o <b>lampă suplimentară</b>, la nivelul verdelui, cu o <b>săgeată verde intermitentă spre dreapta</b> pe fond negru. Când clipește, <b>poți vira la dreapta</b> oricare ar fi culoarea semaforului principal, chiar și pe roșu, dar <b>acorzi prioritate</b> vehiculelor și pietonilor care au liber.</p>",
+      "src": "Regulament art. 51",
+      "visual": {
+        "signs": [
+          "sem-verde",
+          "x-sageata-verde-suplimentara"
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Semafoare speciale",
+      "body": "<ul><li><b>Tramvai</b>: lumini <b>albe</b>. Trei lămpi sus aprinse împreună = oprire.</li><li><b>Pietoni</b>: omuleț verde = traversează; roșu = nu. <b>Verde intermitent</b>: timpul se termină; cine e pe carosabil grăbește pasul, cine n-a pornit nu mai pornește.</li><li><b>Deasupra benzilor</b>: <b>X roșu</b> = interzis să intri pe banda de dedesubt; <b>săgeată verde în jos</b> = poți circula pe ea.</li><li><b>Bicicletă</b> desenată în lampă: semaforul e pentru bicicliști și trotinete.</li></ul>",
+      "src": "Regulament art. 50, 55, 56, 58–60"
+    },
+    {
+      "kind": "rule",
+      "title": "Linia continuă și linia discontinuă",
+      "body": "<ul><li><b>Linia continuă</b> (simplă sau dublă): <b>nu ai voie să o încalci</b>. Linia dublă separă sensurile, de obicei unde fiecare sens are cel puțin două benzi.</li><li><b>Linia discontinuă</b>: <b>poți trece peste ea</b> când manevra o cere (depășire, schimbarea benzii).</li><li><b>Linia dublă discontinuă</b> delimitează <b>benzile reversibile</b>, folosite împreună cu semafoare deasupra benzilor.</li></ul>",
+      "src": "Regulament art. 77–79"
+    },
+    {
+      "kind": "trap",
+      "title": "Linia continuă lângă una discontinuă",
+      "body": "<p>Uneori vezi două linii alăturate: una continuă și una discontinuă. Pare că se contrazic.</p><p>Regula: <b>contează linia aflată pe partea ta</b>, cea mai apropiată în sensul tău de mers.</p><ul><li>Discontinua e pe partea ta: <b>poți trece</b>.</li><li>Continua e pe partea ta: <b>nu poți trece</b>.</li></ul><p>Așa, unul dintre sensuri are voie să depășească, iar celălalt nu.</p>",
+      "src": "Regulament art. 79 alin. (3)"
+    },
+    {
+      "kind": "rule",
+      "title": "Marcajele transversale",
+      "body": "<ul><li><b>Linia continuă de-a latul</b> (linia de oprire): locul unde oprești la <b>STOP</b>, la semafor, la semnalul polițistului, la calea ferată. Poate fi precedată de inscripția „Stop”.</li><li><b>Linia discontinuă de-a latul</b>: locul pe care <b>nu îl depășești când cedezi trecerea</b>. Poate fi precedată de un triunghi desenat pe asfalt.</li><li><b>Zebra</b>: linii late, paralele cu axa drumului, unde traversează pietonii.</li><li>Linii discontinue paralele: traversarea pentru <b>bicicliști</b>.</li></ul>",
+      "src": "Regulament art. 81"
+    },
+    {
+      "kind": "rule",
+      "title": "Marcaje pentru oprire și parcare",
+      "body": "<ul><li><b>Linia galbenă continuă</b> pe bordură sau pe marginea acostamentului: <b>oprirea interzisă</b> pe acea parte a drumului.</li><li><b>Linia în zig-zag</b> la marginea carosabilului: oprirea interzisă. Cu inscripția <b>BUS</b>, <b>TAXI</b> sau <b>TRAM</b>, marchează stații fără refugiu.</li><li><b>Locurile de parcare</b> sunt delimitate cu linii pe asfalt și, de obicei, semnalizate cu indicatorul „Parcare”. Parchezi în interiorul lor, cum arată marcajul.</li></ul>",
+      "src": "Regulament art. 80 alin. (3), art. 83 alin. (3)",
+      "visual": {
+        "sign": "inf-parcare"
+      }
+    }
+  ],
+  "summary": [
+    "Ordinea semnalelor este: polițist, vehicule prioritare, semnalizare temporară, semafor, indicator, marcaj, regulă.",
+    "Dacă vezi pieptul sau spatele polițistului, oprești; dacă îl vezi din profil, poți trece.",
+    "Brațul ridicat vertical înseamnă „atenție, oprire” pentru toți, cu excepția celor care nu mai pot opri în siguranță.",
+    "La girofar roșu și sirenă oprești imediat lângă margine; la girofar albastru și sirenă încetinești, te tragi spre margine și cedezi.",
+    "Fără sirenă, un vehicul cu girofar nu are prioritate; girofarul galben înseamnă doar atenție.",
+    "Semnalizarea temporară are fond galben și e mai puternică decât semnalizarea permanentă.",
+    "Galbenul după verde te oprește, doar dacă mai poți opri în siguranță; galbenul intermitent te lasă să treci încet, după indicatoare.",
+    "Săgeata verde intermitentă spre dreapta permite virajul la dreapta și pe roșu, cu prioritate pentru cei care au liber.",
+    "Linia continuă nu se încalcă; la linii alăturate contează cea de pe partea ta.",
+    "Linia galbenă continuă pe bordură interzice oprirea pe acea parte."
+  ],
+  "questions": [
+    {
+      "q": "Care dintre următoarele au prioritate față de semnificația culorilor semaforului?",
+      "o": [
+        "Semnalele, indicațiile și dispozițiile polițistului rutier",
+        "Semnalele speciale de avertizare ale vehiculelor cu regim de circulație prioritară",
+        "Indicatoarele rutiere"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "Polițistul și vehiculele prioritare sunt mai sus decât semaforul în ordinea legală. Indicatoarele sunt sub semafor, deci nu au prioritate față de el.",
+      "src": "OUG 195/2002 art. 31"
+    },
+    {
+      "q": "Semaforul vă arată verde, iar polițistul din intersecție ridică brațul vertical. Cum procedați?",
+      "o": [
+        "Continuați deplasarea, deoarece semaforul verde vă permite trecerea",
+        "Opriți, deoarece semnalul polițistului are prioritate față de semafor",
+        "Opriți numai dacă polițistul folosește și fluierul"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Polițistul este primul în ordinea de prioritate. Brațul ridicat vertical înseamnă „atenție, oprire”, chiar dacă semaforul arată verde.",
+      "src": "OUG 195/2002 art. 31; Regulament art. 88 alin. (1) lit. a)"
+    },
+    {
+      "q": "La o intersecție, pe stâlpul semaforului este montat și indicatorul „Cedează trecerea”. Semaforul funcționează normal și vă arată verde. Ce respectați?",
+      "o": [
+        "Semnificația culorii semaforului",
+        "Indicatorul „Cedează trecerea”",
+        "Regula priorității de dreapta"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Semaforul este mai sus decât indicatorul. Indicatorul de pe stâlp contează abia când semaforul e stins sau arată galben intermitent.",
+      "src": "OUG 195/2002 art. 31",
+      "visual": {
+        "signs": [
+          "sem-verde",
+          "pr-cedeaza"
+        ]
+      }
+    },
+    {
+      "q": "Pe un sector de drum aveți un indicator permanent care limitează viteza la 50 km/h și un indicator cu fond galben care limitează viteza la 30 km/h. Cu ce viteză maximă aveți voie să circulați?",
+      "o": [
+        "50 km/h",
+        "40 km/h, media celor două",
+        "30 km/h"
+      ],
+      "c": [
+        2
+      ],
+      "x": "Indicatorul cu fond galben face parte din semnalizarea temporară, care are prioritate față de indicatoarele permanente.",
+      "src": "OUG 195/2002 art. 31 lit. c); Regulament art. 67"
+    },
+    {
+      "q": "Marcajul longitudinal din dreptul dumneavoastră este discontinuu, dar pe marginea drumului este instalat indicatorul „Depășirea interzisă”. Puteți depăși?",
+      "o": [
+        "Da, marcajul discontinuu permite trecerea peste el",
+        "Nu, indicatorul are prioritate față de marcaj",
+        "Da, dar numai autovehiculele lente"
+      ],
+      "c": [
+        1
+      ],
+      "x": "În ordinea de prioritate, indicatoarele sunt deasupra marcajelor. Marcajul discontinuu nu anulează interdicția dată de indicator.",
+      "src": "OUG 195/2002 art. 31",
+      "visual": {
+        "sign": "in-depasirea-interzisa"
+      }
+    },
+    {
+      "q": "Vă apropiați de o intersecție dirijată de un polițist care stă cu fața spre dumneavoastră, cu ambele brațe întinse orizontal. Ce obligație aveți?",
+      "o": [
+        "Să opriți",
+        "Să treceți cu viteză redusă",
+        "Să virați obligatoriu la dreapta"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Vezi pieptul polițistului, deci ai „un perete” în față. Brațele întinse orizontal înseamnă oprire pentru cei din față și din spate.",
+      "src": "Regulament art. 88 alin. (1) lit. b)",
+      "visual": {
+        "scene": {
+          "layout": "cross",
+          "main": null,
+          "vehicles": [
+            {
+              "id": "A",
+              "arm": "s",
+              "go": "straight",
+              "type": "car",
+              "you": true
+            }
+          ],
+          "signs": [],
+          "officer": {
+            "facing": "ns",
+            "arm": "both-out"
+          }
+        }
+      }
+    },
+    {
+      "q": "Polițistul din intersecție are brațele întinse orizontal, iar dumneavoastră veniți din direcția în care arată brațul lui stâng. Ce este corect?",
+      "o": [
+        "Trebuie să opriți până când polițistul coboară brațele",
+        "Puteți trece prin intersecție",
+        "Pot trece și vehiculele care vin din direcția celuilalt braț"
+      ],
+      "c": [
+        1,
+        2
+      ],
+      "x": "Brațele opresc doar direcțiile pe care le „taie”, adică pe cele din fața și din spatele polițistului. Cei din direcția brațelor îl văd din profil și pot trece.",
+      "src": "Regulament art. 88 alin. (1) lit. b)"
+    },
+    {
+      "q": "Ce semnifică brațul polițistului ridicat vertical?",
+      "o": [
+        "„Atenție, oprire” pentru toți participanții la trafic care se apropie",
+        "Șoferii aflați deja în traversarea intersecției își pot continua deplasarea",
+        "Oprire numai pentru pietoni"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "Semnalul e pentru toți, cu excepția celor care nu mai pot opri în siguranță. Dacă e dat în intersecție, cei deja angajați își termină traversarea.",
+      "src": "Regulament art. 88 alin. (1) lit. a)"
+    },
+    {
+      "q": "Polițistul balansează brațul pe verticală, cu palma orientată spre sol. Ce vă cere?",
+      "o": [
+        "Să măriți viteza",
+        "Să reduceți viteza",
+        "Să opriți imediat"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Mișcarea „în jos”, cu palma spre sol, e ca o mână care apasă frâna: reduceți viteza. Rotirea vioaie a brațului cere, invers, mărirea vitezei.",
+      "src": "Regulament art. 88 alin. (1) lit. d)"
+    },
+    {
+      "q": "Un polițist aflat în autovehiculul poliției scoate brațul pe partea dreaptă a mașinii. Pentru cine înseamnă oprire?",
+      "o": [
+        "Pentru vehiculele care vin din sens opus",
+        "Pentru vehiculele de pe banda din stânga, în același sens",
+        "Pentru vehiculele care circulă în spatele autovehiculului poliției"
+      ],
+      "c": [
+        2
+      ],
+      "x": "Brațul pe dreapta oprește mașinile din spate. Brațul pe stânga oprește banda din stânga și sensul opus.",
+      "src": "Regulament art. 92 alin. (2)"
+    },
+    {
+      "q": "Un autovehicul al poliției se apropie cu lumina roșie și semnalul sonor în funcțiune. Ce obligație aveți?",
+      "o": [
+        "Să reduceți viteza și să continuați deplasarea aproape de margine",
+        "Să opriți imediat pe acostament sau, în lipsa lui, cât mai aproape de marginea drumului",
+        "Să accelerați pentru a elibera mai repede drumul"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Roșu cu sirenă înseamnă oprire imediată lângă margine. Doar încetinirea este obligația pentru lumina albastră, nu pentru cea roșie.",
+      "src": "OUG 195/2002 art. 37 alin. (1)"
+    },
+    {
+      "q": "O ambulanță se apropie cu lumina albastră și semnalul sonor în funcțiune. Ce obligații aveți?",
+      "o": [
+        "Să opriți în mijlocul benzii, pentru a fi vizibil",
+        "Să reduceți viteza",
+        "Să circulați cât mai aproape de marginea drumului și să-i acordați prioritate"
+      ],
+      "c": [
+        1,
+        2
+      ],
+      "x": "La albastru cu sirenă: încetinești, te tragi spre margine și îi lași drum liber. Oprirea în mijlocul benzii ar bloca exact drumul de care are nevoie.",
+      "src": "OUG 195/2002 art. 37 alin. (2)"
+    },
+    {
+      "q": "O autosanitară circulă cu lumina albastră aprinsă, dar fără semnal sonor. Cum o considerați?",
+      "o": [
+        "Nu are regim de circulație prioritară; aplicați regulile obișnuite, cu atenție",
+        "Are prioritate, girofarul fiind suficient",
+        "Are prioritate numai în intersecții"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Regimul prioritar cere ambele semnale, luminos și sonor, în funcțiune. Doar cu girofar, vehiculul nu are prioritate.",
+      "src": "OUG 195/2002 art. 61 alin. (1); Regulament art. 91 alin. (2)"
+    },
+    {
+      "q": "Ce semnifică lumina galbenă intermitentă (girofarul galben) a unui utilaj de deszăpezire?",
+      "o": [
+        "Vă avertizează să circulați cu atenție",
+        "Sunteți obligat să opriți la marginea drumului",
+        "Vehiculul nu are regim de circulație prioritară"
+      ],
+      "c": [
+        0,
+        2
+      ],
+      "x": "Girofarul galben cere doar atenție. Nu dă prioritate, deci nu trebuie să oprești.",
+      "src": "OUG 195/2002 art. 32 alin. (1) lit. c)"
+    },
+    {
+      "q": "Semaforul trece de pe verde pe galben când vă aflați atât de aproape de linia de oprire încât nu mai puteți opri în siguranță. Cum procedați?",
+      "o": [
+        "Frânați brusc, oprirea fiind obligatorie",
+        "Continuați deplasarea, deoarece nu mai puteți opri în condiții de siguranță",
+        "Opriți după linia de oprire și dați înapoi"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Galbenul te oprește doar dacă mai poți opri în siguranță. O frână bruscă ar putea provoca o tamponare din spate.",
+      "src": "Regulament art. 53 alin. (1)"
+    },
+    {
+      "q": "La semafor sunt aprinse simultan lumina roșie și cea galbenă. Ce înseamnă?",
+      "o": [
+        "Anunță apariția semnalului verde",
+        "Permite trecerea, cu prudență",
+        "Trebuie să rămâneți oprit până apare verdele"
+      ],
+      "c": [
+        0,
+        2
+      ],
+      "x": "Roșu cu galben e un „pregătește-te”: urmează verdele. Roșul e încă aprins, deci nu pornești.",
+      "src": "Regulament art. 52 alin. (3)"
+    },
+    {
+      "q": "Semaforul de la intersecție funcționează cu galben intermitent. Ce este corect?",
+      "o": [
+        "Puteți trece, cu viteză redusă",
+        "Respectați indicatoarele și regulile de prioritate din acea intersecție",
+        "Trebuie să opriți ca la indicatorul „Oprire”"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "Galbenul intermitent permite trecerea, dar prioritatea o dau indicatoarele sau regulile. Nu e o oprire obligatorie, dacă nu există indicatorul STOP.",
+      "src": "Regulament art. 53 alin. (2)",
+      "visual": {
+        "sign": "sem-galben-intermitent"
+      }
+    },
+    {
+      "q": "Semaforul vă arată roșu, dar lampa suplimentară cu săgeată verde spre dreapta clipește. Cum procedați?",
+      "o": [
+        "Puteți vira la dreapta, acordând prioritate vehiculelor și pietonilor care au liber",
+        "Așteptați apariția verdelui",
+        "Puteți merge înainte sau la dreapta"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Săgeata verde intermitentă permite doar direcția arătată, chiar și pe roșu. Cei care circulă pe verdele lor au însă prioritate.",
+      "src": "Regulament art. 51 alin. (2)",
+      "visual": {
+        "signs": [
+          "sem-rosu",
+          "x-sageata-verde-suplimentara"
+        ]
+      }
+    },
+    {
+      "q": "Ce semnificație are, pentru pietoni, lumina verde intermitentă a semaforului pentru pietoni?",
+      "o": [
+        "Pietonii pot începe liniștiți traversarea",
+        "Timpul de traversare se termină; cei aflați pe carosabil trebuie să grăbească pasul",
+        "Pietonii care nu au început traversarea nu mai au voie să pornească"
+      ],
+      "c": [
+        1,
+        2
+      ],
+      "x": "Verdele care clipește spune „se termină timpul”. Cine e deja pe carosabil se grăbește, cine e pe trotuar așteaptă următorul verde.",
+      "src": "Regulament art. 59, 60"
+    },
+    {
+      "q": "Deasupra benzii pe care circulați apare un semnal luminos roșu în formă de două bare încrucișate (X). Ce semnifică?",
+      "o": [
+        "Banda este rezervată autobuzelor",
+        "Banda poate fi folosită, cu atenție, din cauza lucrărilor",
+        "Interzice intrarea pe banda de sub semnal"
+      ],
+      "c": [
+        2
+      ],
+      "x": "X-ul roșu închide banda de dedesubt. Săgeata verde orientată în jos o deschide.",
+      "src": "Regulament art. 56"
+    },
+    {
+      "q": "Ce interzice marcajul longitudinal continuu care separă sensurile de circulație?",
+      "o": [
+        "Încălcarea lui",
+        "Nimic, are doar rol de orientare",
+        "Trecerea peste el numai noaptea"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Linia continuă nu se încalcă, nici pentru depășire, nici pentru virare. Linia discontinuă este cea care permite trecerea peste ea.",
+      "src": "Regulament art. 77 alin. (2)"
+    },
+    {
+      "q": "Axa drumului este marcată cu o linie continuă alăturată unei linii discontinue, iar linia discontinuă se află pe partea dumneavoastră. Ce este corect?",
+      "o": [
+        "Puteți trece peste marcaj, dacă manevra o impune",
+        "Nu aveți voie să treceți peste marcaj",
+        "Conducătorii din sens opus, care au linia continuă pe partea lor, nu au voie să treacă peste marcaj"
+      ],
+      "c": [
+        0,
+        2
+      ],
+      "x": "Contează linia de pe partea ta. Tu ai discontinua, deci poți trece; cei din sens opus au continua, deci nu pot.",
+      "src": "Regulament art. 79 alin. (3)"
+    },
+    {
+      "q": "Ce indică marcajul transversal format dintr-o linie discontinuă?",
+      "o": [
+        "Locul în care oprești obligatoriu la indicatorul „Oprire”",
+        "Linia pe care nu trebuie să o depășești atunci când cedezi trecerea",
+        "Trecerea pentru pietoni"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Linia transversală discontinuă merge cu „Cedează trecerea”. Linia continuă de-a latul e linia de oprire, folosită la STOP și la semafor.",
+      "src": "Regulament art. 81 alin. (1), (2)"
+    },
+    {
+      "q": "Ce semnifică linia galbenă continuă aplicată pe bordura trotuarului?",
+      "o": [
+        "Este interzisă doar staționarea; oprirea e permisă",
+        "Oprirea este interzisă pe acea parte a drumului",
+        "Locul este rezervat taxiurilor"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Linia galbenă continuă pe bordură interzice oprirea, deci și staționarea. Locurile pentru taxi se marchează cu zig-zag și inscripția TAXI.",
+      "src": "Regulament art. 80 alin. (3) lit. a)"
+    },
+    {
+      "q": "În care dintre situațiile de mai jos se poate folosi semnalizarea temporară?",
+      "o": [
+        "Pe sectoarele de drum cu lucrări",
+        "În locurile în care s-au produs accidente",
+        "În zonele afectate de calamități"
+      ],
+      "c": [
+        0,
+        1,
+        2
+      ],
+      "x": "Toate trei sunt corecte. Semnalizarea temporară schimbă regimul obișnuit pe o perioadă limitată: la lucrări, accidente sau calamități.",
+      "src": "Regulament art. 67"
+    }
+  ],
+  "uncertain": [
+    "Culoarea marcajelor temporare: brief-ul spune „galbene”, iar unele surse noi (ex. un articol EVZ despre normativul tehnic de marcaje) spun că marcajele temporare la lucrări sunt portocalii. Nu am putut citi textul oficial al Regulamentului/normativului AND 616. Am formulat neutru: „de altă culoare decât albul obișnuit” și n-am pus întrebare pe culoare.",
+    "Sign id nou „x-sageata-verde-suplimentara”: lampă de semafor cu săgeată verde spre dreapta pe fond negru (semnal verde intermitent suplimentar), montată la nivelul lămpii verzi.",
+    "Lista vehiculelor cu lumină albastră e prescurtată (OUG art. 32 alin. (2) lit. b) e mai lungă și se mai modifică); exemplele date sunt sigur incluse.",
+    "Pentru săgeata verde, scoalarutiera etichetează textul ca „OUG art. 59 alin. (4)”, dar art. 59 pare a fi despre tramvaie; am citat Regulament art. 51 alin. (2), unde apare aceeași regulă.",
+    "Scena cu polițistul folosește câmpul officer {facing:'ns', arm:'both-out'}; presupun că 'facing: ns' înseamnă că polițistul e cu fața/spatele spre brațele n și s."
+  ]
+}

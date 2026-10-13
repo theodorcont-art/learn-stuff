@@ -1,0 +1,586 @@
+{
+ "id": 12,
+ "title": "Prim ajutor, mecanică și conducere ecologică",
+ "tagline": "Cum ajuți, cum îți înțelegi mașina, cum conduci cu cap",
+ "minutes": 40,
+ "intro": "Capitolul acesta te pregătește pentru momentele în care nu există un indicator care să-ți spună ce să faci: un accident, un martor roșu în bord, un drum lung. Nu trebuie să devii medic sau mecanic. E suficient să știi câțiva pași simpli, în ordinea potrivită.",
+ "cards": [
+  {
+   "kind": "idea",
+   "title": "Întâi te protejezi pe tine",
+   "body": "<p>Un salvator rănit nu mai poate ajuta pe nimeni. De aceea, primul pas nu e victima, ci <b>locul</b>.</p><ul><li>Oprești într-un loc sigur și pui <b>luminile de avarie</b>.</li><li>Așezi <b>triunghiul reflectorizant</b> ca să-i avertizezi pe ceilalți din timp.</li><li>Te uiți după pericole: trafic, foc, scurgeri de combustibil. Oprești motorul mașinii accidentate, dacă poți.</li><li>Pui mănușile din trusă.</li></ul><p>Abia apoi te apropii de victimă. Dacă locul e prea periculos, te retragi și aștepți salvatorii.</p>",
+   "src": "Curs prim ajutor; ERC 2021",
+   "visual": {
+    "sign": "trg-triunghi-reflectorizant"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Ce îți cere legea la un accident",
+   "body": "<p>Dacă ești implicat într-un accident cu morți sau răniți, legea îți cere:</p><ul><li>să anunți <b>imediat poliția</b> (prin 112);</li><li>să <b>nu modifici sau ștergi urmele</b> accidentului;</li><li>să <b>nu părăsești locul</b> faptei.</li></ul><p>Nimeni nu are voie să mute vehiculele implicate fără acordul poliției. Până la testare, cei implicați <b>nu au voie să consume alcool</b> sau alte substanțe.</p><p>Ca să poți ajuta, mașina trebuie să aibă: <b>trusă medicală, două triunghiuri reflectorizante și un stingător</b>, omologate.</p>",
+   "src": "OUG 195/2002 art. 77, art. 78, art. 8"
+  },
+  {
+   "kind": "memo",
+   "title": "Apelul la 112, pe scurt",
+   "body": "<p>112 e numărul unic de urgență: poliție, ambulanță, pompieri. Vorbești calm și spui pe rând:</p><ol><li><b>Unde</b> ești (drum, kilometru, localitate, repere).</li><li><b>Ce</b> s-a întâmplat.</li><li><b>Câte victime</b> sunt și cum arată: conștiente? respiră? sângerează?</li><li>Pericole speciale: foc, persoane blocate, marfă periculoasă.</li></ol><p><b>Nu închizi tu primul.</b> Dispecerul îți poate da instrucțiuni pas cu pas, chiar și pentru resuscitare.</p>",
+   "src": "OUG 195/2002 art. 77 alin. (2)",
+   "visual": {
+    "big": "112",
+    "caption": "poliție, ambulanță, pompieri"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Inconștient, dar respiră: poziția laterală",
+   "body": "<p>Întâi verifici: răspunde dacă îl strigi și îl atingi ușor pe umăr? Dacă nu, îi eliberezi căile respiratorii (capul ușor pe spate, bărbia ridicată) și te uiți <b>cel mult 10 secunde</b> dacă respiră normal.</p><p>Dacă <b>respiră normal</b>, îl pui în <b>poziția laterală de siguranță</b>: culcat pe o parte, cu capul ușor pe spate. Așa limba nu blochează aerul, iar voma se poate scurge.</p><p>Îl verifici des până vine ambulanța. Dacă nu mai respiră normal, începi resuscitarea.</p>",
+   "src": "ERC 2021 (Prim ajutor, BLS)"
+  },
+  {
+   "kind": "rule",
+   "title": "Nu respiră normal: resuscitarea 30:2",
+   "body": "<p>Suni la 112 (pe difuzor) și ceri un defibrilator, dacă e unul aproape. Apoi:</p><ul><li>Victima stă pe spate, pe o suprafață <b>tare</b>.</li><li>Apeși cu podul palmelor în <b>centrul pieptului</b>, cu brațele întinse.</li><li>Adâncime <b>5–6 cm</b>, ritm <b>100–120 pe minut</b>.</li><li><b>30 de compresii, apoi 2 insuflații</b>, și tot așa.</li></ul><p>Dacă nu poți sau nu vrei să faci insuflații, faci doar compresii, fără pauză. Te oprești doar când vin salvatorii, când victima își revine sau când nu mai poți.</p>",
+   "src": "ERC 2021 (BLS adult)",
+   "visual": {
+    "big": "30 : 2",
+    "caption": "compresii : insuflații"
+   }
+  },
+  {
+   "kind": "trap",
+   "title": "Respirația „gâfâită” nu e respirație",
+   "body": "<p>Imediat după oprirea inimii, unii oameni au câteva <b>respirații rare, zgomotoase, sacadate</b>. Par semne de viață, dar nu sunt.</p><p>Regula simplă: dacă victima <b>nu răspunde</b> și <b>nu respiră normal</b>, o tratezi ca în stop cardio-respirator: 112 și compresii.</p><p>Nu pierzi timp căutând pulsul. Pentru un om fără pregătire medicală, verificarea respirației e suficientă.</p>",
+   "src": "ERC 2021 (BLS adult)"
+  },
+  {
+   "kind": "rule",
+   "title": "Hemoragiile: cum le recunoști",
+   "body": "<p>Sângele îți spune ce vas e rănit:</p><ul><li><b>Arterială</b>: roșu aprins, țâșnește în jet, în ritmul inimii. Cea mai periculoasă.</li><li><b>Venoasă</b>: roșu închis, curge continuu, fără jet.</li><li><b>Capilară</b>: picături care apar pe toată suprafața rănii (zgârietură).</li></ul><p>Prima măsură, pentru toate: <b>apeși direct pe rană</b> cu o compresă sterilă, apoi faci un <b>pansament compresiv</b>. Dacă membrul nu e fracturat, îl ții ridicat.</p><p>Nu scoți obiectele înfipte în rană: pot opri chiar ele sângerarea.</p>",
+   "src": "Curs prim ajutor, cap. III; ERC 2021",
+   "visual": {
+    "table": [
+     [
+      "Tip",
+      "Cum arată"
+     ],
+     [
+      "Arterială",
+      "roșu aprins, în jet"
+     ],
+     [
+      "Venoasă",
+      "roșu închis, continuu"
+     ],
+     [
+      "Capilară",
+      "picături, pe suprafață"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Garoul și victima în șoc",
+   "body": "<p><b>Garoul</b> e ultima soluție: doar pentru o sângerare la un membru care pune viața în pericol și nu se oprește prin apăsare. Se pune <b>deasupra rănii</b> (spre inimă), strâns, și se <b>notează ora</b> aplicării, ca medicii să știe de când e pus.</p><p>Pierderea mare de sânge poate duce la <b>șoc</b>: piele palidă și rece, transpirație, puls rapid, agitație. Culci victima <b>pe spate, cu picioarele ridicate</b> (dacă nu are fracturi la picioare), o acoperi cu <b>folia izotermă</b> din trusă și nu îi dai alcool.</p>",
+   "src": "Curs prim ajutor, cap. I și III; ERC 2021"
+  },
+  {
+   "kind": "rule",
+   "title": "Fracturi: imobilizezi, nu repari",
+   "body": "<p>Fractura poate fi <b>închisă</b> (pielea e întreagă) sau <b>deschisă</b> (există o rană până la os). Semne: durere puternică, deformare, umflătură, membrul nu se mișcă normal.</p><ul><li>Lași membrul <b>în poziția în care l-ai găsit</b>.</li><li><b>Nu încerci să pui osul la loc</b>.</li><li>La fractura deschisă, acoperi rana cu o compresă sterilă.</li><li>Imobilizezi cu atele sau bandajul triunghiular, prinzând și articulațiile de deasupra și de dedesubt.</li></ul>",
+   "src": "Curs prim ajutor, cap. IV; ERC 2021"
+  },
+  {
+   "kind": "rule",
+   "title": "Arsuri: apă rece, mult timp",
+   "body": "<p>Îndepărtezi victima de sursa de căldură. Dacă îi iau foc hainele, o acoperi cu o pătură.</p><ul><li>Răcești arsura cu <b>apă rece și curată, cam 20 de minute</b>. Nu folosești gheață.</li><li>Scoți inelele și ceasul înainte să se umfle zona.</li><li><b>Nu dezlipești</b> hainele lipite de piele și <b>nu spargi</b> bășicile.</li><li>Nu pui unguente, ulei, pudră sau alte remedii.</li><li>Acoperi lejer cu o compresă sterilă sau cu folie alimentară curată.</li></ul>",
+   "src": "ERC 2021 (Prim ajutor); Curs prim ajutor, cap. II",
+   "visual": {
+    "big": "20 min",
+    "caption": "apă rece pe arsură"
+   }
+  },
+  {
+   "kind": "trap",
+   "title": "Pe cine nu muți. Și casca motociclistului",
+   "body": "<p>Dacă bănuiești o leziune la <b>coloană</b> (impact puternic, durere de gât sau spate, amorțeli), <b>nu muți victima</b>. Îi ții capul nemișcat, în linie cu corpul, și aștepți ambulanța.</p><p>O muți doar dacă e în <b>pericol imediat</b> (foc, trafic). Atunci o ridicați mai mulți, fără s-o trageți, cu capul, gâtul și trunchiul în linie.</p><p><b>Casca motociclistului nu se scoate</b> dacă victima respiră. Se scoate doar dacă nu respiră sau vomită și trebuie eliberate căile respiratorii, de preferat de două persoane: una ține capul și gâtul.</p>",
+   "src": "Curs prim ajutor, cap. II și IV; ERC 2021"
+  },
+  {
+   "kind": "idea",
+   "title": "Martorii de bord, ca un semafor",
+   "body": "<p>Culoarea martorului îți spune cât de grav e:</p><ul><li><b>Roșu</b>: problemă serioasă. Oprești cât mai curând, în siguranță, și oprești motorul. Exemple: presiunea uleiului, temperatura motorului, frânele, încărcarea bateriei.</li><li><b>Galben sau portocaliu</b>: ceva trebuie verificat curând. Exemple: motor (check engine), ABS, presiunea în pneuri, bujiile incandescente la diesel.</li><li><b>Verde sau albastru</b>: doar informare. Exemple: semnalizarea, faza scurtă (verde), faza lungă (albastru).</li></ul>",
+   "src": "Noțiuni de mecanică auto",
+   "visual": {
+    "table": [
+     [
+      "Culoare",
+      "Ce faci"
+     ],
+     [
+      "Roșu",
+      "oprești în siguranță"
+     ],
+     [
+      "Galben",
+      "verifici curând"
+     ],
+     [
+      "Verde/albastru",
+      "doar informare"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Pneurile: presiune și uzură",
+   "body": "<p>Pneurile sunt singurul contact cu drumul. Verifici presiunea <b>la rece</b>, cel puțin <b>o dată pe lună</b> și înainte de un drum lung, la valorile din manual.</p><ul><li>Uzură pe <b>ambele margini</b>: presiune <b>prea mică</b>.</li><li>Uzură <b>la mijloc</b>: presiune <b>prea mare</b>.</li><li>Uzură <b>pe o singură parte</b>: geometria roților e dereglată.</li></ul><p>Adâncimea minimă a profilului este <b>1,6 mm</b>. Pe drum cu zăpadă, gheață sau polei circuli doar cu <b>anvelope de iarnă</b>.</p>",
+   "src": "Noțiuni de mecanică auto (sistemul de rulare); OUG 195/2002 art. 102",
+   "visual": {
+    "table": [
+     [
+      "Unde e uzat",
+      "Cauza"
+     ],
+     [
+      "Pe margini",
+      "presiune prea mică"
+     ],
+     [
+      "La mijloc",
+      "presiune prea mare"
+     ],
+     [
+      "Pe o parte",
+      "geometrie dereglată"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Lichidele și motorul care se încinge",
+   "body": "<ul><li><b>Uleiul</b>: îl verifici cu joja, pe teren plan, cu motorul oprit de câteva minute. Nivelul trebuie să fie <b>între minim și maxim</b>.</li><li><b>Lichidul de răcire</b> (antigel): în vasul de expansiune, între minim și maxim, verificat la rece. Motorul lucrează normal la <b>80–95°C</b>.</li><li><b>Lichidul de frână</b>: nivelul nu trebuie să scadă sub minim.</li></ul><p>Dacă acul temperaturii urcă spre roșu, oprești în siguranță și lași motorul să se răcească. <b>Nu deschizi bușonul</b> cât e fierbinte: lichidul sub presiune te poate opări.</p>",
+   "src": "Noțiuni de mecanică auto (ungere, răcire)"
+  },
+  {
+   "kind": "rule",
+   "title": "Frânele și bateria: semne de alarmă",
+   "body": "<ul><li>Pedala de frână <b>moale</b> sau care <b>coboară mult</b>: aer în sistem sau scurgere de lichid. Nu pleci la drum așa.</li><li>Mașina <b>trage într-o parte</b> la frânare: frânare inegală, mergi la service.</li><li>Pe pante lungi la vale folosești <b>frâna de motor</b> (o treaptă inferioară), ca frânele să nu se supraîncălzească.</li><li>Bateria are <b>12 V</b>. Dacă martorul bateriei se aprinde în mers, nu se mai încarcă: alternatorul sau cureaua au o problemă.</li><li><b>ABS</b> împiedică blocarea roților la frânare, ca să poți vira în timp ce frânezi.</li></ul>",
+   "src": "Noțiuni de mecanică auto (frânare, aprindere și pornire)"
+  },
+  {
+   "kind": "rule",
+   "title": "Eco: trepte superioare, turație moderată",
+   "body": "<p>Motorul consumă cel mai puțin la <b>turații moderate</b> și în <b>trepte mari</b>.</p><ul><li>Treci devreme în treapta superioară: la benzină, pe la <b>2000 rot/min</b> (la diesel, de obicei chiar mai devreme).</li><li>Accelerezi lin, fără ambalări.</li><li>La opriri mai lungi <b>oprești motorul</b>: la ralanti consumi degeaba.</li><li>Pornești imediat după ce ai pornit motorul, fără să-l încălzești pe loc.</li></ul>",
+   "src": "Conducerea ecologică, cap. I",
+   "visual": {
+    "big": "~2000 rot/min",
+    "caption": "schimbi în treapta superioară (benzină)"
+   }
+  },
+  {
+   "kind": "idea",
+   "title": "Eco: anticipezi și cari doar ce trebuie",
+   "body": "<p>Fiecare frânare bruscă aruncă energie pe care ai plătit-o cu carburant. Dacă vezi de departe un semafor roșu, <b>ridici piciorul de pe accelerație</b> și lași mașina să încetinească <b>în viteză</b>: frâna de motor nu consumă aproape nimic.</p><ul><li>Pneurile umflate corect consumă mai puțin.</li><li>Aerul condiționat poate crește consumul cu <b>circa 20%</b>.</li><li>Portbagajul de pe plafon și greutatea inutilă cresc consumul.</li><li>Îți planifici traseul ca să eviți aglomerația.</li></ul>",
+   "src": "Conducerea ecologică, cap. I"
+  },
+  {
+   "kind": "rule",
+   "title": "Distanța: viteza dublă, frânare de 4 ori",
+   "body": "<p>Până apeși frâna trece cam <b>o secundă</b>, iar mașina merge în tot acest timp. Apoi urmează frânarea propriu-zisă.</p><p>Distanța de frânare crește cu <b>pătratul vitezei</b>: la viteză dublă, frânezi pe o distanță de <b>circa 4 ori</b> mai mare. Pe drum ud, și mai mult.</p><p>Un truc simplu: lași cel puțin <b>2 secunde</b> între tine și mașina din față (numeri când trece de un reper). Pe ploaie, dublezi.</p>",
+   "src": "Conducerea preventivă, cap. III",
+   "visual": {
+    "table": [
+     [
+      "Viteză",
+      "Oprire (uscat–ud)"
+     ],
+     [
+      "50 km/h",
+      "28–33 m"
+     ],
+     [
+      "90 km/h",
+      "70–88 m"
+     ],
+     [
+      "130 km/h",
+      "130–167 m"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Oboseala: pauză înainte să fie târziu",
+   "body": "<p>Oboseala lungește timpul de reacție și te face să judeci greșit viteza și distanțele. Cel mai periculos e <b>ațipirea la volan</b>, care durează doar câteva secunde.</p><ul><li>Faci o pauză de <b>cel puțin 15 minute la fiecare 2 ore</b> de condus.</li><li>Semne de alarmă: căscat des, pleoape grele, nu-ți amintești ultimii kilometri, ieși ușor de pe bandă.</li><li>Atunci oprești într-un loc sigur. Geamul deschis sau muzica tare nu ajută decât câteva minute.</li></ul><p>Unele medicamente (calmante, sedative) dau și ele somnolență: citește prospectul.</p>",
+   "src": "Conducerea preventivă, cap. II",
+   "visual": {
+    "big": "2 h → 15 min",
+    "caption": "pauză minimă recomandată"
+   }
+  },
+  {
+   "kind": "trap",
+   "title": "Punctul mort: oglinzile nu văd tot",
+   "body": "<p>Lângă mașina ta, în spate-stânga și spate-dreapta, există zone pe care <b>nicio oglindă nu le arată</b>. Acolo poate fi un motociclist sau o mașină întreagă.</p><ul><li>Înainte să schimbi banda: <b>oglinzi</b>, <b>semnalizare din timp</b> și o <b>privire scurtă peste umăr</b>.</li><li>Nu stai mult timp în punctul mort al altuia, mai ales lângă camioane.</li><li>Regulă bună: dacă nu vezi șoferul camionului în oglinda lui, nici el nu te vede.</li></ul>",
+   "src": "Conducerea preventivă, cap. IX"
+  }
+ ],
+ "summary": [
+  "La un accident, întâi faci locul sigur: avarii, triunghi, atenție la trafic și foc.",
+  "Dacă ești implicat într-un accident cu victime, anunți imediat poliția, nu ștergi urmele și nu pleci de la fața locului.",
+  "La 112 spui unde ești, ce s-a întâmplat, câte victime sunt și în ce stare, și nu închizi primul.",
+  "Victima inconștientă care respiră normal se pune în poziția laterală de siguranță.",
+  "Dacă nu respiră normal: 30 de compresii în centrul pieptului (5–6 cm, 100–120 pe minut), apoi 2 insuflații.",
+  "Sângerarea se oprește prin apăsare directă; garoul e ultima soluție, deasupra rănii, cu ora notată.",
+  "Fracturile se imobilizează așa cum sunt, iar arsurile se răcesc cu apă cam 20 de minute.",
+  "Victima cu posibilă leziune de coloană nu se mută, iar casca motociclistului nu se scoate dacă acesta respiră.",
+  "Un martor roșu în bord înseamnă oprire în siguranță; pneurile se verifică la rece, lunar.",
+  "Treptele mari, anticiparea, pauzele la 2 ore și privirea peste umăr fac drumul mai ieftin și mai sigur."
+ ],
+ "questions": [
+  {
+   "q": "Ce obligații are conducătorul unui vehicul implicat într-un accident în urma căruia o persoană a fost rănită?",
+   "o": [
+    "să anunțe imediat poliția;",
+    "să mute vehiculele pe acostament, fără acordul poliției, ca să elibereze drumul;",
+    "să nu modifice și să nu șteargă urmele accidentului."
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Legea cere anunțarea imediată a poliției și păstrarea urmelor. Vehiculele implicate nu se mută fără acordul poliției, chiar dacă pare de ajutor.",
+   "src": "OUG 195/2002 art. 77"
+  },
+  {
+   "q": "Ajungeți primul la locul unui accident pe un drum aglomerat. Ce faceți mai întâi?",
+   "o": [
+    "scoateți imediat toate victimele din vehicule;",
+    "vă asigurați că locul e sigur: opriți corect, puneți avariile și triunghiul reflectorizant;",
+    "le dați victimelor apă să se liniștească."
+   ],
+   "c": [
+    1
+   ],
+   "x": "Primul pas e siguranța locului, ca să nu apară un al doilea accident. Victimele nu se scot din mașină decât dacă sunt în pericol imediat.",
+   "src": "Curs prim ajutor, cap. I",
+   "visual": {
+    "sign": "trg-triunghi-reflectorizant"
+   }
+  },
+  {
+   "q": "Cu ce trebuie să fie dotat un autoturism, conform legii?",
+   "o": [
+    "cu trusă medicală de prim ajutor;",
+    "cu lanțuri de zăpadă, pe tot parcursul anului;",
+    "cu două triunghiuri reflectorizante și un stingător de incendiu."
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Trusa medicală, cele două triunghiuri și stingătorul sunt dotări obligatorii. Lanțurile sunt obligatorii doar unde le cere indicatorul.",
+   "src": "OUG 195/2002 art. 8"
+  },
+  {
+   "q": "O victimă nu reacționează când o strigați și o atingeți, dar respiră normal. Cum procedați?",
+   "o": [
+    "începeți imediat compresiile toracice;",
+    "o lăsați pe spate, cu o haină împăturită sub cap;",
+    "o așezați în poziția laterală de siguranță și o supravegheați până sosește ambulanța."
+   ],
+   "c": [
+    2
+   ],
+   "x": "Victima inconștientă care respiră normal se pune pe o parte, ca limba sau voma să nu-i blocheze respirația. Compresiile se fac doar dacă nu respiră normal.",
+   "src": "ERC 2021"
+  },
+  {
+   "q": "Care este raportul corect dintre compresiile toracice și insuflații la resuscitarea unui adult?",
+   "o": [
+    "15 compresii și 2 insuflații;",
+    "30 de compresii și 2 insuflații;",
+    "5 compresii și o insuflație."
+   ],
+   "c": [
+    1
+   ],
+   "x": "La adult se fac 30 de compresii, apoi 2 insuflații. Dacă nu poți face insuflații, faci doar compresii continue.",
+   "src": "ERC 2021 (BLS adult)",
+   "visual": {
+    "big": "30 : 2",
+    "caption": "compresii : insuflații"
+   }
+  },
+  {
+   "q": "Cum se fac corect compresiile toracice la un adult?",
+   "o": [
+    "apăsând în centrul pieptului, cam 5–6 cm adâncime;",
+    "cu un ritm de 100–120 de compresii pe minut;",
+    "apăsând pe abdomen, sub coaste, ca să nu rupeți nimic."
+   ],
+   "c": [
+    0,
+    1
+   ],
+   "x": "Locul corect este centrul pieptului, cu adâncimea de 5–6 cm și ritm de 100–120 pe minut. Apăsarea pe abdomen nu ajută inima.",
+   "src": "ERC 2021 (BLS adult)"
+  },
+  {
+   "q": "O victimă nu răspunde și respiră rar, zgomotos, sacadat. Ce faceți?",
+   "o": [
+    "considerați că nu respiră normal: sunați la 112 și începeți resuscitarea;",
+    "considerați că respiră și o puneți în poziția laterală de siguranță;",
+    "așteptați câteva minute să vedeți dacă își revine."
+   ],
+   "c": [
+    0
+   ],
+   "x": "Respirația rară și „gâfâită” apare des imediat după oprirea inimii și nu este respirație normală. Atenție: e capcana clasică.",
+   "src": "ERC 2021 (BLS adult)"
+  },
+  {
+   "q": "După ce semne recunoașteți o hemoragie arterială?",
+   "o": [
+    "sânge roșu închis, care curge continuu, fără jet;",
+    "picături mici care apar pe toată suprafața rănii;",
+    "sânge roșu aprins, care țâșnește în jet, în ritmul inimii."
+   ],
+   "c": [
+    2
+   ],
+   "x": "Sângele arterial e roșu aprins și țâșnește pulsat. Roșul închis care curge continuu e venos, iar picăturile pe suprafață sunt capilare.",
+   "src": "Curs prim ajutor, cap. III"
+  },
+  {
+   "q": "Cum opriți o sângerare puternică la antebraț, fără fractură?",
+   "o": [
+    "turnați alcool direct în rana adâncă;",
+    "apăsați direct pe rană cu o compresă sterilă și faceți un pansament compresiv;",
+    "țineți brațul ridicat."
+   ],
+   "c": [
+    1,
+    2
+   ],
+   "x": "Apăsarea directă și pansamentul compresiv opresc majoritatea sângerărilor, iar membrul ridicat ajută. Dezinfectantele nu se pun în rănile adânci.",
+   "src": "Curs prim ajutor, cap. III; ERC 2021"
+  },
+  {
+   "q": "Ce este adevărat despre garou?",
+   "o": [
+    "se folosește doar când sângerarea unui membru pune viața în pericol și nu poate fi oprită altfel;",
+    "se aplică deasupra rănii, spre inimă;",
+    "se notează ora la care a fost aplicat."
+   ],
+   "c": [
+    0,
+    1,
+    2
+   ],
+   "x": "Toate trei sunt corecte. Garoul e ultima soluție, se pune deasupra rănii, iar ora notată îi ajută pe medici.",
+   "src": "Curs prim ajutor, cap. I și III"
+  },
+  {
+   "q": "După o pierdere mare de sânge, victima e palidă, rece, transpirată și are pulsul rapid. Cum o ajutați?",
+   "o": [
+    "o culcați pe spate, cu picioarele ridicate, dacă nu are fracturi la picioare;",
+    "îi dați puțin alcool ca să se încălzească;",
+    "o acoperiți cu folia izotermă sau cu o haină."
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Sunt semne de șoc. Poziția cu picioarele ridicate și căldura o ajută. Alcoolul e interzis: agravează starea victimei.",
+   "src": "Curs prim ajutor, cap. III și IV"
+  },
+  {
+   "q": "Un pieton are o fractură deschisă la gambă. Ce faceți?",
+   "o": [
+    "împingeți ușor osul la loc, ca să puteți pansa rana;",
+    "îl ajutați să meargă până la mașină, sprijinit de umărul dumneavoastră;",
+    "acoperiți rana cu o compresă sterilă și imobilizați piciorul în poziția găsită."
+   ],
+   "c": [
+    2
+   ],
+   "x": "La fractură nu se încearcă reducerea osului și nu se sprijină greutate pe membru. Acoperi rana steril și imobilizezi.",
+   "src": "Curs prim ajutor, cap. IV"
+  },
+  {
+   "q": "Cum acordați primul ajutor unei persoane cu arsuri pe mână?",
+   "o": [
+    "răciți arsura cu apă rece și curată, cam 20 de minute;",
+    "ungeți arsura cu ulei sau cu pastă de dinți;",
+    "dezlipiți hainele lipite de piele, ca să vedeți rana."
+   ],
+   "c": [
+    0
+   ],
+   "x": "Apa rece oprește arderea în profunzime. Unsorile și dezlipirea hainelor agravează leziunea.",
+   "src": "ERC 2021 (Prim ajutor)"
+  },
+  {
+   "q": "Un motociclist accidentat este inconștient, dar respiră normal. Cum procedați cu casca lui?",
+   "o": [
+    "o scoateți imediat, ca să respire mai ușor;",
+    "nu o scoateți;",
+    "o scoateți și îl așezați în șezut."
+   ],
+   "c": [
+    1
+   ],
+   "x": "Dacă victima respiră, casca rămâne pe cap, ca să nu fie mișcată coloana cervicală. Se scoate doar dacă nu respiră sau vomită, ideal de două persoane.",
+   "src": "Curs prim ajutor; ERC 2021"
+  },
+  {
+   "q": "Șoferul unei mașini accidentate se plânge de dureri puternice de gât. Nu există pericol de incendiu. Cum procedați?",
+   "o": [
+    "nu îl mutați și așteptați ambulanța;",
+    "îl scoateți din mașină trăgându-l de brațe;",
+    "îi țineți capul nemișcat, în linie cu corpul."
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Durerea de gât poate însemna o leziune la coloană. Fără pericol imediat, victima nu se mută, iar capul se ține nemișcat.",
+   "src": "Curs prim ajutor, cap. IV; ERC 2021"
+  },
+  {
+   "q": "În timpul mersului se aprinde martorul roșu al presiunii uleiului. Ce faceți?",
+   "o": [
+    "continuați până la cel mai apropiat service;",
+    "măriți turația, ca să crească presiunea;",
+    "opriți cât mai curând, în siguranță, și opriți motorul."
+   ],
+   "c": [
+    2
+   ],
+   "x": "Un martor roșu înseamnă o problemă serioasă. Fără presiune de ulei, motorul se poate distruge în câteva minute.",
+   "src": "Noțiuni de mecanică auto"
+  },
+  {
+   "q": "Observați că pneurile sunt uzate mai mult pe ambele margini decât la mijloc. Care este cauza probabilă?",
+   "o": [
+    "presiunea în pneuri este prea mare;",
+    "presiunea în pneuri este prea mică;",
+    "pneurile sunt prea noi."
+   ],
+   "c": [
+    1
+   ],
+   "x": "Pneul subumflat se sprijină pe margini și le uzează. Uzura la mijloc arată presiune prea mare.",
+   "src": "Noțiuni de mecanică auto"
+  },
+  {
+   "q": "Acul indicatorului de temperatură urcă în zona roșie. Cum procedați?",
+   "o": [
+    "deschideți imediat bușonul vasului de expansiune, ca să iasă aburul;",
+    "opriți în siguranță și lăsați motorul să se răcească înainte de a verifica lichidul;",
+    "continuați drumul cu o turație cât mai mare."
+   ],
+   "c": [
+    1
+   ],
+   "x": "Un motor supraîncălzit trebuie lăsat să se răcească. Bușonul deschis la cald poate arunca lichid fierbinte sub presiune.",
+   "src": "Noțiuni de mecanică auto (răcire)"
+  },
+  {
+   "q": "Pedala de frână devine moale și coboară mult mai jos decât de obicei. Ce poate însemna și ce faceți?",
+   "o": [
+    "poate fi aer în sistemul de frânare sau o scurgere de lichid de frână;",
+    "este normal după un drum lung, nu e nevoie de nimic;",
+    "nu mai circulați până nu verificați și reparați sistemul."
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Pedala moale arată o problemă în circuitul hidraulic. Frânele sunt vitale, așa că nu pleci la drum până nu sunt reparate.",
+   "src": "Noțiuni de mecanică auto (frânare)"
+  },
+  {
+   "q": "Ce comportamente țin de conducerea ecologică?",
+   "o": [
+    "treceți devreme în treapta superioară, pe la 2000 rot/min la benzină;",
+    "opriți motorul la staționările mai lungi;",
+    "accelerați puternic, ca să ajungeți repede la viteza dorită."
+   ],
+   "c": [
+    0,
+    1
+   ],
+   "x": "Turațiile moderate, treptele mari și oprirea motorului la staționări scad consumul. Accelerările bruște îl cresc.",
+   "src": "Conducerea ecologică, cap. I"
+  },
+  {
+   "q": "Vedeți de departe că semaforul din față este roșu. Ce comportament este cel mai ecologic?",
+   "o": [
+    "accelerați până aproape de semafor și frânați puternic;",
+    "ridicați piciorul de pe accelerație și lăsați mașina să încetinească în viteză;",
+    "treceți schimbătorul în neutru și opriți motorul din mers."
+   ],
+   "c": [
+    1
+   ],
+   "x": "Anticiparea și frâna de motor economisesc carburant. Motorul oprit în mers te lasă fără servofrână și servodirecție, deci e periculos.",
+   "src": "Conducerea ecologică, cap. I"
+  },
+  {
+   "q": "Cum preveniți oboseala la un drum lung?",
+   "o": [
+    "faceți o pauză de cel puțin 15 minute la fiecare 2 ore de condus;",
+    "deschideți geamul și continuați încă câteva ore;",
+    "la primele semne de somnolență, opriți într-un loc sigur."
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Pauzele regulate și oprirea la primele semne de somn sunt soluțiile reale. Aerul rece te ține treaz doar câteva minute.",
+   "src": "Conducerea preventivă, cap. II"
+  },
+  {
+   "q": "Ce faceți înainte de a schimba banda de circulație, ca să evitați punctul mort?",
+   "o": [
+    "vă uitați doar în oglinda retrovizoare interioară;",
+    "verificați oglinzile și priviți scurt peste umăr;",
+    "semnalizați din timp."
+   ],
+   "c": [
+    1,
+    2
+   ],
+   "x": "Oglinzile nu acoperă tot. Privirea scurtă peste umăr și semnalizarea din timp îi feresc pe cei aflați în punctul mort.",
+   "src": "Conducerea preventivă, cap. IX"
+  },
+  {
+   "q": "Dacă viteza se dublează, cum se modifică distanța de frânare?",
+   "o": [
+    "se dublează și ea;",
+    "rămâne aproximativ aceeași;",
+    "crește de aproximativ 4 ori."
+   ],
+   "c": [
+    2
+   ],
+   "x": "Distanța de frânare crește cu pătratul vitezei. De la 50 la 100 km/h, frânezi pe o distanță de circa 4 ori mai mare.",
+   "src": "Conducerea preventivă, cap. III"
+  }
+ ],
+ "uncertain": [
+  "Garoul: cursul scoalarutiera.ro (cap. III) spune că se slăbește la fiecare 15 minute și se ține maxim 2 ore; ghidurile ERC actuale nu mai recomandă slăbirea periodică. Am evitat orice afirmație despre slăbire și am păstrat doar ce e comun (ultima soluție, deasupra rănii, ora notată). Dacă banca DRPCIV are o întrebare pe acest detaliu, răspunsul de examen poate fi varianta veche.",
+  "Ritmul compresiilor: cursul scoalarutiera.ro indică 80–100/min (formulare veche); am folosit ghidul ERC 2021/2025: 100–120/min, 5–6 cm. Răspunsul din banca DRPCIV poate diferi dacă întrebarea e veche.",
+  "Victima în șoc: cursul scoalarutiera.ro spune că i se poate da apă dacă e conștientă; ERC nu recomandă băuturi. Am scris doar „nu îi dai alcool” și nu am pus întrebare pe tema apei.",
+  "Adâncimea minimă a profilului 1,6 mm: valoarea standard UE (Directiva 89/459/CEE), confirmată doar de surse de presă; cursul scoalarutiera.ro (sistemul de rulare) menționează 4 mm, probabil ca recomandare. Articolul exact din legislația RO (RNTR/Ordin MT) nu a fost verificat.",
+  "Anvelope de iarnă: obligația pe drum cu zăpadă/gheață/polei e confirmată (sancțiune în OUG 195/2002 art. 102, fostul pct. 28; reținerea certificatului în art. 112); numerotarea exactă a alineatului/literei în forma actuală nu a fost verificată.",
+  "Turația pentru schimbarea treptei la diesel (sub 2000 rot/min) și regula celor 2 secunde sunt recomandări uzuale, nu apar explicit în sursele verificate.",
+  "Clasificarea culorilor martorilor de bord (roșu/galben/verde-albastru) este convenția producătorilor (ISO 2575), nu un text din lege."
+ ]
+}

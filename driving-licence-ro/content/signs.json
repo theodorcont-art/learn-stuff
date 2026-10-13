@@ -1,0 +1,488 @@
+{
+ "av-curba-dreapta": {
+  "name": "Curbă la dreapta",
+  "cat": "avertizare",
+  "meaning": "Urmează o curbă periculoasă spre dreapta. Reduci viteza înainte de curbă și păstrezi banda.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M44 80 V60 Q44 44 62 42\" fill=\"none\" stroke=\"#111\" stroke-width=\"8\"/><path d=\"M60 34 L70 42 L60 50Z\" fill=\"#111\"/></svg>"
+ },
+ "av-curba-stanga": {
+  "name": "Curbă la stânga",
+  "cat": "avertizare",
+  "meaning": "Urmează o curbă periculoasă spre stânga. Reduci viteza înainte de curbă și păstrezi banda.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M56 80 V60 Q56 44 38 42\" fill=\"none\" stroke=\"#111\" stroke-width=\"8\"/><path d=\"M40 34 L30 42 L40 50Z\" fill=\"#111\"/></svg>"
+ },
+ "av-curbe-succesive": {
+  "name": "Curbe succesive",
+  "cat": "avertizare",
+  "meaning": "Urmează mai multe curbe una după alta (prima în sensul arătat). Circuli cu viteză redusă și nu depășești.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M42 82 V72 Q42 62 52 60 Q60 58 60 50 Q60 42 50 40 L46 39\" fill=\"none\" stroke=\"#111\" stroke-width=\"7\"/><path d=\"M48 31 L38 38 L48 45Z\" fill=\"#111\"/></svg>"
+ },
+ "av-drum-ingustat": {
+  "name": "Drum îngustat",
+  "cat": "avertizare",
+  "meaning": "Partea carosabilă se îngustează pe ambele părți. Reduci viteza și ești atent la cei din față și din sens opus.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M36 82 V68 L43 56 V38 M64 82 V68 L57 56 V38\" fill=\"none\" stroke=\"#111\" stroke-width=\"5\"/></svg>"
+ },
+ "av-drum-alunecos": {
+  "name": "Drum alunecos",
+  "cat": "avertizare",
+  "meaning": "Drumul poate fi alunecos (umezeală, polei, noroi). Reduci viteza și eviți frânările și virajele bruște.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><g transform=\"translate(36 35) scale(1.1)\"><path fill=\"#111\" d=\"M4 9 L7 2 H19 L22 9 H25 V19 H1 V9Z\"/><path fill=\"#FFF\" d=\"M7.5 8.5 L9.5 4 H16.5 L18.5 8.5Z\"/><rect x=\"2\" y=\"19\" width=\"5\" height=\"4\" fill=\"#111\"/><rect x=\"19\" y=\"19\" width=\"5\" height=\"4\" fill=\"#111\"/></g><path d=\"M40 82 C46 74 34 70 42 62 M60 82 C66 74 54 70 62 62\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></svg>"
+ },
+ "av-denivelare": {
+  "name": "Drum denivelat",
+  "cat": "avertizare",
+  "meaning": "Urmează o porțiune cu denivelări (gropi, ridicături). Reduci viteza ca să păstrezi controlul.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M22 79 H32 Q38 58 44 79 H56 Q62 58 68 79 H78 V83 H22Z\" fill=\"#111\"/></svg>"
+ },
+ "av-intersectie": {
+  "name": "Intersecție de drumuri",
+  "cat": "avertizare",
+  "meaning": "Urmează o intersecție în care se aplică regula priorității de dreapta. Reduci viteza și cedezi trecerea celor din dreapta.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M50 36 V82 M30 62 H70\" stroke=\"#111\" stroke-width=\"7\"/></svg>"
+ },
+ "av-sens-giratoriu": {
+  "name": "Intersecție cu sens giratoriu",
+  "cat": "avertizare",
+  "meaning": "Urmează o intersecție cu sens giratoriu. Reduci viteza și te pregătești să cedezi trecerea celor aflați deja în giratoriu.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><g fill=\"none\" stroke=\"#111\" stroke-width=\"5\"><path d=\"M38 58 A13 13 0 0 1 56 46\"/><path d=\"M62 54 A13 13 0 0 1 54 72\"/><path d=\"M45 74 A13 13 0 0 1 37 64\"/></g><g fill=\"#111\"><path d=\"M54 40 L62 47 L52 51Z\"/><path d=\"M60 72 L50 77 L52 67Z\"/><path d=\"M32 66 L34 56 L42 63Z\"/></g></svg>"
+ },
+ "av-semafoare": {
+  "name": "Semafoare",
+  "cat": "avertizare",
+  "meaning": "Urmează o intersecție sau o trecere dirijată prin semafoare. Te pregătești să oprești.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><rect x=\"41\" y=\"34\" width=\"18\" height=\"46\" rx=\"4\" fill=\"#111\"/><circle cx=\"50\" cy=\"43\" r=\"5\" fill=\"#C8102E\"/><circle cx=\"50\" cy=\"57\" r=\"5\" fill=\"#FFCC00\"/><circle cx=\"50\" cy=\"71\" r=\"5\" fill=\"#1FA34A\"/></svg>"
+ },
+ "av-trecere-pietoni": {
+  "name": "Trecere pentru pietoni",
+  "cat": "avertizare",
+  "meaning": "Urmează o trecere pentru pietoni nesemaforizată. Reduci viteza și ești gata să acorzi prioritate pietonilor.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><g transform=\"translate(40 38) scale(0.95)\" stroke=\"#111\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"11\" cy=\"4\" r=\"4\" fill=\"#111\" stroke=\"none\"/><path d=\"M11 11 L9 23 M10.5 12 L4 19 M10.5 12 L16 18 M9 23 L3 36 M9 23 L15 30 L16 36\"/></g><rect x=\"28\" y=\"77\" width=\"5\" height=\"5\" fill=\"#111\"/><rect x=\"37\" y=\"77\" width=\"5\" height=\"5\" fill=\"#111\"/><rect x=\"46\" y=\"77\" width=\"5\" height=\"5\" fill=\"#111\"/><rect x=\"55\" y=\"77\" width=\"5\" height=\"5\" fill=\"#111\"/><rect x=\"64\" y=\"77\" width=\"5\" height=\"5\" fill=\"#111\"/></svg>"
+ },
+ "av-copii": {
+  "name": "Copii",
+  "cat": "avertizare",
+  "meaning": "Urmează un loc frecventat de copii (școală, loc de joacă). Reduci viteza; copiii pot apărea brusc pe drum.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><g transform=\"translate(32 41) scale(0.95)\" stroke=\"#111\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"11\" cy=\"4\" r=\"4\" fill=\"#111\" stroke=\"none\"/><path d=\"M11 11 L9 23 M10.5 12 L4 19 M10.5 12 L16 18 M9 23 L3 36 M9 23 L15 30 L16 36\"/></g><g transform=\"translate(52 52) scale(0.7)\" stroke=\"#111\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"11\" cy=\"4\" r=\"4\" fill=\"#111\" stroke=\"none\"/><path d=\"M11 11 L9 23 M10.5 12 L4 19 M10.5 12 L16 18 M9 23 L3 36 M9 23 L15 30 L16 36\"/></g></svg>"
+ },
+ "av-lucrari": {
+  "name": "Lucrări",
+  "cat": "avertizare",
+  "meaning": "Urmează un sector de drum unde se fac lucrări. Reduci viteza și urmezi semnalizarea temporară.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><g stroke=\"#111\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M44 56 L38 68 L33 80 M38 68 L44 80 M44 56 L54 62 M44 56 L36 60\"/><path d=\"M56 56 L68 76\" stroke-width=\"2.5\"/></g><circle cx=\"47\" cy=\"48\" r=\"4.5\" fill=\"#111\"/><path d=\"M64 76 L74 72 L70 80Z\" fill=\"#111\"/><path d=\"M58 82 Q66 72 76 82Z\" fill=\"#111\"/></svg>"
+ },
+ "av-calea-ferata-bariere": {
+  "name": "Trecere la nivel cu calea ferată cu bariere",
+  "cat": "avertizare",
+  "meaning": "Urmează o trecere la nivel cu calea ferată prevăzută cu bariere sau semibariere. Reduci viteza și te pregătești să oprești.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><g stroke=\"#111\" stroke-width=\"4\"><path d=\"M30 52 V82 M70 52 V82\"/><path d=\"M28 56 H72 M28 72 H72\"/><path d=\"M34 56 L42 72 M42 56 L50 72 M50 56 L58 72 M58 56 L66 72\" stroke-width=\"2.5\"/></g></svg>"
+ },
+ "av-calea-ferata-fara-bariere": {
+  "name": "Trecere la nivel cu calea ferată fără bariere",
+  "cat": "avertizare",
+  "meaning": "Urmează o trecere la nivel cu calea ferată fără bariere. Reduci viteza, te asiguri și oprești dacă vine trenul.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><g fill=\"#111\"><rect x=\"28\" y=\"56\" width=\"32\" height=\"14\"/><rect x=\"56\" y=\"46\" width=\"14\" height=\"24\"/><rect x=\"54\" y=\"44\" width=\"18\" height=\"4\"/><rect x=\"32\" y=\"48\" width=\"6\" height=\"8\"/><rect x=\"30\" y=\"45\" width=\"10\" height=\"3\"/><path d=\"M26 70 L22 76 H30Z\"/><circle cx=\"38\" cy=\"76\" r=\"5\"/><circle cx=\"52\" cy=\"76\" r=\"5\"/><circle cx=\"65\" cy=\"76\" r=\"5\"/></g><rect x=\"59\" y=\"50\" width=\"8\" height=\"7\" fill=\"#FFF\"/></svg>"
+ },
+ "av-cruce-sf-andrei": {
+  "name": "Trecere la nivel cu o cale ferată simplă, fără bariere",
+  "cat": "avertizare",
+  "meaning": "Se pune chiar lângă calea ferată (o singură linie), fără bariere. Te asiguri cu atenție și treci doar dacă nu vine trenul.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"3.5\"><rect x=\"6\" y=\"43.5\" width=\"88\" height=\"13\" transform=\"rotate(35 50 50)\"/><rect x=\"6\" y=\"43.5\" width=\"88\" height=\"13\" transform=\"rotate(-35 50 50)\"/></g></svg>"
+ },
+ "av-cruce-sf-andrei-dubla": {
+  "name": "Trecere la nivel cu o cale ferată dublă, fără bariere",
+  "cat": "avertizare",
+  "meaning": "Se pune chiar lângă o cale ferată cu două sau mai multe linii, fără bariere. Atenție: după un tren poate veni altul pe cealaltă linie.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"3.5\"><rect x=\"6\" y=\"33.5\" width=\"88\" height=\"13\" transform=\"rotate(35 50 40)\"/><rect x=\"6\" y=\"33.5\" width=\"88\" height=\"13\" transform=\"rotate(-35 50 40)\"/></g><g fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"3.5\"><path d=\"M50 70 L26 90 L19 82 L43 62Z\"/><path d=\"M50 70 L74 90 L81 82 L57 62Z\"/></g></svg>"
+ },
+ "av-tramvai": {
+  "name": "Tramvai",
+  "cat": "avertizare",
+  "meaning": "Drumul este intersectat de o linie de tramvai. Ești atent la tramvaie, care de regulă au prioritate.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M44 34 L50 42 L56 34 M50 42 V45\" stroke=\"#111\" stroke-width=\"2.2\" fill=\"none\"/><rect x=\"36\" y=\"45\" width=\"28\" height=\"31\" rx=\"5\" fill=\"#111\"/><rect x=\"40\" y=\"49\" width=\"20\" height=\"11\" rx=\"1.5\" fill=\"#FFF\"/><circle cx=\"42\" cy=\"69\" r=\"2.3\" fill=\"#FFF\"/><circle cx=\"58\" cy=\"69\" r=\"2.3\" fill=\"#FFF\"/><rect x=\"34\" y=\"78\" width=\"32\" height=\"3\" fill=\"#111\"/></svg>"
+ },
+ "av-animale": {
+  "name": "Animale",
+  "cat": "avertizare",
+  "meaning": "Pot apărea pe drum animale domestice. Reduci viteza și nu claxonezi strident lângă ele.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><g fill=\"#111\"><path d=\"M30 56 Q30 50 38 50 H60 Q66 50 68 54 L74 52 Q78 56 76 62 L70 62 L68 64 V80 H64 V66 H40 V80 H36 V66 Q30 64 30 60Z\"/><path d=\"M30 56 L25 68 L27 69 L32 60Z\"/><path d=\"M72 51 L74 46 L76 47 L75 52Z\"/><rect x=\"44\" y=\"66\" width=\"3\" height=\"14\"/><rect x=\"58\" y=\"66\" width=\"3\" height=\"14\"/></g></svg>"
+ },
+ "av-alte-pericole": {
+  "name": "Alte pericole",
+  "cat": "avertizare",
+  "meaning": "Urmează un pericol care nu are un indicator propriu (de obicei explicat pe un panou adițional). Reduci viteza și ești atent.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M46 38 H54 L52.5 66 H47.5Z\" fill=\"#111\"/><circle cx=\"50\" cy=\"74\" r=\"4.5\" fill=\"#111\"/></svg>"
+ },
+ "av-coborare": {
+  "name": "Coborâre periculoasă",
+  "cat": "avertizare",
+  "meaning": "Urmează o pantă abruptă la vale (procentul arată înclinarea). Folosești o treaptă inferioară și frâna de motor.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M22 82 V58 L78 82Z\" fill=\"#111\"/><text x=\"60\" y=\"63\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"13\" fill=\"#111\" text-anchor=\"middle\">10%</text></svg>"
+ },
+ "av-urcare": {
+  "name": "Urcare cu înclinare mare",
+  "cat": "avertizare",
+  "meaning": "Urmează o rampă abruptă la deal (procentul arată înclinarea). Alegi din timp o treaptă de viteză potrivită.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M78 82 V58 L22 82Z\" fill=\"#111\"/><text x=\"40\" y=\"63\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"13\" fill=\"#111\" text-anchor=\"middle\">10%</text></svg>"
+ },
+ "pr-cedeaza": {
+  "name": "Cedează trecerea",
+  "cat": "prioritate",
+  "meaning": "Ești obligat să cedezi trecerea vehiculelor care circulă pe drumul pe care urmează să intri. Oprești doar dacă e nevoie.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 13 H93 L50 91 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\" stroke-linejoin=\"round\"/></svg>"
+ },
+ "pr-stop": {
+  "name": "Oprire (STOP)",
+  "cat": "prioritate",
+  "meaning": "Ești obligat să oprești complet la linia de oprire (sau la marginea drumului) și apoi să cedezi trecerea tuturor celor de pe drumul pe care intri.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"93.4,68.0 68.0,93.4 32.0,93.4 6.6,68.0 6.6,32.0 32.0,6.6 68.0,6.6 93.4,32.0\" fill=\"#FFF\" stroke=\"#111\" stroke-width=\"0.8\"/><polygon points=\"89.7,66.5 66.5,89.7 33.5,89.7 10.3,66.5 10.3,33.5 33.5,10.3 66.5,10.3 89.7,33.5\" fill=\"#C8102E\"/><text x=\"50\" y=\"59.5\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"26\" fill=\"#FFF\" text-anchor=\"middle\">STOP</text></svg>"
+ },
+ "pr-drum-prioritate": {
+  "name": "Drum cu prioritate",
+  "cat": "prioritate",
+  "meaning": "Circuli pe un drum cu prioritate: vehiculele de pe drumurile laterale îți cedează trecerea în intersecțiile următoare.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 3 L97 50 L50 97 L3 50Z\" fill=\"#FFF\" stroke=\"#111\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><path d=\"M50 18 L82 50 L50 82 L18 50Z\" fill=\"#FFCC00\"/></svg>"
+ },
+ "pr-sfarsit-prioritate": {
+  "name": "Sfârșitul drumului cu prioritate",
+  "cat": "prioritate",
+  "meaning": "Aici se termină drumul cu prioritate. De la următoarea intersecție nu mai ai prioritate automat; urmezi semnele sau regula priorității de dreapta.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 3 L97 50 L50 97 L3 50Z\" fill=\"#FFF\" stroke=\"#111\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><path d=\"M50 18 L82 50 L50 82 L18 50Z\" fill=\"#FFCC00\"/><path d=\"M54.0 22.0 L22.0 54.0\" stroke=\"#333\" stroke-width=\"2.2\"/><path d=\"M58.0 26.0 L26.0 58.0\" stroke=\"#333\" stroke-width=\"2.2\"/><path d=\"M62.0 30.0 L30.0 62.0\" stroke=\"#333\" stroke-width=\"2.2\"/><path d=\"M66.0 34.0 L34.0 66.0\" stroke=\"#333\" stroke-width=\"2.2\"/><path d=\"M70.0 38.0 L38.0 70.0\" stroke=\"#333\" stroke-width=\"2.2\"/><path d=\"M74.0 42.0 L42.0 74.0\" stroke=\"#333\" stroke-width=\"2.2\"/><path d=\"M78.0 46.0 L46.0 78.0\" stroke=\"#333\" stroke-width=\"2.2\"/></svg>"
+ },
+ "pr-intersectie-fara-prioritate": {
+  "name": "Intersecție cu un drum fără prioritate",
+  "cat": "prioritate",
+  "meaning": "Urmează o intersecție în care tu ai prioritate față de vehiculele care vin de pe drumul lateral (din ambele părți).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M50 36 V82\" stroke=\"#111\" stroke-width=\"9\"/><path d=\"M30 62 H70\" stroke=\"#111\" stroke-width=\"3.5\"/></svg>"
+ },
+ "pr-intersectie-fara-prioritate-dreapta": {
+  "name": "Intersecție cu un drum fără prioritate din dreapta",
+  "cat": "prioritate",
+  "meaning": "Urmează o intersecție cu un drum lateral din dreapta; ai prioritate față de vehiculele care vin de pe acel drum.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M48 36 V82\" stroke=\"#111\" stroke-width=\"9\"/><path d=\"M48 62 H70\" stroke=\"#111\" stroke-width=\"3.5\"/></svg>"
+ },
+ "pr-intersectie-fara-prioritate-stanga": {
+  "name": "Intersecție cu un drum fără prioritate din stânga",
+  "cat": "prioritate",
+  "meaning": "Urmează o intersecție cu un drum lateral din stânga; ai prioritate față de vehiculele care vin de pe acel drum.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 7 L95 87 H5 Z\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M52 36 V82\" stroke=\"#111\" stroke-width=\"9\"/><path d=\"M30 62 H52\" stroke=\"#111\" stroke-width=\"3.5\"/></svg>"
+ },
+ "pr-prioritate-sens-invers": {
+  "name": "Prioritate pentru circulația din sens invers",
+  "cat": "prioritate",
+  "meaning": "Pe porțiunea îngustă care urmează, cedezi trecerea vehiculelor din sens opus (săgeata roșie e sensul tău).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\"/><path d=\"M38 24 L46 36 H41 V76 H35 V36 H30Z\" fill=\"#C8102E\"/><path d=\"M62 76 L70 64 H65 V24 H59 V64 H54Z\" fill=\"#111\"/></svg>"
+ },
+ "pr-prioritate-fata-de-sens-invers": {
+  "name": "Prioritate față de circulația din sens invers",
+  "cat": "prioritate",
+  "meaning": "Pe porțiunea îngustă care urmează, ai prioritate față de vehiculele din sens opus (săgeata albă e sensul tău).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><path d=\"M38 22 L46 34 H41 V78 H35 V34 H30Z\" fill=\"#FFF\"/><path d=\"M62 78 L70 66 H65 V22 H59 V66 H54Z\" fill=\"#C8102E\"/></svg>"
+ },
+ "in-accesul-interzis": {
+  "name": "Accesul interzis",
+  "cat": "interzicere",
+  "meaning": "Este interzisă intrarea tuturor vehiculelor în sensul de mers spre care e pus indicatorul (de obicei la capătul unei străzi cu sens unic).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"47\" fill=\"#C8102E\"/><rect x=\"18\" y=\"42\" width=\"64\" height=\"16\" fill=\"#FFF\"/></svg>"
+ },
+ "in-circulatia-interzisa": {
+  "name": "Circulația interzisă în ambele sensuri",
+  "cat": "interzicere",
+  "meaning": "Este interzisă circulația tuturor vehiculelor, în ambele sensuri. Pietonii pot circula.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\"/></svg>"
+ },
+ "in-acces-interzis-autovehicule": {
+  "name": "Accesul interzis autovehiculelor",
+  "cat": "interzicere",
+  "meaning": "Este interzis accesul autovehiculelor (cu excepția motocicletelor fără ataș și a mopedelor).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\"/><g transform=\"translate(27 40) scale(1.1)\" fill=\"#111\"><path d=\"M1 13 L3 8 L11 6.5 L16 1 H29 L34 6.5 L39 8 Q41 9 41 12 V15 H1Z\"/><circle cx=\"10\" cy=\"15\" r=\"4.2\" stroke=\"#FFF\" stroke-width=\"1.2\"/><circle cx=\"32\" cy=\"15\" r=\"4.2\" stroke=\"#FFF\" stroke-width=\"1.2\"/></g></svg>"
+ },
+ "in-depasirea-interzisa": {
+  "name": "Depășirea interzisă",
+  "cat": "interzicere",
+  "meaning": "Este interzisă depășirea autovehiculelor (cu excepția vehiculelor cu două roți fără ataș), până la indicatorul de sfârșit sau prima intersecție.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\"/><g transform=\"translate(20 35) scale(1.2)\"><path fill=\"#C8102E\" d=\"M4 9 L7 2 H19 L22 9 H25 V19 H1 V9Z\"/><path fill=\"#FFF\" d=\"M7.5 8.5 L9.5 4 H16.5 L18.5 8.5Z\"/><rect x=\"2\" y=\"19\" width=\"5\" height=\"4\" fill=\"#C8102E\"/><rect x=\"19\" y=\"19\" width=\"5\" height=\"4\" fill=\"#C8102E\"/></g><g transform=\"translate(50 35) scale(1.2)\"><path fill=\"#111\" d=\"M4 9 L7 2 H19 L22 9 H25 V19 H1 V9Z\"/><path fill=\"#FFF\" d=\"M7.5 8.5 L9.5 4 H16.5 L18.5 8.5Z\"/><rect x=\"2\" y=\"19\" width=\"5\" height=\"4\" fill=\"#111\"/><rect x=\"19\" y=\"19\" width=\"5\" height=\"4\" fill=\"#111\"/></g></svg>"
+ },
+ "in-viteza-50": {
+  "name": "Limitare de viteză 50 km/h",
+  "cat": "interzicere",
+  "meaning": "Este interzisă circulația cu o viteză mai mare de 50 km/h, de la indicator până la sfârșitul restricției sau prima intersecție.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\"/><text x=\"50\" y=\"63\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"38\" fill=\"#111\" text-anchor=\"middle\">50</text></svg>"
+ },
+ "in-viteza-30": {
+  "name": "Limitare de viteză 30 km/h",
+  "cat": "interzicere",
+  "meaning": "Este interzisă circulația cu o viteză mai mare de 30 km/h, de la indicator până la sfârșitul restricției sau prima intersecție.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\"/><text x=\"50\" y=\"63\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"38\" fill=\"#111\" text-anchor=\"middle\">30</text></svg>"
+ },
+ "in-viteza-70": {
+  "name": "Limitare de viteză 70 km/h",
+  "cat": "interzicere",
+  "meaning": "Este interzisă circulația cu o viteză mai mare de 70 km/h, de la indicator până la sfârșitul restricției sau prima intersecție.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\"/><text x=\"50\" y=\"63\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"38\" fill=\"#111\" text-anchor=\"middle\">70</text></svg>"
+ },
+ "in-sfarsit-viteza-50": {
+  "name": "Sfârșitul limitării de viteză (50 km/h)",
+  "cat": "interzicere",
+  "meaning": "Se termină limitarea de viteză de 50 km/h. De aici se aplică din nou viteza maximă legală pentru acel drum.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#FFF\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"50\" y=\"63\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"38\" fill=\"#999\" text-anchor=\"middle\">50</text><path d=\"M13.5 74.5 L74.5 13.5\" stroke=\"#111\" stroke-width=\"2.2\"/><path d=\"M16.0 78.0 L78.0 16.0\" stroke=\"#111\" stroke-width=\"2.2\"/><path d=\"M18.9 81.1 L81.1 18.9\" stroke=\"#111\" stroke-width=\"2.2\"/><path d=\"M22.0 84.0 L84.0 22.0\" stroke=\"#111\" stroke-width=\"2.2\"/><path d=\"M25.5 86.5 L86.5 25.5\" stroke=\"#111\" stroke-width=\"2.2\"/></svg>"
+ },
+ "in-oprirea-interzisa": {
+  "name": "Oprirea interzisă",
+  "cat": "interzicere",
+  "meaning": "Este interzisă oprirea și staționarea vehiculelor pe partea drumului pe care e pus indicatorul.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#005BAC\" stroke=\"#C8102E\" stroke-width=\"10\"/><path d=\"M22 22 L78 78 M78 22 L22 78\" stroke=\"#C8102E\" stroke-width=\"8\"/></svg>"
+ },
+ "in-stationarea-interzisa": {
+  "name": "Staționarea interzisă",
+  "cat": "interzicere",
+  "meaning": "Este interzisă staționarea pe partea drumului pe care e pus indicatorul. Oprirea scurtă (ex. urcarea/coborârea pasagerilor) este permisă.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#005BAC\" stroke=\"#C8102E\" stroke-width=\"10\"/><path d=\"M21 21 L79 79\" stroke=\"#C8102E\" stroke-width=\"8\"/></svg>"
+ },
+ "in-interzis-stanga": {
+  "name": "Interzis la stânga",
+  "cat": "interzicere",
+  "meaning": "Este interzis virajul la stânga în prima intersecție. Întoarcerea nu este interzisă de acest indicator.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\"/><path d=\"M58 80 V54 Q58 42 46 42 H40\" fill=\"none\" stroke=\"#111\" stroke-width=\"8\"/><path d=\"M42 30 L26 42 L42 54Z\" fill=\"#111\"/><path d=\"M21 21 L79 79\" stroke=\"#C8102E\" stroke-width=\"8\"/></svg>"
+ },
+ "in-interzis-dreapta": {
+  "name": "Interzis la dreapta",
+  "cat": "interzicere",
+  "meaning": "Este interzis virajul la dreapta în prima intersecție.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\"/><path d=\"M42 80 V54 Q42 42 54 42 H60\" fill=\"none\" stroke=\"#111\" stroke-width=\"8\"/><path d=\"M58 30 L74 42 L58 54Z\" fill=\"#111\"/><path d=\"M21 21 L79 79\" stroke=\"#C8102E\" stroke-width=\"8\"/></svg>"
+ },
+ "in-intoarcerea-interzisa": {
+  "name": "Întoarcerea interzisă",
+  "cat": "interzicere",
+  "meaning": "Este interzisă întoarcerea vehiculelor până la prima intersecție (virajul la stânga rămâne permis).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\"/><path d=\"M60 80 V44 Q60 30 48 30 Q36 30 36 44 V56\" fill=\"none\" stroke=\"#111\" stroke-width=\"7\"/><path d=\"M26 54 L36 70 L46 54Z\" fill=\"#111\"/><path d=\"M21 21 L79 79\" stroke=\"#C8102E\" stroke-width=\"8\"/></svg>"
+ },
+ "in-claxonarea-interzisa": {
+  "name": "Folosirea mijloacelor de avertizare sonoră interzisă",
+  "cat": "interzicere",
+  "meaning": "Este interzisă folosirea claxonului, cu excepția situațiilor în care e singurul mod de a evita un accident.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\"/><path d=\"M26 44 H36 L66 32 V68 L36 56 H26Z\" fill=\"#111\"/><path d=\"M66 36 Q76 50 66 64\" fill=\"none\" stroke=\"#111\" stroke-width=\"4\"/><path d=\"M21 21 L79 79\" stroke=\"#C8102E\" stroke-width=\"8\"/></svg>"
+ },
+ "in-sfarsit-restrictii": {
+  "name": "Sfârșitul tuturor restricțiilor",
+  "cat": "interzicere",
+  "meaning": "Se termină toate restricțiile impuse anterior prin indicatoare (viteză, depășire etc.) pentru vehiculele în mers.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#FFF\" stroke=\"#111\" stroke-width=\"1.5\"/><path d=\"M12.3 72.7 L72.7 12.3\" stroke=\"#111\" stroke-width=\"2.2\"/><path d=\"M14.7 76.3 L76.3 14.7\" stroke=\"#111\" stroke-width=\"2.2\"/><path d=\"M17.4 79.6 L79.6 17.4\" stroke=\"#111\" stroke-width=\"2.2\"/><path d=\"M20.4 82.6 L82.6 20.4\" stroke=\"#111\" stroke-width=\"2.2\"/><path d=\"M23.7 85.3 L85.3 23.7\" stroke=\"#111\" stroke-width=\"2.2\"/><path d=\"M27.3 87.7 L87.7 27.3\" stroke=\"#111\" stroke-width=\"2.2\"/></svg>"
+ },
+ "in-distanta-minima": {
+  "name": "Distanța minimă între vehicule",
+  "cat": "interzicere",
+  "meaning": "Este interzis să circuli la o distanță mai mică decât cea indicată (aici 50 m) față de vehiculul din față.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF\" stroke=\"#C8102E\" stroke-width=\"10\"/><g transform=\"translate(18 36) scale(0.62)\" fill=\"#111\"><path d=\"M1 13 L3 8 L11 6.5 L16 1 H29 L34 6.5 L39 8 Q41 9 41 12 V15 H1Z\"/><circle cx=\"10\" cy=\"15\" r=\"4.2\" stroke=\"#FFF\" stroke-width=\"1.2\"/><circle cx=\"32\" cy=\"15\" r=\"4.2\" stroke=\"#FFF\" stroke-width=\"1.2\"/></g><g transform=\"translate(57 36) scale(0.62)\" fill=\"#111\"><path d=\"M1 13 L3 8 L11 6.5 L16 1 H29 L34 6.5 L39 8 Q41 9 41 12 V15 H1Z\"/><circle cx=\"10\" cy=\"15\" r=\"4.2\" stroke=\"#FFF\" stroke-width=\"1.2\"/><circle cx=\"32\" cy=\"15\" r=\"4.2\" stroke=\"#FFF\" stroke-width=\"1.2\"/></g><path d=\"M28 58 H72\" stroke=\"#111\" stroke-width=\"2.5\"/><path d=\"M24 58 L32 54 V62Z M76 58 L68 54 V62Z\" fill=\"#111\"/><text x=\"50\" y=\"76\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\">50 m</text></svg>"
+ },
+ "ob-inainte": {
+  "name": "Obligatoriu înainte",
+  "cat": "obligare",
+  "meaning": "La intersecția următoare poți merge numai înainte.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#005BAC\" stroke=\"#FFF\" stroke-width=\"1.5\"/><path d=\"M50 18 L67 36.7 H55.5 V82 H44.5 V36.7 H33Z\" fill=\"#FFF\"/></svg>"
+ },
+ "ob-dreapta": {
+  "name": "Obligatoriu la dreapta",
+  "cat": "obligare",
+  "meaning": "La intersecția următoare poți vira numai la dreapta.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#005BAC\" stroke=\"#FFF\" stroke-width=\"1.5\"/><path d=\"M40 82 V52 Q40 42 50 42 H58\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"11\"/><path d=\"M56 25 L78 42 L56 59Z\" fill=\"#FFF\"/></svg>"
+ },
+ "ob-stanga": {
+  "name": "Obligatoriu la stânga",
+  "cat": "obligare",
+  "meaning": "La intersecția următoare poți vira numai la stânga.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#005BAC\" stroke=\"#FFF\" stroke-width=\"1.5\"/><path d=\"M60 82 V52 Q60 42 50 42 H42\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"11\"/><path d=\"M44 25 L22 42 L44 59Z\" fill=\"#FFF\"/></svg>"
+ },
+ "ob-inainte-sau-dreapta": {
+  "name": "Obligatoriu înainte sau la dreapta",
+  "cat": "obligare",
+  "meaning": "La intersecția următoare poți merge numai înainte sau la dreapta.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#005BAC\" stroke=\"#FFF\" stroke-width=\"1.5\"/><path d=\"M42 16 L55 30.3 H47.0 V84 H37.0 V30.3 H29Z\" fill=\"#FFF\"/><path d=\"M42 66 Q42 52 56 52 H62\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"10\"/><path d=\"M60 39 L78 52 L60 65Z\" fill=\"#FFF\"/></svg>"
+ },
+ "ob-ocolire-dreapta": {
+  "name": "Ocolirea obstacolului prin dreapta",
+  "cat": "obligare",
+  "meaning": "Ești obligat să ocolești insula sau obstacolul trecând prin partea dreaptă a acestuia.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#005BAC\" stroke=\"#FFF\" stroke-width=\"1.5\"/><g transform=\"rotate(135 50 50)\"><path d=\"M50 18 L67 36.7 H55.5 V82 H44.5 V36.7 H33Z\" fill=\"#FFF\"/></g></svg>"
+ },
+ "ob-sens-giratoriu": {
+  "name": "Sens giratoriu",
+  "cat": "obligare",
+  "meaning": "Ești obligat să circuli în sensul arătat de săgeți (în jurul insulei centrale, spre dreapta).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#005BAC\" stroke=\"#FFF\" stroke-width=\"1.5\"/><g fill=\"none\" stroke=\"#FFF\" stroke-width=\"7\"><path d=\"M33 52 A18 18 0 0 1 56 33\"/><path d=\"M68 50 A18 18 0 0 1 54 68\"/><path d=\"M42 68 A18 18 0 0 1 32 60\"/></g><g fill=\"#FFF\"><path d=\"M53 23 L67 34 L53 43Z\"/><path d=\"M61 76 L47 79 L50 63Z\"/><path d=\"M23 64 L26 49 L37 59Z\"/></g></svg>"
+ },
+ "ob-pista-biciclete": {
+  "name": "Pistă obligatorie pentru biciclete",
+  "cat": "obligare",
+  "meaning": "Pistă rezervată bicicletelor; bicicliștii sunt obligați să o folosească, iar celelalte vehicule nu au voie pe ea.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#005BAC\" stroke=\"#FFF\" stroke-width=\"1.5\"/><g fill=\"none\" stroke=\"#FFF\" stroke-width=\"4\"><circle cx=\"30\" cy=\"60\" r=\"11\"/><circle cx=\"70\" cy=\"60\" r=\"11\"/><path d=\"M30 60 L42 42 H62 L70 60 M42 42 L50 60 L62 42 M50 60 H30 M40 36 H48 M60 42 L58 34 H64\"/></g></svg>"
+ },
+ "ob-pista-pietoni": {
+  "name": "Pistă obligatorie pentru pietoni",
+  "cat": "obligare",
+  "meaning": "Pistă rezervată pietonilor; pietonii sunt obligați să o folosească, iar vehiculele nu au voie pe ea.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#005BAC\" stroke=\"#FFF\" stroke-width=\"1.5\"/><g transform=\"translate(36 22) scale(1.45)\" stroke=\"#FFF\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"11\" cy=\"4\" r=\"4\" fill=\"#FFF\" stroke=\"none\"/><path d=\"M11 11 L9 23 M10.5 12 L4 19 M10.5 12 L16 18 M9 23 L3 36 M9 23 L15 30 L16 36\"/></g></svg>"
+ },
+ "ob-viteza-minima-30": {
+  "name": "Viteză minimă obligatorie 30 km/h",
+  "cat": "obligare",
+  "meaning": "Ești obligat să circuli cu cel puțin 30 km/h (dacă trafic și condițiile permit).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#005BAC\" stroke=\"#FFF\" stroke-width=\"1.5\"/><text x=\"50\" y=\"63\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"38\" fill=\"#FFF\" text-anchor=\"middle\">30</text></svg>"
+ },
+ "ob-lanturi": {
+  "name": "Obligatoriu lanțuri de zăpadă",
+  "cat": "obligare",
+  "meaning": "Ești obligat să circuli cu lanțuri de zăpadă montate pe cel puțin două roți motoare.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#005BAC\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"50\" cy=\"50\" r=\"27\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"13\"/><circle cx=\"50\" cy=\"50\" r=\"8\" fill=\"#FFF\"/><circle cx=\"50\" cy=\"50\" r=\"27\" fill=\"none\" stroke=\"#005BAC\" stroke-width=\"2.2\" stroke-dasharray=\"5 3\"/><path d=\"M50 16 V30\" stroke=\"#005BAC\" stroke-width=\"2.2\" transform=\"rotate(0 50 50)\"/><path d=\"M50 16 V30\" stroke=\"#005BAC\" stroke-width=\"2.2\" transform=\"rotate(30 50 50)\"/><path d=\"M50 16 V30\" stroke=\"#005BAC\" stroke-width=\"2.2\" transform=\"rotate(60 50 50)\"/><path d=\"M50 16 V30\" stroke=\"#005BAC\" stroke-width=\"2.2\" transform=\"rotate(90 50 50)\"/><path d=\"M50 16 V30\" stroke=\"#005BAC\" stroke-width=\"2.2\" transform=\"rotate(120 50 50)\"/><path d=\"M50 16 V30\" stroke=\"#005BAC\" stroke-width=\"2.2\" transform=\"rotate(150 50 50)\"/><path d=\"M50 16 V30\" stroke=\"#005BAC\" stroke-width=\"2.2\" transform=\"rotate(180 50 50)\"/><path d=\"M50 16 V30\" stroke=\"#005BAC\" stroke-width=\"2.2\" transform=\"rotate(210 50 50)\"/><path d=\"M50 16 V30\" stroke=\"#005BAC\" stroke-width=\"2.2\" transform=\"rotate(240 50 50)\"/><path d=\"M50 16 V30\" stroke=\"#005BAC\" stroke-width=\"2.2\" transform=\"rotate(270 50 50)\"/><path d=\"M50 16 V30\" stroke=\"#005BAC\" stroke-width=\"2.2\" transform=\"rotate(300 50 50)\"/><path d=\"M50 16 V30\" stroke=\"#005BAC\" stroke-width=\"2.2\" transform=\"rotate(330 50 50)\"/></svg>"
+ },
+ "inf-parcare": {
+  "name": "Parcare",
+  "cat": "informare",
+  "meaning": "Loc special amenajat pentru parcarea vehiculelor.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><text x=\"50\" y=\"74\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"66\" fill=\"#FFF\" text-anchor=\"middle\">P</text></svg>"
+ },
+ "inf-trecere-pietoni": {
+  "name": "Trecere pentru pietoni",
+  "cat": "informare",
+  "meaning": "Arată locul exact al trecerii pentru pietoni. Pietonii angajați pe trecere au prioritate.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><path d=\"M50 14 L86 80 H14Z\" fill=\"#FFF\"/><g transform=\"translate(41 36) scale(0.92)\" stroke=\"#111\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"11\" cy=\"4\" r=\"4\" fill=\"#111\" stroke=\"none\"/><path d=\"M11 11 L9 23 M10.5 12 L4 19 M10.5 12 L16 18 M9 23 L3 36 M9 23 L15 30 L16 36\"/></g><rect x=\"26\" y=\"72\" width=\"6\" height=\"5\" fill=\"#111\"/><rect x=\"36\" y=\"72\" width=\"6\" height=\"5\" fill=\"#111\"/><rect x=\"46\" y=\"72\" width=\"6\" height=\"5\" fill=\"#111\"/><rect x=\"56\" y=\"72\" width=\"6\" height=\"5\" fill=\"#111\"/><rect x=\"66\" y=\"72\" width=\"6\" height=\"5\" fill=\"#111\"/></svg>"
+ },
+ "inf-sens-unic": {
+  "name": "Sens unic",
+  "cat": "informare",
+  "meaning": "Drumul pe care circuli are un singur sens, cel arătat de săgeată.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><path d=\"M50 16 L70 38.0 H57.0 V84 H43.0 V38.0 H30Z\" fill=\"#FFF\"/></svg>"
+ },
+ "inf-autostrada": {
+  "name": "Autostradă",
+  "cat": "informare",
+  "meaning": "Începe autostrada: se aplică regulile speciale pentru autostradă (viteze, interdicții de întoarcere, mers înapoi, staționare).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#00843D\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><path d=\"M40 86 L46 50 M60 86 L54 50\" stroke=\"#FFF\" stroke-width=\"6\"/><path d=\"M48 76 V70 M50 62 V58\" stroke=\"#FFF\" stroke-width=\"2\"/><rect x=\"14\" y=\"36\" width=\"72\" height=\"8\" fill=\"#FFF\"/><path d=\"M22 44 V58 M78 44 V58\" stroke=\"#FFF\" stroke-width=\"6\"/></svg>"
+ },
+ "inf-sfarsit-autostrada": {
+  "name": "Sfârșit de autostradă",
+  "cat": "informare",
+  "meaning": "Se termină autostrada; de aici se aplică din nou regulile obișnuite ale drumului respectiv.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#00843D\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><path d=\"M40 86 L46 50 M60 86 L54 50\" stroke=\"#FFF\" stroke-width=\"6\"/><rect x=\"14\" y=\"36\" width=\"72\" height=\"8\" fill=\"#FFF\"/><path d=\"M22 44 V58 M78 44 V58\" stroke=\"#FFF\" stroke-width=\"6\"/><path d=\"M14 86 L86 14\" stroke=\"#C8102E\" stroke-width=\"7\"/></svg>"
+ },
+ "inf-drum-expres": {
+  "name": "Drum expres",
+  "cat": "informare",
+  "meaning": "Începe un drum expres, rezervat autovehiculelor; se aplică reguli speciale (viteză, interdicții de întoarcere și staționare).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><g transform=\"translate(16 36) scale(1.65)\" fill=\"#FFF\"><path d=\"M1 13 L3 8 L11 6.5 L16 1 H29 L34 6.5 L39 8 Q41 9 41 12 V15 H1Z\"/><circle cx=\"10\" cy=\"15\" r=\"4.2\" stroke=\"#005BAC\" stroke-width=\"1.2\"/><circle cx=\"32\" cy=\"15\" r=\"4.2\" stroke=\"#005BAC\" stroke-width=\"1.2\"/></g></svg>"
+ },
+ "inf-intrare-localitate": {
+  "name": "Intrare în localitate",
+  "cat": "informare",
+  "meaning": "Marchează începutul localității: de aici se aplică regulile de circulație din localitate (de regulă 50 km/h).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"4\" y=\"22\" width=\"92\" height=\"56\" rx=\"4\" fill=\"#FFF\" stroke=\"#111\" stroke-width=\"1\"/><rect x=\"8\" y=\"26\" width=\"84\" height=\"48\" rx=\"2\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><text x=\"50\" y=\"55\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"11\" fill=\"#111\" text-anchor=\"middle\">LOCALITATE</text></svg>"
+ },
+ "inf-iesire-localitate": {
+  "name": "Ieșire din localitate",
+  "cat": "informare",
+  "meaning": "Marchează sfârșitul localității: de aici se aplică regulile din afara localității.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"4\" y=\"22\" width=\"92\" height=\"56\" rx=\"4\" fill=\"#FFF\" stroke=\"#111\" stroke-width=\"1\"/><rect x=\"8\" y=\"26\" width=\"84\" height=\"48\" rx=\"2\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><text x=\"50\" y=\"55\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"11\" fill=\"#111\" text-anchor=\"middle\">LOCALITATE</text><path d=\"M12 72 L88 28\" stroke=\"#C8102E\" stroke-width=\"5\"/></svg>"
+ },
+ "inf-zona-rezidentiala": {
+  "name": "Zonă rezidențială",
+  "cat": "informare",
+  "meaning": "Începe o zonă rezidențială: pietonii pot folosi toată strada, copiii se pot juca, viteza maximă e 20 km/h, iar staționarea e permisă doar în locuri marcate.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><rect x=\"16\" y=\"16\" width=\"68\" height=\"68\" fill=\"#FFF\"/><path d=\"M20 46 L34 34 L48 46 V62 H20Z\" fill=\"#111\"/><g transform=\"translate(56 30) scale(0.75)\" stroke=\"#111\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"11\" cy=\"4\" r=\"4\" fill=\"#111\" stroke=\"none\"/><path d=\"M11 11 L9 23 M10.5 12 L4 19 M10.5 12 L16 18 M9 23 L3 36 M9 23 L15 30 L16 36\"/></g><g transform=\"translate(68 44) scale(0.5)\" stroke=\"#111\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"11\" cy=\"4\" r=\"4\" fill=\"#111\" stroke=\"none\"/><path d=\"M11 11 L9 23 M10.5 12 L4 19 M10.5 12 L16 18 M9 23 L3 36 M9 23 L15 30 L16 36\"/></g><circle cx=\"30\" cy=\"74\" r=\"3\" fill=\"#111\"/><g transform=\"translate(42 66) scale(0.9)\" fill=\"#111\"><path d=\"M1 13 L3 8 L11 6.5 L16 1 H29 L34 6.5 L39 8 Q41 9 41 12 V15 H1Z\"/><circle cx=\"10\" cy=\"15\" r=\"4.2\" stroke=\"#FFF\" stroke-width=\"1.2\"/><circle cx=\"32\" cy=\"15\" r=\"4.2\" stroke=\"#FFF\" stroke-width=\"1.2\"/></g></svg>"
+ },
+ "inf-sfarsit-zona-rezidentiala": {
+  "name": "Sfârșitul zonei rezidențiale",
+  "cat": "informare",
+  "meaning": "Se termină zona rezidențială și regulile ei speciale.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><rect x=\"16\" y=\"16\" width=\"68\" height=\"68\" fill=\"#FFF\"/><path d=\"M20 46 L34 34 L48 46 V62 H20Z\" fill=\"#111\"/><g transform=\"translate(56 30) scale(0.75)\" stroke=\"#111\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"11\" cy=\"4\" r=\"4\" fill=\"#111\" stroke=\"none\"/><path d=\"M11 11 L9 23 M10.5 12 L4 19 M10.5 12 L16 18 M9 23 L3 36 M9 23 L15 30 L16 36\"/></g><g transform=\"translate(68 44) scale(0.5)\" stroke=\"#111\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"11\" cy=\"4\" r=\"4\" fill=\"#111\" stroke=\"none\"/><path d=\"M11 11 L9 23 M10.5 12 L4 19 M10.5 12 L16 18 M9 23 L3 36 M9 23 L15 30 L16 36\"/></g><circle cx=\"30\" cy=\"74\" r=\"3\" fill=\"#111\"/><g transform=\"translate(42 66) scale(0.9)\" fill=\"#111\"><path d=\"M1 13 L3 8 L11 6.5 L16 1 H29 L34 6.5 L39 8 Q41 9 41 12 V15 H1Z\"/><circle cx=\"10\" cy=\"15\" r=\"4.2\" stroke=\"#FFF\" stroke-width=\"1.2\"/><circle cx=\"32\" cy=\"15\" r=\"4.2\" stroke=\"#FFF\" stroke-width=\"1.2\"/></g><path d=\"M16 84 L84 16\" stroke=\"#C8102E\" stroke-width=\"6\"/></svg>"
+ },
+ "inf-zona-pietonala": {
+  "name": "Zonă pietonală",
+  "cat": "informare",
+  "meaning": "Începe o zonă rezervată pietonilor; accesul vehiculelor este interzis (cu excepțiile semnalizate).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><rect x=\"16\" y=\"16\" width=\"68\" height=\"68\" fill=\"#FFF\"/><g transform=\"translate(32 26) scale(1.15)\" stroke=\"#111\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"11\" cy=\"4\" r=\"4\" fill=\"#111\" stroke=\"none\"/><path d=\"M11 11 L9 23 M10.5 12 L4 19 M10.5 12 L16 18 M9 23 L3 36 M9 23 L15 30 L16 36\"/></g><g transform=\"translate(56 44) scale(0.75)\" stroke=\"#111\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"11\" cy=\"4\" r=\"4\" fill=\"#111\" stroke=\"none\"/><path d=\"M11 11 L9 23 M10.5 12 L4 19 M10.5 12 L16 18 M9 23 L3 36 M9 23 L15 30 L16 36\"/></g></svg>"
+ },
+ "inf-statie-autobuz": {
+  "name": "Stație de autobuz",
+  "cat": "informare",
+  "meaning": "Locul de oprire al autobuzelor. Oprirea și staționarea altor vehicule sunt interzise în zona stației.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><rect x=\"16\" y=\"30\" width=\"68\" height=\"34\" rx=\"5\" fill=\"#FFF\"/><g fill=\"#005BAC\"><rect x=\"21\" y=\"35\" width=\"11\" height=\"12\"/><rect x=\"35\" y=\"35\" width=\"11\" height=\"12\"/><rect x=\"49\" y=\"35\" width=\"11\" height=\"12\"/><rect x=\"66\" y=\"35\" width=\"11\" height=\"22\"/></g><circle cx=\"30\" cy=\"66\" r=\"6\" fill=\"#FFF\" stroke=\"#005BAC\" stroke-width=\"2\"/><circle cx=\"70\" cy=\"66\" r=\"6\" fill=\"#FFF\" stroke=\"#005BAC\" stroke-width=\"2\"/></svg>"
+ },
+ "inf-drum-fara-iesire": {
+  "name": "Drum fără ieșire",
+  "cat": "informare",
+  "meaning": "Drumul care urmează este închis la capăt (înfundat); nu poți ieși pe partea cealaltă.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><rect x=\"42\" y=\"38\" width=\"16\" height=\"48\" fill=\"#FFF\"/><rect x=\"24\" y=\"18\" width=\"52\" height=\"16\" fill=\"#C8102E\"/></svg>"
+ },
+ "inf-spital": {
+  "name": "Spital",
+  "cat": "informare",
+  "meaning": "Indică apropierea unui spital. Circuli liniștit și eviți zgomotul inutil, inclusiv claxonul.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><rect x=\"20\" y=\"20\" width=\"60\" height=\"60\" fill=\"#FFF\"/><path d=\"M44 28 H56 V44 H72 V56 H56 V72 H44 V56 H28 V44 H44Z\" fill=\"#C8102E\"/></svg>"
+ },
+ "sem-rosu": {
+  "name": "Semafor: lumină roșie",
+  "cat": "semafor",
+  "meaning": "Lumina roșie interzice trecerea. Oprești înaintea liniei de oprire sau a semaforului.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"31\" y=\"4\" width=\"38\" height=\"92\" rx=\"8\" fill=\"#222\"/><circle cx=\"50\" cy=\"22\" r=\"11.5\" fill=\"#E3242B\"/><circle cx=\"50\" cy=\"50\" r=\"11.5\" fill=\"#4a4a4a\"/><circle cx=\"50\" cy=\"78\" r=\"11.5\" fill=\"#4a4a4a\"/></svg>"
+ },
+ "sem-galben": {
+  "name": "Semafor: lumină galbenă",
+  "cat": "semafor",
+  "meaning": "Lumina galbenă fixă interzice trecerea, ca roșul; poți continua doar dacă, la aprindere, erai atât de aproape încât nu mai puteai opri în siguranță.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"31\" y=\"4\" width=\"38\" height=\"92\" rx=\"8\" fill=\"#222\"/><circle cx=\"50\" cy=\"22\" r=\"11.5\" fill=\"#4a4a4a\"/><circle cx=\"50\" cy=\"50\" r=\"11.5\" fill=\"#FFC20E\"/><circle cx=\"50\" cy=\"78\" r=\"11.5\" fill=\"#4a4a4a\"/></svg>"
+ },
+ "sem-verde": {
+  "name": "Semafor: lumină verde",
+  "cat": "semafor",
+  "meaning": "Lumina verde permite trecerea, dar tot cedezi trecerea pietonilor și vehiculelor care au prioritate.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"31\" y=\"4\" width=\"38\" height=\"92\" rx=\"8\" fill=\"#222\"/><circle cx=\"50\" cy=\"22\" r=\"11.5\" fill=\"#4a4a4a\"/><circle cx=\"50\" cy=\"50\" r=\"11.5\" fill=\"#4a4a4a\"/><circle cx=\"50\" cy=\"78\" r=\"11.5\" fill=\"#1FA34A\"/></svg>"
+ },
+ "sem-galben-intermitent": {
+  "name": "Semafor: lumină galbenă intermitentă",
+  "cat": "semafor",
+  "meaning": "Galbenul intermitent permite trecerea, dar cu prudență: respecți indicatoarele de prioritate sau, în lipsa lor, regulile generale de prioritate.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"31\" y=\"4\" width=\"38\" height=\"92\" rx=\"8\" fill=\"#222\"/><circle cx=\"50\" cy=\"22\" r=\"11.5\" fill=\"#4a4a4a\"/><circle cx=\"50\" cy=\"50\" r=\"11.5\" fill=\"#FFC20E\"/><circle cx=\"50\" cy=\"78\" r=\"11.5\" fill=\"#4a4a4a\"/><g stroke=\"#FFC20E\" stroke-width=\"2.5\" stroke-linecap=\"round\"><path d=\"M22 50 H27 M73 50 H78 M24 38 L28 41 M76 38 L72 41 M24 62 L28 59 M76 62 L72 59\"/></g></svg>"
+ },
+ "trg-triunghi-reflectorizant": {
+  "name": "Triunghi reflectorizant",
+  "cat": "altele",
+  "meaning": "Se pune în spatele vehiculului imobilizat pe partea carosabilă, ca să-i avertizeze din timp pe ceilalți (de regulă la cel puțin 30 m în afara localității).",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 8 L93 84 H7Z\" fill=\"none\" stroke=\"#C8102E\" stroke-width=\"13\" stroke-linejoin=\"round\"/><path d=\"M50 8 L93 84 H7Z\" fill=\"none\" stroke=\"#FF6A4D\" stroke-width=\"3\" stroke-linejoin=\"round\"/><path d=\"M30 91 H70\" stroke=\"#555\" stroke-width=\"3\"/><path d=\"M40 84 L34 92 M60 84 L66 92\" stroke=\"#555\" stroke-width=\"2\"/></svg>"
+ },
+ "pan-sfarsit": {
+  "name": "Panou adițional: Sfârșit",
+  "cat": "altele",
+  "meaning": "Panou adițional pus sub un indicator: arată că zona sau restricția indicatorului principal se termină aici.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"6\" y=\"30\" width=\"88\" height=\"40\" rx=\"4\" fill=\"#FFF\" stroke=\"#111\" stroke-width=\"2.5\"/><text x=\"50\" y=\"57\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"17\" fill=\"#111\" text-anchor=\"middle\">SFÂRȘIT</text></svg>"
+ },
+ "x-banda-vehicule-lente": {
+  "name": "Bandă destinată circulației vehiculelor lente",
+  "cat": "informare",
+  "meaning": "Banda din dreapta este destinată vehiculelor lente (de obicei pe rampe); vehiculele care circulă încet sunt obligate să o folosească.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><path d=\"M50 16 V84\" stroke=\"#FFF\" stroke-width=\"2.5\" stroke-dasharray=\"7 5\"/><path d=\"M30 20 L41 32.1 H34.0 V80 H26.0 V32.1 H19Z\" fill=\"#FFF\"/><g transform=\"translate(61 34) scale(1.0)\" fill=\"#FFF\"><rect x=\"0\" y=\"10\" width=\"18\" height=\"30\" rx=\"1.5\"/><rect x=\"1.5\" y=\"0\" width=\"15\" height=\"9\" rx=\"2\"/></g><path d=\"M70 20 L77 30 H63Z\" fill=\"#FFF\"/></svg>"
+ },
+ "x-banda-transport-public": {
+  "name": "Bandă rezervată vehiculelor de transport public de persoane",
+  "cat": "informare",
+  "meaning": "Banda marcată este rezervată autobuzelor (și altor vehicule de transport public); celelalte vehicule nu circulă pe ea, cu excepțiile prevăzute de lege.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"7\" fill=\"#005BAC\"/><rect x=\"9\" y=\"9\" width=\"82\" height=\"82\" rx=\"4\" fill=\"none\" stroke=\"#FFF\" stroke-width=\"2\"/><path d=\"M50 16 V84\" stroke=\"#FFF\" stroke-width=\"2.5\"/><path d=\"M30 20 L41 32.1 H34.0 V80 H26.0 V32.1 H19Z\" fill=\"#FFF\"/><g transform=\"translate(60 30) scale(1.0)\"><rect x=\"0\" y=\"0\" width=\"20\" height=\"44\" rx=\"4\" fill=\"#FFF\"/><rect x=\"3\" y=\"3\" width=\"14\" height=\"7\" rx=\"1\" fill=\"#005BAC\"/><rect x=\"3\" y=\"36\" width=\"14\" height=\"4\" rx=\"1\" fill=\"#005BAC\"/></g><text x=\"70\" y=\"88\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"9\" fill=\"#FFF\" text-anchor=\"middle\">BUS</text></svg>"
+ },
+ "x-viteza-30-galben": {
+  "name": "Limitare de viteză 30 km/h (temporar)",
+  "cat": "interzicere",
+  "meaning": "Varianta temporară (fond galben, de regulă în zona lucrărilor): este interzis să circuli cu mai mult de 30 km/h; are prioritate față de indicatoarele permanente.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFCC00\" stroke=\"#C8102E\" stroke-width=\"10\"/><text x=\"50\" y=\"63\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"bold\" font-size=\"38\" fill=\"#111\" text-anchor=\"middle\">30</text></svg>"
+ },
+ "x-sageata-verde-suplimentara": {
+  "name": "Semafor: săgeată verde suplimentară",
+  "cat": "semafor",
+  "meaning": "Săgeata verde intermitentă permite virajul în direcția arătată chiar dacă lumina principală e roșie, dar numai cedând trecerea tuturor celor care au verde și pietonilor.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"14\" width=\"72\" height=\"72\" rx=\"10\" fill=\"#222\"/><circle cx=\"50\" cy=\"50\" r=\"28\" fill=\"#111\"/><path d=\"M30 45 H52 V34 L72 50 L52 66 V55 H30Z\" fill=\"#1FA34A\"/></svg>"
+ },
+ "x-disc-incepator": {
+  "name": "Disc „Începător” (semnul exclamării)",
+  "cat": "altele",
+  "meaning": "Disc galben cu semnul exclamării negru, pus pe vehicul de conducătorii care au permis de mai puțin de un an.",
+  "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"45\" fill=\"#FFCC00\" stroke=\"#111\" stroke-width=\"1.2\"/><path d=\"M44.5 20 H55.5 L53.5 62 H46.5Z\" fill=\"#111\"/><circle cx=\"50\" cy=\"74\" r=\"6\" fill=\"#111\"/></svg>"
+ }
+}
