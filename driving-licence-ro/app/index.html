@@ -1,0 +1,683 @@
+<title>Drumul spre permis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap">
+<style>
+/* Layout: a calm, phone-shaped study app. One idea per screen, big tap targets, soft colours.
+   Home = progress + chapter list; chapter = step cards then a quiz; exam = 26 questions, 30 min. */
+:root {
+  --bg: #F3F5F9;
+  --surface: #FFFFFF;
+  --surface-2: #EBEFF5;
+  --ink: #18202F;
+  --muted: #5D6778;
+  --line: #DCE2EA;
+  --brand: #17845C;        /* calm "go" green */
+  --brand-ink: #FFFFFF;
+  --brand-soft: #DCF2E8;
+  --sky: #2D6BCF;
+  --sky-soft: #E2EBFA;
+  --sun: #B97F00;
+  --sun-soft: #FFF2CC;
+  --rose: #C93C3C;
+  --rose-soft: #FBE2E2;
+  --violet: #6555CC;
+  --violet-soft: #EAE7FA;
+  --road: #3A4352;
+  --road-line: #F4F6FA;
+  --grass: #CFE6C8;
+  --shadow: 0 1px 2px rgba(24,32,47,.06), 0 8px 24px rgba(24,32,47,.06);
+  --f: "Lexend", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --r: 18px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10141B; --surface: #181E28; --surface-2: #212937; --ink: #E8ECF2; --muted: #9AA5B6; --line: #2A3342;
+    --brand: #3CC48F; --brand-ink: #08130E; --brand-soft: #143127; --sky: #6FA3F2; --sky-soft: #172843;
+    --sun: #F2C14E; --sun-soft: #33290E; --rose: #F07C7C; --rose-soft: #3A1B1D; --violet: #A79BF5; --violet-soft: #241F44;
+    --road: #2B3341; --road-line: #D9DEE6; --grass: #1E3020;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10141B; --surface: #181E28; --surface-2: #212937; --ink: #E8ECF2; --muted: #9AA5B6; --line: #2A3342;
+  --brand: #3CC48F; --brand-ink: #08130E; --brand-soft: #143127; --sky: #6FA3F2; --sky-soft: #172843;
+  --sun: #F2C14E; --sun-soft: #33290E; --rose: #F07C7C; --rose-soft: #3A1B1D; --violet: #A79BF5; --violet-soft: #241F44;
+  --road: #2B3341; --road-line: #D9DEE6; --grass: #1E3020;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body { min-height: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--f); font-size: 17px; line-height: 1.6; font-weight: 400;
+  padding-inline: 16px; padding-block: 0 40px;
+  -webkit-font-smoothing: antialiased;
+}
+#app { max-width: 600px; margin-inline: auto; }
+h1, h2, h3 { margin: 0; line-height: 1.2; text-wrap: balance; font-weight: 600; letter-spacing: -0.01em; }
+p { margin: 0; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; border-radius: 8px; }
+.muted { color: var(--muted); }
+.small { font-size: .86rem; }
+.stack { display: grid; gap: 16px; }
+.row { display: flex; gap: 12px; align-items: center; }
+.sp { flex: 1; }
+.num { font-variant-numeric: tabular-nums; }
+
+/* buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 52px; padding: 12px 22px; border-radius: 14px; border: 0; cursor: pointer;
+  background: var(--brand); color: var(--brand-ink); font-weight: 600; font-size: 1rem;
+  transition: transform .12s ease, filter .12s ease;
+}
+.btn:hover { filter: brightness(1.05); }
+.btn:active { transform: scale(.98); }
+.btn:disabled { opacity: .4; cursor: default; transform: none; filter: none; }
+.btn.soft { background: var(--surface-2); color: var(--ink); }
+.btn.ghost { background: transparent; color: var(--muted); padding-inline: 12px; }
+.btn.wide { width: 100%; }
+.link { background: none; border: 0; cursor: pointer; color: var(--muted); font-weight: 500; padding: 8px 4px; display: inline-flex; gap: 6px; align-items: center; }
+.link:hover { color: var(--ink); }
+
+/* top bar */
+.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg);
+  margin-inline: -16px; padding: 10px 16px 8px;
+}
+.top .in { max-width: 600px; margin-inline: auto; display: grid; gap: 8px; }
+.bar { height: 8px; border-radius: 99px; background: var(--surface-2); overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; border-radius: 99px; background: var(--brand); transition: width .35s ease; }
+
+/* home */
+.hello { padding-top: 28px; display: grid; gap: 6px; }
+.hello h1 { font-size: 1.9rem; font-weight: 700; }
+.panel { background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); padding: 20px; }
+.overview { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; }
+.ring { width: 92px; height: 92px; position: relative; }
+.ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.ring .lbl { position: absolute; inset: 0; display: grid; place-items: center; font-weight: 700; font-size: 1.3rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: .8rem; padding: 4px 10px; border-radius: 99px; background: var(--surface-2); color: var(--muted); font-weight: 500; }
+.next { display: grid; gap: 14px; background: var(--brand); color: var(--brand-ink); border-radius: var(--r); padding: 20px; box-shadow: var(--shadow); }
+.next .eyebrow { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; opacity: .8; }
+.next h2 { font-size: 1.4rem; }
+.next .btn { background: var(--brand-ink); color: var(--brand); justify-self: start; }
+.next .ic { width: 64px; height: 64px; flex: none; }
+.sec-title { font-size: .82rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 8px; }
+.chlist { display: grid; gap: 10px; }
+.ch {
+  display: grid; grid-template-columns: 52px 1fr auto; gap: 14px; align-items: center; text-align: left;
+  width: 100%; padding: 12px 14px; border: 0; border-radius: 16px; background: var(--surface); box-shadow: var(--shadow); cursor: pointer;
+  transition: transform .12s ease;
+}
+.ch:hover { transform: translateY(-1px); }
+.ch .ic { width: 52px; height: 52px; }
+.ch .t { min-width: 0; display: grid; gap: 1px; }
+.ch .t b { font-weight: 600; font-size: 1.02rem; }
+.ch .t span { font-size: .86rem; color: var(--muted); line-height: 1.35; }
+.ch .n { font-size: .78rem; color: var(--muted); font-weight: 500; }
+.pill { font-size: .78rem; font-weight: 600; padding: 4px 10px; border-radius: 99px; white-space: nowrap; background: var(--surface-2); color: var(--muted); }
+.pill.go { background: var(--sky-soft); color: var(--sky); }
+.pill.ok { background: var(--brand-soft); color: var(--brand); }
+.practice { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.pcard { text-align: left; border: 0; cursor: pointer; border-radius: var(--r); padding: 16px; background: var(--surface); box-shadow: var(--shadow); display: grid; gap: 6px; align-content: start; }
+.pcard b { font-weight: 600; font-size: 1.05rem; }
+.pcard span { font-size: .86rem; color: var(--muted); line-height: 1.4; }
+.pcard .big { font-size: 1.6rem; font-weight: 700; line-height: 1; }
+@media (max-width: 420px) { .practice { grid-template-columns: 1fr; } }
+
+/* sign / icon */
+.sign { display: block; width: 100%; height: 100%; }
+.sign svg { width: 100%; height: 100%; display: block; }
+.sign.missing { border-radius: 12px; background: var(--surface-2); display: grid; place-items: center; font-size: .6rem; color: var(--muted); text-align: center; padding: 4px; }
+
+/* lesson card */
+.lesson { padding-top: 6px; display: grid; gap: 16px; }
+.card { background: var(--surface); border-radius: 22px; box-shadow: var(--shadow); padding: 22px 20px; display: grid; gap: 14px; animation: rise .28s ease both; }
+@keyframes rise { from { transform: translateY(8px); opacity: .0; } to { transform: none; opacity: 1; } }
+.kind { display: inline-flex; align-items: center; gap: 8px; font-size: .8rem; font-weight: 600; padding: 5px 12px 5px 8px; border-radius: 99px; width: fit-content; }
+.kind i { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-style: normal; font-size: .8rem; color: var(--surface); }
+.k-idea { background: var(--sky-soft); color: var(--sky); } .k-idea i { background: var(--sky); }
+.k-rule { background: var(--brand-soft); color: var(--brand); } .k-rule i { background: var(--brand); }
+.k-trap { background: var(--rose-soft); color: var(--rose); } .k-trap i { background: var(--rose); }
+.k-memo { background: var(--violet-soft); color: var(--violet); } .k-memo i { background: var(--violet); }
+.k-example { background: var(--sun-soft); color: var(--sun); } .k-example i { background: var(--sun); }
+.card h2 { font-size: 1.45rem; }
+.body { display: grid; gap: 10px; font-size: 1.04rem; }
+.body ul, .body ol { margin: 0; padding-left: 1.25em; display: grid; gap: 6px; }
+.body b { font-weight: 600; }
+.src { font-size: .78rem; color: var(--muted); }
+.visual { display: grid; place-items: center; }
+.v-sign { width: 132px; height: 132px; }
+.v-signs { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+.v-signs figure { margin: 0; display: grid; gap: 6px; justify-items: center; width: 104px; }
+.v-signs .sg { width: 84px; height: 84px; }
+.v-signs figcaption { font-size: .74rem; color: var(--muted); text-align: center; line-height: 1.3; }
+.v-big { text-align: center; display: grid; gap: 2px; padding: 8px 0; }
+.v-big b { font-size: 2.6rem; font-weight: 700; color: var(--brand); line-height: 1.1; }
+.v-big span { color: var(--muted); }
+.v-table { overflow-x: auto; width: 100%; }
+.v-table table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.v-table th, .v-table td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.v-table th { font-weight: 600; color: var(--muted); font-size: .8rem; }
+.v-table tr:last-child td { border-bottom: 0; }
+.scene { width: 100%; max-width: 340px; display: grid; gap: 8px; }
+.scene svg { width: 100%; height: auto; display: block; border-radius: 16px; }
+.scene .cap { font-size: .86rem; color: var(--muted); text-align: center; }
+.nav { display: grid; grid-template-columns: auto 1fr; gap: 10px; position: sticky; bottom: 0; padding: 12px 0 calc(12px + env(safe-area-inset-bottom, 0px)); background: linear-gradient(to bottom, transparent, var(--bg) 30%); }
+.intro-ic { width: 96px; height: 96px; }
+.summary li { line-height: 1.5; }
+.summary ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.summary li { display: grid; grid-template-columns: 26px 1fr; gap: 10px; }
+.summary li::before { content: "✓"; width: 26px; height: 26px; border-radius: 50%; background: var(--brand-soft); color: var(--brand); display: grid; place-items: center; font-size: .85rem; font-weight: 700; }
+
+/* quiz */
+.qhead { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: .9rem; color: var(--muted); }
+.qhead .ok { color: var(--brand); font-weight: 600; } .qhead .bad { color: var(--rose); font-weight: 600; }
+.timer { font-weight: 600; color: var(--ink); background: var(--surface); padding: 4px 12px; border-radius: 99px; box-shadow: var(--shadow); }
+.timer.low { color: var(--rose); }
+.qtext { font-size: 1.18rem; font-weight: 500; line-height: 1.45; }
+.hint { font-size: .84rem; color: var(--muted); }
+.opts { display: grid; gap: 10px; }
+.opt {
+  display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: center; text-align: left; width: 100%;
+  padding: 12px 14px; border-radius: 16px; cursor: pointer; background: var(--surface-2); border: 2px solid transparent; line-height: 1.45; min-height: 64px;
+  transition: border-color .12s ease, background .12s ease;
+}
+.opt:hover { border-color: var(--line); }
+.opt .key { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; font-weight: 700; background: var(--surface); }
+.opt[aria-pressed="true"] { border-color: var(--sky); background: var(--sky-soft); }
+.opt[aria-pressed="true"] .key { background: var(--sky); color: var(--surface); }
+.opt.right { border-color: var(--brand); background: var(--brand-soft); }
+.opt.right .key { background: var(--brand); color: var(--surface); }
+.opt.wrong { border-color: var(--rose); background: var(--rose-soft); }
+.opt.wrong .key { background: var(--rose); color: var(--surface); }
+.opt.missed { border-style: dashed; }
+.opt:disabled { cursor: default; }
+.fb { border-radius: 16px; padding: 14px 16px; display: grid; gap: 4px; animation: rise .2s ease both; }
+.fb.ok { background: var(--brand-soft); } .fb.bad { background: var(--rose-soft); }
+.fb b { font-weight: 600; }
+.result { text-align: center; display: grid; gap: 14px; justify-items: center; padding-top: 10px; }
+.result .score { font-size: 3.4rem; font-weight: 700; line-height: 1; }
+.result .badge { font-size: .9rem; font-weight: 600; padding: 6px 14px; border-radius: 99px; }
+.badge.pass { background: var(--brand-soft); color: var(--brand); } .badge.fail { background: var(--rose-soft); color: var(--rose); }
+.actions { display: grid; gap: 10px; width: 100%; }
+.review { display: grid; gap: 12px; text-align: left; width: 100%; }
+.review .item { background: var(--surface); border-radius: 16px; padding: 14px 16px; box-shadow: var(--shadow); display: grid; gap: 6px; }
+.review .item .q { font-weight: 500; }
+.review .item .a { color: var(--brand); font-size: .92rem; }
+.review .item .x { color: var(--muted); font-size: .9rem; }
+.empty { text-align: center; padding: 30px 10px; display: grid; gap: 10px; justify-items: center; }
+footer { margin-top: 30px; font-size: .8rem; color: var(--muted); text-align: center; line-height: 1.5; }
+footer a { color: inherit; }
+
+@media (prefers-reduced-motion: reduce) { *, *::before { animation: none !important; transition: none !important; } }
+</style>
+
+<div id="app" aria-live="polite"></div>
+
+<script src="content.js"></script>
+<script>
+(function () {
+  var C = window.COURSE || { chapters: [], signs: {} };
+  var CH = C.chapters.slice().sort(function (a, b) { return a.id - b.id; });
+  var SIGNS = C.signs || {};
+  var ICON = { 1: 'inf-autostrada', 2: 'ob-inainte', 3: 'av-alte-pericole', 4: 'sem-verde', 5: 'pr-drum-prioritate', 6: 'ob-sens-giratoriu', 7: 'in-viteza-50', 8: 'in-depasirea-interzisa', 9: 'av-calea-ferata-bariere', 10: 'trg-triunghi-reflectorizant', 11: 'pr-stop', 12: 'inf-spital' };
+  var EXAM_MIX = { 1: 1, 2: 2, 3: 3, 4: 2, 5: 5, 6: 2, 7: 2, 8: 2, 9: 2, 10: 2, 11: 2, 12: 1 };
+  var KIND = { idea: ['Ideea', '💡'], rule: ['Regula', '§'], trap: ['Capcană', '!'], memo: ['Truc de memorare', '★'], example: ['Exemplu', '→'] };
+  var LET = ['A', 'B', 'C'];
+  var app = document.getElementById('app');
+
+  // every question gets a stable id
+  var QBY = {};
+  CH.forEach(function (ch) { (ch.questions || []).forEach(function (q, i) { q._id = 'c' + ch.id + '-q' + i; q._ch = ch.id; QBY[q._id] = q; }); });
+
+  /* ---------- progress: localStorage now, db when the viewer offers it ---------- */
+  var KEY = 'dsp-progress-v2';
+  var P = load() || { ch: {}, mis: {}, exams: [], at: 0 };
+  function load() { try { return JSON.parse(localStorage.getItem(KEY)); } catch (e) { return null; } }
+  var db = null, saving = false, dirty = false, saveTimer = null;
+  function save() {
+    P.at = Date.now();
+    try { localStorage.setItem(KEY, JSON.stringify(P)); } catch (e) {}
+    dirty = true; clearTimeout(saveTimer); saveTimer = setTimeout(flush, 1200);
+  }
+  function flush() {
+    if (!db || !dirty || saving) return;
+    saving = true; dirty = false;
+    db.doc('progress/main').set(JSON.parse(JSON.stringify(P))).catch(function () { dirty = true; }).then(function () { saving = false; if (dirty) flush(); });
+  }
+  if (window.claude && window.claude.use) {
+    window.claude.use('db').then(function (d) {
+      if (!d) return; db = d;
+      d.doc('progress/main').get().then(function (s) {
+        var remote = s.exists ? s.data() : null;
+        if (remote && (remote.at || 0) > (P.at || 0)) { P = JSON.parse(JSON.stringify(remote)); try { localStorage.setItem(KEY, JSON.stringify(P)); } catch (e) {} route(); }
+        else if (P.at) { dirty = true; flush(); }
+      }).catch(function () {});
+    }).catch(function () {});
+  }
+  function chp(id) { return P.ch[id] || (P.ch[id] = { step: 0, best: 0, tries: 0 }); }
+  function mastered(ch) { var p = P.ch[ch.id]; return !!p && ch.questions && ch.questions.length && p.best >= Math.ceil(ch.questions.length * 0.85); }
+  function mistakeIds() { return Object.keys(P.mis).filter(function (k) { return QBY[k] && P.mis[k].s < 2; }); }
+  function noteAnswer(q, right) {
+    var m = P.mis[q._id];
+    if (!right) P.mis[q._id] = { w: (m ? m.w : 0) + 1, s: 0 };
+    else if (m) m.s = (m.s || 0) + 1;
+  }
+
+  /* ---------- helpers ---------- */
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function signHTML(id, cls) {
+    var s = SIGNS[id];
+    if (s && s.svg) return '<span class="sign ' + (cls || '') + '" role="img" aria-label="' + esc(s.name) + '">' + s.svg + '</span>';
+    return '<span class="sign missing ' + (cls || '') + '">' + esc(id) + '</span>';
+  }
+  function signName(id) { return SIGNS[id] ? SIGNS[id].name : id; }
+  function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  function top(back, label, pct, extra) {
+    return '<div class="top"><div class="in"><div class="row">' +
+      '<button class="link" data-go="' + back + '">← ' + esc(label) + '</button><span class="sp"></span>' + (extra || '') + '</div>' +
+      (pct == null ? '' : '<div class="bar"><i style="width:' + pct + '%"></i></div>') + '</div></div>';
+  }
+  function bindGo() {
+    app.querySelectorAll('[data-go]').forEach(function (b) { b.addEventListener('click', function () { go(b.dataset.go); }); });
+  }
+  function go(h) { if (location.hash === '#' + h) route(); else location.hash = h; }
+  window.addEventListener('hashchange', route);
+
+  /* ---------- visuals ---------- */
+  function visualHTML(v) {
+    if (!v) return '';
+    if (v.sign) return '<div class="visual"><div class="v-sign">' + signHTML(v.sign) + '</div></div>';
+    if (v.signs) return '<div class="visual v-signs">' + v.signs.map(function (id) { return '<figure><div class="sg">' + signHTML(id) + '</div><figcaption>' + esc(signName(id)) + '</figcaption></figure>'; }).join('') + '</div>';
+    if (v.big) return '<div class="visual v-big"><b>' + esc(v.big) + '</b>' + (v.caption ? '<span>' + esc(v.caption) + '</span>' : '') + '</div>';
+    if (v.table) return '<div class="visual v-table"><table><thead><tr>' + v.table[0].map(function (c) { return '<th>' + esc(c) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+      v.table.slice(1).map(function (r) { return '<tr>' + r.map(function (c) { return '<td>' + esc(c) + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody></table></div>';
+    if (v.scene) return '<div class="visual"><div class="scene">' + scene(v.scene) + (v.scene.caption ? '<p class="cap">' + esc(v.scene.caption) + '</p>' : '') + '</div></div>';
+    return '';
+  }
+
+  // Top-down road scene. Canvas 300x300, centre 150. Each road is 2 lanes of 40px; traffic keeps right.
+  function scene(s) {
+    var L = s.layout || 'cross', W = 40, c = 150;
+    var arms = { n: 1, s: 1, e: 1, w: 1 };
+    if (L.indexOf('t-') === 0) arms[L.slice(2, 3)] = 0;
+    if (L === 'straight') { arms.e = 0; arms.w = 0; }
+    var o = ['<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schiță de intersecție">'];
+    o.push('<rect width="300" height="300" fill="var(--grass)"/>');
+    var R = 'fill="var(--road)"';
+    if (L === 'roundabout') {
+      o.push('<rect x="' + (c - W) + '" y="0" width="' + 2 * W + '" height="300" ' + R + '/><rect x="0" y="' + (c - W) + '" width="300" height="' + 2 * W + '" ' + R + '/>');
+      o.push('<circle cx="150" cy="150" r="86" ' + R + '/><circle cx="150" cy="150" r="40" fill="var(--grass)" stroke="var(--road-line)" stroke-width="2"/>');
+      o.push('<circle cx="150" cy="150" r="63" fill="none" stroke="var(--road-line)" stroke-width="1.5" stroke-dasharray="6 7" opacity=".7"/>');
+    } else {
+      if (arms.n || arms.s) o.push('<rect x="' + (c - W) + '" y="' + (arms.n ? 0 : c - W) + '" width="' + 2 * W + '" height="' + ((arms.n ? c : W) + (arms.s ? c : W)) + '" ' + R + '/>');
+      if (arms.e || arms.w) o.push('<rect x="' + (arms.w ? 0 : c - W) + '" y="' + (c - W) + '" width="' + ((arms.w ? c : W) + (arms.e ? c : W)) + '" height="' + 2 * W + '" ' + R + '/>');
+      // centre lines on each arm (dashed); the priority road keeps a continuous edge through the junction
+      var dash = 'stroke="var(--road-line)" stroke-width="2" stroke-dasharray="10 8"';
+      if (L === 'straight') o.push('<line x1="150" y1="0" x2="150" y2="300" ' + dash + '/>');
+      else {
+        if (arms.n) o.push('<line x1="150" y1="0" x2="150" y2="' + (c - W - 4) + '" ' + dash + '/>');
+        if (arms.s) o.push('<line x1="150" y1="' + (c + W + 4) + '" x2="150" y2="300" ' + dash + '/>');
+        if (arms.w) o.push('<line x1="0" y1="150" x2="' + (c - W - 4) + '" y2="150" ' + dash + '/>');
+        if (arms.e) o.push('<line x1="' + (c + W + 4) + '" y1="150" x2="300" y2="150" ' + dash + '/>');
+        // yield / stop lines on the minor arms
+        var minor = s.main === 'ns' ? ['e', 'w'] : s.main === 'ew' ? ['n', 's'] : [];
+        var stopL = { s: [c, c + W + 2, c + W, c + W + 2], n: [c - W, c - W - 2, c, c - W - 2], e: [c + W + 2, c - W, c + W + 2, c], w: [c - W - 2, c, c - W - 2, c + W] };
+        minor.forEach(function (a) { if (arms[a]) { var p = stopL[a]; o.push('<line x1="' + p[0] + '" y1="' + p[1] + '" x2="' + p[2] + '" y2="' + p[3] + '" stroke="var(--road-line)" stroke-width="3" stroke-dasharray="5 4"/>'); } });
+        if (s.main === 'ns' || s.main === 'ew') {
+          var e1 = s.main === 'ns' ? [[c - W, 0, c - W, 300], [c + W, 0, c + W, 300]] : [[0, c - W, 300, c - W], [0, c + W, 300, c + W]];
+          e1.forEach(function (p) { o.push('<line x1="' + p[0] + '" y1="' + p[1] + '" x2="' + p[2] + '" y2="' + p[3] + '" stroke="var(--sun)" stroke-width="3" opacity=".9"/>'); });
+        }
+      }
+    }
+    // tram tracks
+    if (s.tram === 'ns') o.push('<g stroke="var(--muted)" stroke-width="1.5" opacity=".8"><line x1="142" y1="0" x2="142" y2="300"/><line x1="158" y1="0" x2="158" y2="300"/></g>');
+    if (s.tram === 'ew') o.push('<g stroke="var(--muted)" stroke-width="1.5" opacity=".8"><line x1="0" y1="142" x2="300" y2="142"/><line x1="0" y1="158" x2="300" y2="158"/></g>');
+
+    // signs and lights stand on the right-hand side of each approach
+    var spot = { s: [196, 214], n: [74, 56], e: [214, 74], w: [56, 196] };
+    (s.signs || []).forEach(function (g) {
+      var p = spot[g.arm]; if (!p) return;
+      o.push(nested(g.sign, p[0], p[1], 30));
+    });
+    if (s.light) Object.keys(s.light).forEach(function (a) {
+      var p = spot[a]; if (!p) return; var st = s.light[a];
+      var col = { red: '#E5383B', yellow: '#F5B700', 'yellow-blink': '#F5B700', green: '#2BB673' }[st] || '#999';
+      var idx = { red: 0, yellow: 1, 'yellow-blink': 1, green: 2 }[st];
+      var x = p[0] + 8, y = p[1] - 6;
+      o.push('<rect x="' + x + '" y="' + y + '" width="16" height="40" rx="4" fill="#20242c"/>');
+      for (var i = 0; i < 3; i++) o.push('<circle cx="' + (x + 8) + '" cy="' + (y + 7 + i * 13) + '" r="4.5" fill="' + (i === idx ? col : '#3d434e') + '"/>');
+    });
+    if (s.officer) o.push('<g><circle cx="150" cy="150" r="13" fill="var(--sky)"/><circle cx="150" cy="150" r="6" fill="#fff"/><text x="150" y="176" text-anchor="middle" font-size="10" fill="var(--road-line)" font-family="Lexend, sans-serif">polițist</text></g>');
+
+    // vehicles: position by arm, queue backwards for repeats on the same arm
+    var count = {};
+    var pal = ['#E8505B', '#F2A541', '#7E57C2', '#26A69A', '#5C6BC0'];
+    (s.vehicles || []).forEach(function (v, i) {
+      var k = count[v.arm] = (count[v.arm] || 0) + 1;
+      var back = (k - 1) * 52;
+      var geo = L === 'straight'
+        ? { s: [170, 210 + back, 0], n: [130, 90 - back, 180] }
+        : L === 'roundabout'
+          ? { s: [170, 262 + back, 0], n: [130, 38 - back, 180], e: [262 + back, 130, 270], w: [38 - back, 170, 90] }
+          : { s: [170, 244 + back, 0], n: [130, 56 - back, 180], e: [244 + back, 130, 270], w: [56 - back, 170, 90] };
+      var g = geo[v.arm]; if (!g) return;
+      var color = v.you ? 'var(--sky)' : pal[i % pal.length];
+      if (v.type === 'pedestrian') { o.push(walker(v, L, color)); return; }
+      o.push(vehicle(v, g[0], g[1], g[2], color, L === 'roundabout'));
+    });
+    o.push('</svg>');
+    return o.join('');
+  }
+  function nested(id, x, y, size) {
+    var s = SIGNS[id];
+    if (!s || !s.svg) return '<rect x="' + x + '" y="' + y + '" width="' + size + '" height="' + size + '" rx="6" fill="#fff" stroke="#999"/>';
+    return s.svg.replace('<svg', '<svg x="' + x + '" y="' + y + '" width="' + size + '" height="' + size + '"');
+  }
+  // Roundabouts run anticlockwise (seen from above): enter on the right, leave at the exit arm.
+  function ringArrow(v, color) {
+    var A = { s: 90, e: 0, n: -90, w: 180 }, a0 = A[v.arm];
+    var turn = { right: 90, straight: 180, left: 270, uturn: 340 }[v.go || 'straight'] || 180;
+    var r = 63, s0 = a0 - 22, s1 = a0 - turn + 22;
+    function pt(a) { a = a * Math.PI / 180; return [(150 + r * Math.cos(a)).toFixed(1), (150 + r * Math.sin(a)).toFixed(1)]; }
+    var p0 = pt(s0), p1 = pt(s1), large = (s0 - s1) > 180 ? 1 : 0;
+    var d = 'M' + p0[0] + ' ' + p0[1] + ' A' + r + ' ' + r + ' 0 ' + large + ' 0 ' + p1[0] + ' ' + p1[1];
+    var b = (s1 - 6) * Math.PI / 180, hx = 150 + r * Math.cos(b), hy = 150 + r * Math.sin(b);
+    var ang = Math.atan2(hy - p1[1], hx - p1[0]) * 180 / Math.PI;
+    return '<path d="' + d + '" fill="none" stroke="' + color + '" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 7"/>' +
+      '<path d="M0 -6 L10 0 L0 6 Z" fill="' + color + '" transform="translate(' + hx.toFixed(1) + ' ' + hy.toFixed(1) + ') rotate(' + ang.toFixed(1) + ')"/>';
+  }
+  // A pedestrian stands at the start of a zebra crossing drawn across that arm.
+  function walker(v, L, color) {
+    var d = L === 'roundabout' ? 104 : 58, c = 150, o = '', i;
+    var vert = v.arm === 'n' || v.arm === 's', sg = v.arm === 'n' || v.arm === 'w' ? -1 : 1;
+    for (i = 0; i < 7; i++) {
+      var off = -36 + i * 12;
+      o += vert ? '<rect x="' + (c + off - 4) + '" y="' + (c + sg * d - 9) + '" width="7" height="18" fill="var(--road-line)" opacity=".9"/>'
+                : '<rect x="' + (c + sg * d - 9) + '" y="' + (c + off - 4) + '" width="18" height="7" fill="var(--road-line)" opacity=".9"/>';
+    }
+    var x = vert ? c - 52 : c + sg * d, y = vert ? c + sg * d : c - 52;
+    o += '<circle cx="' + x + '" cy="' + y + '" r="9" fill="' + color + '" stroke="#fff" stroke-width="2"/>';
+    var lab = v.id || '';
+    if (lab) o += '<text x="' + x + '" y="' + (y + 4) + '" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Lexend, sans-serif">' + esc(lab) + '</text>';
+    return o;
+  }
+  function vehicle(v, x, y, rot, color, ring) {
+    var t = v.type || 'car', len = { car: 34, tram: 62, bus: 52, truck: 50, bike: 22, ambulance: 38, police: 34, pedestrian: 0 }[t];
+    var wid = t === 'bike' ? 10 : t === 'tram' || t === 'bus' || t === 'truck' ? 24 : 22;
+    if (t === 'tram') color = '#E0A100';
+    if (t === 'ambulance') color = '#FFFFFF';
+    if (t === 'police') color = '#1F4FA8';
+    var o = '<g transform="translate(' + x + ' ' + y + ') rotate(' + rot + ')">';
+    // intention arrow, drawn in the vehicle's own frame (it faces "up", i.e. negative y)
+    var go = v.go || 'straight', front = -len / 2, ap;
+    if (go === 'straight') ap = 'M0 ' + (front - 4) + ' L0 ' + (front - 46);
+    if (go === 'right') ap = 'M0 ' + (front - 4) + ' Q0 ' + (front - 36) + ' 34 ' + (front - 40);
+    if (go === 'left') ap = 'M0 ' + (front - 4) + ' Q0 ' + (front - 76) + ' -64 ' + (front - 80);
+    if (go === 'uturn') ap = 'M0 ' + (front - 4) + ' Q0 ' + (front - 50) + ' -20 ' + (front - 50) + ' Q-40 ' + (front - 50) + ' -40 ' + (front - 10);
+    if (ring) ap = null;
+    if (ap && t !== 'pedestrian') o += '<path d="' + ap + '" fill="none" stroke="' + (color === '#FFFFFF' ? '#E8505B' : color) + '" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 7" opacity=".95"/>' +
+      arrowHead(ap, color === '#FFFFFF' ? '#E8505B' : color);
+    if (t === 'pedestrian') {
+      o += '<circle r="9" fill="' + color + '" stroke="#fff" stroke-width="2"/>';
+    } else {
+      o += '<rect x="' + (-wid / 2) + '" y="' + (-len / 2) + '" width="' + wid + '" height="' + len + '" rx="' + (t === 'bike' ? 4 : 6) + '" fill="' + color + '" stroke="rgba(0,0,0,.35)" stroke-width="1"/>';
+      if (t !== 'bike') o += '<rect x="' + (-wid / 2 + 3) + '" y="' + (-len / 2 + 4) + '" width="' + (wid - 6) + '" height="7" rx="2" fill="rgba(255,255,255,.75)"/>';
+      if (t === 'ambulance') o += '<path d="M-2 2h4v-5h5v-4h-5v-5h-4v5h-5v4h5z" fill="#E5383B" transform="translate(0 8)"/>';
+      if (t === 'police') o += '<rect x="-6" y="-2" width="12" height="4" fill="#5DADE2"/>';
+    }
+    o += '</g>';
+    if (ring && v.go && v.go !== 'stop') o += ringArrow(v, color === '#FFFFFF' ? '#E8505B' : color);
+    // the label stays upright, next to the vehicle
+    var lab = v.you ? 'TU' : (v.id || '');
+    if (lab) {
+      var r = lab.length > 1 ? 13 : 11;
+      o += '<g><circle cx="' + x + '" cy="' + y + '" r="' + r + '" fill="#fff" stroke="' + (v.you ? 'var(--sky)' : '#18202F') + '" stroke-width="2"/>' +
+        '<text x="' + x + '" y="' + (y + 4.5) + '" text-anchor="middle" font-size="' + (lab.length > 1 ? 10 : 13) + '" font-weight="700" fill="#18202F" font-family="Lexend, sans-serif">' + esc(lab) + '</text></g>';
+    }
+    return o;
+  }
+  function arrowHead(d, color) {
+    // place a small triangle at the path's last point, pointing along the last segment
+    var nums = d.match(/-?\d+(\.\d+)?/g).map(Number);
+    var x2 = nums[nums.length - 2], y2 = nums[nums.length - 1], x1 = nums[nums.length - 4], y1 = nums[nums.length - 3];
+    var a = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
+    return '<path d="M0 -6 L10 0 L0 6 Z" fill="' + color + '" transform="translate(' + x2 + ' ' + y2 + ') rotate(' + a + ')"/>';
+  }
+
+  /* ---------- views ---------- */
+  function route() {
+    clearInterval(timerId);
+    var h = (location.hash || '').slice(1);
+    var m;
+    if ((m = h.match(/^cap(\d+)$/))) return lessonView(+m[1]);
+    if ((m = h.match(/^test(\d+)$/))) return quizStart({ kind: 'chapter', ch: +m[1] });
+    if (h === 'examen') return examIntro();
+    if (h === 'greseli') return quizStart({ kind: 'mistakes' });
+    home();
+  }
+
+  function home() {
+    var done = CH.filter(mastered).length, total = CH.length || 12;
+    var pct = Math.round(done / total * 100);
+    var next = CH.filter(function (c) { return !mastered(c); })[0];
+    var mis = mistakeIds().length;
+    var lastExam = P.exams[P.exams.length - 1];
+    var circ = 2 * Math.PI * 40;
+    var h = '<header class="hello"><p class="muted small">Drumul spre permis · categoria B</p><h1>Bună! Hai să învățăm puțin, dar bine.</h1></header>' +
+      '<div class="stack" style="margin-top:20px">' +
+      '<section class="panel overview" aria-label="Progresul tău">' +
+        '<div class="ring"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="var(--surface-2)" stroke-width="10"/>' +
+        '<circle cx="50" cy="50" r="40" fill="none" stroke="var(--brand)" stroke-width="10" stroke-linecap="round" stroke-dasharray="' + (circ * pct / 100) + ' ' + circ + '"' + (pct ? '' : ' opacity="0"') + '/></svg><span class="lbl num">' + pct + '%</span></div>' +
+        '<div class="stack" style="gap:8px"><p><b style="font-weight:600">' + done + ' din ' + total + ' capitole stăpânite</b></p>' +
+        '<div class="chips"><span class="chip">26 întrebări</span><span class="chip">30 minute</span><span class="chip">minim 22 corecte</span></div></div>' +
+      '</section>';
+    if (next) {
+      var p = P.ch[next.id];
+      h += '<section class="next"><div class="row" style="align-items:flex-start"><div class="stack" style="gap:6px"><span class="eyebrow">' + (p && p.step ? 'Continuă' : 'Următorul pas') + ' · capitolul ' + next.id + '</span><h2>' + esc(next.title) + '</h2><p style="opacity:.9">' + esc(next.tagline) + '</p></div><span class="sp"></span><div class="ic">' + signHTML(ICON[next.id]) + '</div></div>' +
+        '<button class="btn" data-go="cap' + next.id + '">' + (p && p.step ? 'Continuă lecția' : 'Începe') + ' · ' + next.minutes + ' min</button></section>';
+    } else {
+      h += '<section class="next"><span class="eyebrow">Toate capitolele sunt stăpânite</span><h2>Ești gata de simulări.</h2><button class="btn" data-go="examen">Fă o simulare de examen</button></section>';
+    }
+    h += '<p class="sec-title">Exersează</p><div class="practice">' +
+      '<button class="pcard" data-go="examen"><b>Simulare examen</b><span>26 de întrebări din toate capitolele, 30 de minute, ca la DRPCIV.</span>' +
+        (lastExam ? '<span>Ultima: <b class="num">' + lastExam.ok + '/26</b> · ' + (lastExam.passed ? 'admis' : 'respins') + '</span>' : '') + '</button>' +
+      '<button class="pcard" data-go="greseli"><span class="big num">' + mis + '</span><b>Greșelile mele</b><span>' + (mis ? 'Întrebările greșite revin până le nimerești de două ori la rând.' : 'Nimic aici încă. Ce greșești apare aici.') + '</span></button>' +
+      '</div>';
+    h += '<p class="sec-title">Capitolele</p><div class="chlist">';
+    CH.forEach(function (c) {
+      var p = P.ch[c.id], n = (c.questions || []).length, st;
+      if (mastered(c)) st = '<span class="pill ok">Stăpânit ✓</span>';
+      else if (p && p.tries) st = '<span class="pill go num">' + p.best + '/' + n + '</span>';
+      else if (p && p.step) st = '<span class="pill go">Început</span>';
+      else st = '<span class="pill">' + c.minutes + ' min</span>';
+      h += '<button class="ch" data-go="cap' + c.id + '"><span class="ic">' + signHTML(ICON[c.id]) + '</span><span class="t"><span class="n">Capitolul ' + c.id + '</span><b>' + esc(c.title) + '</b><span>' + esc(c.tagline) + '</span></span>' + st + '</button>';
+    });
+    h += '</div></div><footer>Conținut verificat după OUG 195/2002 și HG 1391/2006, octombrie 2026. Dacă ceva nu se potrivește cu cartea ta, spune-mi în conversație și verific.</footer>';
+    app.innerHTML = h; bindGo(); window.scrollTo(0, 0);
+  }
+
+  function lessonView(id) {
+    var ch = CH.filter(function (c) { return c.id === id; })[0];
+    if (!ch) return home();
+    var p = chp(id), cards = ch.cards || [];
+    var steps = cards.length + 2; // intro + cards + summary
+    var i = Math.min(p.step || 0, steps - 1);
+    function draw() {
+      var pct = Math.round(i / (steps - 1) * 100), inner;
+      if (i === 0) {
+        inner = '<article class="card"><div class="intro-ic">' + signHTML(ICON[id]) + '</div><p class="muted small">Capitolul ' + id + ' · ' + ch.minutes + ' minute · ' + cards.length + ' cartonașe · ' + (ch.questions || []).length + ' întrebări</p><h2>' + esc(ch.title) + '</h2><div class="body"><p>' + esc(ch.intro) + '</p><p class="muted">Citește câte un cartonaș, în ritmul tău. La final te așteaptă un test scurt, fără cronometru.</p></div></article>';
+      } else if (i === steps - 1) {
+        inner = '<article class="card summary"><span class="kind k-rule"><i>✓</i>Pe scurt</span><h2>Ce reții din capitolul ' + id + '</h2><ul>' + (ch.summary || []).map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') + '</ul></article>';
+      } else {
+        var c = cards[i - 1], k = KIND[c.kind] || KIND.idea;
+        inner = '<article class="card"><span class="kind k-' + (KIND[c.kind] ? c.kind : 'idea') + '"><i>' + k[1] + '</i>' + k[0] + '</span><h2>' + esc(c.title) + '</h2>' + visualHTML(c.visual) + '<div class="body">' + c.body + '</div>' + (c.src ? '<p class="src">' + esc(c.src) + '</p>' : '') + '</article>';
+      }
+      var last = i === steps - 1;
+      app.innerHTML = top('acasa', 'Capitole', pct, '<span class="muted small num">' + (i + 1) + ' / ' + steps + '</span>') +
+        '<div class="lesson">' + inner + '<div class="nav">' +
+        '<button class="btn soft" id="prev"' + (i === 0 ? ' disabled' : '') + ' aria-label="Înapoi">←</button>' +
+        (last ? '<button class="btn" id="quiz">Începe testul</button>' : '<button class="btn" id="nextb">' + (i === 0 ? 'Să începem' : 'Continuă') + '</button>') +
+        '</div></div>';
+      bindGo();
+      document.getElementById('prev').onclick = function () { move(-1); };
+      var nb = document.getElementById('nextb'); if (nb) nb.onclick = function () { move(1); };
+      var qb = document.getElementById('quiz'); if (qb) qb.onclick = function () { go('test' + id); };
+      window.scrollTo(0, 0);
+    }
+    function move(d) {
+      i = Math.max(0, Math.min(steps - 1, i + d));
+      p.step = i; save(); draw();
+    }
+    keyHandler = function (e) { if (e.key === 'ArrowRight' && i < steps - 1) move(1); if (e.key === 'ArrowLeft' && i > 0) move(-1); };
+    draw();
+  }
+  var keyHandler = null;
+  document.addEventListener('keydown', function (e) { if (keyHandler && !/INPUT|TEXTAREA/.test(e.target.tagName)) keyHandler(e); });
+
+  /* ---------- quiz engine: chapter test, mistakes practice, exam ---------- */
+  var Q, timerId = null;
+  function quizStart(cfg) {
+    keyHandler = null;
+    var list;
+    if (cfg.kind === 'chapter') {
+      var ch = CH.filter(function (c) { return c.id === cfg.ch; })[0]; if (!ch) return home();
+      list = cfg.only ? cfg.only.map(function (id) { return QBY[id]; }) : ch.questions.slice();
+    } else if (cfg.kind === 'mistakes') {
+      list = shuffle(mistakeIds().map(function (id) { return QBY[id]; })).slice(0, 15);
+      if (!list.length) return emptyMistakes();
+    } else {
+      list = [];
+      Object.keys(EXAM_MIX).forEach(function (k) {
+        var ch = CH.filter(function (c) { return c.id === +k; })[0];
+        if (ch && ch.questions) list = list.concat(shuffle(ch.questions).slice(0, EXAM_MIX[k]));
+      });
+      var pool = shuffle([].concat.apply([], CH.map(function (c) { return c.questions || []; })).filter(function (q) { return list.indexOf(q) < 0; }));
+      while (list.length < 26 && pool.length) list.push(pool.pop());
+      list = shuffle(list).slice(0, 26);
+    }
+    Q = { cfg: cfg, queue: list.slice(), total: list.length, n: 0, ok: 0, bad: 0, wrong: [], sel: [], locked: false, end: cfg.kind === 'exam' ? Date.now() + 30 * 60 * 1000 : 0 };
+    if (Q.end) timerId = setInterval(tick, 1000);
+    qRender();
+  }
+  function emptyMistakes() {
+    app.innerHTML = top('acasa', 'Acasă', null) + '<div class="card empty"><h2>Nicio greșeală de recuperat</h2><p class="muted">Când greșești o întrebare la un test, apare aici ca s-o mai exersezi. Revine până o nimerești de două ori la rând.</p><button class="btn" data-go="acasa">Înapoi acasă</button></div>';
+    bindGo();
+  }
+  function backTarget() { return Q.cfg.kind === 'chapter' ? 'cap' + Q.cfg.ch : 'acasa'; }
+  function title() { return Q.cfg.kind === 'chapter' ? 'Testul capitolului ' + Q.cfg.ch : Q.cfg.kind === 'exam' ? 'Simulare examen' : 'Greșelile mele'; }
+  function fmt(ms) { var s = Math.max(0, Math.round(ms / 1000)); return Math.floor(s / 60) + ':' + ('0' + s % 60).slice(-2); }
+  function tick() {
+    var t = document.getElementById('timer'); var left = Q.end - Date.now();
+    if (t) { t.textContent = fmt(left); t.classList.toggle('low', left < 5 * 60 * 1000); }
+    if (left <= 0) { clearInterval(timerId); qFinish('timp'); }
+  }
+  function qRender() {
+    if (!Q.queue.length) return qFinish();
+    var q = Q.queue[0], exam = Q.cfg.kind === 'exam';
+    var pct = Math.round(Q.n / Q.total * 100);
+    var extra = exam ? '<span class="timer num" id="timer">' + fmt(Q.end - Date.now()) + '</span>' : '';
+    var h = top(backTarget(), exam ? 'Renunță' : 'Înapoi', pct, extra) + '<div class="lesson"><article class="card">' +
+      '<div class="qhead num"><span>' + esc(title()) + ' · ' + Math.min(Q.n + 1, Q.total) + ' din ' + Q.total + '</span><span class="sp"></span><span class="ok">✓ ' + Q.ok + '</span><span class="bad">✗ ' + Q.bad + '</span></div>' +
+      visualHTML(q.visual) + '<p class="qtext">' + esc(q.q) + '</p><p class="hint">Bifează toate variantele corecte.</p><div class="opts">';
+    q.o.forEach(function (o, i) { h += '<button class="opt" data-i="' + i + '" aria-pressed="false"><span class="key">' + LET[i] + '</span><span>' + esc(o) + '</span></button>'; });
+    h += '</div><div id="fb"></div></article><div class="nav" id="acts" style="grid-template-columns:' + (Q.queue.length > 1 ? '1fr 1fr' : '1fr') + '">' +
+      (Q.queue.length > 1 ? '<button class="btn soft" id="later">Mai târziu</button>' : '') +
+      '<button class="btn" id="send" disabled>Trimite răspunsul</button></div></div>';
+    app.innerHTML = h; bindGo(); window.scrollTo(0, 0);
+    Q.sel = []; Q.locked = false;
+    app.querySelectorAll('.opt').forEach(function (b) {
+      b.onclick = function () {
+        if (Q.locked) return;
+        var i = +b.dataset.i, k = Q.sel.indexOf(i);
+        if (k >= 0) Q.sel.splice(k, 1); else Q.sel.push(i);
+        b.setAttribute('aria-pressed', k < 0 ? 'true' : 'false');
+        document.getElementById('send').disabled = !Q.sel.length;
+      };
+    });
+    document.getElementById('send').onclick = qSubmit;
+    var l = document.getElementById('later'); if (l) l.onclick = function () { Q.queue.push(Q.queue.shift()); qRender(); };
+    keyHandler = function (e) {
+      var k = e.key.toUpperCase(), idx = LET.indexOf(k);
+      if (idx >= 0) { var b = app.querySelector('.opt[data-i="' + idx + '"]'); if (b) b.click(); }
+      if (e.key === 'Enter') { var s = document.getElementById('send') || document.getElementById('nextq'); if (s && !s.disabled) s.click(); }
+    };
+  }
+  function qSubmit() {
+    var q = Q.queue[0], exam = Q.cfg.kind === 'exam';
+    Q.locked = true;
+    var a = Q.sel.slice().sort(), c = q.c.slice().sort();
+    var right = a.length === c.length && a.every(function (v, i) { return v === c[i]; });
+    Q.n++; if (right) Q.ok++; else { Q.bad++; Q.wrong.push({ q: q, sel: Q.sel.slice() }); }
+    noteAnswer(q, right); save();
+    Q.queue.shift();
+    if (exam) {
+      if (Q.bad >= 5) return qFinish('greseli');
+      return qRender();
+    }
+    app.querySelectorAll('.opt').forEach(function (b) {
+      var i = +b.dataset.i, isC = q.c.indexOf(i) >= 0, isS = Q.sel.indexOf(i) >= 0;
+      b.disabled = true;
+      if (isC && isS) b.classList.add('right'); else if (!isC && isS) b.classList.add('wrong'); else if (isC) b.classList.add('right', 'missed');
+    });
+    document.getElementById('fb').innerHTML = '<div class="fb ' + (right ? 'ok' : 'bad') + '"><b>' + (right ? 'Corect!' : 'Nu chiar. Corect era: ' + q.c.map(function (i) { return LET[i]; }).join(' + ')) + '</b><p>' + esc(q.x) + '</p>' + (q.src ? '<p class="src">' + esc(q.src) + '</p>' : '') + '</div>';
+    var acts = document.getElementById('acts'); acts.style.gridTemplateColumns = '1fr';
+    acts.innerHTML = '<button class="btn" id="nextq">' + (Q.queue.length ? 'Următoarea întrebare' : 'Vezi rezultatul') + '</button>';
+    document.getElementById('nextq').onclick = qRender;
+    document.getElementById('fb').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  function qFinish(reason) {
+    clearInterval(timerId); keyHandler = null;
+    var exam = Q.cfg.kind === 'exam', kind = Q.cfg.kind;
+    if (kind === 'chapter' && !Q.cfg.only) { var p = chp(Q.cfg.ch); p.tries = (p.tries || 0) + 1; p.best = Math.max(p.best || 0, Q.ok); p.last = Date.now(); }
+    if (exam) { P.exams.push({ at: Date.now(), ok: Q.ok, bad: Q.bad, passed: Q.ok >= 22, end: reason || 'gata' }); P.exams = P.exams.slice(-30); }
+    save();
+    var msg;
+    if (exam) msg = Q.ok >= 22 ? 'Admis! Exact ca la examenul real: cel puțin 22 de răspunsuri corecte.' : reason === 'greseli' ? 'La a cincea greșeală testul se oprește, ca la examen. Uită-te liniștit peste greșeli mai jos, apoi mai încearcă.' : reason === 'timp' ? 'Timpul s-a terminat. Data viitoare folosește „Mai târziu” pentru întrebările grele.' : 'Aproape. Uită-te peste greșeli mai jos.';
+    else if (Q.bad === 0) msg = 'Perfect! Totul corect.';
+    else if (Q.ok >= Math.ceil(Q.total * 22 / 26)) msg = 'Foarte bine! La examen ar fi fost promovat. Reia greșelile ca să se fixeze.';
+    else msg = 'E în regulă, așa se învață. Reia doar întrebările greșite, apoi încă o dată tot testul.';
+    var badge = exam ? '<span class="badge ' + (Q.ok >= 22 ? 'pass' : 'fail') + '">' + (Q.ok >= 22 ? 'ADMIS' : 'RESPINS') + '</span>' : '';
+    var h = top(backTarget(), 'Înapoi', 100) + '<div class="lesson"><section class="card result"><p class="muted">' + esc(title()) + '</p><div class="score num">' + Q.ok + ' / ' + (exam ? 26 : Q.total) + '</div>' + badge + '<p>' + esc(msg) + '</p><div class="actions">';
+    var wrongIds = Q.wrong.map(function (w) { return w.q._id; });
+    if (kind === 'chapter' && wrongIds.length) h += '<button class="btn" id="rw">Reia greșelile (' + wrongIds.length + ')</button>';
+    if (kind === 'chapter') h += '<button class="btn ' + (wrongIds.length ? 'soft' : '') + '" id="again">Reia tot testul</button>';
+    if (kind === 'exam') h += '<button class="btn" id="again">Încă o simulare</button>';
+    if (kind === 'mistakes') h += '<button class="btn" id="again">Continuă cu greșelile</button>';
+    var nextCh = kind === 'chapter' ? CH.filter(function (c) { return c.id > Q.cfg.ch; })[0] : null;
+    if (nextCh && Q.ok >= Math.ceil(Q.total * 22 / 26)) h += '<button class="btn soft" data-go="cap' + nextCh.id + '">Capitolul ' + nextCh.id + ': ' + esc(nextCh.title) + ' →</button>';
+    h += '<button class="btn ghost" data-go="acasa">Acasă</button></div></section>';
+    if (Q.wrong.length && kind !== 'chapter') {
+      h += '<p class="sec-title">De recitit</p><div class="review">' + Q.wrong.map(function (w) {
+        return '<div class="item"><p class="q">' + esc(w.q.q) + '</p><p class="a">Corect: ' + w.q.c.map(function (i) { return LET[i] + ') ' + esc(w.q.o[i]); }).join('<br>') + '</p><p class="x">' + esc(w.q.x) + '</p></div>';
+      }).join('') + '</div>';
+    }
+    h += '</div>';
+    app.innerHTML = h; bindGo(); window.scrollTo(0, 0);
+    var cfg = Q.cfg;
+    var rw = document.getElementById('rw'); if (rw) rw.onclick = function () { quizStart({ kind: 'chapter', ch: cfg.ch, only: wrongIds }); };
+    var ag = document.getElementById('again'); if (ag) ag.onclick = function () { quizStart({ kind: cfg.kind, ch: cfg.ch }); };
+  }
+
+  function examIntro() {
+    keyHandler = null;
+    var hist = P.exams.slice(-5).reverse();
+    app.innerHTML = top('acasa', 'Acasă', null) + '<div class="lesson"><article class="card"><span class="kind k-example"><i>⏱</i>Simulare</span><h2>Simulare de examen</h2><div class="body">' +
+      '<ul><li><b>26 de întrebări</b> din toate capitolele, mai multe din prioritate.</li><li><b>30 de minute.</b> Cronometrul e sus.</li><li>Treci cu <b>minimum 22 corecte</b>. La a cincea greșeală testul se oprește, ca la examen.</li><li>Nu vezi explicațiile pe parcurs, doar la final.</li><li>„Mai târziu” mută întrebarea la coadă.</li></ul></div>' +
+      (hist.length ? '<p class="sec-title">Ultimele simulări</p><div class="chips">' + hist.map(function (e) { return '<span class="chip num">' + e.ok + '/26 · ' + (e.passed ? 'admis' : 'respins') + '</span>'; }).join('') + '</div>' : '') +
+      '</article><div class="nav" style="grid-template-columns:1fr"><button class="btn" id="startx">Începe simularea</button></div></div>';
+    bindGo();
+    document.getElementById('startx').onclick = function () { quizStart({ kind: 'exam' }); };
+  }
+
+  route();
+})();
+</script>
