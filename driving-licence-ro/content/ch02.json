@@ -1,0 +1,538 @@
+{
+ "id": 2,
+ "title": "Deplasarea pe drum",
+ "tagline": "Pe ce bandă stai, cum schimbi banda și cât spațiu lași",
+ "minutes": 35,
+ "intro": "Traficul merge bine când fiecare face ce se așteaptă ceilalți. Capitolul ăsta îți arată unde e locul tău pe drum: pe ce bandă stai, cum treci pe alta fără să surprinzi pe nimeni și cât spațiu păstrezi în jur. Sunt reguli logice, care se leagă una de alta.",
+ "cards": [
+  {
+   "kind": "idea",
+   "title": "Ideea de bază: fii previzibil",
+   "body": "<p>Ceilalți șoferi nu îți pot citi gândurile. Pot doar să vadă <b>unde stai</b> și <b>ce semnalizezi</b>.</p><p>De aceea legea are o regulă simplă: stai cât mai la dreapta, folosește benzile din stânga doar când ai nevoie de ele și anunță din timp orice mișcare.</p><p>Dacă reții ideea asta, aproape toate regulile din capitol vor părea firești.</p>"
+  },
+  {
+   "kind": "rule",
+   "title": "Circulăm pe partea dreaptă",
+   "body": "<p>Vehiculele circulă <b>pe partea dreaptă</b> a drumului, în sensul de mers, <b>cât mai aproape de marginea părții carosabile</b>, respectând semnalizarea și regulile de circulație.</p><p>Partea stângă e a celor care vin din față. Când ne întâlnim, fiecare rămâne pe jumătatea lui.</p>",
+   "src": "OUG 195/2002 art. 41 alin. (1)",
+   "visual": {
+    "scene": {
+     "layout": "straight",
+     "main": null,
+     "vehicles": [
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "straight",
+       "type": "car",
+       "you": true
+      },
+      {
+       "id": "B",
+       "arm": "n",
+       "go": "straight",
+       "type": "car"
+      }
+     ],
+     "caption": "Fiecare rămâne pe partea dreaptă a sensului său."
+    }
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Banda 1 e „acasă”",
+   "body": "<p>Benzile se numără <b>de la marginea din dreapta spre axa drumului</b>. Pe autostradă, banda de urgență nu se numără.</p><p>Pe un drum cu două sau mai multe benzi pe sens, circuli în mod normal pe <b>banda de lângă acostament sau bordură</b>, adică banda 1.</p><p>Celelalte benzi le folosești <b>pe rând, de la dreapta spre stânga</b>, doar dacă banda ta e ocupată. Apoi <b>revii la dreapta</b> de îndată ce se poate.</p>",
+   "src": "OUG 195/2002 art. 41 alin. (2), art. 42; Regulament art. 101",
+   "visual": {
+    "big": "Banda 1",
+    "caption": "banda ta de bază, lângă bordură sau acostament"
+   }
+  },
+  {
+   "kind": "idea",
+   "title": "La ce folosesc benzile din stânga",
+   "body": "<p>Gândește-te la banda 2 ca la o bandă „de trecere”, nu de stat.</p><ul><li>O folosești când banda 1 e ocupată, de exemplu ca să depășești.</li><li>O folosești când te pregătești să <b>virezi la stânga</b>.</li><li>Când ai terminat, te întorci pe banda din dreapta.</li></ul><p>Legea spune că alegi banda <b>după densitatea traficului și viteza ta</b>, dar cu obligația de a reveni pe banda 1.</p>",
+   "src": "OUG 195/2002 art. 42; Regulament art. 101"
+  },
+  {
+   "kind": "trap",
+   "title": "Mai repede pe banda ta nu e depășire",
+   "body": "<p>Pe un drum cu mai multe benzi pe sens, mașinile de pe o bandă pot merge mai repede decât cele de pe banda vecină. Asta <b>nu se consideră depășire</b>.</p><p>Deci dacă mergi pe banda 1 și treci pe lângă cineva care merge încet pe banda 2, nu ai făcut o „depășire pe dreapta”.</p><p>Atenție: asta nu înseamnă că ai voie să tot schimbi banda ca să treci prin dreapta. Regula de bază rămâne: stai la dreapta.</p>",
+   "src": "OUG 195/2002 art. 45 alin. (4)"
+  },
+  {
+   "kind": "rule",
+   "title": "Vehiculele lente și grele stau la dreapta",
+   "body": "<p>Vehiculele <b>grele</b>, <b>lente</b>, cele cu <b>mase sau gabarite depășite</b> și cele care merg <b>cu viteză redusă</b> circulă pe banda de lângă acostament sau bordură.</p><p>Dacă drumul are o <b>bandă special destinată vehiculelor lente</b> (des întâlnită la urcări lungi), aceste vehicule circulă <b>numai pe ea</b>.</p><p>Așa, cei mai rapizi nu sunt blocați, iar cei lenți nu sunt presați din spate.</p>",
+   "src": "Regulament art. 102; OUG 195/2002 art. 43 alin. (1)",
+   "visual": {
+    "sign": "x-banda-vehicule-lente"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Banda pentru transport public",
+   "body": "<p>Unde există o bandă <b>rezervată</b>, marcată și semnalizată, autobuzele și celelalte vehicule de transport public de persoane circulă pe ea.</p><p>Pe aceeași bandă pot merge și <b>vehiculele cu regim prioritar</b> (ambulanță, poliție, pompieri) când sunt în misiune de urgență.</p><p>Celelalte vehicule <b>nu circulă</b> pe banda rezervată. Obligația de a reveni pe banda 1 nu se aplică atunci când banda 1 e chiar banda rezervată.</p>",
+   "src": "Regulament art. 104; OUG 195/2002 art. 42, art. 43 alin. (1)",
+   "visual": {
+    "sign": "x-banda-transport-public"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Autobuzul care pleacă din alveolă",
+   "body": "<p>Alveola e o stație „scobită” în trotuar, unde autobuzul iese din fluxul de mașini.</p><p>Dacă mergi pe banda de lângă trotuar, <b>cedezi trecerea</b> autobuzului care vrea să reintre în trafic, dar numai când sunt îndeplinite <b>ambele</b> condiții:</p><ul><li>șoferul autobuzului <b>semnalizează</b> că pleacă din stația cu alveolă;</li><li>el s-a <b>asigurat</b> că manevra nu pune în pericol pe nimeni.</li></ul>",
+   "src": "OUG 195/2002 art. 43 alin. (2)",
+   "visual": {
+    "sign": "inf-statie-autobuz"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Banda reversibilă și semnalele ei",
+   "body": "<p>Banda reversibilă e lângă axa drumului și își schimbă sensul după cum e traficul (dimineața spre oraș, seara spre ieșire). Deasupra ei sunt semnale luminoase:</p><ul><li><b>Roșu, două bare încrucișate (X)</b>: accesul pe bandă e interzis.</li><li><b>Verde, săgeată cu vârful în jos</b>: poți intra și circula pe bandă.</li><li><b>Săgeată galbenă sau albă, oblică</b>: semnalul urmează să se schimbe sau banda se închide. Treci pe banda arătată de săgeată.</li></ul>",
+   "src": "OUG 195/2002 art. 6 pct. 9; Regulament art. 56"
+  },
+  {
+   "kind": "rule",
+   "title": "Linia de tramvai ca a treia bandă",
+   "body": "<p>Pe un drum cu <b>cel mult două benzi pe sens</b> și o a treia bandă cu linie de tramvai, aproape de axă, <b>ai voie să circuli</b> și pe banda cu șine.</p><p>Condiția: când vine tramvaiul, îi <b>lași liberă calea</b>.</p><p>Logica e simplă: tramvaiul nu se poate feri, tu poți.</p>",
+   "src": "Regulament art. 103",
+   "visual": {
+    "sign": "av-tramvai"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Schimbarea benzii: semnalizezi din timp",
+   "body": "<p>Când schimbi banda, schimbi direcția, virezi, întorci, mergi înapoi sau ieși dintr-un șir de mașini oprite, trebuie:</p><ol><li>să <b>semnalizezi din timp</b>;</li><li>să te <b>asiguri</b> că manevra nu stânjenește și nu pune în pericol pe nimeni;</li><li>să ții semnalizarea pornită <b>pe toată durata manevrei</b>.</li></ol><p>Semnalizarea anunță o intenție. Nu îți dă prioritate.</p>",
+   "src": "OUG 195/2002 art. 54 alin. (1)-(2)"
+  },
+  {
+   "kind": "rule",
+   "title": "Când banda ta se termină",
+   "body": "<p>Uneori banda pe care mergi se termină și trebuie să treci pe banda din stânga.</p><p>În acest caz <b>cedezi trecerea</b> vehiculelor care circulă deja pe banda în care vrei să intri. Ele sunt „acasă” pe banda lor, tu ești cel care se mută.</p><p>Semnalizezi, te asiguri și intri într-un spațiu liber, fără să forțezi.</p>",
+   "src": "Regulament art. 106 alin. (2)"
+  },
+  {
+   "kind": "trap",
+   "title": "Trei benzi: cine intră pe mijloc?",
+   "body": "<p>Drum cu <b>cel puțin trei benzi pe sens</b>. O mașină e pe banda din dreapta, alta pe banda din stânga. Amândouă vor să intre pe banda liberă din mijloc.</p><p>Aici nu se aplică „prioritatea de dreapta”. Cel de pe <b>banda din dreapta</b> trebuie să îi permită celui din <b>stânga</b> să intre pe banda din mijloc.</p><p>Ca să ții minte: cel din stânga se mută spre dreapta, adică face exact ce cere legea.</p>",
+   "src": "Regulament art. 106 alin. (1)"
+  },
+  {
+   "kind": "rule",
+   "title": "Te încadrezi cu 50 m înainte",
+   "body": "<p>Când la intersecție sunt indicatoare sau marcaje pentru direcții (săgeți pe benzi), te așezi pe banda potrivită direcției tale <b>cu cel puțin 50 m înainte de intersecție</b>.</p><p>Și respecți ce arată săgețile: dacă banda ta arată doar înainte, mergi doar înainte.</p><p>Sfat practic: dacă ai greșit banda, nu tăia benzile în ultimul moment. Mergi pe direcția benzii tale și te întorci apoi pe alt drum.</p>",
+   "src": "Regulament art. 107 alin. (1), art. 109",
+   "visual": {
+    "big": "50 m",
+    "caption": "încadrarea înainte de intersecție"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Fără marcaje: rândurile",
+   "body": "<p>Când benzile nu sunt marcate, mașinile se așază pe <b>rânduri</b>. Cu cel puțin 50 m înainte de intersecție:</p><ul><li>pentru <b>dreapta</b>: rândul de lângă bordură sau acostament;</li><li>pentru <b>stânga</b>: rândul de lângă axa drumului sau de lângă marcajul care separă sensurile;</li><li>pentru <b>înainte</b>: oricare dintre rânduri.</li></ul>",
+   "src": "Regulament art. 107 alin. (2)",
+   "visual": {
+    "scene": {
+     "layout": "cross",
+     "main": null,
+     "vehicles": [
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "left",
+       "type": "car",
+       "you": true
+      },
+      {
+       "id": "B",
+       "arm": "s",
+       "go": "right",
+       "type": "car",
+       "beside": true
+      }
+     ],
+     "caption": "Cine virează la stânga stă lângă axă, cine virează la dreapta stă lângă bordură."
+    }
+   }
+  },
+  {
+   "kind": "trap",
+   "title": "Pe sens unic, stânga e la bordură",
+   "body": "<p>Pe un drum cu <b>sens unic</b> nu există axă care să despartă sensurile. Toată lățimea e a ta.</p><p>De aceea, ca să virezi la stânga, ocupi <b>rândul de lângă bordura sau acostamentul din partea stângă</b>.</p><p>La examen apare des varianta „rândul de lângă axă”, care aici nu are sens.</p>",
+   "src": "Regulament art. 107 alin. (2) lit. b)",
+   "visual": {
+    "sign": "inf-sens-unic"
+   }
+  },
+  {
+   "kind": "example",
+   "title": "Intersecție îngustă, cu tramvai",
+   "body": "<p>Te apropii de o intersecție prin care trece tramvaiul. Între șina din dreapta și trotuar e loc pentru un singur șir de mașini.</p><p>Ce faci? Indiferent dacă vrei înainte, la stânga sau la dreapta, toți circulă <b>pe un singur rând</b>, lăsând liber traseul tramvaiului.</p><p>Nu formezi un al doilea rând pe șine, chiar dacă nu vezi niciun tramvai.</p>",
+   "src": "Regulament art. 107 alin. (3)"
+  },
+  {
+   "kind": "rule",
+   "title": "Distanța față de cel din față",
+   "body": "<p>Când mergi în spatele altui vehicul, păstrezi o <b>distanță suficientă</b> ca să eviți coliziunea.</p><p>Legea nu dă un număr fix de metri, pentru că distanța potrivită depinde de viteză, de drum și de vreme.</p><p>Gândește așa: dacă cel din față frânează brusc, ai timp și loc să oprești?</p>",
+   "src": "OUG 195/2002 art. 51",
+   "visual": {
+    "sign": "in-distanta-minima"
+   }
+  },
+  {
+   "kind": "memo",
+   "title": "Regula celor două secunde",
+   "body": "<p>Un truc simplu, folosit în școlile de șoferi (nu e articol de lege):</p><ol><li>Alege un reper fix, de exemplu un stâlp.</li><li>Când mașina din față trece de el, numără „una-mie-unu, una-mie-doi”.</li><li>Dacă ajungi la stâlp înainte să termini, ești prea aproape.</li></ol><p>Pe ploaie, ceață sau zăpadă, dublează timpul.</p>"
+  },
+  {
+   "kind": "rule",
+   "title": "Spațiu și în lateral",
+   "body": "<p>Când te întâlnești cu un vehicul din sens opus, păstrezi o <b>distanță laterală suficientă</b> și circuli <b>cât mai aproape de marginea din dreapta</b> a benzii tale.</p><p>La fel, când depășești pe cineva, păstrezi distanță laterală față de el.</p><p>De ce? O oglindă sau o rafală de vânt pot apropia mașinile mai mult decât crezi.</p>",
+   "src": "OUG 195/2002 art. 47; Regulament art. 118 lit. c)"
+  },
+  {
+   "kind": "rule",
+   "title": "În coloană: răbdare și spațiu",
+   "body": "<p>Când traficul e aglomerat și mergi într-o coloană:</p><ul><li><b>nu frâna brusc</b> și nu opri pe neașteptate fără motiv;</li><li><b>nu depăși</b> o coloană de vehicule care așteaptă, dacă pentru asta intri pe sensul opus;</li><li><b>nu intra în intersecție</b> dacă riști să rămâi blocat în ea, chiar dacă ai verde.</li></ul>",
+   "src": "Regulament art. 122, art. 120 alin. (1) lit. k), art. 105"
+  }
+ ],
+ "summary": [
+  "Circuli pe partea dreaptă, cât mai aproape de marginea părții carosabile.",
+  "Benzile se numără de la dreapta spre axă, iar banda 1 e banda ta de bază.",
+  "Benzile din stânga le folosești doar când e nevoie, apoi revii la dreapta cât mai repede.",
+  "Vehiculele lente și grele stau pe banda din dreapta sau pe banda special destinată lor.",
+  "Pe banda rezervată transportului public merg doar autobuzele și vehiculele prioritare în misiune.",
+  "Orice schimbare de bandă se semnalizează din timp, cu asigurare, pe toată durata manevrei.",
+  "Când banda ta se termină, cedezi trecerea celor de pe banda în care intri.",
+  "Te încadrezi pe banda potrivită cu cel puțin 50 m înainte de intersecție.",
+  "Fără marcaje: dreapta lângă bordură, stânga lângă axă (pe sens unic, lângă bordura din stânga), înainte pe oricare rând.",
+  "Păstrezi față de cel din față o distanță suficientă ca să poți opri fără coliziune."
+ ],
+ "questions": [
+  {
+   "q": "Pe un drum cu două benzi pe sens, pe ce bandă sunteți obligat să circulați în mod normal?",
+   "o": [
+    "Pe banda din stânga, mai aproape de axa drumului",
+    "Pe banda de lângă bordură sau acostament",
+    "Pe oricare dintre benzi, la alegere, dacă respectați viteza maximă"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Banda de bază e banda 1, de lângă bordură sau acostament. Celelalte benzi le folosești doar când banda ta e ocupată.",
+   "src": "Regulament art. 101"
+  },
+  {
+   "q": "Cum se numerotează benzile de circulație pe un sens?",
+   "o": [
+    "De la axa drumului spre marginea din dreapta",
+    "Pe autostradă, banda de urgență este banda 1",
+    "De la marginea din dreapta a părții carosabile spre axa drumului"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Numărătoarea începe de la dreapta. Pe autostradă, banda de urgență nu intră în numerotare, deci banda 1 e prima bandă de circulație.",
+   "src": "OUG 195/2002 art. 41 alin. (2)"
+  },
+  {
+   "q": "Pe un drum cu trei benzi pe sens, când puteți folosi banda a doua?",
+   "o": [
+    "Când banda 1 este ocupată",
+    "Când vă încadrați pentru a vira la stânga",
+    "Oricând circulați cu viteza maximă admisă"
+   ],
+   "c": [
+    0,
+    1
+   ],
+   "x": "Benzile din stânga sunt pentru când banda ta e ocupată și pentru pregătirea virajului la stânga. Faptul că mergi repede nu e un motiv să rămâi pe ele.",
+   "src": "Regulament art. 101, art. 107"
+  },
+  {
+   "q": "Ați trecut pe banda a doua pentru a depăși un autocamion. Ce obligație aveți după depășire?",
+   "o": [
+    "Să rămâneți pe banda a doua până la următoarea intersecție",
+    "Să reveniți pe banda din dreapta de îndată ce este posibil",
+    "Să reveniți pe banda 1 numai dacă cineva din spate vă semnalizează"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Legea cere revenirea pe banda din dreapta imediat ce situația permite, fără să aștepți un semnal de la altcineva.",
+   "src": "Regulament art. 101; OUG 195/2002 art. 42"
+  },
+  {
+   "q": "Pe un drum cu două benzi pe sens, circulați pe banda 1 mai repede decât vehiculele de pe banda 2. Cum se consideră această situație?",
+   "o": [
+    "Depășire pe partea dreaptă, interzisă",
+    "Depășire permisă numai în localitate",
+    "Nu este considerată depășire"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Când vehiculele de pe o bandă merg mai repede decât cele de pe altă bandă, legea spune explicit că nu e depășire. Capcana e varianta cu „depășire pe dreapta”.",
+   "src": "OUG 195/2002 art. 45 alin. (4)"
+  },
+  {
+   "q": "Dacă un drum are o bandă destinată vehiculelor lente, semnalizată, ce obligație au conducătorii acestor vehicule?",
+   "o": [
+    "Să circule numai pe banda respectivă",
+    "Să circule pe ea doar în urcare, iar în rest pe banda 2",
+    "Să o folosească numai noaptea"
+   ],
+   "c": [
+    0
+   ],
+   "x": "Vehiculele lente circulă numai pe banda lor, când aceasta există. Așa nu încurcă traficul mai rapid.",
+   "src": "OUG 195/2002 art. 43 alin. (1)"
+  },
+  {
+   "q": "Care dintre vehiculele de mai jos pot circula pe banda rezervată transportului public de persoane, marcată și semnalizată?",
+   "o": [
+    "Autobuzele de transport public de persoane",
+    "Autoturismele, când banda 1 este aglomerată",
+    "O ambulanță în misiune de urgență, cu semnalele speciale în funcțiune"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Banda rezervată e a transportului public. Vehiculele cu regim prioritar o pot folosi doar când sunt în misiune de urgență. Aglomerația nu e un motiv pentru autoturisme.",
+   "src": "Regulament art. 104"
+  },
+  {
+   "q": "Circulați pe banda de lângă trotuar. Când sunteți obligat să permiteți unui autobuz să reintre în trafic din stație?",
+   "o": [
+    "Când conducătorul autobuzului semnalizează intenția de a ieși din stația prevăzută cu alveolă",
+    "Când conducătorul autobuzului s-a asigurat că manevra nu pune în pericol siguranța circulației",
+    "Ori de câte ori un autobuz oprit pe partea carosabilă pornește de pe loc"
+   ],
+   "c": [
+    0,
+    1
+   ],
+   "x": "Obligația apare când ambele condiții sunt îndeplinite: autobuzul pleacă din stație cu alveolă și semnalizează, iar șoferul lui s-a asigurat. Nu e valabilă pentru orice autobuz oprit oriunde.",
+   "src": "OUG 195/2002 art. 43 alin. (2)"
+  },
+  {
+   "q": "Deasupra unei benzi reversibile este aprins un semnal roșu în formă de două bare încrucișate. Ce semnificație are?",
+   "o": [
+    "Interzice accesul vehiculelor pe banda respectivă",
+    "Permite accesul doar autobuzelor",
+    "Anunță că semnalul verde urmează să apară"
+   ],
+   "c": [
+    0
+   ],
+   "x": "X-ul roșu înseamnă „nu intra pe această bandă”. Săgeata verde în jos e cea care permite accesul.",
+   "src": "Regulament art. 56"
+  },
+  {
+   "q": "Deasupra benzii pe care circulați apare o săgeată galbenă intermitentă, cu vârful oblic spre dreapta. Ce semnificație are?",
+   "o": [
+    "Banda urmează să se închidă sau semnalul se va schimba",
+    "Trebuie să treceți pe banda indicată de săgeată",
+    "Puteți continua pe aceeași bandă fără nicio restricție"
+   ],
+   "c": [
+    0,
+    1
+   ],
+   "x": "Săgeata oblică e un avertisment: banda se închide sau semnalul se schimbă, așa că te muți pe banda arătată de săgeată.",
+   "src": "Regulament art. 56"
+  },
+  {
+   "q": "Pe un drum cu două benzi pe sens există și o a treia bandă, lângă axă, pe care se află linia de tramvai. Ce reguli se aplică?",
+   "o": [
+    "Este interzis să circulați pe banda cu linie de tramvai",
+    "Puteți circula pe banda cu linie de tramvai",
+    "Când se apropie tramvaiul, sunteți obligat să îi lăsați liberă calea"
+   ],
+   "c": [
+    1,
+    2
+   ],
+   "x": "Pe drumurile cu cel mult două benzi pe sens poți folosi banda cu șine, dar te retragi când vine tramvaiul.",
+   "src": "Regulament art. 103"
+  },
+  {
+   "q": "Ce obligații aveți înainte de a trece de pe o bandă pe alta?",
+   "o": [
+    "Să semnalizați din timp intenția",
+    "Să semnalizați doar dacă observați un vehicul în spate",
+    "Să vă asigurați că manevra nu stânjenește și nu pune în pericol ceilalți participanți la trafic"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Semnalizezi mereu, nu doar când vezi pe cineva. Pe lângă semnalizare, te asiguri că nu încurci pe nimeni.",
+   "src": "OUG 195/2002 art. 54 alin. (1)"
+  },
+  {
+   "q": "Cât timp trebuie menținută semnalizarea schimbării direcției de mers?",
+   "o": [
+    "Până la începerea manevrei",
+    "Cel puțin trei clipiri ale semnalizatorului",
+    "Pe întreaga durată a manevrei"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Legea spune clar: semnalizarea rămâne pornită pe toată durata manevrei, ca ceilalți să știe tot timpul ce faci.",
+   "src": "OUG 195/2002 art. 54 alin. (2)"
+  },
+  {
+   "q": "Banda pe care circulați se termină și doriți să continuați pe banda din stânga. Cum procedați?",
+   "o": [
+    "Cedați trecerea vehiculelor care circulă pe banda din stânga",
+    "Intrați pe bandă, deoarece vehiculele de pe banda din stânga vin din partea stângă și trebuie să vă cedeze",
+    "Aveți prioritate dacă ați semnalizat din timp"
+   ],
+   "c": [
+    0
+   ],
+   "x": "Cine se mută pe altă bandă cedează celor care sunt deja pe ea. Semnalizarea nu îți dă prioritate, iar „prioritatea de dreapta” nu se aplică aici.",
+   "src": "Regulament art. 106 alin. (2)"
+  },
+  {
+   "q": "Circulați pe banda 1 a unui drum cu trei benzi pe sens. Un autoturism de pe banda 3 vrea, ca și dumneavoastră, să intre pe banda 2, care este liberă. Cum procedați?",
+   "o": [
+    "Îi permiteți accesul pe banda 2",
+    "Intrați primul, deoarece el vine din stânga dumneavoastră",
+    "După ce el s-a înscris pe banda 2, puteți schimba banda dacă vă asigurați"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Pe drumurile cu cel puțin trei benzi pe sens, cel de pe banda din dreapta lasă vehiculul din stânga să intre pe banda din mijloc. Capcana e să aplici „prioritatea de dreapta”.",
+   "src": "Regulament art. 106 alin. (1)"
+  },
+  {
+   "q": "La o intersecție cu marcaje care indică direcțiile pe benzi, cu ce distanță minimă înainte de intersecție trebuie să vă încadrați pe banda corespunzătoare?",
+   "o": [
+    "25 m",
+    "50 m",
+    "100 m"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Încadrarea se face cu cel puțin 50 m înainte de intersecție, ca ceilalți să înțeleagă din timp ce vrei să faci.",
+   "src": "Regulament art. 107 alin. (1)"
+  },
+  {
+   "q": "Pe un drum cu dublu sens, fără marcaje de delimitare a benzilor, doriți să virați la stânga în intersecție. Ce poziție ocupați?",
+   "o": [
+    "Rândul de lângă bordură sau acostament",
+    "Oricare dintre rânduri",
+    "Rândul de lângă axa drumului"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Pentru stânga te apropii de axă, pentru dreapta de bordură. Asta ține traseele separate și sigure.",
+   "src": "Regulament art. 107 alin. (2) lit. b)"
+  },
+  {
+   "q": "Circulați pe un drum cu sens unic, fără marcaje, și doriți să virați la stânga. Ce poziție ocupați?",
+   "o": [
+    "Rândul de lângă bordura sau acostamentul din partea stângă",
+    "Rândul de lângă axa drumului",
+    "Rândul de lângă bordura din partea dreaptă"
+   ],
+   "c": [
+    0
+   ],
+   "x": "Pe sens unic nu există axă care să separe sensurile, așa că pentru stânga mergi lângă bordura din stânga.",
+   "src": "Regulament art. 107 alin. (2) lit. b)",
+   "visual": {
+    "sign": "inf-sens-unic"
+   }
+  },
+  {
+   "q": "La o intersecție fără marcaje, doriți să mergeți înainte. Pe ce rând vă puteți încadra?",
+   "o": [
+    "Numai pe rândul din dreapta",
+    "Pe oricare dintre rânduri",
+    "Numai pe rândul din stânga"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Pentru înainte poți folosi oricare rând. Restricțiile de poziție sunt pentru viraje.",
+   "src": "Regulament art. 107 alin. (2) lit. c)"
+  },
+  {
+   "q": "Ce distanță trebuie să păstrați față de vehiculul care circulă în fața dumneavoastră?",
+   "o": [
+    "O distanță suficientă pentru evitarea coliziunii",
+    "Minimum 5 m, în orice situație",
+    "O distanță mai mare pe drum ud sau la viteză mare"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Legea cere o distanță suficientă, fără un număr fix. Cu cât mergi mai repede sau drumul e mai alunecos, cu atât îți trebuie mai mult spațiu.",
+   "src": "OUG 195/2002 art. 51"
+  },
+  {
+   "q": "Ce obligații aveți la întâlnirea cu un vehicul care vine din sens opus?",
+   "o": [
+    "Să păstrați o distanță laterală suficientă",
+    "Să semnalizați cu farurile",
+    "Să circulați cât mai aproape de marginea din dreapta a benzii dumneavoastră"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "La întâlnire, fiecare se ține spre dreapta și lasă spațiu lateral. Semnalizarea cu farurile nu e o obligație aici.",
+   "src": "OUG 195/2002 art. 47"
+  },
+  {
+   "q": "Circulați într-o coloană de vehicule, pe un drum aglomerat. Ce vă este interzis?",
+   "o": [
+    "Să depășiți coloana de vehicule aflate în așteptare, dacă manevra presupune intrarea pe sensul opus",
+    "Să reduceți brusc viteza sau să opriți neașteptat, fără motiv întemeiat",
+    "Să pătrundeți în intersecție, chiar dacă semaforul vă permite, dacă riscați să rămâneți blocat în ea"
+   ],
+   "c": [
+    0,
+    1,
+    2
+   ],
+   "x": "Toate trei sunt interzise. În coloană contează răbdarea: fără depășiri pe contrasens, fără frâne bruște și fără blocarea intersecției.",
+   "src": "Regulament art. 120 alin. (1) lit. k), art. 122, art. 105"
+  },
+  {
+   "q": "Unde trebuie să circulați pe partea carosabilă a unui drum cu dublu sens?",
+   "o": [
+    "Pe mijlocul părții carosabile, ca să aveți spațiu în ambele părți",
+    "Pe partea dreaptă, în sensul de mers, cât mai aproape de marginea părții carosabile",
+    "Pe partea stângă, dacă partea dreaptă are denivelări"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Regula de bază: partea dreaptă, aproape de margine, cât timp e sigur. Mijlocul drumului e locul unde te-ai întâlni cu cei din față.",
+   "src": "OUG 195/2002 art. 41 alin. (1)"
+  }
+ ],
+ "uncertain": [
+  "Semnalizarea schimbării benzii: legea (OUG art. 54) cere doar semnalizare „din timp”, fără distanță fixă. Presa citează „50 m în localitate / 100 m în afara localității”, dar n-am găsit această regulă în OUG sau în Regulament, așa că n-am inclus-o.",
+  "Circulația în coloană: n-am găsit o distanță numerică obligatorie între vehicule (de ex. 50 m pentru vehicule grele) în textul actual; cardul folosește doar regulile verificate (Regulament art. 105, 120 alin. 1 lit. k, 122). Regula celor două secunde e prezentată explicit ca sfat practic, nu ca lege.",
+  "Banda reversibilă: semnalele (X roșu, săgeată verde în jos, săgeată galbenă/albă oblică) sunt verificate din citări ale Regulamentului art. 56 (scoalarutiera.ro, politisti.ro), nu din textul oficial direct.",
+  "Regulament art. 106 alin. (1) (cel de pe banda din dreapta lasă vehiculul din stânga să intre pe banda din mijloc): verificat pe legeaz.net și dailydriven.ro.",
+  "Semne noi pentru artist: x-banda-vehicule-lente = indicator dreptunghiular albastru „Bandă destinată circulației vehiculelor lente” (benzi cu săgeți, camion pe banda din dreapta); x-banda-transport-public = indicator albastru „Bandă rezervată pentru vehiculele de transport public de persoane” (siluetă de autobuz pe o bandă)."
+ ]
+}

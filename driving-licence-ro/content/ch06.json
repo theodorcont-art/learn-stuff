@@ -1,0 +1,660 @@
+{
+ "id": 6,
+ "title": "Intersecții și drumuri speciale",
+ "tagline": "Unde te așezi, pe unde treci și ce e altfel pe autostradă",
+ "minutes": 40,
+ "intro": "Intersecțiile sunt locurile unde se întâlnesc cei mai mulți oameni, așa că acolo se întâmplă și cele mai multe greșeli. Dacă știi din timp pe ce bandă să stai și pe unde să virezi, totul devine liniștit. Apoi vedem drumurile cu reguli proprii: sensul unic, sensul giratoriu, autostrada și zonele rezidențiale.",
+ "cards": [
+  {
+   "kind": "idea",
+   "title": "Ce este, de fapt, o intersecție",
+   "body": "<p>Legea numește intersecție <b>„orice încrucișare, joncțiune sau bifurcare de drumuri la nivel”</b>, inclusiv spațiul format de ele. Deci și un simplu „T” sau o ramificație în „Y” sunt intersecții.</p><p>Intersecțiile sunt de două feluri:</p><ul><li><b>cu circulație dirijată</b>: polițist, semafor, indicatoare de prioritate; <b>sensul giratoriu</b> intră tot aici;</li><li><b>cu circulație nedirijată</b>: fără nimic din toate acestea.</li></ul>",
+   "src": "OUG 195/2002 art. 6 pct. 16, art. 55"
+  },
+  {
+   "kind": "rule",
+   "title": "Te apropii încet, ca să poți opri",
+   "body": "<p>La apropierea de orice intersecție mergi cu o viteză care să-ți permită <b>oprirea</b>, ca să poți ceda trecerea celor care au prioritate.</p><p>În intersecțiile <b>nedirijate</b> și la <b>viraje</b>, viteza maximă este <b>30 km/h în localitate</b> și <b>50 km/h în afara localității</b>.</p>",
+   "src": "OUG 195/2002 art. 56; Regulament art. 123",
+   "visual": {
+    "big": "30 / 50 km/h",
+    "caption": "intersecție nedirijată: în / în afara localității"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Te încadrezi cu 50 m înainte",
+   "body": "<p>Cu <b>cel puțin 50 m înainte</b> de intersecție te așezi pe banda potrivită direcției în care vrei să mergi.</p><p>Dacă benzile au <b>săgeți</b> pe asfalt sau există indicatoare de obligare, mergi <b>doar</b> în direcțiile arătate de banda pe care ești.</p><p>Gândește-te la ultimii 50 m ca la o coadă la ghișeu: alegi coada înainte, nu în ultima clipă.</p>",
+   "src": "Regulament art. 107 alin. (1), art. 109"
+  },
+  {
+   "kind": "rule",
+   "title": "Fără marcaje: pe ce rând stai",
+   "body": "<p>Când banda nu e marcată, regula e intuitivă:</p><ul><li><b>Dreapta</b>: rândul de lângă <b>bordură</b> sau acostament.</li><li><b>Stânga</b>: rândul de lângă <b>axa drumului</b> (sau lângă marcajul de separare a sensurilor). Pe un drum cu <b>sens unic</b>: rândul de lângă <b>bordura din stânga</b>.</li><li><b>Înainte</b>: <b>oricare</b> dintre rânduri.</li></ul>",
+   "src": "Regulament art. 107 alin. (2)"
+  },
+  {
+   "kind": "rule",
+   "title": "Virajul la stânga, pe lângă centru",
+   "body": "<p>Virajul la stânga se face <b>prin stânga centrului</b> imaginar al intersecției. Dacă există marcaje de ghidare, le urmezi.</p><p>Când două vehicule din <b>sensuri opuse</b> virează amândouă la stânga, fiecare trece prin stânga centrului intersecției, <b>fără ca traiectoriile lor să se intersecteze</b>.</p><p>Obstacolele sau amenajările din mijlocul drumului se ocolesc <b>prin dreapta</b>.</p>",
+   "src": "Regulament art. 110",
+   "visual": {
+    "scene": {
+     "layout": "cross",
+     "main": null,
+     "vehicles": [
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "left",
+       "type": "car",
+       "you": true
+      },
+      {
+       "id": "B",
+       "arm": "n",
+       "go": "left",
+       "type": "car"
+      }
+     ],
+     "signs": [],
+     "caption": "A și B virează la stânga simultan, prin stânga centrului, fără să li se intersecteze traiectoriile."
+    }
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Lângă linia de tramvai",
+   "body": "<p>Dacă între șina din dreapta și trotuar <b>nu încap două sau mai multe șiruri</b> de mașini, toți circulă <b>pe un singur rând</b>, oricare ar fi direcția, și lasă liber traseul tramvaiului.</p><p>Nu formezi un al doilea rând pe linia de tramvai, <b>nici când nu vine niciun tramvai</b>. Contează linia, nu tramvaiul.</p>",
+   "src": "Regulament art. 107 alin. (3)"
+  },
+  {
+   "kind": "trap",
+   "title": "Verdele nu te lasă să blochezi",
+   "body": "<p>Ai verde, dar dincolo de intersecție coloana stă pe loc. Dacă intri, rămâi blocat în mijloc și îi încurci pe cei care primesc verde din lateral.</p><p>Legea interzice intrarea într-o intersecție <b>dacă prin asta se produce blocarea ei</b>. Deci aștepți înainte de linia de oprire, chiar dacă semaforul e verde.</p>",
+   "src": "OUG 195/2002 art. 57 alin. (3)"
+  },
+  {
+   "kind": "idea",
+   "title": "De ce merge sensul giratoriu",
+   "body": "<p>Într-un sens giratoriu toți merg <b>în aceeași direcție</b>, în jurul unei insule centrale. Nu mai există viraje care taie calea cuiva din față.</p><p>Ca să nu se blocheze cercul, legea dă prioritate celor <b>care sunt deja în el</b>. Cei care vin intră doar când e loc. Așa cercul se golește mereu și traficul curge.</p>"
+  },
+  {
+   "kind": "rule",
+   "title": "Prioritatea în sensul giratoriu",
+   "body": "<p>La intersecțiile cu sens giratoriu <b>semnalizate ca atare</b>, vehiculele care circulă <b>în interior</b> au prioritate față de cele care urmează să intre.</p><p>Deci la intrare <b>cedezi trecerea</b> celor din cerc, chiar dacă vin din stânga ta.</p><p>Recunoști intersecția după indicatorul de obligare <b>„Sens giratoriu”</b>, montat la intrare pe fiecare drum.</p>",
+   "src": "OUG 195/2002 art. 57 alin. (4); Regulament art. 135 lit. d)",
+   "visual": {
+    "scene": {
+     "layout": "roundabout",
+     "main": null,
+     "vehicles": [
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "straight",
+       "type": "car",
+       "you": true
+      },
+      {
+       "id": "B",
+       "arm": "rw",
+       "go": "straight",
+       "type": "car"
+      }
+     ],
+     "signs": [
+      {
+       "arm": "s",
+       "sign": "ob-sens-giratoriu"
+      }
+     ],
+     "caption": "B este deja în sensul giratoriu. A așteaptă și intră după B."
+    }
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Pe ce bandă intri în giratoriu",
+   "body": "<ul><li><b>Prima ieșire, la dreapta</b>: intri pe banda de <b>lângă bordură</b> și rămâi pe dreapta.</li><li><b>Înainte</b>: poți folosi <b>oricare</b> bandă.</li><li><b>La stânga sau întoarcere</b>: intri pe banda de <b>lângă axă</b>.</li></ul><p>În interior, cei care nu ies imediat circulă mai aproape de <b>insula centrală</b>, apoi se apropie de margine înainte de ieșire.</p>",
+   "src": "Regulament art. 107 alin. (1), (2)"
+  },
+  {
+   "kind": "memo",
+   "title": "Semnalizarea în giratoriu",
+   "body": "<p>Obligatoriu: <b>ieșirea</b> din sensul giratoriu se semnalizează <b>din timp</b>, fără să-i încurci pe ceilalți. Schimbarea benzii în interior se semnalizează și ea.</p><p>Un mod simplu de a ține minte ce recomandă instructorii:</p><ul><li>prima ieșire: <b>dreapta</b> de la intrare până ieși;</li><li>înainte: nimic la intrare, <b>dreapta</b> la ieșire;</li><li>stânga sau întoarcere: <b>stânga</b> la intrare, <b>dreapta</b> la ieșire.</li></ul>",
+   "src": "OUG 195/2002 art. 54; Regulament art. 107 alin. (1¹)"
+  },
+  {
+   "kind": "trap",
+   "title": "Ce nu faci în intersecție",
+   "body": "<p>În intersecții, <b>inclusiv în cele cu sens giratoriu</b>, oprirea voluntară e <b>interzisă</b>. Odată cu ea sunt interzise și <b>staționarea</b>, <b>întoarcerea</b> cu mers înapoi și <b>mersul înapoi</b>.</p><p>Te-ai întors greșit? Fă încă un tur al insulei. În giratoriu, întoarcerea se face <b>ocolind insula centrală</b>, nu cu manevre înainte-înapoi.</p>",
+   "src": "Regulament art. 126 lit. a), art. 128 alin. (1), art. 142 lit. f)"
+  },
+  {
+   "kind": "rule",
+   "title": "Cum recunoști drumul cu sens unic",
+   "body": "<p>Pe un drum cu sens unic toți merg în aceeași direcție, așa că nu te poți întâlni cu nimeni din față. Îl recunoști așa:</p><ul><li>La intrare e indicatorul <b>„Drum cu sens unic”</b>.</li><li>Pe asfalt <b>nu există axă</b> care să despartă sensurile.</li><li>Dacă vii din sensul greșit, vezi <b>„Accesul interzis”</b>.</li><li>Unde se termină, apare indicatorul <b>„Circulație în ambele sensuri”</b>.</li></ul>",
+   "visual": {
+    "signs": [
+     "inf-sens-unic",
+     "in-accesul-interzis"
+    ]
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Ce e altfel pe sensul unic",
+   "body": "<ul><li><b>Viraj la stânga</b>: din rândul de lângă <b>bordura din stânga</b>.</li><li><b>În localitate</b> poți opri sau staționa și pe <b>partea stângă</b>, dacă rămâne liberă <b>cel puțin o bandă</b>.</li><li><b>Tramvaiul</b> în mers poate fi depășit și <b>pe stânga</b>.</li><li><b>Întoarcerea</b> e <b>interzisă</b>.</li></ul>",
+   "src": "Regulament art. 107 alin. (2) lit. b), art. 126 lit. d), art. 141 alin. (4); OUG 195/2002 art. 45 alin. (6)"
+  },
+  {
+   "kind": "rule",
+   "title": "Cine nu are voie pe autostradă",
+   "body": "<p>Autostrada și drumul expres sunt doar pentru autovehicule rapide. Nu au voie:</p><ul><li>pietonii, animalele, vehiculele cu tracțiune animală sau împinse cu mâna;</li><li><b>bicicletele</b>, <b>trotinetele electrice</b>, <b>mopedele</b>;</li><li>tractoarele agricole sau forestiere și mașinile agricole autopropulsate;</li><li>vehiculele care, prin construcție sau din alte cauze, <b>nu pot depăși 50 km/h</b>;</li><li>transporturile agabaritice fără autorizație specială.</li></ul>",
+   "src": "OUG 195/2002 art. 74 alin. (1)",
+   "visual": {
+    "signs": [
+     "inf-autostrada",
+     "inf-drum-expres"
+    ]
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Intrarea și ieșirea de pe autostradă",
+   "body": "<p>Intri de pe <b>banda de accelerare</b>. Ea îți dă spațiu să prinzi viteza celor de pe autostradă.</p><p>Cei de pe autostradă <b>nu</b> sunt obligați să-ți facă loc: tu <b>cedezi trecerea</b> vehiculelor de pe prima bandă și nu le stânjenești în niciun fel.</p><p>La ieșire, <b>semnalizezi din timp</b> și treci pe <b>banda de decelerare</b>, unde reduci viteza.</p>",
+   "src": "Regulament art. 169"
+  },
+  {
+   "kind": "rule",
+   "title": "Interdicții pe autostradă",
+   "body": "<p>Pe autostradă și pe drumul expres sunt interzise:</p><ul><li><b>întoarcerea</b> și <b>mersul înapoi</b>;</li><li>trecerea dintr-un sens în celălalt prin <b>zona mediană</b> sau prin racorduri;</li><li>circulația, oprirea sau staționarea pe <b>banda de urgență</b> ori pe acostament, în afara cazurilor justificate (de exemplu o pană) și a vehiculelor prioritare;</li><li><b>învățarea conducerii</b>, testele de prototipuri, competițiile și paradele.</li></ul>",
+   "src": "OUG 195/2002 art. 74 alin. (2), (3), art. 108 alin. (1) lit. d)"
+  },
+  {
+   "kind": "rule",
+   "title": "Viteza pe autostradă și drum expres",
+   "body": "<p>Pentru autoturisme (categoria B), în afara localităților, limitele maxime sunt cele din tabel.</p><p>Nu există o viteză minimă generală afișată pe autostrăzi, dar vehiculele care nu pot depăși 50 km/h nu au acces. Unde e montat un indicator de <b>viteză minimă</b>, trebuie să-l respecți.</p><p>Autobuzele și camioanele circulă, de regulă, pe <b>banda din dreapta</b>.</p>",
+   "src": "OUG 195/2002 art. 49 alin. (4), art. 74 alin. (4)",
+   "visual": {
+    "table": [
+     [
+      "Drum",
+      "Viteză maximă (B)"
+     ],
+     [
+      "Autostradă",
+      "130 km/h"
+     ],
+     [
+      "Drum expres",
+      "120 km/h"
+     ],
+     [
+      "Drum național european (E)",
+      "100 km/h"
+     ],
+     [
+      "Alte drumuri",
+      "90 km/h"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Tunelurile și podurile",
+   "body": "<p>În <b>tuneluri</b>, pe poduri, sub poduri și pe pasaje denivelate <b>depășirea este interzisă</b> (cu mici excepții pentru vehicule foarte lente, cum ar fi bicicletele).</p><p>Iar unde depășirea e interzisă, e interzisă și <b>oprirea voluntară</b>. Pe scurt: prin tunel treci, nu te oprești și nu depășești.</p>",
+   "src": "Regulament art. 120 alin. (1) lit. d), art. 142 lit. p)"
+  },
+  {
+   "kind": "rule",
+   "title": "Zona rezidențială: 20 km/h",
+   "body": "<p>E o zonă de locuințe semnalizată la intrare și la ieșire. Aici <b>oamenii au întâietate</b>:</p><ul><li>pietonii pot folosi <b>toată lățimea</b> drumului, iar <b>copiii au voie să se joace</b>;</li><li>circuli cu <b>cel mult 20 km/h</b>;</li><li>nu stânjenești pietonii, <b>chiar dacă trebuie să oprești</b>;</li><li>oprești sau parchezi <b>doar în locurile amenajate și semnalizate</b>.</li></ul>",
+   "src": "Regulament art. 158",
+   "visual": {
+    "sign": "inf-zona-rezidentiala"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Zona pietonală: 5 km/h",
+   "body": "<p>Una sau mai multe străzi rezervate pietonilor. Poți intra cu mașina doar dacă:</p><ul><li><b>locuiești</b> în zonă, sau</li><li>asiguri <b>servicii publice „din poartă în poartă”</b> și nu ai altă cale de acces.</li></ul><p>Chiar și atunci mergi cu <b>cel mult 5 km/h</b>, nu încurci pietonii și oprești dacă e nevoie, ca să-i lași să treacă.</p>",
+   "src": "Regulament art. 159",
+   "visual": {
+    "sign": "inf-zona-pietonala"
+   }
+  },
+  {
+   "kind": "memo",
+   "title": "20 și 5: pas de om",
+   "body": "<p>Ca să nu încurci cifrele:</p><ul><li><b>Zona rezidențială = 20 km/h</b>: mergi ca o bicicletă liniștită printre case.</li><li><b>Zona pietonală = 5 km/h</b>: mergi la pas, cât un om care se plimbă.</li></ul><p>Cu cât sunt mai mulți pietoni, cu atât cifra e mai mică.</p>",
+   "visual": {
+    "big": "20 · 5",
+    "caption": "rezidențială · pietonală (km/h)"
+   }
+  }
+ ],
+ "summary": [
+  "Te apropii de intersecție cu o viteză care îți permite să oprești; în cele nedirijate, maximum 30 km/h în localitate și 50 km/h în afara ei.",
+  "Te încadrezi pe banda potrivită cu cel puțin 50 m înainte de intersecție.",
+  "Fără marcaje: dreapta de lângă bordură, stânga de lângă axă, înainte de pe oricare rând.",
+  "Virajul la stânga se face prin stânga centrului intersecției, fără ca traiectoriile celor din sens opus să se intersecteze.",
+  "Nu intri în intersecție dacă ai rămâne blocat în ea, nici pe verde.",
+  "În sensul giratoriu au prioritate cei aflați deja în interior; ieșirea se semnalizează din timp.",
+  "În intersecții, inclusiv în giratoriu, nu oprești, nu staționezi și nu mergi înapoi.",
+  "Pe sensul unic virezi la stânga din banda din stânga, nu te întorci, iar în localitate poți opri și pe stânga dacă rămâne o bandă liberă.",
+  "Pe autostradă intri cedând trecerea celor de pe prima bandă; întoarcerea, mersul înapoi și învățarea conducerii sunt interzise.",
+  "Limitele sunt 130 km/h pe autostradă, 120 km/h pe drum expres, 20 km/h în zona rezidențială și 5 km/h în zona pietonală."
+ ],
+ "questions": [
+  {
+   "q": "Pe un drum cu două sensuri, fără marcaje pe benzi, doriți să virați la stânga în intersecția următoare. Unde vă încadrați?",
+   "o": [
+    "Pe rândul de lângă bordură",
+    "Pe rândul de lângă axa drumului",
+    "Pe oricare rând, dacă semnalizați"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Pentru stânga stai lângă axă, pentru dreapta lângă bordură. Doar mersul înainte se poate face de pe oricare rând.",
+   "src": "Regulament art. 107 alin. (2)"
+  },
+  {
+   "q": "Cu cel puțin câți metri înainte de intersecție sunteți obligat să vă încadrați pe banda corespunzătoare direcției de mers?",
+   "o": [
+    "25 m",
+    "100 m",
+    "50 m"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Încadrarea se face cu cel puțin 50 m înainte de intersecție. De acolo nu mai schimbi banda.",
+   "src": "Regulament art. 107 alin. (1)"
+  },
+  {
+   "q": "Care este viteza maximă admisă într-o intersecție cu circulație nedirijată, în localitate?",
+   "o": [
+    "30 km/h",
+    "50 km/h",
+    "40 km/h"
+   ],
+   "c": [
+    0
+   ],
+   "x": "În intersecțiile nedirijate: 30 km/h în localitate și 50 km/h în afara ei. Atenție să nu confunzi cele două cifre.",
+   "src": "Regulament art. 123"
+  },
+  {
+   "q": "Două autoturisme care vin din sensuri opuse virează simultan la stânga în aceeași intersecție. Cum se execută virajul?",
+   "o": [
+    "Prin stânga centrului intersecției",
+    "Fără ca traiectoriile lor să se intersecteze",
+    "Fiecare ocolește centrul prin dreapta, după ce trec unul pe lângă altul"
+   ],
+   "c": [
+    0,
+    1
+   ],
+   "x": "Virajul la stânga se face prin stânga centrului intersecției, iar traiectoriile celor două mașini nu se intersectează.",
+   "src": "Regulament art. 110 alin. (2)",
+   "visual": {
+    "scene": {
+     "layout": "cross",
+     "main": null,
+     "vehicles": [
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "left",
+       "type": "car",
+       "you": true
+      },
+      {
+       "id": "B",
+       "arm": "n",
+       "go": "left",
+       "type": "car"
+      }
+     ],
+     "signs": []
+    }
+   }
+  },
+  {
+   "q": "Aveți verde la semafor, dar coloana de dincolo de intersecție stă pe loc și ați rămâne blocat în mijlocul intersecției. Cum procedați?",
+   "o": [
+    "Intrați în intersecție, deoarece aveți verde",
+    "Intrați și semnalizați cu farurile ca să vi se facă loc",
+    "Nu intrați în intersecție până când nu vă puteți continua drumul"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Este interzisă intrarea în intersecție dacă prin asta o blochezi, chiar și pe verde. Aștepți înainte de linia de oprire.",
+   "src": "OUG 195/2002 art. 57 alin. (3)"
+  },
+  {
+   "q": "Între șina de tramvai din dreapta și trotuar este loc pentru un singur șir de autoturisme. Ce obligație aveți la apropierea de intersecție?",
+   "o": [
+    "Să circulați pe un singur rând, lăsând liber traseul tramvaiului",
+    "Să formați un al doilea rând pe linia de tramvai, dacă nu vine tramvaiul",
+    "Să circulați pe un singur rând, indiferent de direcția în care doriți să mergeți"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Când nu încap două rânduri, toți stau pe un singur rând, oricare ar fi direcția. Linia de tramvai rămâne liberă chiar dacă nu se vede niciun tramvai.",
+   "src": "Regulament art. 107 alin. (3)"
+  },
+  {
+   "q": "Vă apropiați de o intersecție cu sens giratoriu semnalizată ca atare. Cine are prioritate?",
+   "o": [
+    "Vehiculele care intră, venind din dreapta",
+    "Vehiculele care circulă în interiorul sensului giratoriu",
+    "Vehiculul care circulă cu viteza mai mare"
+   ],
+   "c": [
+    1
+   ],
+   "x": "În giratoriul semnalizat, prioritatea o au cei deja în cerc. La intrare cedezi, chiar dacă aceștia vin din stânga ta.",
+   "src": "OUG 195/2002 art. 57 alin. (4)",
+   "visual": {
+    "scene": {
+     "layout": "roundabout",
+     "main": null,
+     "vehicles": [
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "straight",
+       "type": "car",
+       "you": true
+      },
+      {
+       "id": "B",
+       "arm": "rw",
+       "go": "straight",
+       "type": "car"
+      }
+     ],
+     "signs": [
+      {
+       "arm": "s",
+       "sign": "ob-sens-giratoriu"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "q": "Doriți să ieșiți din sensul giratoriu pe prima ieșire din dreapta. Cum procedați?",
+   "o": [
+    "Vă încadrați pe banda de lângă insula centrală",
+    "Vă încadrați pe banda de lângă bordură",
+    "Semnalizați intenția de a ieși la dreapta"
+   ],
+   "c": [
+    1,
+    2
+   ],
+   "x": "Pentru prima ieșire stai pe dreapta, lângă bordură, și semnalizezi dreapta. Banda de lângă insulă e pentru cei care merg mai departe.",
+   "src": "Regulament art. 107 alin. (1), (1¹)"
+  },
+  {
+   "q": "Doriți să părăsiți sensul giratoriu pe o ieșire aflată în stânga direcției de intrare. Ce este corect?",
+   "o": [
+    "La intrare vă încadrați pe banda de lângă axă",
+    "La intrare vă încadrați obligatoriu pe banda de lângă bordură",
+    "Înainte de ieșire semnalizați spre dreapta"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Pentru stânga intri pe banda de lângă axă. Ieșirea, oricare ar fi ea, se semnalizează spre dreapta, din timp.",
+   "src": "Regulament art. 107 alin. (1), (1¹)"
+  },
+  {
+   "q": "Care dintre manevrele de mai jos sunt interzise într-o intersecție cu sens giratoriu?",
+   "o": [
+    "Oprirea voluntară",
+    "Mersul înapoi",
+    "Întoarcerea prin ocolirea insulei centrale"
+   ],
+   "c": [
+    0,
+    1
+   ],
+   "x": "În intersecții, inclusiv în giratoriu, oprirea și mersul înapoi sunt interzise. Ocolirea completă a insulei centrale este însă modul normal de a te întoarce.",
+   "src": "Regulament art. 128, art. 142 lit. f)"
+  },
+  {
+   "q": "Pe un drum cu sens unic, fără marcaje, doriți să virați la stânga. Pe ce rând vă încadrați?",
+   "o": [
+    "Pe rândul de lângă bordura din stânga",
+    "Pe rândul de lângă bordura din dreapta",
+    "Pe rândul din mijloc"
+   ],
+   "c": [
+    0
+   ],
+   "x": "Pe sensul unic nu există axă, așa că pentru stânga te apropii de bordura din stânga.",
+   "src": "Regulament art. 107 alin. (2) lit. b)"
+  },
+  {
+   "q": "Pe un drum cu sens unic, în localitate, aveți voie:",
+   "o": [
+    "Să întoarceți vehiculul",
+    "Să opriți pe partea stângă, dacă rămâne liberă cel puțin o bandă de circulație",
+    "Să staționați pe partea stângă, dacă rămâne liberă cel puțin o bandă de circulație"
+   ],
+   "c": [
+    1,
+    2
+   ],
+   "x": "În localitate, pe sens unic, poți opri și staționa și pe stânga, cu condiția să rămână o bandă liberă. Întoarcerea e interzisă pe drumurile cu sens unic.",
+   "src": "Regulament art. 126 lit. d), art. 141 alin. (4)"
+  },
+  {
+   "q": "Un tramvai circulă pe un drum cu sens unic. Pe ce parte îl puteți depăși?",
+   "o": [
+    "Pe partea dreaptă",
+    "Pe partea stângă",
+    "Numai când tramvaiul staționează"
+   ],
+   "c": [
+    0,
+    1
+   ],
+   "x": "În mod normal tramvaiul se depășește pe dreapta. Pe sensul unic, legea permite depășirea lui și pe stânga.",
+   "src": "OUG 195/2002 art. 45 alin. (6)"
+  },
+  {
+   "q": "Care dintre vehiculele de mai jos nu au acces pe autostradă?",
+   "o": [
+    "Mopedele",
+    "Autoturismele care tractează o remorcă",
+    "Vehiculele care, prin construcție, nu pot depăși 50 km/h"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Mopedele și vehiculele care nu pot trece de 50 km/h nu au voie pe autostradă. Un autoturism cu remorcă are voie, fiind autovehicul.",
+   "src": "OUG 195/2002 art. 74 alin. (1)",
+   "visual": {
+    "sign": "inf-autostrada"
+   }
+  },
+  {
+   "q": "Intrați pe autostradă de pe banda de accelerare. Ce obligație aveți?",
+   "o": [
+    "Să cedați trecerea vehiculelor care circulă pe prima bandă a autostrăzii",
+    "Să opriți obligatoriu la capătul benzii de accelerare",
+    "Să intrați direct, cei de pe autostradă fiind obligați să vă facă loc"
+   ],
+   "c": [
+    0
+   ],
+   "x": "Banda de accelerare te ajută să prinzi viteza, dar prioritatea o au cei de pe autostradă. Nu e obligatoriu să oprești, doar să nu-i stânjenești.",
+   "src": "Regulament art. 169"
+  },
+  {
+   "q": "Care dintre următoarele manevre sunt interzise pe autostradă?",
+   "o": [
+    "Întoarcerea",
+    "Mersul înapoi",
+    "Trecerea dintr-un sens în celălalt prin zona mediană"
+   ],
+   "c": [
+    0,
+    1,
+    2
+   ],
+   "x": "Toate trei sunt interzise. Dacă ai ratat ieșirea, mergi până la următoarea.",
+   "src": "OUG 195/2002 art. 108 alin. (1) lit. d)"
+  },
+  {
+   "q": "În ce situație aveți voie să opriți pe banda de urgență a autostrăzii?",
+   "o": [
+    "Pentru a vă odihni câteva minute",
+    "În cazuri justificate, de exemplu o defecțiune tehnică",
+    "Pentru a răspunde la telefon"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Banda de urgență e doar pentru urgențe reale și pentru vehiculele prioritare. Pentru odihnă folosești parcările amenajate.",
+   "src": "OUG 195/2002 art. 74 alin. (3)"
+  },
+  {
+   "q": "Care este viteza maximă admisă pentru autoturisme pe autostradă?",
+   "o": [
+    "120 km/h",
+    "130 km/h",
+    "100 km/h"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Pe autostradă limita pentru categoria B este 130 km/h. 120 km/h este limita pe drumurile expres.",
+   "src": "OUG 195/2002 art. 49 alin. (4)"
+  },
+  {
+   "q": "Care este viteza maximă admisă pentru autoturisme pe un drum expres?",
+   "o": [
+    "100 km/h",
+    "130 km/h",
+    "120 km/h"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Pe drumurile expres limita este 120 km/h. 100 km/h e limita pe drumurile naționale europene (E).",
+   "src": "OUG 195/2002 art. 49 alin. (4)",
+   "visual": {
+    "sign": "inf-drum-expres"
+   }
+  },
+  {
+   "q": "Un instructor auto vrea să facă o oră de pregătire practică cu un cursant pe autostradă. Are voie?",
+   "o": [
+    "Da, dacă autoturismul are dublă comandă",
+    "Nu, învățarea conducerii este interzisă pe autostrăzi și pe drumurile expres",
+    "Da, dar numai pe banda din dreapta"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Legea interzice învățarea conducerii pe autostradă și pe drumul expres, indiferent de mașină sau bandă.",
+   "src": "OUG 195/2002 art. 74 alin. (2)"
+  },
+  {
+   "q": "Ce obligații aveți când circulați într-o zonă rezidențială?",
+   "o": [
+    "Să nu stânjeniți circulația pietonilor, chiar dacă pentru asta trebuie să opriți",
+    "Să claxonați copiii care se joacă pe carosabil, ca să elibereze drumul",
+    "Să circulați cu cel mult 20 km/h"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "În zona rezidențială pietonii pot folosi tot drumul și copiii au voie să se joace. Mergi cu cel mult 20 km/h și oprești dacă e nevoie.",
+   "src": "Regulament art. 158",
+   "visual": {
+    "sign": "inf-zona-rezidentiala"
+   }
+  },
+  {
+   "q": "Unde aveți voie să parcați autoturismul într-o zonă rezidențială?",
+   "o": [
+    "Oriunde, dacă nu blocați accesul în curți",
+    "Pe partea carosabilă, cu avariile pornite",
+    "Numai în spațiile amenajate și semnalizate pentru parcare"
+   ],
+   "c": [
+    2
+   ],
+   "x": "În zona rezidențială oprești și parchezi doar în locurile amenajate și semnalizate. Restul drumului e lăsat oamenilor.",
+   "src": "Regulament art. 158 alin. (2)"
+  },
+  {
+   "q": "Cine poate intra cu autovehiculul într-o zonă pietonală semnalizată ca atare?",
+   "o": [
+    "Conducătorul care locuiește în acea zonă",
+    "Conducătorul care asigură servicii publice „din poartă în poartă” și nu are altă posibilitate de acces",
+    "Orice conducător, dacă circulă cu cel mult 5 km/h"
+   ],
+   "c": [
+    0,
+    1
+   ],
+   "x": "Accesul e permis doar locuitorilor și celor care asigură servicii publice fără altă cale de acces. Viteza de 5 km/h e o obligație pentru ei, nu o permisiune pentru oricine.",
+   "src": "Regulament art. 159",
+   "visual": {
+    "sign": "inf-zona-pietonala"
+   }
+  },
+  {
+   "q": "Cu ce viteză maximă aveți voie să circulați într-o zonă pietonală, atunci când accesul vă este permis?",
+   "o": [
+    "5 km/h",
+    "10 km/h",
+    "20 km/h"
+   ],
+   "c": [
+    0
+   ],
+   "x": "În zona pietonală mergi la pas, cu cel mult 5 km/h. 20 km/h este limita din zona rezidențială.",
+   "src": "Regulament art. 159"
+  },
+  {
+   "q": "Ce este interzis într-un tunel?",
+   "o": [
+    "Depășirea",
+    "Oprirea voluntară",
+    "Circulația cu viteză constantă"
+   ],
+   "c": [
+    0,
+    1
+   ],
+   "x": "În tuneluri depășirea e interzisă, iar unde depășirea e interzisă, e interzisă și oprirea voluntară.",
+   "src": "Regulament art. 120 alin. (1) lit. d), art. 142 lit. p)"
+  }
+ ],
+ "uncertain": [
+  "Pagina scoalarutiera despre mersul înapoi afișa unele litere din Regulament art. 126/142 tăiate (strikethrough), fără să fie clar dacă sunt abrogate sau doar reformulate. Pagina despre oprirea interzisă redă art. 142 lit. f) („în intersecții, inclusiv cele cu circulație în sens giratoriu”) ca text în vigoare, iar pagina despre întoarcere redă art. 126 lit. d) („pe drumurile cu sens unic”) ca în vigoare. Am mers pe varianta asta; merită verificat în textul oficial.",
+  "Recomandările de semnalizare în giratoriu (dreapta de la intrare pentru prima ieșire, stânga la intrare pentru virajul la stânga) nu sunt text de lege, ci practica explicată de școlile de șoferi; obligatorie e doar semnalizarea ieșirii și a schimbării benzii (Regulament art. 107 alin. (1¹)). Am marcat cardul ca „memo” și nu am pus întrebare pe semnalizarea la intrare.",
+  "Viteza pe drumul expres (120 km/h) vine din modificarea OUG 195/2002 adoptată în 2022 (confirmată de scoalarutiera.ro, art. 49 alin. (4)). Interdicțiile de pe autostradă (întoarcere, mers înapoi, zona mediană) le-am citat la art. 108 alin. (1) lit. d) pct. 5–7, unde sunt sancționate; n-am găsit un articol separat din Regulament care să le enunțe.",
+  "Viteză minimă pe autostradă: surse de presă (capital.ro, 2025) spun că nu există o limită minimă generală afișată; avocatnet.ro (2012) menționa „minimum 50 km/h”. Am scris doar că vehiculele care nu pot depăși 50 km/h nu au acces și că indicatorul de viteză minimă, unde există, trebuie respectat.",
+  "Tunelurile: am găsit doar interdicția de depășire (Regulament art. 120 alin. (1) lit. d)) și, prin trimitere, interdicția de oprire (art. 142 lit. p)). N-am verificat reguli speciale pentru lumini sau distanțe în tuneluri, așa că nu le-am inclus.",
+  "Scena pentru giratoriu: B e pus pe brațul „w” cu go „right” ca să sugereze o mașină deja aflată în cerc; editorul ar putea avea nevoie de un mod mai clar de a desena un vehicul „în interior”."
+ ]
+}

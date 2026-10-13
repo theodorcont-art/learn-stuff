@@ -1,0 +1,540 @@
+{
+  "id": 11,
+  "title": "Sancțiuni",
+  "tagline": "Ce se întâmplă când o regulă e încălcată, pe scurt și fără sperietori",
+  "minutes": 40,
+  "intro": "Sancțiunile nu sunt aici ca să te sperie. Ele îți arată cât de gravă e fiecare greșeală în ochii legii. La examen apar des: clase de amendă, puncte de penalizare, zile de suspendare și diferența dintre contravenție și infracțiune. Le punem în ordine, ca să le poți recunoaște ușor.",
+  "cards": [
+    {
+      "kind": "idea",
+      "title": "Contravenție sau infracțiune?",
+      "body": "<p>Gândește-te la o scară a gravității.</p><ul><li><b>Contravenția</b> e o încălcare a unei reguli de circulație care <b>nu</b> e infracțiune. Pericolul social e mai mic. Se sancționează cu <b>avertisment sau amendă</b>, uneori și cu puncte ori suspendarea permisului.</li><li><b>Infracțiunea</b> e o faptă <b>deosebit de gravă</b>, prevăzută de legea penală (Codul penal). Se pedepsește cu <b>închisoare sau amendă penală</b> și duce la dosar penal.</li></ul><p>Exemple de infracțiuni: conducerea fără permis, alcoolemia peste 0,80 g/l, părăsirea locului unui accident cu victime.</p>"
+    },
+    {
+      "kind": "rule",
+      "title": "Sancțiunile contravenționale",
+      "body": "<p><b>Principale</b> (una dintre ele se aplică mereu):</p><ul><li><b>avertismentul</b>;</li><li><b>amenda</b>.</li></ul><p><b>Complementare</b> (se adaugă celei principale):</p><ul><li><b>punctele de penalizare</b>;</li><li><b>suspendarea</b> dreptului de a conduce;</li><li><b>confiscarea</b> bunurilor folosite la contravenție;</li><li><b>radierea din oficiu</b> a vehiculului, în cazurile prevăzute de lege.</li></ul>",
+      "src": "OUG 195/2002 art. 95–96"
+    },
+    {
+      "kind": "rule",
+      "title": "Cele cinci clase de amendă",
+      "body": "<p>Amenzile se dau în <b>puncte-amendă</b>, grupate în cinci clase. Cu cât clasa e mai mare, cu atât fapta e mai gravă.</p><p>Clasa a V-a se aplică <b>doar persoanelor juridice</b> (firme), nu șoferilor persoane fizice.</p><p>Truc de memorie: limitele claselor cresc așa: <b>3 · 5 · 8 · 20</b>. Oprește-te la clasa a IV-a, pentru că pe tine, ca șofer, nu te privește clasa a V-a.</p>",
+      "src": "OUG 195/2002 art. 98 alin. (3)–(4)",
+      "visual": {
+        "table": [
+          [
+            "Clasa",
+            "Puncte-amendă"
+          ],
+          [
+            "I",
+            "2–3"
+          ],
+          [
+            "II",
+            "4–5"
+          ],
+          [
+            "III",
+            "6–8"
+          ],
+          [
+            "IV",
+            "9–20"
+          ],
+          [
+            "V (doar firme)",
+            "21–100"
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Cât valorează un punct-amendă",
+      "body": "<p>Un punct-amendă înseamnă <b>5% din salariul de bază minim brut pe țară</b>. Când crește salariul minim, cresc și amenzile.</p><p>De la <b>1 iulie 2026</b> salariul minim e 4.325 lei, deci un punct-amendă valorează <b>216,25 lei</b> (înainte: 202,50 lei).</p><p>Exemplu: amenda de clasa I (2–3 puncte) înseamnă 432,50–648,75 lei.</p><p>La examen contează mai ales <b>regula de 5%</b>; suma în lei se schimbă când se schimbă salariul minim.</p>",
+      "src": "OUG 195/2002 art. 98 alin. (1)–(2); valoare verificată la 13.10.2026",
+      "visual": {
+        "big": "216,25 lei",
+        "caption": "un punct-amendă, de la 1 iulie 2026"
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Jumătate din minim, în 15 zile",
+      "body": "<p>Dacă plătești în <b>cel mult 15 zile</b> de la primirea procesului-verbal, achiți <b>jumătate din minimul</b> amenzii.</p><p>Exemplu: pentru o amendă de clasa a II-a (4–5 puncte), minimul e 4 × 216,25 = 865 lei. În 15 zile plătești <b>432,50 lei</b>.</p><p>Tot în <b>15 zile</b> poți face și <b>plângere</b> la judecătorie, dacă nu ești de acord cu amenda.</p>",
+      "src": "OG 2/2001 art. 28 și art. 31; OUG 195/2002 art. 118"
+    },
+    {
+      "kind": "trap",
+      "title": "Puncte-amendă vs. puncte de penalizare",
+      "body": "<p>Două lucruri diferite, cu nume asemănătoare:</p><ul><li><b>Punctele-amendă</b> arată <b>cât plătești</b>. Se înmulțesc cu valoarea unui punct.</li><li><b>Punctele de penalizare</b> se <b>adună în dosarul tău de șofer</b>. Nu costă bani, dar la 15 puncte îți pierzi permisul pentru o vreme.</li></ul><p>La aceeași faptă poți primi ambele: de exemplu, la depășirea vitezei cu 25 km/h primești o amendă de clasa a II-a <b>și</b> 3 puncte de penalizare.</p>",
+      "src": "OUG 195/2002 art. 98, art. 108"
+    },
+    {
+      "kind": "rule",
+      "title": "Viteza: puncte și suspendare",
+      "body": "<p>Cu cât depășești mai mult limita, cu atât urci în clasă și primești mai multe puncte. Peste 50 km/h nu mai e vorba de puncte, ci direct de <b>suspendare</b>.</p><p>Vitezele se măsoară cu aparate omologate și verificate metrologic.</p><p>Observă că primele patru trepte urcă împreună: clasa crește cu unu, iar punctele cresc odată cu ea (2, 3, 4, apoi un salt la 6).</p>",
+      "src": "OUG 195/2002 art. 99–102, art. 108",
+      "visual": {
+        "table": [
+          [
+            "Peste limită",
+            "Sancțiune"
+          ],
+          [
+            "10–20 km/h",
+            "clasa I + 2 puncte"
+          ],
+          [
+            "21–30 km/h",
+            "clasa II + 3 puncte"
+          ],
+          [
+            "31–40 km/h",
+            "clasa III + 4 puncte"
+          ],
+          [
+            "41–50 km/h",
+            "clasa IV + 6 puncte"
+          ],
+          [
+            "peste 50 km/h",
+            "clasa IV + suspendare 90 de zile"
+          ],
+          [
+            "peste 70 km/h",
+            "clasa IV + suspendare 120 de zile"
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "La 15 puncte: suspendare",
+      "body": "<ul><li>Când aduni <b>15 puncte de penalizare</b>, permisul se suspendă <b>30 de zile</b>.</li><li>Dacă aduni din nou 15 puncte în <b>12 luni</b> de la restituirea permisului, suspendarea e de <b>60 de zile</b>.</li><li>Punctele se <b>anulează după 6 luni</b> de la data constatării contravenției.</li><li>Când permisul e suspendat pentru puncte, <b>toate punctele adunate până atunci se șterg</b>.</li></ul>",
+      "src": "OUG 195/2002 art. 103 alin. (1) lit. a)–b), art. 108",
+      "visual": {
+        "big": "15 puncte",
+        "caption": "= 30 de zile fără permis"
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Suspendare 30 de zile (clasa a II-a)",
+      "body": "<p>Exemple de fapte cu suspendare de <b>30 de zile</b>:</p><ul><li>trecerea pe <b>culoarea roșie</b> a semaforului;</li><li>depășirea coloanei oprite la <b>semafor roșu</b> sau la <b>calea ferată</b>;</li><li>nerespectarea semnalelor <b>polițistului</b>;</li><li>neprezentarea la poliție în <b>24 de ore</b> după un accident doar cu pagube (fără constatare amiabilă);</li><li><b>telefonul</b> în mână <b>plus</b> încălcarea altei reguli;</li><li><b>conducerea agresivă</b>.</li></ul>",
+      "src": "OUG 195/2002 art. 100 alin. (3)"
+    },
+    {
+      "kind": "rule",
+      "title": "Suspendare 60 de zile (clasa a III-a)",
+      "body": "<p>Din 2022, câteva greșeli foarte periculoase au urcat la <b>60 de zile</b>:</p><ul><li>neacordarea priorității <b>pietonilor</b> angajați regulamentar în traversare;</li><li>neacordarea priorității <b>vehiculelor</b> care au acest drept;</li><li>nerespectarea regulilor de <b>depășire</b>;</li><li>circulația pe <b>sensul opus</b> (în afara depășirii regulamentare);</li><li>trecerea pe roșu <b>care produce un accident</b> doar cu pagube.</li></ul>",
+      "src": "OUG 195/2002 art. 101 alin. (3)",
+      "visual": {
+        "sign": "av-trecere-pietoni"
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Suspendare 90 de zile (clasa a IV-a)",
+      "body": "<ul><li>conducerea <b>sub influența alcoolului</b>, când fapta nu e infracțiune;</li><li>depășirea vitezei cu <b>peste 50 km/h</b>;</li><li>conducerea cu defecțiuni grave la <b>frâne sau la direcție</b>;</li><li>folosirea fără drept a <b>semnalelor speciale</b> (girofar, sirenă);</li><li>accident doar cu pagube, produs prin încălcarea regulilor de <b>prioritate sau depășire</b>;</li><li>circulația nejustificată pe <b>banda de urgență</b> a autostrăzii.</li></ul>",
+      "src": "OUG 195/2002 art. 102 alin. (3)"
+    },
+    {
+      "kind": "rule",
+      "title": "Suspendare 120 de zile",
+      "body": "<p>Cea mai lungă suspendare pentru o contravenție, plus amendă de clasa a IV-a, pentru:</p><ul><li>depășirea vitezei cu <b>peste 70 km/h</b>;</li><li>neoprirea la <b>trecerea cu calea ferată</b> când barierele sunt coborâte sau în coborâre, ori când semnalele roșii sau sonore funcționează;</li><li><b>întoarcerea, mersul înapoi sau pe contrasens</b> pe autostradă sau drum expres.</li></ul><p>Toate pot ucide pe loc, de aceea sunt în vârful scării.</p>",
+      "src": "OUG 195/2002 art. 102 alin. (4)",
+      "visual": {
+        "big": "120 de zile",
+        "caption": "peste 70 km/h, cale ferată, contrasens pe autostradă"
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Permisul reținut și dovada",
+      "body": "<p>Când i se suspendă dreptul de a conduce, șoferului i se <b>reține permisul</b> și primește o <b>dovadă înlocuitoare</b>. La contravenții, dovada îi dă de obicei drept de circulație <b>15 zile</b>; suspendarea începe după aceea.</p><p>La infracțiuni (alcool peste prag, fără permis, părăsirea locului accidentului) permisul se reține în vederea <b>anulării</b>, iar dovada se dă <b>fără drept de circulație</b>.</p><p>Dacă, în <b>6 luni</b> de la restituire, faci din nou o faptă care aduce suspendarea, perioada crește cu <b>30 de zile</b>.</p>",
+      "src": "OUG 195/2002 art. 103 alin. (2), art. 111"
+    },
+    {
+      "kind": "rule",
+      "title": "Alcoolul: unde e granița",
+      "body": "<p>În România, la volan e <b>toleranță zero</b>: orice cantitate de alcool aduce o sancțiune.</p><ul><li><b>Până la 0,80 g/l în sânge</b>: <b>contravenție</b>, amendă de clasa a IV-a și suspendare <b>90 de zile</b>.</li><li><b>Peste 0,80 g/l în sânge</b>: <b>infracțiune</b>, închisoare de la <b>1 la 5 ani</b> sau amendă. Pentru transport public de persoane, mărfuri periculoase sau instruire auto: <b>2–7 ani</b>.</li></ul><p>Aceleași pedepse penale se aplică și celui care conduce sub influența <b>substanțelor psihoactive</b>.</p>",
+      "src": "OUG 195/2002 art. 102 alin. (3) lit. a); Cod penal art. 336"
+    },
+    {
+      "kind": "memo",
+      "title": "0,40 în aer, 0,80 în sânge",
+      "body": "<p>Etilotestul măsoară alcoolul din <b>aerul expirat</b>, în <b>mg/l</b>. Analiza de laborator măsoară alcoolul din <b>sânge</b>, în <b>g/l</b>.</p><p>Ține minte perechea <b>0,40 ↔ 0,80</b>: cifra din sânge e <b>dublă</b>.</p><ul><li>Rezultat la etilotest <b>peste 0,40 mg/l</b>: recoltarea probelor biologice e <b>obligatorie</b>.</li><li>Între 0,11 și 0,40 mg/l: poți cere tu recoltarea.</li><li>Se recoltează <b>două probe</b>, la o oră distanță.</li></ul>",
+      "src": "OUG 195/2002 art. 88 alin. (5); Regulament art. 185, art. 194"
+    },
+    {
+      "kind": "rule",
+      "title": "Refuzul probelor și alcoolul după accident",
+      "body": "<ul><li><b>Refuzul</b> sau sustragerea de la recoltarea probelor biologice e <b>infracțiune</b>: închisoare de la <b>1 la 5 ani</b>.</li><li>Dacă refuzi etilotestul, ești dus obligatoriu la recoltarea probelor de sânge.</li><li>Consumul de alcool sau substanțe psihoactive <b>după un accident cu victime</b>, înainte de recoltarea probelor, e tot <b>infracțiune</b> (1–5 ani sau amendă).</li></ul><p>Pe scurt: după accident, nici un pahar până la testare.</p>",
+      "src": "Cod penal art. 336¹, art. 337; OUG 195/2002 art. 38 alin. (3)"
+    },
+    {
+      "kind": "rule",
+      "title": "Fără permis sau cu permis suspendat",
+      "body": "<ul><li>Conducerea de către o persoană care <b>nu are permis</b>: închisoare de la <b>1 la 5 ani</b>.</li><li>Permis de <b>altă categorie</b>, <b>retras</b> sau <b>anulat</b>, drept de a conduce <b>suspendat</b>, ori fără drept de a conduce în România: închisoare de la <b>6 luni la 3 ani</b> sau amendă.</li><li>Și cel care <b>încredințează</b> mașina, cu bună știință, unei astfel de persoane sau unui șofer băut ori drogat: <b>6 luni–3 ani</b> sau amendă.</li></ul>",
+      "src": "Cod penal art. 335 alin. (1)–(3)"
+    },
+    {
+      "kind": "rule",
+      "title": "Vehicul neînmatriculat sau cu numere false",
+      "body": "<ul><li>Punerea în circulație sau conducerea unui vehicul <b>neînmatriculat</b>: închisoare de la <b>1 la 3 ani</b> sau amendă.</li><li>Folosirea unui <b>număr de înmatriculare fals</b>: <b>1–5 ani</b> sau amendă.</li><li>Tractarea unei remorci neînmatriculate: 3 luni–2 ani sau amendă.</li><li>Conducerea cu <b>plăcuțele retrase</b>: 6 luni–2 ani sau amendă.</li></ul><p>În toate cazurile permisul se reține pentru anulare.</p>",
+      "src": "Cod penal art. 334"
+    },
+    {
+      "kind": "rule",
+      "title": "Părăsirea locului accidentului",
+      "body": "<p>Dacă pleci de la locul unui accident fără încuviințarea poliției sau a procurorului: închisoare de la <b>2 la 7 ani</b>. La fel dacă modifici sau ștergi urmele unui accident cu victime.</p><p><b>Nu</b> e infracțiune dacă:</p><ul><li>accidentul a produs <b>doar pagube materiale</b>;</li><li>duci chiar tu rănitul la spital, când nu există alt mijloc, lași datele tale acolo și <b>revii imediat</b>;</li><li>victima pleacă, iar tu anunți imediat poliția.</li></ul>",
+      "src": "Cod penal art. 338",
+      "visual": {
+        "big": "2–7 ani",
+        "caption": "părăsirea locului accidentului fără încuviințare"
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Reținerea certificatului de înmatriculare",
+      "body": "<p>Poliția reține certificatul de înmatriculare, de exemplu, când:</p><ul><li><b>ITP-ul a expirat</b>: primești dovadă cu drept de circulație <b>15 zile</b>;</li><li><b>anvelopele sunt uzate</b> peste limită sau au altă dimensiune: 15 zile;</li><li>frâna de serviciu sau <b>direcția</b> au defecțiuni grave: <b>fără drept</b> de circulație;</li><li>vehiculul <b>nu are RCA</b>: fără drept de circulație, iar <b>plăcuțele se retrag</b>.</li></ul><p>Logica: dacă defectul te pune imediat în pericol, mașina nu mai pleacă de acolo.</p>",
+      "src": "OUG 195/2002 art. 112 alin. (1)–(3)"
+    },
+    {
+      "kind": "idea",
+      "title": "Nou din august 2026: amenzile neplătite",
+      "body": "<p>De la <b>25 august 2026</b>, dacă nu plătești o amendă rutieră în <b>90 de zile</b> de la primirea procesului-verbal, dreptul de a conduce se suspendă.</p><p>Durata: <b>o zi pentru fiecare 50 de lei</b> datorați. De exemplu, la 1.000 de lei datorați, 20 de zile.</p><p>Permisul nu ți se ia fizic. Suspendarea apare în evidențe și se ridică după ce plătești. Regula e nouă, deci s-ar putea să nu apară încă în întrebările de examen.</p>",
+      "src": "OUG 7/2026 art. XVII (verificat la 13.10.2026)"
+    },
+    {
+      "kind": "example",
+      "title": "Calculăm o amendă, pas cu pas",
+      "body": "<p>Mergi cu 85 km/h într-o localitate unde limita e 50 km/h. Ai depășit-o cu <b>35 km/h</b>.</p><ol><li>Treapta 31–40 km/h înseamnă <b>4 puncte de penalizare</b> și amendă de <b>clasa a III-a</b> (6–8 puncte-amendă).</li><li>Minimul: 6 × 216,25 = <b>1.297,50 lei</b>.</li><li>Plătești în 15 zile jumătate din minim: <b>648,75 lei</b>.</li></ol><p>Cele 4 puncte stau în dosarul tău 6 luni. Dacă ajungi la 15, urmează 30 de zile fără permis.</p>",
+      "src": "OUG 195/2002 art. 98, art. 101 alin. (2), art. 108; OG 2/2001 art. 28"
+    }
+  ],
+  "summary": [
+    "Contravenția e o încălcare mai ușoară, sancționată cu avertisment sau amendă; infracțiunea e prevăzută de Codul penal și se pedepsește cu închisoare sau amendă penală.",
+    "Amenzile au cinci clase: I (2–3), II (4–5), III (6–8), IV (9–20) și V (21–100, doar pentru firme) puncte-amendă.",
+    "Un punct-amendă valorează 5% din salariul minim brut, adică 216,25 lei de la 1 iulie 2026.",
+    "Dacă plătești în 15 zile, achiți jumătate din minimul amenzii.",
+    "La 15 puncte de penalizare permisul se suspendă 30 de zile; dacă ajungi iar la 15 în 12 luni, suspendarea e de 60 de zile; punctele se șterg după 6 luni.",
+    "Suspendările principale sunt de 30, 60, 90 și 120 de zile, în funcție de gravitatea faptei.",
+    "Alcoolul până la 0,80 g/l în sânge e contravenție cu 90 de zile de suspendare; peste 0,80 g/l e infracțiune.",
+    "Conducerea fără permis, cu permis suspendat sau a unui vehicul neînmatriculat sunt infracțiuni.",
+    "Părăsirea locului unui accident fără încuviințare se pedepsește cu 2–7 ani, cu excepțiile prevăzute de lege.",
+    "Pentru ITP expirat sau lipsa RCA se reține certificatul de înmatriculare."
+  ],
+  "questions": [
+    {
+      "q": "Care dintre faptele de mai jos constituie infracțiuni?",
+      "o": [
+        "Conducerea unui autoturism de către o persoană fără permis de conducere",
+        "Neacordarea priorității pietonilor angajați în traversare",
+        "Conducerea pe drumurile publice a unui autoturism neînmatriculat"
+      ],
+      "c": [
+        0,
+        2
+      ],
+      "x": "Conducerea fără permis și conducerea unui vehicul neînmatriculat sunt în Codul penal. Neacordarea priorității pietonilor e contravenție, gravă, dar contravenție.",
+      "src": "Cod penal art. 334, art. 335; OUG 195/2002 art. 101 alin. (3)"
+    },
+    {
+      "q": "Câte puncte-amendă cuprinde clasa a II-a de sancțiuni?",
+      "o": [
+        "2 sau 3 puncte",
+        "6 până la 8 puncte",
+        "4 sau 5 puncte"
+      ],
+      "c": [
+        2
+      ],
+      "x": "Clasa a II-a înseamnă 4 sau 5 puncte-amendă. Clasa I are 2–3, iar clasa a III-a are 6–8.",
+      "src": "OUG 195/2002 art. 98 alin. (4)"
+    },
+    {
+      "q": "Cum se stabilește valoarea unui punct-amendă?",
+      "o": [
+        "Reprezintă 5% din salariul de bază minim brut pe țară",
+        "Reprezintă 10% din salariul mediu brut",
+        "Este o sumă fixă, stabilită o dată la cinci ani"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Punctul-amendă e 5% din salariul minim brut, așa că se modifică atunci când crește salariul minim. De la 1 iulie 2026 valorează 216,25 lei.",
+      "src": "OUG 195/2002 art. 98 alin. (2)"
+    },
+    {
+      "q": "În ce termen puteți achita jumătate din minimul amenzii aplicate?",
+      "o": [
+        "În 48 de ore de la constatare",
+        "În cel mult 15 zile de la înmânarea sau comunicarea procesului-verbal",
+        "În 30 de zile de la constatare"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Ai 15 zile ca să plătești jumătate din minim. Tot 15 zile ai și pentru plângere, dacă nu ești de acord.",
+      "src": "OG 2/2001 art. 28"
+    },
+    {
+      "q": "Ce măsură se ia împotriva conducătorului auto care a acumulat 15 puncte de penalizare?",
+      "o": [
+        "Suspendarea dreptului de a conduce pentru 30 de zile",
+        "Suspendarea dreptului de a conduce pentru 90 de zile",
+        "Anularea permisului de conducere"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Prima acumulare a 15 puncte aduce 30 de zile de suspendare. Anularea e pentru infracțiuni, nu pentru puncte.",
+      "src": "OUG 195/2002 art. 103 alin. (1) lit. a)"
+    },
+    {
+      "q": "Un conducător auto acumulează din nou 15 puncte de penalizare în termen de 12 luni de la restituirea permisului. Pentru cât timp i se suspendă dreptul de a conduce?",
+      "o": [
+        "30 de zile",
+        "120 de zile",
+        "60 de zile"
+      ],
+      "c": [
+        2
+      ],
+      "x": "A doua acumulare, în 12 luni de la restituire, dublează suspendarea la 60 de zile.",
+      "src": "OUG 195/2002 art. 103 alin. (1) lit. b)"
+    },
+    {
+      "q": "Când se anulează punctele de penalizare?",
+      "o": [
+        "La sfârșitul fiecărui an calendaristic",
+        "După 6 luni de la data constatării contravenției",
+        "La suspendarea permisului pentru acumularea a 15 puncte"
+      ],
+      "c": [
+        1,
+        2
+      ],
+      "x": "Fiecare punct dispare după 6 luni, iar o suspendare pentru 15 puncte le șterge pe toate. Nu există o resetare la 1 ianuarie.",
+      "src": "OUG 195/2002 art. 103, art. 108"
+    },
+    {
+      "q": "Ați depășit viteza maximă admisă cu 25 km/h. Cum veți fi sancționat?",
+      "o": [
+        "Cu amendă din clasa a II-a",
+        "Cu 3 puncte de penalizare",
+        "Cu suspendarea dreptului de a conduce pentru 30 de zile"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "Între 21 și 30 km/h peste limită primești amendă de clasa a II-a și 3 puncte de penalizare. Suspendarea directă apare abia peste 50 km/h.",
+      "src": "OUG 195/2002 art. 100 alin. (2), art. 108 alin. (1) lit. b)"
+    },
+    {
+      "q": "Ce sancțiuni se aplică pentru depășirea cu mai mult de 50 km/h a vitezei maxime admise?",
+      "o": [
+        "Amendă din clasa a IV-a",
+        "Suspendarea dreptului de a conduce pentru 90 de zile",
+        "Închisoare de la 1 la 5 ani"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "Peste 50 km/h e contravenție de clasa a IV-a, cu 90 de zile de suspendare. Nu e infracțiune, deci nu se dă închisoare.",
+      "src": "OUG 195/2002 art. 102 alin. (3) lit. e)"
+    },
+    {
+      "q": "Pentru depășirea cu mai mult de 70 km/h a vitezei maxime admise, dreptul de a conduce se suspendă pentru:",
+      "o": [
+        "120 de zile",
+        "90 de zile",
+        "60 de zile"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Peste 70 km/h urci în treapta cea mai severă: 120 de zile, plus amendă de clasa a IV-a.",
+      "src": "OUG 195/2002 art. 102 alin. (4) lit. a)"
+    },
+    {
+      "q": "Ce sancțiuni riscați dacă nu acordați prioritate unui pieton angajat regulamentar în traversare?",
+      "o": [
+        "Suspendarea dreptului de a conduce pentru 30 de zile",
+        "Amendă din clasa a III-a",
+        "Suspendarea dreptului de a conduce pentru 60 de zile"
+      ],
+      "c": [
+        1,
+        2
+      ],
+      "x": "Din 2022 fapta e în clasa a III-a, cu 60 de zile de suspendare. Varianta cu 30 de zile e regula veche, de aceea pare familiară.",
+      "src": "OUG 195/2002 art. 101 alin. (3) lit. e)"
+    },
+    {
+      "q": "Ați trecut pe culoarea roșie a semaforului, fără să produceți un accident. Pentru cât timp vi se suspendă dreptul de a conduce?",
+      "o": [
+        "60 de zile",
+        "30 de zile",
+        "90 de zile"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Trecerea pe roșu aduce 30 de zile. Suspendarea crește la 60 de zile doar dacă fapta produce un accident cu pagube.",
+      "src": "OUG 195/2002 art. 100 alin. (3) lit. d), art. 101 alin. (3) lit. a)"
+    },
+    {
+      "q": "La un control, etilotestul arată 0,30 mg/l alcool pur în aerul expirat. Nu ați produs niciun accident. Ce riscați?",
+      "o": [
+        "Suspendarea dreptului de a conduce pentru 90 de zile",
+        "Nicio sancțiune, deoarece valoarea este sub 0,40 mg/l",
+        "O amendă contravențională din clasa a IV-a"
+      ],
+      "c": [
+        0,
+        2
+      ],
+      "x": "Sub pragul penal fapta e contravenție, dar nu e scutită: clasa a IV-a și 90 de zile fără permis. Toleranța la volan e zero.",
+      "src": "OUG 195/2002 art. 102 alin. (3) lit. a)"
+    },
+    {
+      "q": "Conducerea unui autoturism de către o persoană care are o îmbibație alcoolică de peste 0,80 g/l alcool pur în sânge:",
+      "o": [
+        "Este contravenție de clasa a IV-a",
+        "Este infracțiune",
+        "Se pedepsește cu închisoare de la 1 la 5 ani sau cu amendă"
+      ],
+      "c": [
+        1,
+        2
+      ],
+      "x": "Peste 0,80 g/l în sânge ai trecut granița spre Codul penal: infracțiune, cu 1–5 ani sau amendă.",
+      "src": "Cod penal art. 336 alin. (1)"
+    },
+    {
+      "q": "Etilotestul indică 0,45 mg/l alcool pur în aerul expirat. Ce urmează?",
+      "o": [
+        "Recoltarea probelor biologice este obligatorie",
+        "Se repetă etilotestul și se ia în calcul valoarea mai mică",
+        "Primiți doar avertisment, dacă este prima abatere"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Peste 0,40 mg/l recoltarea probelor biologice e obligatorie. Analiza de sânge stabilește apoi dacă fapta e infracțiune.",
+      "src": "Regulament art. 185 alin. (2)"
+    },
+    {
+      "q": "Cum se sancționează refuzul de a vă supune recoltării probelor biologice pentru stabilirea alcoolemiei?",
+      "o": [
+        "Cu amendă din clasa a II-a",
+        "Cu închisoare de la 1 la 5 ani",
+        "Cu suspendarea permisului pentru 30 de zile"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Refuzul recoltării e infracțiune separată, cu 1–5 ani de închisoare. Legea vrea să nu existe avantaj în a refuza testul.",
+      "src": "Cod penal art. 337"
+    },
+    {
+      "q": "Conducerea unui autoturism de către o persoană căreia i-a fost suspendat dreptul de a conduce:",
+      "o": [
+        "Este infracțiune",
+        "Se sancționează cu închisoare de la 6 luni la 3 ani sau cu amendă",
+        "Se sancționează doar cu amendă din clasa I"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "Cu dreptul suspendat nu ai voie la volan. Fapta e infracțiune, cu 6 luni–3 ani sau amendă.",
+      "src": "Cod penal art. 335 alin. (2)"
+    },
+    {
+      "q": "Încredințați cu bună știință autoturismul dumneavoastră unei persoane care nu are permis de conducere. Ce faptă săvârșiți?",
+      "o": [
+        "O infracțiune",
+        "O contravenție de clasa I",
+        "Nicio faptă, răspunderea este doar a celui care conduce"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Și cel care dă cheile răspunde penal: încredințarea vehiculului unei persoane fără permis e infracțiune.",
+      "src": "Cod penal art. 335 alin. (3)"
+    },
+    {
+      "q": "Cu ce se pedepsește părăsirea locului unui accident de circulație fără încuviințarea poliției sau a procurorului?",
+      "o": [
+        "Cu amendă din clasa a IV-a",
+        "Cu suspendarea permisului pentru 90 de zile",
+        "Cu închisoare de la 2 la 7 ani"
+      ],
+      "c": [
+        2
+      ],
+      "x": "Fapta e infracțiune, cu închisoare de la 2 la 7 ani. Excepțiile, de exemplu un accident doar cu pagube, sunt strict prevăzute de lege.",
+      "src": "Cod penal art. 338 alin. (1)"
+    },
+    {
+      "q": "În care dintre situațiile de mai jos părăsirea locului accidentului nu constituie infracțiune?",
+      "o": [
+        "Când accidentul a produs doar pagube materiale",
+        "Când duceți chiar dumneavoastră victima la cea mai apropiată unitate medicală, în lipsa altui mijloc de transport, și reveniți imediat",
+        "Când plecați acasă să vă aduceți actele mașinii"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "Legea te lasă să pleci doar când sunt numai pagube sau când salvezi victima și revii imediat. Drumul acasă după acte nu e o excepție.",
+      "src": "Cod penal art. 338 alin. (3)"
+    },
+    {
+      "q": "În care dintre situațiile de mai jos poliția reține certificatul de înmatriculare?",
+      "o": [
+        "Inspecția tehnică periodică a vehiculului a expirat",
+        "Vehiculul nu are asigurare obligatorie RCA valabilă",
+        "Anvelopele sunt uzate peste limita legală"
+      ],
+      "c": [
+        0,
+        1,
+        2
+      ],
+      "x": "Toate trei duc la reținerea certificatului. La ITP expirat și anvelope uzate primești 15 zile cu drept de circulație; fără RCA nu mai ai drept de circulație și se retrag și plăcuțele.",
+      "src": "OUG 195/2002 art. 112 alin. (1) lit. a), h), s)"
+    },
+    {
+      "q": "Vi s-a reținut certificatul de înmatriculare pentru că ITP-ul a expirat. Ce valabilitate are dovada înlocuitoare cu drept de circulație?",
+      "o": [
+        "15 zile",
+        "30 de zile",
+        "48 de ore"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Dovada cu drept de circulație e valabilă 15 zile, timp în care poți face inspecția tehnică.",
+      "src": "OUG 195/2002 art. 112 alin. (1) lit. a), alin. (2)"
+    }
+  ],
+  "uncertain": [
+    "Valoarea punctului-amendă: 216,25 lei de la 1 iulie 2026 (5% din salariul minim de 4.325 lei). Confirmat de Poliția Română pentru digi24.ro (30.06.2026) și de monitoruldevaslui.ro (aprilie 2026). Valoare verificată la 13.10.2026. Înainte de 1 iulie 2026 era 202,50 lei. Atenție: dexcar.ro (martie 2026) dă greșit 10% / 405 lei; i-am ignorat cifrele. Valoarea se schimbă la fiecare majorare a salariului minim, de aceea cardul pune accent pe regula de 5%.",
+    "Suspendarea pentru amenzi neplătite (OUG 7/2026 art. XVII, în vigoare din 25.08.2026, după economedia.ro din 24.08.2026): o zi pentru fiecare 50 de lei, după 90 de zile. Nu e încă sigur dacă apare în banca DRPCIV, așa că n-am pus întrebare pe tema asta. Tot OUG 7/2026 (aplicabilă din 27.03.2026) schimbă condițiile pentru reducerea la cerere a suspendării (dovada plății tuturor obligațiilor către bugetul local). Detaliul a rămas pe dinafară ca prea specific.",
+    "Proiecte nevotate, neincluse: limita de 5 km/h în loc de 10 km/h pentru puncte (proiect din aug. 2025), restricțiile de putere pentru începători (PL 555/2025, încă nevotat la 18.06.2026), camerele pe autobuze și viteza medie (proiect, aprilie 2026).",
+    "Anularea punctelor după 6 luni: scoalarutiera o pune la art. 103 alin. (4), alte surse la art. 108. Am citat „art. 103, art. 108”, fără alineat.",
+    "Termenul de 15 zile pentru jumătate din minim e citat din OG 2/2001 art. 28; termenul de plângere (15 zile) din OG 2/2001 art. 31 și OUG 195/2002 art. 118. N-am verificat direct textul acestor articole, doar surse secundare (digi24.ro).",
+    "Pragurile pentru alcool: contravenția acoperă orice alcoolemie care nu atinge pragul penal (≤0,80 g/l în sânge). Scoalarutiera spune „0,0–0,8 mg/l” și pentru aer expirat, probabil o greșeală. Am folosit în schimb perechea 0,40 mg/l (aer) ↔ 0,80 g/l (sânge) și regula că peste 0,40 mg/l recoltarea e obligatorie (Regulament art. 185). Am verificat și regula celui de-al doilea test pentru 0,00–0,10 mg/l (OUG art. 88 alin. 5¹), dar am lăsat-o pe dinafară.",
+    "Telefonul plus altă încălcare = 30 de zile (art. 100 alin. 3 lit. h). Trecerea pe roșu = 30 de zile, iar cu accident cu pagube = 60 de zile (art. 101 alin. 3 lit. a). Neacordarea priorității pietonilor sau vehiculelor și depășirea neregulamentară = 60 de zile, după mutarea din 27.02.2022 (confirmat de scoalarutiera și de presa din 2026). Unele site-uri (de ex. dexcar.ro) încă spun 30 de zile.",
+    "Cod penal art. 338 alin. (3): excepțiile sunt luate din rezumatul scoalarutiera (doar pagube materiale; transportul victimei la spital și revenirea imediată; vehicul cu regim prioritar; victima pleacă și șoferul anunță poliția). N-am verificat formularea exactă în Codul penal."
+  ]
+}

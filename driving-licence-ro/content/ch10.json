@@ -1,0 +1,599 @@
+{
+ "id": 10,
+ "title": "Obligațiile șoferului",
+ "tagline": "Ce ai în mașină, ce faci pe drum și ce faci când ceva nu merge",
+ "minutes": 40,
+ "intro": "Capitolul ăsta e despre lucrurile pe care le faci tu, ca șofer, înainte de plecare, pe drum și când apare o problemă. Multe par de bun-simț, dar examenul cere cifrele exacte: distanțe, vârste, înălțimi, termene. Le luăm pe rând, cu motivul din spatele fiecăreia.",
+ "cards": [
+  {
+   "kind": "idea",
+   "title": "De ce există atâtea obligații",
+   "body": "<p>Aproape fiecare obligație de aici răspunde la o întrebare simplă: <b>cum te văd ceilalți și cum te protejezi pe tine și pe pasageri?</b></p><ul><li>Luminile și triunghiurile te fac <b>vizibil</b>.</li><li>Centura și scaunul pentru copil <b>protejează</b> la impact.</li><li>Regulile de după accident <b>păstrează adevărul</b> despre ce s-a întâmplat.</li></ul><p>Dacă știi motivul, cifrele se leagă mai ușor între ele.</p>"
+  },
+  {
+   "kind": "rule",
+   "title": "Înainte de plecare: acte și verificări",
+   "body": "<p>Ai asupra ta: <b>actul de identitate</b>, <b>permisul de conducere</b>, <b>certificatul de înmatriculare</b> și, unde e cazul, atestatul profesional.</p><p>Înainte să pornești, verifici că <b>luminile și semnalizarea funcționează</b> și că <b>parbrizul, luneta, geamurile laterale și plăcuțele cu numărul</b> sunt curate.</p><p>Cartea de identitate a vehiculului (CIV) <b>nu</b> e pe lista actelor pe care trebuie să le ai la bord.</p>",
+   "src": "Regulament art. 147 pct. 1 și 3"
+  },
+  {
+   "kind": "rule",
+   "title": "Dotările obligatorii: trusă, triunghiuri, stingător",
+   "body": "<p>Un autoturism trebuie să aibă, <b>omologate</b>:</p><ul><li>o <b>trusă medicală</b> de prim ajutor;</li><li><b>două triunghiuri</b> reflectorizante;</li><li>un <b>stingător</b> de incendiu.</li></ul><p>Regula nu se aplică motocicletelor și mopedelor (categoriile AM, A1, A2, A). Lipsa lor se sancționează cu amendă din clasa a II-a.</p>",
+   "src": "OUG 195/2002 art. 8 (forma din Legea 82/2024); art. 100 alin. (1) pct. 13",
+   "visual": {
+    "sign": "trg-triunghi-reflectorizant"
+   }
+  },
+  {
+   "kind": "trap",
+   "title": "Vesta nu e pe lista autoturismelor",
+   "body": "<p>Mulți cred că vesta reflectorizantă e obligatorie în orice mașină. Legea română <b>nu</b> o trece printre dotările obligatorii ale autoturismului.</p><p>Vesta (echipament fluorescent-reflectorizant) e obligatorie pentru șoferii vehiculelor cu masa maximă autorizată <b>peste 3,5 tone</b>, când lucrează la vehicul pe partea carosabilă.</p><p>Totuși, e o idee foarte bună să ai una: noaptea, pe marginea drumului, te face vizibil de departe.</p>",
+   "src": "OUG 195/2002 art. 8 și art. 35 alin. (6)"
+  },
+  {
+   "kind": "rule",
+   "title": "Centura: cine o poartă, cine e scutit",
+   "body": "<p><b>Toți</b> ocupanții poartă centura. Șoferul îi <b>informează</b> pe pasageri și se asigură că <b>minorii</b> o poartă sau stau în dispozitive pentru copii.</p><p>Sunt scutiți:</p><ul><li>șoferul care merge <b>cu spatele</b> sau stă pe loc;</li><li><b>femeile cu sarcină vizibilă</b>;</li><li><b>taximetriștii</b> când transportă clienți;</li><li>persoanele cu <b>certificat medical</b> (îl au la ei);</li><li>instructorii și examinatorii, în timpul pregătirii sau examenului.</li></ul>",
+   "src": "OUG 195/2002 art. 36 alin. (1)–(1²); Regulament art. 97 alin. (4)–(5)"
+  },
+  {
+   "kind": "rule",
+   "title": "Telefonul: doar cu mâinile libere",
+   "body": "<p>În timpul mersului <b>nu ai voie să folosești telefonul</b> ținut în mână. E permis doar cu un sistem <b>„mâini libere”</b> (Bluetooth, sistemul mașinii, cască).</p><p>Interdicția acoperă și alte dispozitive care înregistrează sau redau text, foto sau video.</p><p>Sancțiune: amendă clasa a III-a și <b>4 puncte de penalizare</b>. Dacă, în timp ce folosești telefonul, încalci și altă regulă, permisul se suspendă <b>30 de zile</b>.</p>",
+   "src": "OUG 195/2002 art. 36 alin. (3); art. 100 alin. (3) lit. h); art. 101; art. 108"
+  },
+  {
+   "kind": "rule",
+   "title": "Copiii: pragurile de 135 și 150 cm",
+   "body": "<ul><li><b>Sub 135 cm</b>: copilul stă într-un <b>dispozitiv de reținere omologat</b>, potrivit greutății și înălțimii lui.</li><li><b>Peste 135 cm</b>: poate folosi <b>centura de adult</b>, reglată să nu treacă peste gât sau față, sau un dispozitiv pentru copii.</li><li><b>Sub 3 ani</b>: nu poate fi transportat într-o mașină fără sisteme de siguranță (cu mici excepții, ca transportul public).</li><li><b>Peste 3 ani și sub 150 cm</b>, într-o mașină fără centuri: doar <b>pe alt loc decât cel din față</b>.</li></ul>",
+   "src": "OUG 195/2002 art. 36 alin. (1³); Regulament art. 97 alin. (1), (1²), (2), (2³)",
+   "visual": {
+    "big": "135 cm",
+    "caption": "sub această înălțime: scaun sau înălțător omologat"
+   }
+  },
+  {
+   "kind": "trap",
+   "title": "Scaunul de copil pe locul din față",
+   "body": "<p>Dispozitivele pentru copii se montează, de regulă, <b>pe locurile din spate</b>, după instrucțiunile producătorului.</p><p>Unele scaune pot fi puse și pe locul pasagerului din față, cu fața sau cu spatele la direcția de mers. Asta e permis <b>doar dacă airbagul frontal al pasagerului este dezactivat</b> sau mașina nu are un astfel de airbag.</p><p>De ce? Airbagul se deschide cu forță mare și poate răni grav un copil așezat foarte aproape de el.</p>",
+   "src": "Regulament art. 97 alin. (1⁵)–(1⁷)"
+  },
+  {
+   "kind": "rule",
+   "title": "Ziua: faza scurtă sau luminile de zi",
+   "body": "<p>Pe timp de zi, șoferii de autovehicule folosesc <b>luminile de întâlnire (faza scurtă) sau luminile de zi</b>, pe <b>toate drumurile publice</b>, și în localitate, și în afara ei.</p><p>Motocicletele și mopedele circulă <b>mereu</b> cu faza scurtă aprinsă.</p><p>Faza scurtă e obligatorie și în <b>tunel</b>, la ploaie torențială, ninsoare abundentă sau alte situații cu vizibilitate redusă, și când tractezi.</p>",
+   "src": "OUG 195/2002 art. 44 alin. (2)–(3); Regulament art. 114 alin. (1) lit. d)–e), alin. (7)"
+  },
+  {
+   "kind": "memo",
+   "title": "200 în față, 100 în spate",
+   "body": "<p>Noaptea, faza lungă orbește. De aceea treci pe <b>faza scurtă</b>:</p><ul><li>de la cel puțin <b>200 m</b> când vine cineva <b>din sens opus</b> (și <b>reduci viteza</b>);</li><li>de la cel puțin <b>100 m</b> când <b>urmezi</b> un vehicul pe același sens.</li></ul><p>Truc: mașina din sens opus vine spre tine, deci te gândești <b>de două ori mai devreme</b>: 200, nu 100.</p><p>La intersecțiile nedirijate, noaptea, alternezi scurt faza scurtă cu cea lungă, ca să te anunți.</p>",
+   "src": "Regulament art. 114 alin. (2)–(3)",
+   "visual": {
+    "table": [
+     [
+      "Situație",
+      "Treci pe faza scurtă de la"
+     ],
+     [
+      "Vehicul din sens opus",
+      "cel puțin 200 m"
+     ],
+     [
+      "Vehicul în față, același sens",
+      "cel puțin 100 m"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Ceață, poziție și avarie",
+   "body": "<ul><li><b>Luminile de ceață</b> (față și spate) se folosesc doar pe <b>ceață densă</b>, împreună cu faza scurtă. Folosite altfel, orbesc și aduc amendă și puncte.</li><li><b>Luminile de poziție</b>: când stai pe partea carosabilă <b>în afara localității</b>, de la lăsarea serii până dimineața.</li><li><b>Luminile de avarie</b>: când mașina e imobilizată pe carosabil, merge foarte încet ori e tractată.</li></ul>",
+   "src": "Regulament art. 114 alin. (1) lit. a), c), alin. (5)–(6)"
+  },
+  {
+   "kind": "rule",
+   "title": "Accident cu victime: anunți și rămâi",
+   "body": "<p>Dacă în accident cineva e <b>rănit sau a murit</b>, ca șofer implicat:</p><ul><li><b>anunți imediat poliția</b> (sună la <b>112</b>);</li><li><b>nu modifici și nu ștergi</b> urmele;</li><li><b>nu părăsești</b> locul faptei;</li><li><b>nu consumi alcool</b> sau substanțe psihoactive până după testare.</li></ul><p>Fără acordul poliției nimeni nu mută vehiculele. Motivul: urmele arată cum s-a produs accidentul.</p>",
+   "src": "OUG 195/2002 art. 77 alin. (1)–(3), art. 78"
+  },
+  {
+   "kind": "rule",
+   "title": "Accident doar cu pagube materiale",
+   "body": "<p>Când sunt doar mașini lovite, fără răniți:</p><ul><li><b>scoți imediat</b> vehiculele de pe partea carosabilă; dacă nu pot merge, le tragi cât mai aproape de bordură sau acostament și le <b>semnalizezi</b>;</li><li>te prezinți la poliție <b>în cel mult 24 de ore</b>, pentru documente.</li></ul><p><b>Nu</b> mai mergi la poliție dacă ați completat <b>constatarea amiabilă</b> sau dacă e avariată doar mașina ta și ai <b>asigurare facultativă (CASCO)</b>.</p>",
+   "src": "OUG 195/2002 art. 79 alin. (1)–(2)",
+   "visual": {
+    "big": "24 de ore",
+    "caption": "termen pentru poliție, la accident doar cu pagube"
+   }
+  },
+  {
+   "kind": "example",
+   "title": "O tamponare ușoară, pas cu pas",
+   "body": "<p>Ești oprit la semafor și cineva te lovește ușor din spate. Nimeni nu e rănit.</p><ol><li>Aprinzi avariile și, dacă mașinile pot merge, le trageți imediat pe dreapta, ca să nu blocați traficul.</li><li>Faceți poze și completați împreună <b>constatarea amiabilă</b>.</li><li>Cu constatarea completată, <b>nu</b> mai e nevoie să mergeți la poliție.</li></ol><p>Dacă nu vă înțelegeți asupra constatării, mergeți amândoi la poliție în <b>24 de ore</b>.</p>",
+   "src": "OUG 195/2002 art. 79"
+  },
+  {
+   "kind": "rule",
+   "title": "Defecțiune pe drum: triunghiuri la 30 m",
+   "body": "<p>Mai întâi încerci să <b>scoți mașina de pe carosabil</b>. Dacă nu se poate, o lași lângă bordură sau acostament, paralel cu axa drumului.</p><p>Dacă rămâne pe carosabil: aprinzi <b>avariile</b> și pui <b>triunghiurile</b> în față și în spate, pe aceeași bandă, la <b>cel puțin 30 m</b>.</p><p>În localitățile aglomerate pot sta mai aproape sau chiar pe mașină. Noaptea, dacă avariile nu merg, pui în spate o <b>lampă portabilă cu lumină galbenă intermitentă</b>.</p>",
+   "src": "Regulament art. 155 alin. (1), art. 156 alin. (1)–(3)",
+   "visual": {
+    "big": "30 m",
+    "caption": "minimum, în față și în spate, pe aceeași bandă"
+   }
+  },
+  {
+   "kind": "idea",
+   "title": "Pe autostradă, distanța e viață",
+   "body": "<p>Pe autostradă, mașinile vin cu 130 km/h și au nevoie de mult loc să te observe.</p><ul><li>Oprești pe <b>banda de urgență</b>, cât mai aproape de parapet.</li><li>Aprinzi <b>avariile</b>.</li><li>Pui triunghiul <b>mult mai departe</b> de 30 m; administratorii de drum recomandă cel puțin 100 m.</li><li>Toți ies din mașină pe partea dreaptă și <b>trec în spatele parapetului</b>.</li></ul><p>Abia apoi suni după asistență. Mașina se repară, oamenii nu.</p>",
+   "src": "Regulament art. 156; recomandare DRDP (nu e normă legală)"
+  },
+  {
+   "kind": "rule",
+   "title": "Primul an de permis",
+   "body": "<p>În primul an după obținerea permisului:</p><ul><li>ai pe mașină <b>discul galben cu semnul exclamării</b> (jos în dreapta pe parbriz și jos în stânga pe lunetă);</li><li>în afara localității, viteza ta maximă e cu <b>20 km/h mai mică</b> decât a categoriei tale;</li><li>nu ai voie să conduci <b>taxiuri</b> sau alte vehicule de transport public de persoane, vehicule cu mărfuri sau produse periculoase și vehicule pentru probe.</li></ul>",
+   "src": "OUG 195/2002 art. 50 alin. (4); Regulament art. 147 pct. 6, art. 149",
+   "visual": {
+    "sign": "x-disc-incepator"
+   }
+  },
+  {
+   "kind": "memo",
+   "title": "Vitezele începătorului, categoria B",
+   "body": "<p>Scazi <b>20</b> din limita obișnuită, doar <b>în afara localității</b>. În localitate rămâne 50 km/h, ca pentru toată lumea.</p><p>Pe scurt: <b>110 · 80 · 70</b>, adică autostradă, drum expres sau european, alte drumuri.</p><p>De ce doar în afara localității? Acolo vitezele sunt mari, iar experiența îți spune cât de repede se apropie un pericol. În primul an, cei 20 km/h în minus îți dau timp în plus să reacționezi.</p>",
+   "src": "OUG 195/2002 art. 49–50",
+   "visual": {
+    "table": [
+     [
+      "Drum",
+      "Limită normală",
+      "Primul an"
+     ],
+     [
+      "Autostradă",
+      "130 km/h",
+      "110 km/h"
+     ],
+     [
+      "Drum expres / DN european (E)",
+      "100 km/h",
+      "80 km/h"
+     ],
+     [
+      "Alte drumuri în afara localității",
+      "90 km/h",
+      "70 km/h"
+     ],
+     [
+      "În localitate",
+      "50 km/h",
+      "50 km/h"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Pietonii la trecere",
+   "body": "<p>La o trecere de pietoni fără semafor, <b>acorzi prioritate</b> pietonului care s-a angajat pe trecere <b>pe sensul tău de mers</b>.</p><p>Pe drumurile cu o bandă pe sens, dacă vezi pietoni pe trotuar lângă trecere, reduci viteza (30 km/h în localitate, 50 km/h în afara ei), ca să poți opri la nevoie.</p><p>La semafor, când <b>virezi</b> pe verde, lași să treacă pietonii care traversează pe verde drumul în care intri.</p>",
+   "src": "Regulament art. 123 lit. h), art. 135 lit. h)",
+   "visual": {
+    "sign": "av-trecere-pietoni"
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Bicicliștii și trotinetele",
+   "body": "<p>Când depășești o bicicletă sau o trotinetă electrică, ca să le lași loc suficient, <b>treci peste marcajul</b> care separă sensurile sau benzile:</p><ul><li>la peste 50 km/h: cu <b>cel puțin jumătate din lățimea mașinii</b>;</li><li>la cel mult 50 km/h: cel puțin <b>calci marcajul</b>.</li></ul><p>Peste o <b>linie continuă</b> nu treci; aștepți linia discontinuă.</p><p>Bine de știut: bicicliștii și trotinetiștii au voie pe drum de la <b>14 ani</b>, iar trotinetele pe carosabil doar unde limita e de cel mult 50 km/h.</p>",
+   "src": "Regulament art. 118 alin. (2); OUG 195/2002 art. 41 alin. (3), art. 70",
+   "visual": {
+    "scene": {
+     "layout": "straight",
+     "main": null,
+     "vehicles": [
+      {
+       "id": "B",
+       "arm": "s",
+       "go": "straight",
+       "type": "bike"
+      },
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "straight",
+       "type": "car",
+       "you": true
+      }
+     ],
+     "caption": "A depășește bicicleta trecând peste marcaj."
+    }
+   }
+  },
+  {
+   "kind": "rule",
+   "title": "Starea tehnică, RCA și ITP",
+   "body": "<p>Este <b>interzisă</b> circulația unui vehicul care:</p><ul><li>nu corespunde tehnic;</li><li><b>nu are RCA</b> (asigurarea obligatorie);</li><li>are <b>înmatricularea suspendată</b>;</li><li>are <b>ITP-ul expirat</b> sau anulat.</li></ul><p>ITP pentru autoturisme: prima dată la <b>3 ani</b> de la înmatricularea ca nou, apoi la <b>2 ani</b>; după <b>12 ani</b> vechime, în fiecare an.</p>",
+   "src": "OUG 195/2002 art. 9 alin. (4), art. 10 alin. (1)"
+  },
+  {
+   "kind": "rule",
+   "title": "Proprietarul mașinii și permisul",
+   "body": "<ul><li>Vehiculul se <b>înmatriculează înainte</b> de a fi pus în circulație. După cumpărare, noul proprietar cere transcrierea în <b>cel mult 90 de zile</b>.</li><li>Dacă poliția cere, proprietarul <b>comunică identitatea</b> celui căruia i-a dat mașina, în termenul cerut.</li><li>Pierderea sau furtul certificatului de înmatriculare se anunță în <b>48 de ore</b>.</li><li>Permisul de categoria B se obține de la <b>18 ani</b> și are valabilitate administrativă de <b>10 ani</b>.</li></ul>",
+   "src": "OUG 195/2002 art. 11, art. 20, art. 39; Regulament art. 27"
+  }
+ ],
+ "summary": [
+  "În mașină ai trusa medicală, două triunghiuri și stingătorul, toate omologate; vesta nu e obligatorie la autoturism.",
+  "La bord ai buletinul, permisul și certificatul de înmatriculare.",
+  "Toți poartă centura, cu câteva excepții clare: mers înapoi, sarcină vizibilă, taxi cu clienți, certificat medical, instructori și examinatori.",
+  "Telefonul se folosește doar cu sistem mâini libere.",
+  "Copiii sub 135 cm stau în dispozitiv omologat; pe locul din față, doar cu airbagul dezactivat.",
+  "Ziua circuli cu faza scurtă sau luminile de zi pe toate drumurile; noaptea treci pe faza scurtă la 200 m de cei din față și la 100 m de cei pe care îi urmezi.",
+  "La accident cu victime anunți imediat poliția, nu muți nimic și nu pleci; la pagube doar materiale, eliberezi drumul și mergi la poliție în 24 de ore, dacă nu ați completat constatarea amiabilă.",
+  "La defecțiune, avarii și triunghiuri la cel puțin 30 m în față și în spate.",
+  "În primul an ai discul galben și viteza cu 20 km/h mai mică în afara localității.",
+  "Fără RCA, cu ITP expirat sau cu înmatriculare suspendată, mașina nu are voie pe drum."
+ ],
+ "questions": [
+  {
+   "q": "Cu ce dotări obligatorii trebuie să fie echipat un autoturism pentru a circula pe drumurile publice?",
+   "o": [
+    "Trusă medicală, un triunghi reflectorizant și o vestă reflectorizantă",
+    "Trusă medicală, două triunghiuri reflectorizante și un stingător de incendiu, omologate",
+    "Două triunghiuri reflectorizante, stingător de incendiu și roată de rezervă"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Legea cere trei lucruri omologate: trusa medicală, două triunghiuri și stingătorul. Vesta și roata de rezervă sunt utile, dar nu fac parte din lista obligatorie.",
+   "src": "OUG 195/2002 art. 8"
+  },
+  {
+   "q": "Sunteți obligat să aveți în autoturism o vestă reflectorizantă?",
+   "o": [
+    "Da, câte una pentru fiecare ocupant",
+    "Da, una pentru șofer",
+    "Nu, vesta nu face parte din dotările obligatorii ale autoturismului"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Vesta e obligatorie pentru șoferii vehiculelor de peste 3,5 tone, când lucrează la vehicul pe carosabil. Pentru autoturism nu e obligatorie, deși e o idee bună s-o ai.",
+   "src": "OUG 195/2002 art. 8, art. 35 alin. (6)"
+  },
+  {
+   "q": "Ce documente sunteți obligat să aveți asupra dumneavoastră când conduceți un autoturism?",
+   "o": [
+    "Permisul de conducere",
+    "Cartea de identitate a vehiculului",
+    "Certificatul de înmatriculare"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Ai la tine actul de identitate, permisul și certificatul de înmatriculare. Cartea de identitate a vehiculului (CIV) nu e cerută la bord, e o confuzie frecventă.",
+   "src": "Regulament art. 147 pct. 1"
+  },
+  {
+   "q": "Care dintre persoanele de mai jos nu au obligația de a purta centura de siguranță?",
+   "o": [
+    "Pasagerii de pe bancheta din spate, când mașina circulă în localitate",
+    "Femeile cu sarcină vizibilă",
+    "Conducătorul autoturismului, când merge cu spatele"
+   ],
+   "c": [
+    1,
+    2
+   ],
+   "x": "Sunt scutite femeile cu sarcină vizibilă și șoferul care merge în marșarier sau stă pe loc. Pasagerii din spate poartă centura și în localitate.",
+   "src": "Regulament art. 97 alin. (4)"
+  },
+  {
+   "q": "În ce condiții aveți voie să folosiți telefonul mobil în timp ce conduceți?",
+   "o": [
+    "Doar cu un sistem de tip „mâini libere”",
+    "Ținându-l în mână, dacă viteza este sub 30 km/h",
+    "Ținându-l în mână, doar pentru a scrie un mesaj scurt"
+   ],
+   "c": [
+    0
+   ],
+   "x": "Telefonul ținut în mână e interzis în timpul mersului, indiferent de viteză. Singura variantă permisă e sistemul mâini libere.",
+   "src": "OUG 195/2002 art. 36 alin. (3)"
+  },
+  {
+   "q": "Un copil cu înălțimea de 120 cm este transportat într-un autoturism echipat cu centuri. Cum procedați?",
+   "o": [
+    "Îl lăsați să poarte centura de adult, pe bancheta din spate",
+    "Îl asigurați într-un dispozitiv de reținere omologat, potrivit greutății și înălțimii lui",
+    "Poate sta în brațele unui adult, dacă acesta poartă centura"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Sub 135 cm copilul trebuie să stea într-un dispozitiv de reținere omologat. Centura de adult e permisă abia peste 135 cm, iar în brațe nu e voie.",
+   "src": "Regulament art. 97 alin. (1)"
+  },
+  {
+   "q": "Un copil cu înălțimea de 140 cm poate fi transportat într-un autoturism:",
+   "o": [
+    "Doar pe scaunul din față, cu centura de adult",
+    "Folosind centura de adult, reglată astfel încât să nu treacă peste gât sau față",
+    "Folosind un dispozitiv de reținere pentru copii"
+   ],
+   "c": [
+    1,
+    2
+   ],
+   "x": "Peste 135 cm copilul poate folosi centura de adult reglată corect sau un dispozitiv pentru copii. Nu există regula că trebuie să stea în față.",
+   "src": "Regulament art. 97 alin. (1²)"
+  },
+  {
+   "q": "Puteți monta un scaun pentru copil, orientat cu spatele la direcția de mers, pe locul pasagerului din față?",
+   "o": [
+    "Da, doar dacă airbagul frontal al pasagerului este dezactivat sau lipsește",
+    "Nu, în nicio situație",
+    "Da, oricând, dacă scaunul este omologat"
+   ],
+   "c": [
+    0
+   ],
+   "x": "E permis numai cu airbagul frontal al pasagerului dezactivat. Airbagul deschis lângă un scaun de copil poate răni grav copilul.",
+   "src": "Regulament art. 97 alin. (1⁶)–(1⁷)"
+  },
+  {
+   "q": "Pe timp de zi, circulați cu autoturismul pe o stradă dintr-o localitate. Ce lumini folosiți?",
+   "o": [
+    "Luminile de poziție",
+    "Luminile de întâlnire",
+    "Luminile de zi"
+   ],
+   "c": [
+    1,
+    2
+   ],
+   "x": "Ziua folosești faza scurtă sau luminile de zi pe toate drumurile publice, nu doar în afara localității. Luminile de poziție nu sunt suficiente.",
+   "src": "OUG 195/2002 art. 44 alin. (2)"
+  },
+  {
+   "q": "Noaptea, din sens opus se apropie un autovehicul. Ce obligații aveți?",
+   "o": [
+    "Să comutați pe faza scurtă de la cel mult 50 m",
+    "Să reduceți viteza",
+    "Să comutați pe faza scurtă de la o distanță de cel puțin 200 m"
+   ],
+   "c": [
+    1,
+    2
+   ],
+   "x": "Treci pe faza scurtă de la cel puțin 200 m și, în același timp, reduci viteza. La 50 m ai orbi deja celălalt șofer.",
+   "src": "Regulament art. 114 alin. (2)"
+  },
+  {
+   "q": "Noaptea, în afara localității, circulați cu faza lungă în spatele unui autoturism care merge pe același sens. De la ce distanță treceți pe faza scurtă?",
+   "o": [
+    "De la cel puțin 50 m",
+    "De la cel puțin 100 m",
+    "De la cel puțin 200 m"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Când urmezi un vehicul, comuți de la cel puțin 100 m. Cei 200 m sunt pentru vehiculele din sens opus, iar asta e capcana clasică.",
+   "src": "Regulament art. 114 alin. (2)"
+  },
+  {
+   "q": "Când aveți voie să folosiți luminile de ceață?",
+   "o": [
+    "Pe ploaie slabă",
+    "Pe ceață densă",
+    "În tunel, în locul fazei scurte"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Luminile de ceață se aprind doar pe ceață densă, împreună cu faza scurtă. Folosite în alte condiții orbesc și se sancționează.",
+   "src": "Regulament art. 114 alin. (1) lit. c)"
+  },
+  {
+   "q": "Ați fost implicat într-un accident în urma căruia o persoană a fost rănită. Ce obligații aveți?",
+   "o": [
+    "Să mutați imediat vehiculele de pe carosabil, chiar fără acordul poliției",
+    "Să anunțați imediat poliția",
+    "Să nu modificați sau să ștergeți urmele accidentului"
+   ],
+   "c": [
+    1,
+    2
+   ],
+   "x": "La accident cu victime anunți imediat poliția și lași urmele neatinse. Vehiculele nu se mută fără acordul poliției, pentru că urmele arată cum s-a produs accidentul.",
+   "src": "OUG 195/2002 art. 77"
+  },
+  {
+   "q": "Ați produs un accident soldat doar cu pagube materiale și nu ați completat constatarea amiabilă. Ce obligații aveți?",
+   "o": [
+    "Să scoateți imediat vehiculele de pe partea carosabilă, dacă se poate",
+    "Să vă prezentați la poliție în cel mult 24 de ore",
+    "Să plecați, deoarece nu există victime"
+   ],
+   "c": [
+    0,
+    1
+   ],
+   "x": "Eliberezi drumul și mergi la poliție în cel mult 24 de ore. Faptul că nu sunt victime nu te scutește de drumul la poliție, dacă nu există constatare amiabilă.",
+   "src": "OUG 195/2002 art. 79 alin. (1)"
+  },
+  {
+   "q": "În care situații nu mai sunteți obligat să vă prezentați la poliție după un accident soldat doar cu pagube materiale?",
+   "o": [
+    "Când ați completat împreună cu celălalt șofer formularul de constatare amiabilă",
+    "Când aveți asigurare RCA valabilă",
+    "Când este avariat doar vehiculul dumneavoastră și aveți asigurare facultativă (CASCO)"
+   ],
+   "c": [
+    0,
+    2
+   ],
+   "x": "Excepțiile sunt constatarea amiabilă și situația în care e lovită doar mașina ta, acoperită de CASCO. RCA-ul singur nu te scutește.",
+   "src": "OUG 195/2002 art. 79 alin. (2)"
+  },
+  {
+   "q": "După un accident de circulație, până la testarea alcoolemiei, conducătorul auto implicat:",
+   "o": [
+    "Nu are voie să consume alcool sau substanțe psihoactive",
+    "Poate consuma o cantitate mică de alcool, dacă nu sunt victime",
+    "Poate pleca acasă și se prezintă pentru testare a doua zi"
+   ],
+   "c": [
+    0
+   ],
+   "x": "După accident nu consumi alcool sau substanțe psihoactive până după testare. Altfel, rezultatul se socotește ca fiind starea ta din momentul accidentului.",
+   "src": "OUG 195/2002 art. 78"
+  },
+  {
+   "q": "Autoturismul s-a defectat și rămâne pe partea carosabilă, în afara localității. Unde amplasați triunghiurile reflectorizante?",
+   "o": [
+    "Doar în spatele vehiculului, la cel puțin 10 m",
+    "Pe acostament, lângă roata din spate",
+    "În fața și în spatele vehiculului, pe aceeași bandă, la cel puțin 30 m"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Triunghiurile se pun în față și în spate, pe aceeași bandă, la cel puțin 30 m. Doar în localitățile aglomerate pot fi mai aproape sau pe mașină.",
+   "src": "Regulament art. 156 alin. (2)"
+  },
+  {
+   "q": "Noaptea, autoturismul dumneavoastră rămâne imobilizat pe carosabil, iar luminile de avarie nu funcționează. Ce faceți?",
+   "o": [
+    "Lăsați aprinse doar luminile de frână",
+    "Amplasați în spatele vehiculului o lampă portabilă cu lumină galbenă intermitentă",
+    "Aprindeți luminile de ceață din spate și plecați după ajutor"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Fără avarii, legea cere o lampă portabilă cu lumină galbenă intermitentă, pusă în spatele vehiculului. Așa ceilalți te observă din timp.",
+   "src": "Regulament art. 156 alin. (3)"
+  },
+  {
+   "q": "Aveți permisul de conducere categoria B de 6 luni. Care este viteza maximă cu care puteți circula cu autoturismul pe autostradă?",
+   "o": [
+    "110 km/h",
+    "130 km/h",
+    "90 km/h"
+   ],
+   "c": [
+    0
+   ],
+   "x": "În primul an, în afara localității, scazi 20 km/h din limita categoriei: 130 minus 20 face 110 km/h pe autostradă.",
+   "src": "OUG 195/2002 art. 50 alin. (4)"
+  },
+  {
+   "q": "Ce obligații sau restricții are un conducător auto cu o vechime mai mică de un an?",
+   "o": [
+    "Nu are voie să circule pe autostradă",
+    "Afișează pe vehicul discul galben cu semnul exclamării",
+    "Nu are voie să conducă un taxi"
+   ],
+   "c": [
+    1,
+    2
+   ],
+   "x": "Începătorul pune discul galben și nu conduce taxiuri sau alte vehicule de transport public de persoane. Pe autostradă are voie, doar cu viteză mai mică.",
+   "src": "Regulament art. 147 pct. 6, art. 149"
+  },
+  {
+   "q": "Vă apropiați de o trecere pentru pietoni nesemaforizată. Un pieton s-a angajat în traversare pe sensul dumneavoastră de mers. Cum procedați?",
+   "o": [
+    "Claxonați și continuați deplasarea",
+    "Treceți, dacă pietonul nu a ajuns încă la jumătatea trecerii",
+    "Opriți și îi acordați prioritate"
+   ],
+   "c": [
+    2
+   ],
+   "x": "Pietonul angajat pe trecere, pe sensul tău, are prioritate. Opriți și îl lași să traverseze în liniște.",
+   "src": "Regulament art. 135 lit. h)",
+   "visual": {
+    "sign": "av-trecere-pietoni"
+   }
+  },
+  {
+   "q": "Circulați cu 70 km/h și urmează să depășiți un biciclist. Cum procedați?",
+   "o": [
+    "Treceți peste marcajul longitudinal cu cel puțin jumătate din lățimea autoturismului",
+    "Îl depășiți fără să treceți de marcaj, dacă rămâne o distanță de 50 cm",
+    "Îl depășiți peste linia continuă, dacă nu vine nimeni"
+   ],
+   "c": [
+    0
+   ],
+   "x": "Peste 50 km/h treci peste marcaj cu cel puțin jumătate din lățimea mașinii. Linia continuă nu se încalcă nici pentru un biciclist.",
+   "src": "Regulament art. 118 alin. (2)",
+   "visual": {
+    "scene": {
+     "layout": "straight",
+     "main": null,
+     "vehicles": [
+      {
+       "id": "B",
+       "arm": "s",
+       "go": "straight",
+       "type": "bike"
+      },
+      {
+       "id": "A",
+       "arm": "s",
+       "go": "straight",
+       "type": "car",
+       "you": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "q": "În care dintre situațiile de mai jos este interzisă circulația unui autoturism pe drumurile publice?",
+   "o": [
+    "Nu are asigurare obligatorie RCA valabilă",
+    "Inspecția tehnică periodică (ITP) este expirată",
+    "Înmatricularea este suspendată"
+   ],
+   "c": [
+    0,
+    1,
+    2
+   ],
+   "x": "Toate trei sunt corecte: fără RCA, cu ITP expirat sau cu înmatricularea suspendată mașina nu are voie pe drum.",
+   "src": "OUG 195/2002 art. 10 alin. (1)"
+  },
+  {
+   "q": "Poliția vă cere, în calitate de proprietar, să comunicați identitatea persoanei căreia i-ați încredințat autoturismul. Ce obligație aveți?",
+   "o": [
+    "Să comunicați identitatea persoanei doar dacă aceasta este de acord",
+    "Să comunicați identitatea persoanei în termenul cerut",
+    "Nu aveți nicio obligație, dacă nu conduceați dumneavoastră"
+   ],
+   "c": [
+    1
+   ],
+   "x": "Proprietarul trebuie să spună cui i-a dat mașina, în termenul din solicitare. Dacă nu răspunzi, primești amendă.",
+   "src": "OUG 195/2002 art. 39"
+  }
+ ],
+ "uncertain": [
+  "Vesta reflectorizantă: am verificat Legea 82/2024 (noul art. 8 OUG 195/2002, MO 333 din 10.04.2024) și infocons.ro (5 sept. 2026). Vesta nu e obligatorie la autoturisme, doar pentru vehiculele de peste 3,5 t (art. 35 alin. 6). Dacă banca de întrebări DRPCIV mai are o întrebare veche despre vestă, s-ar putea să nu se potrivească.",
+  "Autostradă/defecțiune: Regulamentul (art. 156 alin. 2) dă minimum 30 m pentru triunghiuri peste tot. „Cel puțin 100 m” pe autostradă e o recomandare DRDP Craiova (newsweek.ro, 16.09.2025), nu normă legală, iar cardul o prezintă ca recomandare. N-am găsit un articol separat din Regulament despre defecțiunea pe autostradă (pagina scoalarutiera despre autostrăzi n-a putut fi descărcată).",
+  "Intervale ITP (3 ani / 2 ani / anual după 12 ani): sursa e capital.ro (17.07.2026), care trimite la RAR. N-am verificat direct ordinul MTI de periodicitate.",
+  "Valabilitatea permisului B (10 ani): un proiect de lege (15 ani sub 70 de ani, termene mai scurte după 70 și 80 de ani) a trecut de Senat. Ultima știre verificată (playtech, 18.09.2025) spune că nu era încă în vigoare. N-am găsit dovezi că ar fi fost adoptat până în oct. 2026.",
+  "Transcrierea în 90 de zile după cumpărare (avocatnet.ro, 14.04.2026): am citat generic OUG 195/2002 art. 11, fără alineat, pentru că nu l-am confirmat exact.",
+  "Regulament art. 149 alin. (2), restricțiile pentru începători: am folosit formularea din rezumatul scoalarutiera („vehicule care transportă mărfuri sau produse periculoase”, transport public de persoane, inclusiv taxi, vehicule de probă). Lista completă exactă n-am verificat-o în textul legii.",
+  "Telefonul mobil: clasa a III-a și 4 puncte de penalizare (art. 101 și art. 108 lit. c), plus 30 de zile de suspendare dacă se încalcă și altă regulă (art. 100 alin. 3 lit. h). Confirmat de scoalarutiera și e-juridic; capital.ro (31.05.2026) e vag la clasă.",
+  "Semn nou necesar: „x-disc-incepator” = disc galben, diametru 100 mm, cu semnul exclamării negru (bară 60 mm, punct 10 mm), afișat de șoferii cu vechime sub un an (Regulament art. 147 pct. 6)."
+ ]
+}

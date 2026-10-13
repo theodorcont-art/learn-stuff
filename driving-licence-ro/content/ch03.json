@@ -1,0 +1,860 @@
+{
+  "id": 3,
+  "title": "Indicatoare rutiere",
+  "tagline": "Forma și culoarea îți spun deja jumătate",
+  "minutes": 40,
+  "intro": "Indicatoarele sunt felul în care drumul îți vorbește. Vestea bună: nu trebuie să le înveți pe de rost unul câte unul, pentru că forma și culoarea îți spun din prima ce fel de mesaj e. La examen apar multe întrebări cu imagini, deci e un capitol care se învață ușor privind.",
+  "cards": [
+    {
+      "kind": "idea",
+      "title": "Un limbaj cu forme și culori",
+      "body": "<p>Imaginează-ți că vezi un indicator de departe, în ceață, și nu distingi desenul. Tot poți afla ceva: dacă e <b>triunghi</b>, urmează un pericol. Dacă e <b>cerc cu chenar roșu</b>, ceva îți e interzis. Dacă e <b>cerc albastru</b>, ceva e obligatoriu.</p><p>De aceea indicatoarele sunt grupate în familii. Fiecare familie are forma și culorile ei. Odată ce știi familiile, orice indicator nou devine ușor de ghicit.</p>",
+      "visual": {
+        "signs": [
+          "av-alte-pericole",
+          "in-accesul-interzis",
+          "ob-inainte",
+          "inf-parcare"
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Familiile de indicatoare",
+      "body": "<p>Regulamentul împarte indicatoarele astfel:</p><ul><li><b>de avertizare</b>;</li><li><b>de reglementare</b>: de <b>prioritate</b>, de <b>interzicere sau restricție</b>, de <b>obligare</b>;</li><li><b>de orientare și informare</b>: de orientare, de informare, de informare turistică, <b>panouri adiționale</b>, indicatoare kilometrice și hectometrice;</li><li><b>pentru lucrări</b>: indicatoare rutiere temporare și mijloace auxiliare.</li></ul>",
+      "src": "Regulament art. 64",
+      "visual": {
+        "table": [
+          [
+            "Familie",
+            "Formă",
+            "Culori"
+          ],
+          [
+            "Avertizare",
+            "triunghi",
+            "fond alb, chenar roșu, simbol negru"
+          ],
+          [
+            "Interzicere / restricție",
+            "cerc",
+            "fond alb, chenar roșu, simbol negru"
+          ],
+          [
+            "Obligare",
+            "cerc",
+            "fond albastru, simbol alb"
+          ],
+          [
+            "Orientare",
+            "dreptunghi sau pătrat",
+            "fond albastru sau verde, scris alb"
+          ],
+          [
+            "Temporare (lucrări)",
+            "ca cele permanente",
+            "fond galben în loc de alb"
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "memo",
+      "title": "Patru forme, patru mesaje",
+      "body": "<ul><li><b>Triunghi</b> = „Atenție, urmează ceva.”</li><li><b>Cerc cu chenar roșu</b> = „Nu ai voie.”</li><li><b>Cerc albastru</b> = „Trebuie să faci asta.”</li><li><b>Dreptunghi / pătrat</b> = „Îți spun unde ești sau ce găsești.”</li></ul><p>Roșul e culoarea interdicției și a pericolului. Albastrul e culoarea indicației: îți arată ce să faci sau ce e disponibil.</p>",
+      "visual": {
+        "signs": [
+          "av-copii",
+          "in-depasirea-interzisa",
+          "ob-dreapta",
+          "inf-spital"
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Unde se montează indicatoarele",
+      "body": "<p>De regulă, indicatoarele se pun <b>pe partea dreaptă</b> a sensului de mers. Dacă nu s-ar vedea la timp, pot fi puse sau <b>repetate</b> pe stânga, pe zona mediană, pe un refugiu, <b>deasupra părții carosabile</b> sau pe partea opusă a intersecției.</p><p>Un indicator e valabil pe <b>toată lățimea</b> părții carosabile deschise celor cărora li se adresează. Excepție: dacă e montat <b>deasupra unei benzi</b>, e valabil doar pentru banda (sau benzile) de sub el.</p>",
+      "src": "Regulament art. 65 alin. (1), art. 66 alin. (1)-(2)"
+    },
+    {
+      "kind": "rule",
+      "title": "Cât de departe e pericolul",
+      "body": "<p>Indicatorul de avertizare stă <b>înaintea</b> locului periculos, ca să ai timp să reacționezi. Cu cât mergi mai repede, cu atât e pus mai departe.</p><p>Dacă terenul cere o distanță mai mare, sub indicator apare un panou cu <b>distanța până la pericol</b>. Pe autostrăzi și drumuri expres acest panou e <b>obligatoriu</b> mereu. Dacă sectorul periculos are peste <b>1.000 m</b>, se adaugă și un panou cu <b>lungimea</b> lui.</p>",
+      "src": "Regulament art. 66 alin. (4)-(5)",
+      "visual": {
+        "table": [
+          [
+            "Unde",
+            "Distanța înaintea pericolului"
+          ],
+          [
+            "În localitate",
+            "cel mult 50 m"
+          ],
+          [
+            "În afara localității",
+            "între 100 m și 250 m"
+          ],
+          [
+            "Autostradă, drum expres",
+            "între 500 m și 1.000 m"
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Panourile adiționale",
+      "body": "<p>Sub un indicator poate apărea un panou mic, cu text sau simbol. El <b>precizează, completează sau limitează</b> sensul indicatorului.</p><p>Exemple:</p><ul><li>distanța până la locul periculos;</li><li>lungimea sectorului la care se referă;</li><li>categoriile de vehicule vizate sau exceptate;</li><li>intervalul orar în care se aplică;</li><li>direcția drumului cu prioritate în intersecție.</li></ul><p>Semnele adiționale pot fi puse și direct pe indicator, dacă nu îi schimbă înțelesul.</p>",
+      "src": "Regulament art. 65 alin. (2)-(3)",
+      "visual": {
+        "sign": "av-alte-pericole"
+      }
+    },
+    {
+      "kind": "example",
+      "title": "Avertizări de pe drum",
+      "body": "<p>Aceste triunghiuri îți descriu <b>drumul</b> din față:</p><ul><li><b>Curbă la dreapta</b>: încetinești înainte de curbă, nu în ea.</li><li><b>Drum îngustat</b>: partea carosabilă se strâmtează; atenție la cei din sens opus.</li><li><b>Drum alunecos</b>: mașina cu urme de derapaj; frânezi și virezi blând.</li><li><b>Drum denivelat</b>: gropi sau valuri; reduci viteza.</li></ul><p>Niciunul nu interzice ceva. Toate îți cer <b>prudență</b> și o viteză potrivită.</p>",
+      "visual": {
+        "signs": [
+          "av-curba-dreapta",
+          "av-drum-ingustat",
+          "av-drum-alunecos",
+          "av-denivelare"
+        ]
+      }
+    },
+    {
+      "kind": "example",
+      "title": "Avertizări despre ce urmează",
+      "body": "<ul><li><b>Intersecție de drumuri</b> (un „X” negru): urmează o intersecție de drumuri egale, unde se aplică de regulă <b>prioritatea de dreapta</b>.</li><li><b>Sens giratoriu</b>: urmează o intersecție cu circulație în sens giratoriu.</li><li><b>Semafoare</b>: urmează o intersecție cu semafor; pregătește-te să oprești.</li><li><b>Copii</b>: școală, loc de joacă; copiii pot apărea brusc.</li></ul><p>Ideea comună: te pregătesc <b>din timp</b> pentru o situație pe care încă nu o vezi.</p>",
+      "visual": {
+        "signs": [
+          "av-intersectie",
+          "av-sens-giratoriu",
+          "av-semafoare",
+          "av-copii"
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Calea ferată: înainte și la șine",
+      "body": "<p>Apropierea de o trecere la nivel cu calea ferată se semnalizează cu indicatoare de avertizare.</p><ul><li><b>Cu bariere</b> (triunghi cu un gard) și <b>fără bariere</b> (triunghi cu o locomotivă) se pun <b>înaintea</b> trecerii, ca orice avertizare.</li><li><b>Crucea Sf. Andrei</b> stă <b>chiar lângă șine</b>, la trecerea fără bariere. Crucea <b>simplă</b> = o singură linie. Crucea <b>dublă</b> = două sau mai multe linii.</li></ul><p>Trenul are mereu prioritate.</p>",
+      "src": "Regulament art. 68",
+      "visual": {
+        "signs": [
+          "av-calea-ferata-bariere",
+          "av-calea-ferata-fara-bariere",
+          "av-cruce-sf-andrei",
+          "av-cruce-sf-andrei-dubla"
+        ]
+      }
+    },
+    {
+      "kind": "idea",
+      "title": "Prioritatea se vede și din spate",
+      "body": "<p>Trei indicatoare de prioritate au forme pe care nu le mai are nimeni altcineva:</p><ul><li><b>Cedează trecerea</b>: triunghi <b>cu vârful în jos</b>.</li><li><b>Oprire (STOP)</b>: <b>octogon</b> roșu.</li><li><b>Drum cu prioritate</b>: pătrat galben <b>așezat pe colț</b> (romb).</li></ul><p>De ce contează? Și cei care vin din altă direcție le recunosc după contur, chiar dacă văd doar spatele indicatorului. Așa știu cine trebuie să cedeze.</p>",
+      "visual": {
+        "signs": [
+          "pr-cedeaza",
+          "pr-stop",
+          "pr-drum-prioritate"
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Cedează trecerea și STOP",
+      "body": "<p><b>Cedează trecerea</b>: lași să treacă vehiculele de pe drumul în care intri, din <b>ambele</b> direcții. Încetinești și oprești <b>doar dacă e nevoie</b>. Dacă drumul e liber, poți trece fără oprire.</p><p><b>Oprire (STOP)</b>: oprirea e <b>obligatorie mereu</b>, chiar dacă drumul pare liber. Oprești <b>la linia de oprire</b>; dacă nu există, la marginea drumului în care intri, de unde vezi bine. Apoi cedezi trecerea și pleci.</p>",
+      "src": "Regulament art. 81 alin. (1)-(2)",
+      "visual": {
+        "scene": {
+          "layout": "t-north",
+          "main": "ew",
+          "vehicles": [
+            {
+              "id": "A",
+              "arm": "s",
+              "go": "right",
+              "type": "car",
+              "you": true
+            },
+            {
+              "id": "B",
+              "arm": "w",
+              "go": "straight",
+              "type": "car"
+            }
+          ],
+          "signs": [
+            {
+              "arm": "s",
+              "sign": "pr-stop"
+            }
+          ],
+          "caption": "Tu (A) oprești la linie, lași B să treacă, apoi pleci."
+        }
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Drumul cu prioritate și sfârșitul lui",
+      "body": "<ul><li><b>Drum cu prioritate</b>: la intersecțiile următoare, ceilalți îți cedează trecerea. E valabil <b>până la indicatorul de sfârșit</b>.</li><li><b>Sfârșitul drumului cu prioritate</b>: același romb, tăiat cu dungi. De aici nu mai ai prioritate automat.</li><li><b>Intersecție cu un drum fără prioritate</b>: un triunghi cu o linie groasă verticală (drumul tău) și una subțire (drumul lateral). Deși e triunghi, face parte din familia <b>de prioritate</b>: tu ai prioritate la intersecția care urmează.</li></ul>",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "signs": [
+          "pr-drum-prioritate",
+          "pr-sfarsit-prioritate",
+          "pr-intersectie-fara-prioritate"
+        ]
+      }
+    },
+    {
+      "kind": "trap",
+      "title": "Sens invers: săgeata roșie cedează",
+      "body": "<p>Pe un pod îngust sau un sector strâmt încape o singură mașină. Două indicatoare spun cine trece primul:</p><ul><li><b>Prioritate pentru circulația din sens invers</b>: <b>rotund</b>, cu chenar roșu. <b>Tu cedezi</b> celor care vin din față.</li><li><b>Prioritate față de circulația din sens invers</b>: <b>pătrat albastru</b>. <b>Tu ai prioritate</b>.</li></ul><p>Truc: săgeata <b>roșie</b> arată sensul care trebuie să cedeze. Pe cel rotund, săgeata roșie e a ta.</p>",
+      "visual": {
+        "signs": [
+          "pr-prioritate-sens-invers",
+          "pr-prioritate-fata-de-sens-invers"
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Cât ține o interdicție",
+      "body": "<p>Un indicator de interzicere sau restricție e valabil <b>din dreptul lui</b>. Se termină:</p><ul><li>la indicatorul de <b>sfârșit</b> (al restricției sau al tuturor restricțiilor);</li><li>la capătul sectorului arătat pe un panou adițional;</li><li>dacă nu există nici una, nici alta, <b>la prima intersecție</b>.</li></ul><p>Indicatoarele de sfârșit sunt albe, cu dungi oblice negre sau gri. Ele „șterg” restricția.</p>",
+      "src": "Regulament art. 66 alin. (6)",
+      "visual": {
+        "signs": [
+          "in-viteza-50",
+          "in-sfarsit-viteza-50",
+          "in-sfarsit-restrictii"
+        ]
+      }
+    },
+    {
+      "kind": "example",
+      "title": "Restricția pusă la intrarea în localitate",
+      "body": "<p>Intri într-o comună. Pe același stâlp cu indicatorul de <b>intrare în localitate</b> e și unul de <b>30 km/h</b>.</p><p>Aici regula „până la prima intersecție” <b>nu</b> se aplică. Restricția e valabilă pe tot drumul prin localitate, <b>până la indicatorul de ieșire</b>, dacă alte indicatoare nu spun altceva.</p><p>Ieșirea din localitate se recunoaște ușor: panoul cu numele localității e tăiat cu o bară roșie.</p>",
+      "src": "Regulament art. 66 alin. (6)",
+      "visual": {
+        "signs": [
+          "inf-intrare-localitate",
+          "in-viteza-30",
+          "inf-iesire-localitate"
+        ]
+      }
+    },
+    {
+      "kind": "trap",
+      "title": "Accesul interzis sau circulația interzisă",
+      "body": "<ul><li><b>Accesul interzis</b>: disc <b>roșu</b> cu o bară albă. Nu ai voie să intri <b>în acel sens</b>. Îl vezi des la capătul unei străzi cu <b>sens unic</b>, unde ai ieși „pe contrasens”.</li><li><b>Circulația interzisă în ambele sensuri</b>: disc <b>alb</b> cu chenar roșu, gol în mijloc. Vehiculele nu au voie pe acel drum <b>în niciun sens</b>.</li></ul><p>Un panou adițional poate scrie cine are totuși voie (de exemplu, riveranii).</p>",
+      "visual": {
+        "signs": [
+          "in-accesul-interzis",
+          "in-circulatia-interzisa",
+          "in-acces-interzis-autovehicule"
+        ]
+      }
+    },
+    {
+      "kind": "trap",
+      "title": "Oprirea și staționarea interzise",
+      "body": "<p>Aceste două au <b>fond albastru</b>, dar sunt indicatoare de <b>interzicere</b>, nu de obligare. Le dă de gol chenarul roșu.</p><ul><li><b>Oprirea interzisă</b> (X roșu): nu ai voie nici să oprești, nici să staționezi.</li><li><b>Staționarea interzisă</b> (o bară roșie): nu ai voie să staționezi, dar <b>poți opri</b> scurt.</li></ul><p>Oprirea înseamnă imobilizarea de cel mult 5 minute; peste atât e staționare. Ambele se aplică pe <b>partea drumului</b> pe care e indicatorul.</p>",
+      "src": "OUG 195/2002 art. 6",
+      "visual": {
+        "signs": [
+          "in-oprirea-interzisa",
+          "in-stationarea-interzisa"
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Depășirea interzisă și vitezele",
+      "body": "<ul><li><b>Depășirea interzisă</b>: nu ai voie să depășești autovehicule. Excepție: <b>motocicletele fără ataș</b> pot fi depășite.</li><li><b>Viteza maximă</b> (cerc cu chenar roșu și un număr): nu ai voie să mergi mai repede de atât.</li><li><b>Viteza minimă</b> (cerc albastru cu număr): nu ai voie să mergi mai încet, dacă drumul și vremea permit. E indicator de <b>obligare</b>.</li></ul><p>Același număr, alt cerc, alt sens. Uită-te la culoare.</p>",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "signs": [
+          "in-depasirea-interzisa",
+          "in-viteza-30",
+          "ob-viteza-minima-30"
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Indicatoarele de obligare",
+      "body": "<p>Cerc albastru, simbol alb: <b>trebuie</b> să faci exact ce arată.</p><ul><li><b>Obligatoriu înainte sau la dreapta</b>: alte direcții nu sunt permise.</li><li><b>Ocolirea prin dreapta</b>: treci de obstacol doar pe partea dreaptă.</li><li><b>Sens giratoriu</b> (trei săgeți în cerc): circuli în jurul insulei, în sensul săgeților.</li><li><b>Pistă pentru biciclete</b>: drumul e rezervat bicicletelor; mașinile nu au voie.</li><li><b>Lanțuri obligatorii</b>: circuli doar cu lanțuri de zăpadă montate.</li></ul>",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "signs": [
+          "ob-inainte-sau-dreapta",
+          "ob-ocolire-dreapta",
+          "ob-sens-giratoriu",
+          "ob-pista-biciclete"
+        ]
+      }
+    },
+    {
+      "kind": "trap",
+      "title": "Două indicatoare pentru pietoni",
+      "body": "<ul><li><b>Triunghiul</b> cu un pieton (avertizare) îți spune că <b>urmează</b> o trecere. E pus înaintea ei.</li><li><b>Pătratul albastru</b> cu un pieton (informare) e pus <b>chiar la trecere</b>. Îți arată locul exact.</li></ul><p>Alte indicatoare de informare utile: <b>Parcare</b>, <b>Spital</b>, <b>Stație de autobuz</b>, <b>Drum fără ieșire</b>, <b>Sens unic</b>. Toate sunt dreptunghiuri sau pătrate, de regulă albastre.</p>",
+      "visual": {
+        "signs": [
+          "av-trecere-pietoni",
+          "inf-trecere-pietoni",
+          "inf-drum-fara-iesire",
+          "inf-sens-unic"
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Zone cu reguli proprii",
+      "body": "<ul><li><b>Autostradă</b> și <b>drum expres</b>: au indicatoare proprii de început și de sfârșit. Autostrada e semnalizată pe fond verde.</li><li><b>Zonă rezidențială</b>: maximum <b>20 km/h</b>, pietonii pot folosi toată lățimea drumului, copiii se pot juca. Oprești și staționezi doar în locurile amenajate și semnalizate.</li><li><b>Zonă pietonală</b>: e rezervată pietonilor; vehiculele intră doar dacă un panou le permite.</li></ul><p>Fiecare zonă ține până la indicatorul ei de sfârșit.</p>",
+      "visual": {
+        "signs": [
+          "inf-autostrada",
+          "inf-zona-rezidentiala",
+          "inf-sfarsit-zona-rezidentiala",
+          "inf-zona-pietonala"
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "title": "Fondul galben bate fondul alb",
+      "body": "<p>La lucrări, după accidente sau calamități, se folosesc indicatoare <b>temporare</b>. Sunt la fel ca cele permanente, dar fondul alb e înlocuit cu <b>fond galben</b>.</p><p>Ele schimbă regimul normal al drumului, deci au <b>prioritate</b> față de indicatoarele permanente și de marcaje. Dacă vezi „50” alb și apoi „30” galben, respecți <b>30</b>.</p><p>Ordinea completă, pe scurt: <b>polițist</b> &gt; semnale speciale (girofar, sirenă) &gt; <b>semnalizare temporară</b> &gt; <b>semafoare</b> &gt; <b>indicatoare</b> &gt; <b>marcaje</b> &gt; reguli. O detaliem în capitolul 4.</p>",
+      "src": "Regulament art. 67; OUG 195/2002 art. 31",
+      "visual": {
+        "signs": [
+          "in-viteza-50",
+          "x-viteza-30-galben",
+          "av-lucrari"
+        ]
+      }
+    }
+  ],
+  "summary": [
+    "Forma și culoarea îți spun familia indicatorului înainte să vezi desenul.",
+    "Triunghiul alb cu chenar roșu avertizează, cercul cu chenar roșu interzice, cercul albastru obligă, dreptunghiul informează.",
+    "Indicatoarele se pun de regulă pe dreapta și pot fi repetate pe stânga sau deasupra drumului.",
+    "Avertizările se pun la cel mult 50 m de pericol în localitate, la 100-250 m în afara ei și la 500-1.000 m pe autostradă.",
+    "Cedează trecerea, STOP și Drum cu prioritate au forme unice, recunoscute și din spate.",
+    "La STOP oprești mereu; la Cedează trecerea oprești doar dacă e nevoie.",
+    "O interdicție ține până la indicatorul de sfârșit sau până la prima intersecție; pusă la intrarea în localitate, ține până la ieșire.",
+    "Oprirea și staționarea interzise au fond albastru, dar sunt indicatoare de interzicere.",
+    "Indicatoarele cu fond galben sunt temporare și au prioritate față de cele permanente.",
+    "Ordinea priorității: polițist, semnale speciale, semnalizare temporară, semafor, indicator, marcaj, reguli."
+  ],
+  "questions": [
+    {
+      "q": "Ce semnificație are indicatorul?",
+      "o": [
+        "Drum denivelat",
+        "Drum alunecos",
+        "Curbe succesive"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Mașina cu urme șerpuite în spate arată un drum alunecos. Încetinește și evită frânările și virajele bruște.",
+      "src": "Regulament art. 64 lit. a)",
+      "visual": {
+        "sign": "av-drum-alunecos"
+      }
+    },
+    {
+      "q": "Ce obligație vă impune indicatorul?",
+      "o": [
+        "Să cedați trecerea vehiculelor care circulă pe drumul în care urmează să intrați",
+        "Să opriți obligatoriu, chiar dacă drumul este liber",
+        "Să reduceți viteza și, la nevoie, să opriți pentru a ceda trecerea"
+      ],
+      "c": [
+        0,
+        2
+      ],
+      "x": "Cedează trecerea cere să lași să treacă vehiculele de pe drumul în care intri. Oprești doar dacă e nevoie; oprirea obligatorie ține de indicatorul STOP.",
+      "src": "Regulament art. 81 alin. (2)",
+      "visual": {
+        "sign": "pr-cedeaza"
+      }
+    },
+    {
+      "q": "Cum procedați la întâlnirea indicatorului, dacă drumul în care intrați pare complet liber?",
+      "o": [
+        "Treceți fără oprire, pentru că nu vine nimeni",
+        "Opriți la linia de oprire, vă asigurați, apoi plecați",
+        "Opriți doar pe timp de noapte, când vizibilitatea e redusă"
+      ],
+      "c": [
+        1
+      ],
+      "x": "La STOP oprirea e obligatorie mereu, chiar dacă drumul pare liber. Abia după ce te-ai asigurat poți pleca.",
+      "src": "Regulament art. 81 alin. (1)",
+      "visual": {
+        "sign": "pr-stop"
+      }
+    },
+    {
+      "q": "Autoturismul A sunteți dumneavoastră. Cum procedați?",
+      "o": [
+        "Opriți la linia de oprire și lăsați autoturismul B să treacă",
+        "Treceți primul, pentru că B vine din stânga",
+        "Opriți numai dacă autoturismul B este foarte aproape"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Ai indicatorul STOP: oprești obligatoriu și cedezi trecerea celor de pe drumul cu prioritate, indiferent din ce parte vin. Regula priorității de dreapta nu se aplică aici.",
+      "src": "Regulament art. 81 alin. (1)",
+      "visual": {
+        "scene": {
+          "layout": "t-north",
+          "main": "ew",
+          "vehicles": [
+            {
+              "id": "A",
+              "arm": "s",
+              "go": "right",
+              "type": "car",
+              "you": true
+            },
+            {
+              "id": "B",
+              "arm": "w",
+              "go": "straight",
+              "type": "car"
+            }
+          ],
+          "signs": [
+            {
+              "arm": "s",
+              "sign": "pr-stop"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "q": "Ce vă indică acest indicator?",
+      "o": [
+        "Circulați pe un drum cu prioritate",
+        "Trebuie să cedați trecerea vehiculelor care vin din dreapta",
+        "Vehiculele din drumurile laterale vă cedează trecerea, până la indicatorul de sfârșit"
+      ],
+      "c": [
+        0,
+        2
+      ],
+      "x": "Rombul galben înseamnă Drum cu prioritate. Ceilalți îți cedează trecerea până apare indicatorul de sfârșit; prioritatea de dreapta nu se aplică pentru tine.",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "sign": "pr-drum-prioritate"
+      }
+    },
+    {
+      "q": "Ce semnificație are indicatorul?",
+      "o": [
+        "Urmează o intersecție de drumuri egale",
+        "Trebuie să cedați trecerea vehiculelor din dreapta",
+        "Urmează o intersecție cu un drum fără prioritate; dumneavoastră aveți prioritate"
+      ],
+      "c": [
+        2
+      ],
+      "x": "Linia groasă e drumul tău, linia subțire e drumul lateral fără prioritate. Deși e triunghi, indicatorul face parte din familia de prioritate.",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "sign": "pr-intersectie-fara-prioritate"
+      }
+    },
+    {
+      "q": "Ce obligație vă impune indicatorul?",
+      "o": [
+        "Aveți prioritate față de vehiculele care vin din sens opus",
+        "Trebuie să acordați prioritate vehiculelor care vin din sens opus",
+        "Circulația în sens opus este interzisă"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Indicatorul rotund cu chenar roșu cere să cedezi celor din față. Săgeata roșie arată sensul care cedează, iar aici e sensul tău.",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "sign": "pr-prioritate-sens-invers"
+      }
+    },
+    {
+      "q": "Ce semnificație are indicatorul?",
+      "o": [
+        "Drum cu sens unic",
+        "Prioritate pentru circulația din sens invers",
+        "Prioritate față de circulația din sens invers"
+      ],
+      "c": [
+        2
+      ],
+      "x": "Pătratul albastru îți dă prioritate pe sectorul îngust: cei din față îți cedează. Varianta rotundă, cu chenar roșu, e opusul.",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "sign": "pr-prioritate-fata-de-sens-invers"
+      }
+    },
+    {
+      "q": "Ce semnificație are indicatorul?",
+      "o": [
+        "Accesul interzis vehiculelor în sensul în care este instalat",
+        "Circulația interzisă în ambele sensuri",
+        "Se întâlnește frecvent la capătul unui drum cu sens unic"
+      ],
+      "c": [
+        0,
+        2
+      ],
+      "x": "Discul roșu cu bară albă interzice intrarea în acel sens. De aceea îl vezi des la ieșirea unei străzi cu sens unic. Circulația interzisă în ambele sensuri e un disc alb cu chenar roșu.",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "sign": "in-accesul-interzis"
+      }
+    },
+    {
+      "q": "Pe sectorul de drum semnalizat cu acest indicator, aveți voie să depășiți:",
+      "o": [
+        "o motocicletă fără ataș",
+        "un autoturism care circulă foarte încet",
+        "un autocamion"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Depășirea interzisă se referă la autovehicule, cu excepția motocicletelor fără ataș. Faptul că cel din față merge încet nu face depășirea permisă.",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "sign": "in-depasirea-interzisa"
+      }
+    },
+    {
+      "q": "Ce vă permite indicatorul?",
+      "o": [
+        "Oprirea de scurtă durată, de cel mult 5 minute",
+        "Staționarea pe partea drumului pe care este instalat",
+        "Nici oprirea, nici staționarea"
+      ],
+      "c": [
+        0
+      ],
+      "x": "O singură bară roșie înseamnă Staționarea interzisă: poți opri scurt, dar nu poți staționa. X-ul roșu ar fi interzis și oprirea.",
+      "src": "OUG 195/2002 art. 6",
+      "visual": {
+        "sign": "in-stationarea-interzisa"
+      }
+    },
+    {
+      "q": "Din ce categorie face parte indicatorul?",
+      "o": [
+        "Indicatoare de obligare, pentru că are fond albastru",
+        "Indicatoare de interzicere sau restricție",
+        "Indicatoare de informare"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Oprirea interzisă are fond albastru, dar chenarul și X-ul roșu arată că e o interdicție. Fondul albastru e capcana clasică.",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "sign": "in-oprirea-interzisa"
+      }
+    },
+    {
+      "q": "Un indicator de limitare a vitezei este instalat fără panou adițional, iar mai departe nu apare niciun indicator de sfârșit. Până unde este valabil?",
+      "o": [
+        "Pe o distanță de 1 km",
+        "Până la prima intersecție",
+        "Până la ieșirea din localitate, în orice situație"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Fără panou și fără indicator de sfârșit, o restricție se termină la prima intersecție. Până la ieșirea din localitate ține doar dacă a fost pusă împreună cu indicatorul de intrare.",
+      "src": "Regulament art. 66 alin. (6)",
+      "visual": {
+        "sign": "in-viteza-50"
+      }
+    },
+    {
+      "q": "Indicatorul de 30 km/h este montat pe același stâlp cu indicatorul de intrare în localitate. Până unde este valabilă restricția?",
+      "o": [
+        "Până la prima intersecție",
+        "Până la indicatorul de ieșire din localitate, dacă alte indicatoare nu prevăd altfel",
+        "Doar pe primii 100 m"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Când e pusă odată cu intrarea în localitate, restricția ține pe tot drumul prin localitate, până la ieșire. Regula primei intersecții nu se aplică aici.",
+      "src": "Regulament art. 66 alin. (6)",
+      "visual": {
+        "signs": [
+          "inf-intrare-localitate",
+          "in-viteza-30"
+        ]
+      }
+    },
+    {
+      "q": "Care afirmații despre aceste două indicatoare sunt corecte?",
+      "o": [
+        "Primul stabilește viteza maximă de 30 km/h",
+        "Al doilea stabilește viteza minimă de 30 km/h",
+        "Ambele au același înțeles, diferă doar culoarea"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "Cercul cu chenar roșu e o restricție: maximum 30. Cercul albastru e o obligație: minimum 30. Culoarea schimbă complet sensul.",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "signs": [
+          "in-viteza-30",
+          "ob-viteza-minima-30"
+        ]
+      }
+    },
+    {
+      "q": "La ce distanță de locul periculos se instalează indicatoarele de avertizare în localități?",
+      "o": [
+        "La cel mult 50 m",
+        "Între 100 m și 250 m",
+        "Între 500 m și 1.000 m"
+      ],
+      "c": [
+        0
+      ],
+      "x": "În localitate vitezele sunt mici, deci avertizarea stă aproape: cel mult 50 m. Celelalte distanțe sunt pentru afara localității și pentru autostrăzi.",
+      "src": "Regulament art. 66 alin. (4)"
+    },
+    {
+      "q": "Ce este corect despre indicatoarele de avertizare de pe autostrăzi?",
+      "o": [
+        "Se instalează între 500 m și 1.000 m înaintea locului periculos",
+        "Sub ele se montează obligatoriu un panou cu distanța până la locul periculos",
+        "Se instalează între 100 m și 250 m înaintea locului periculos"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "Pe autostradă și drum expres, viteza mare cere avertizare de la 500-1.000 m, iar panoul cu distanța e obligatoriu în toate cazurile. 100-250 m e regula din afara localităților, pe drumuri obișnuite.",
+      "src": "Regulament art. 66 alin. (4)-(5)",
+      "visual": {
+        "sign": "av-lucrari"
+      }
+    },
+    {
+      "q": "Ce rol pot avea panourile adiționale montate sub un indicator?",
+      "o": [
+        "Precizează, completează sau limitează semnificația indicatorului",
+        "Arată distanța până la locul periculos sau lungimea sectorului",
+        "Anulează semnificația indicatorului de deasupra"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "Panoul adițional nuanțează indicatorul: distanță, lungime, ore, categorii de vehicule. Nu îl anulează.",
+      "src": "Regulament art. 65 alin. (2)",
+      "visual": {
+        "sign": "av-alte-pericole"
+      }
+    },
+    {
+      "q": "Unde se instalează, de regulă, indicatoarele rutiere?",
+      "o": [
+        "Pe partea dreaptă a sensului de mers",
+        "Exclusiv deasupra părții carosabile",
+        "Pot fi repetate pe partea stângă sau deasupra drumului, dacă altfel nu s-ar vedea la timp"
+      ],
+      "c": [
+        0,
+        2
+      ],
+      "x": "Regula e dreapta. Când locul nu permite o vedere bună, indicatorul poate fi pus sau repetat pe stânga, pe zona mediană ori deasupra drumului.",
+      "src": "Regulament art. 65 alin. (1)"
+    },
+    {
+      "q": "Pe un sector cu lucrări, după un indicator permanent de 50 km/h, întâlniți unul de 30 km/h cu fond galben. Cu ce viteză aveți voie să circulați?",
+      "o": [
+        "Cu cel mult 50 km/h, pentru că indicatorul permanent are prioritate",
+        "Cu cel mult 30 km/h",
+        "Cu cel puțin 30 km/h"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Fondul galben arată semnalizare temporară, care are prioritate față de indicatoarele permanente. Deci respecți 30 km/h ca viteză maximă.",
+      "src": "OUG 195/2002 art. 31; Regulament art. 67",
+      "visual": {
+        "signs": [
+          "in-viteza-50",
+          "x-viteza-30-galben"
+        ]
+      }
+    },
+    {
+      "q": "Semaforul vă arată verde, dar polițistul rutier vă face semn să opriți. Cum procedați?",
+      "o": [
+        "Treceți, pentru că semaforul verde are prioritate",
+        "Opriți, pentru că semnalele polițistului au prioritate față de semafor",
+        "Opriți doar dacă în intersecție există și indicatorul STOP"
+      ],
+      "c": [
+        1
+      ],
+      "x": "Polițistul e pe primul loc în ordinea priorității, înaintea semafoarelor, indicatoarelor și marcajelor.",
+      "src": "OUG 195/2002 art. 31",
+      "visual": {
+        "sign": "sem-verde"
+      }
+    },
+    {
+      "q": "Ce semnificație are indicatorul?",
+      "o": [
+        "Trecere la nivel cu o cale ferată simplă, fără bariere",
+        "Trecere la nivel cu o cale ferată cu două sau mai multe linii",
+        "Intersecție de drumuri"
+      ],
+      "c": [
+        0
+      ],
+      "x": "Crucea Sf. Andrei simplă arată o singură linie ferată, fără bariere. Crucea dublă arată două sau mai multe linii. Stă chiar lângă șine.",
+      "src": "Regulament art. 68",
+      "visual": {
+        "sign": "av-cruce-sf-andrei"
+      }
+    },
+    {
+      "q": "Ce este corect despre acest indicator?",
+      "o": [
+        "Avertizează că urmează o trecere la nivel cu calea ferată cu bariere",
+        "Se instalează înaintea trecerii, la distanța specifică avertizărilor",
+        "Se instalează chiar lângă șine, în locul crucii Sf. Andrei"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "Triunghiul cu gard anunță o trecere cu bariere și se pune înainte, ca orice avertizare. Crucea Sf. Andrei e cea care stă lângă șine, la trecerile fără bariere.",
+      "src": "Regulament art. 66 alin. (4), art. 68",
+      "visual": {
+        "sign": "av-calea-ferata-bariere"
+      }
+    },
+    {
+      "q": "Ce vă anunță indicatorul?",
+      "o": [
+        "O intersecție de drumuri care urmează",
+        "La intersecție se aplică, de regulă, prioritatea de dreapta",
+        "Aveți prioritate față de toate vehiculele din intersecție"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "X-ul negru din triunghi anunță o intersecție de drumuri egale. Acolo, de regulă, cedezi celor din dreapta; nu ai prioritate automat.",
+      "src": "Regulament art. 64 lit. a)",
+      "visual": {
+        "sign": "av-intersectie"
+      }
+    },
+    {
+      "q": "Ce obligație vă impune indicatorul?",
+      "o": [
+        "Să circulați doar înainte sau la dreapta",
+        "Nu aveți voie să virați la stânga",
+        "Să cedați trecerea vehiculelor din dreapta"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "Indicatorul de obligare permite doar direcțiile arătate de săgeți. Orice altă direcție, inclusiv stânga, nu e permisă.",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "sign": "ob-inainte-sau-dreapta"
+      }
+    },
+    {
+      "q": "Ce diferență este între aceste două indicatoare?",
+      "o": [
+        "Ambele se montează exact în dreptul trecerii pentru pietoni",
+        "Al doilea interzice traversarea pietonilor",
+        "Primul anunță din timp o trecere pentru pietoni, al doilea marchează chiar locul trecerii"
+      ],
+      "c": [
+        2
+      ],
+      "x": "Triunghiul te avertizează că urmează o trecere. Pătratul albastru e informare și stă chiar la trecere.",
+      "src": "Regulament art. 64",
+      "visual": {
+        "signs": [
+          "av-trecere-pietoni",
+          "inf-trecere-pietoni"
+        ]
+      }
+    },
+    {
+      "q": "Ce reguli se aplică după acest indicator?",
+      "o": [
+        "Viteza maximă este de 20 km/h",
+        "Pietonii pot folosi toată lățimea drumului, iar copiii se pot juca",
+        "Puteți staționa oriunde pe partea carosabilă"
+      ],
+      "c": [
+        0,
+        1
+      ],
+      "x": "În zona rezidențială pietonii și copiii sunt acasă: 20 km/h și atenție maximă. Staționezi doar în locurile amenajate și semnalizate.",
+      "src": "Regulament (indicatorul Zonă rezidențială)",
+      "visual": {
+        "sign": "inf-zona-rezidentiala"
+      }
+    },
+    {
+      "q": "Care dintre aceste indicatoare pot fi recunoscute după formă chiar și când sunt văzute din spate?",
+      "o": [
+        "Cedează trecerea",
+        "Oprire (STOP)",
+        "Drum cu prioritate"
+      ],
+      "c": [
+        0,
+        1,
+        2
+      ],
+      "x": "Toate trei au forme unice: triunghi cu vârful în jos, octogon și romb. Așa îi ajută și pe cei din alte direcții să știe cine are prioritate.",
+      "src": "Regulament art. 64 lit. b)",
+      "visual": {
+        "signs": [
+          "pr-cedeaza",
+          "pr-stop",
+          "pr-drum-prioritate"
+        ]
+      }
+    }
+  ],
+  "uncertain": [
+    "x-viteza-30-galben: semn nou pentru artist. Este indicatorul «Limitare de viteză 30 km/h» în varianta temporară: cerc cu chenar roșu și cifra 30 neagră, dar cu FOND GALBEN în loc de alb (Regulament art. 67).",
+    "Ordinea de prioritate: brief-ul enumeră polițist > semnale speciale > semafoare > indicatoare > marcaje > reguli, dar textul actual al OUG 195/2002 art. 31 (verificat pe e-juridic.manager.ro) are 7 niveluri, cu lit. c) «semnalizarea temporară și/sau indicatoarele electronice care modifică regimul normal» între semnalele speciale și semafoare. Am folosit forma din lege; capitolul 4 ar trebui să fie consecvent cu ea.",
+    "Semnificațiile individuale ale indicatoarelor sunt definite în standard (SR 1848-1) și în anexa Regulamentului, nu într-un articol anume; în src am citat Regulament art. 64 (categoriile). Excepția de la Depășirea interzisă (motociclete fără ataș) e luată din denumirea oficială a indicatorului, verificată pe o sursă de presă (stirileprotv.ro), nu pe textul oficial.",
+    "Zonă rezidențială (20 km/h, pietonii pe toată lățimea, copiii se pot juca, staționare doar în locuri amenajate): confirmat de explicația Primăriei Cluj-Napoca și de cursurile de legislație, dar nu am găsit articolul exact din Regulament; src e generic.",
+    "Indicatorul STOP: «la linia de oprire» e confirmat (Regulament art. 81 alin. (1)); formularea «în lipsa ei, la marginea drumului în care intri, de unde vezi bine» e din standard/practica cursurilor, nu am verificat-o pe textul legii.",
+    "Oprire = imobilizare de cel mult 5 minute (OUG art. 6) și faptul că Oprirea/Staționarea interzisă se aplică pe partea drumului unde e instalat indicatorul sunt din memorie și surse secundare; nu am reușit să deschid textul art. 6 pentru verificare directă.",
+    "Scena de la cardul STOP și de la întrebarea 4: layout t-north (lipsește brațul de nord), drum principal est-vest, A vine din sud și virează la dreapta, B vine din vest. Verificați că desenul arată B venind din stânga lui A."
+  ]
+}
